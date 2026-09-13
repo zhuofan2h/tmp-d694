@@ -1,0 +1,182 @@
+{
+ "updated": "2026-09-13T18:11:56Z",
+ "countries": [
+  {
+   "code": "EV",
+   "name": "Events"
+  },
+  {
+   "code": "MI",
+   "name": "Movies"
+  },
+  {
+   "code": "ID",
+   "name": "Indonesia"
+  },
+  {
+   "code": "SP",
+   "name": "Sports TV"
+  },
+  {
+   "code": "AR",
+   "name": "Argentina"
+  },
+  {
+   "code": "AU",
+   "name": "Australia"
+  },
+  {
+   "code": "BE",
+   "name": "Belgium"
+  },
+  {
+   "code": "BR",
+   "name": "Brazil"
+  },
+  {
+   "code": "CA",
+   "name": "Canada"
+  },
+  {
+   "code": "CN",
+   "name": "China"
+  },
+  {
+   "code": "KD",
+   "name": "Kids"
+  },
+  {
+   "code": "CO",
+   "name": "Colombia"
+  },
+  {
+   "code": "FR",
+   "name": "France"
+  },
+  {
+   "code": "IN",
+   "name": "India"
+  },
+  {
+   "code": "IT",
+   "name": "Italy"
+  },
+  {
+   "code": "JP",
+   "name": "Japan"
+  },
+  {
+   "code": "KR",
+   "name": "South Korea"
+  },
+  {
+   "code": "KW",
+   "name": "Kuwait"
+  },
+  {
+   "code": "MY",
+   "name": "Malaysia"
+  },
+  {
+   "code": "MX",
+   "name": "Mexico"
+  },
+  {
+   "code": "PY",
+   "name": "Paraguay"
+  },
+  {
+   "code": "PH",
+   "name": "Philippines (the)"
+  },
+  {
+   "code": "PT",
+   "name": "Portugal"
+  },
+  {
+   "code": "RU",
+   "name": "Russian Federation (the)"
+  },
+  {
+   "code": "SA",
+   "name": "Saudi Arabia"
+  },
+  {
+   "code": "SG",
+   "name": "Singapore"
+  },
+  {
+   "code": "SK",
+   "name": "Slovakia"
+  },
+  {
+   "code": "VN",
+   "name": "Viet Nam"
+  },
+  {
+   "code": "SE",
+   "name": "Sweden"
+  },
+  {
+   "code": "TH",
+   "name": "Thailand"
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom"
+  },
+  {
+   "code": "US",
+   "name": "United States of America (the)"
+  },
+  {
+   "code": "UY",
+   "name": "Uruguay"
+  },
+  {
+   "code": "RI",
+   "name": "TVRI"
+  },
+  {
+   "code": "LO",
+   "name": "TV Lokal"
+  }
+ ],
+ "counts": {
+  "Events": 17,
+  "Movies": 2,
+  "Indonesia": 54,
+  "Sports TV": 54,
+  "Argentina": 15,
+  "Australia": 16,
+  "Belgium": 1,
+  "Brazil": 77,
+  "Canada": 7,
+  "China": 2,
+  "Kids": 11,
+  "Colombia": 1,
+  "France": 1,
+  "India": 3,
+  "Italy": 1,
+  "Japan": 15,
+  "South Korea": 10,
+  "Kuwait": 1,
+  "Malaysia": 17,
+  "Mexico": 7,
+  "Paraguay": 1,
+  "Philippines (the)": 3,
+  "Portugal": 1,
+  "Russian Federation (the)": 10,
+  "Saudi Arabia": 19,
+  "Singapore": 11,
+  "Slovakia": 3,
+  "Viet Nam": 1,
+  "Sweden": 1,
+  "Thailand": 4,
+  "United Kingdom": 15,
+  "United States of America (the)": 4,
+  "Uruguay": 2,
+  "TVRI": 31,
+  "TV Lokal": 26
+ }
+}

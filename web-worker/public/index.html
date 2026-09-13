@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPTV Channels</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, sans-serif; background: #0f1115; color: #e6e8ec; margin: 0; }
+  header { padding: 16px 20px; background: #161a22; border-bottom: 1px solid #232833; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  h1 { font-size: 18px; margin: 0 16px 0 0; }
+  #stats { font-size: 12px; color: #8b93a3; }
+  #search { flex: 1; min-width: 200px; padding: 8px 12px; border-radius: 8px; border: 1px solid #2a3040; background: #0f1115; color: #e6e8ec; }
+  select { padding: 8px; border-radius: 8px; border: 1px solid #2a3040; background: #0f1115; color: #e6e8ec; max-width: 160px; }
+  main { padding: 12px 20px; }
+  #toolbar { margin: 8px 0 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+  button { cursor: pointer; padding: 8px 14px; border-radius: 8px; border: 1px solid #2a3040; background: #1b2130; color: #e6e8ec; }
+  button.primary { background: #2563eb; border-color: #2563eb; }
+  #playlist-url { flex: 1; font-family: monospace; font-size: 13px; padding: 8px 10px; border-radius: 8px; border: 1px solid #2a3040; background: #0c0e12; color: #9fb4d8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #1d2230; }
+  th { color: #8b93a3; font-weight: 500; font-size: 12px; text-transform: uppercase; }
+  tr:hover td { background: #141926; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 99px; margin-right: 4px; }
+  .badge.live { background: #052e16; color: #4ade80; }
+  .badge.prem { background: #3b1d06; color: #fbbf24; }
+  .badge.free { background: #052e2b; color: #2dd4bf; }
+  .name { max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .url { max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #7f8ea8; font-family: monospace; font-size: 12px; }
+  #player-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.8); display: none; align-items: center; justify-content: center; z-index: 10; }
+  #player-overlay:target, #player-overlay.open { display: flex; }
+  #player-box { background: #161a22; border-radius: 12px; padding: 16px; max-width: min(860px, 94vw); width: 100%; }
+  video { width: 100%; background: #000; border-radius: 8px; }
+  #msg { color: #8b93a3; font-size: 13px; margin: 8px 0; }
+  footer { padding: 20px; color: #5a6373; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📺 IPTV Channels</h1>
+  <span id="stats">loading…</span>
+  <input id="search" type="search" placeholder="Cari channel…">
+  <select id="country"><option value="">Semua negara</option></select>
+  <select id="premium">
+    <option value="">Free only</option>
+    <option value="1">Include premium</option>
+  </select>
+</header>
+<main>
+  <div id="toolbar">
+    <div id="playlist-url">playlist URL</div>
+    <button id="copy" class="primary">Copy playlist URL</button>
+  </div>
+  <table>
+    <thead><tr><th>Channel</th><th>Negara</th><th>Status</th><th>URL</th><th></th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+<div id="player-overlay">
+  <div id="player-box">
+    <div id="msg"></div>
+    <video id="video" controls autoplay></video>
+    <div style="margin-top:10px;display:flex;gap:8px">
+      <button onclick="document.getElementById('player-overlay').classList.remove('open')">Tutup</button>
+      <button id="open-ext">Buka di player eksternal</button>
+    </div>
+  </div>
+</div>
+<footer>Data di-refresh otomatis tiap 30 menit dari upstream. Playlist: <span id="plink"></span></footer>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+<script>
+const API = 'https://iptv-api.zhuofan2h.workers.dev';
+const $ = s => document.querySelector(s);
+const state = { all: [], hls: null };
+
+function playlistURL() {
+  const c = $('#country').value;
+  const p = $('#premium').value;
+  const qs = new URLSearchParams();
+  if (c) qs.set('country', c);
+  if (p) qs.set('premium', p);
+  const s = qs.toString();
+  return `${API}/playlist.m3u${s ? '?' + s : ''}`;
+}
+
+function render() {
+  const q = ($('#search').value || '').toLowerCase();
+  const country = $('#country').value;
+  const inclPrem = $('#premium').value === '1';
+  let rows = state.all.filter(c => inclPrem || c.premium !== 't');
+  if (country) rows = rows.filter(c => c.code === country);
+  if (q) rows = rows.filter(c => (c.name || '').toLowerCase().includes(q));
+  $('#rows').innerHTML = rows.slice(0, 500).map((c, i) => `
+    <tr>
+      <td class="name" title="${esc(c.name)}">${esc(c.name)}</td>
+      <td>${esc(c.country)}</td>
+      <td>${c.premium === 't' ? '<span class="badge prem">premium</span>' : '<span class="badge free">free</span>'}${c.is_live === 't' ? '<span class="badge live">live</span>' : ''}</td>
+      <td class="url" title="${esc(c.hls)}">${esc(c.hls)}</td>
+      <td><button onclick="play(${JSON.stringify(c.hls).replace(/"/g, '&quot;')})">▶</button></td>
+    </tr>`).join('');
+  $('#stats').textContent = `${rows.length} channel ditampilkan`;
+}
+
+function esc(s) { return (s || '').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+
+function play(url) {
+  const overlay = $('#player-overlay');
+  const video = $('#video');
+  $('#msg').textContent = url;
+  $('#open-ext').onclick = () => window.open(url, '_blank');
+  if (state.hls) { state.hls.destroy(); state.hls = null; }
+  if (url.includes('.m3u8') && window.Hls && Hls.isSupported()) {
+    state.hls = new Hls();
+    state.hls.loadSource(url);
+    state.hls.attachMedia(video);
+    state.hls.on(Hls.Events.ERROR, (_, d) => {
+      if (d.fatal) $('#msg').textContent = 'Gagal play (mungkin butuh header khusus / geo / format MPD). Buka di app IPTV: ' + url;
+    });
+  } else {
+    video.src = url; // .flv/.mpd will likely fail in browser — msg explains
+    if (!url.includes('.m3u8')) $('#msg').textContent = 'Format ini (' + url.split('.').pop() + ') biasanya butuh app IPTV (TiviMate/VLC). Coba: ' + url;
+  }
+  overlay.classList.add('open');
+  video.play().catch(() => {});
+}
+
+async function load() {
+  const data = await fetch(`${API}/api/channels?limit=1000`).then(r => r.json());
+  state.all = data.channels;
+  const countries = await fetch(`${API}/api/countries`).then(r => r.json());
+  const sel = $('#country');
+  for (const [code, name] of countries.countries.map(c => [c.code, c.name])) {
+    const o = document.createElement('option');
+    o.value = code; o.textContent = name;
+    sel.appendChild(o);
+  }
+  $('#stats').textContent = `${data.count} channel · updated ${data.updated}`;
+  $('#playlist-url').textContent = playlistURL();
+  $('#plink').textContent = playlistURL();
+  render();
+}
+
+$('#search').addEventListener('input', render);
+$('#country').addEventListener('change', () => { $('#playlist-url').textContent = playlistURL(); $('#plink').textContent = playlistURL(); render(); });
+$('#premium').addEventListener('change', () => { $('#playlist-url').textContent = playlistURL(); $('#plink').textContent = playlistURL(); render(); });
+$('#copy').addEventListener('click', async () => {
+  const url = playlistURL();
+  try { await navigator.clipboard.writeText(url); $('#copy').textContent = 'Tersalin!'; }
+  catch { prompt('Copy URL ini:', url); }
+  setTimeout(() => $('#copy').textContent = 'Copy playlist URL', 1500);
+});
+load();
+</script>
+</body>
+</html>
