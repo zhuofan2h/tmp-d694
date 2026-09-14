@@ -1,16 +1,16 @@
 {
- "updated": "2026-09-14T05:32:28Z",
+ "updated": "2026-09-14T11:06:40Z",
  "count": 443,
  "channels": [
   {
-   "name": "Men Basketball: Asian Games 2026 [CH1]",
-   "tagline": "14 Sep 11:00 WIB - China vs Philippines",
-   "hls": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd",
+   "name": "Asean Club Championship [CH1]",
+   "tagline": "14 Sep 18:30 WIB - Shan United vs Ezra FC",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
    "is_live": "t",
    "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQUNpMGZLWUZsSmtaRU1iMkJJeFJvQSIsImtpZCI6IlBhR1gwVDExUlFXSWVnU3UzUmVTTGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\":\"https://www.rctiplus.com\",\"Origin\":\"https://www.rctiplus.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "none",
    "country": "Events",
    "code": "EV"
   },
