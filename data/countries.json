@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T07:54:16Z",
+ "updated": "2026-09-15T12:56:42Z",
  "countries": [
   {
    "code": "EV",
@@ -143,7 +143,7 @@
   }
  ],
  "counts": {
-  "Events": 21,
+  "Events": 14,
   "Movies": 2,
   "Indonesia": 54,
   "Sports TV": 54,
