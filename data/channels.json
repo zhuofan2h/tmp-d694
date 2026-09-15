@@ -1,52 +1,28 @@
 {
- "updated": "2026-09-15T12:56:42Z",
- "count": 441,
+ "updated": "2026-09-15T17:24:53Z",
+ "count": 442,
  "channels": [
-  {
-   "name": "AFC Champions League Elite [CH5]",
-   "tagline": "15 Sep 19:15 WIB - Johor Darul Ta`zim FC vs Buriram United",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\":\"https://www.rctiplus.com\",\"Origin\":\"https://www.rctiplus.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "AFC Champions League Elite [CH6]",
-   "tagline": "15 Sep 19:15 WIB - Beijing Guoan vs Pohang Steelers",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\":\"https://www.rctiplus.com\",\"Origin\":\"https://www.rctiplus.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "AFC Champions League Two [CH1]",
    "tagline": "15 Sep 20:45 WIB - Gol Gohar FC vs Al-Jazira(UAE)",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D113",
+   "hls": "https://v101.sportcdn.live/live/live-1-4621316-2.flv?txSecret=4479696f2fd6df750a89cf24135e5f92&txTime=6aa991f5",
    "is_live": "t",
    "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\":\"https://www.rctiplus.com\",\"Origin\":\"https://www.rctiplus.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
+   "jenis": "ts",
+   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV"
   },
   {
    "name": "AFC Champions League Two [CH2]",
    "tagline": "15 Sep 20:45 WIB - Arkadag FK vs Al-Muharraq",
-   "hls": "http://43.152.136.207/live/channel17.flv",
+   "hls": "https://v101.sportcdn.live/live/live-1-4621324-2.flv?txSecret=7848b3d22b45afe7918b322b29751d69&txTime=6aa991d7",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.livefeedtextbox.com\",\"Referer\":\"https://xlz.edgevaultmedia.com/\",\"Origin\":\"https://xlz.edgevaultmedia.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV"
   },
@@ -75,6 +51,18 @@
    "code": "EV"
   },
   {
+   "name": "Spain: La Liga [CH1]",
+   "tagline": "16 Sep 00:00 WIB - Rayo Vallecano vs RCD Espanyol",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSkwvWFhVTnN2M01XaWlvdHpOUUNnUSIsImtpZCI6Ik0xMnRkNEVKbFVVRDNMc2gzSklCWHcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
    "name": "Netherlands: Eredivisie [CH1]",
    "tagline": "16 Sep 01:00 WIB - AFC Ajax vs Willem II",
    "hls": "https://otte.cache.aiv-cdn.net/fra-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
@@ -83,6 +71,18 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"https://dce-ac-live.cdn.indazn.com/\",\"Origin\":\"https://dce-ac-live.cdn.indazn.com\",\"User-Agent\":\"Roku/DVP-12.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiS0Y4U25GN0tBZDBJcGRXaFN0Z0J5QSIsImtpZCI6IkN0UUlETi80eGdzU003SWdoL0N6UUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Spain: La Liga [CH2]",
+   "tagline": "16 Sep 01:00 WIB - Deportivo Alavés vs Valencia CF",
+   "hls": "http://43.152.182.139/live/channel4.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV"
   },
@@ -167,6 +167,18 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiZC9ZcGdOV0M3RlFTZ0hscXo0c3RHUSIsImtpZCI6IkdsMzFOZ25yeVlWNG1NU1E5SEpKR0EifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Spain: La Liga [CH3]",
+   "tagline": "16 Sep 02:30 WIB - Elche CF vs Real Madrid",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSkwvWFhVTnN2M01XaWlvdHpOUUNnUSIsImtpZCI6Ik0xMnRkNEVKbFVVRDNMc2gzSklCWHcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
