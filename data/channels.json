@@ -1,55 +1,7 @@
 {
- "updated": "2026-09-17T05:34:01Z",
- "count": 448,
+ "updated": "2026-09-17T10:33:47Z",
+ "count": 444,
  "channels": [
-  {
-   "name": "Women Volleyball: Asian Games 2026 [CH1]",
-   "tagline": "17 Sep 11:00 WIB - South Korea Women vs Qatar Women",
-   "hls": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQUNpMGZLWUZsSmtaRU1iMkJJeFJvQSIsImtpZCI6IlBhR1gwVDExUlFXSWVnU3UzUmVTTGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Women Volleyball: Asian Games 2026 [CH2]",
-   "tagline": "17 Sep 11:00 WIB - Kazakhstan Women vs Philippines Women",
-   "hls": "https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVmJmdFRNSmZwSGIyYUN4RWV2RW8xUSIsImtpZCI6IjZoOS9obk10UitpWDQ0d3hhSVVWYVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Women Volleyball: Asian Games 2026 [CH3]",
-   "tagline": "17 Sep 14:00 WIB - Chinese Taipei Women vs Mongolia Women",
-   "hls": "https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVmJmdFRNSmZwSGIyYUN4RWV2RW8xUSIsImtpZCI6IjZoOS9obk10UitpWDQ0d3hhSVVWYVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Women Volleyball: Asian Games 2026 [CH4]",
-   "tagline": "17 Sep 14:00 WIB - Hong Kong Women vs Vietnam Women",
-   "hls": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQUNpMGZLWUZsSmtaRU1iMkJJeFJvQSIsImtpZCI6IlBhR1gwVDExUlFXSWVnU3UzUmVTTGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "AFC Champions League Two [CH1]",
    "tagline": "17 Sep 17:00 WIB - Lion City Sailors vs BG Pathum United",
