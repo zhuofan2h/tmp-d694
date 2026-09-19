@@ -1,91 +1,7 @@
 {
- "updated": "2026-09-19T14:56:58Z",
- "count": 464,
+ "updated": "2026-09-19T17:38:07Z",
+ "count": 457,
  "channels": [
-  {
-   "name": "Italy: Serie-A [CH1]",
-   "tagline": "19 Sep 20:00 WIB - Bologna vs Torino",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Italy: Serie-A [CH2]",
-   "tagline": "19 Sep 20:00 WIB - Udinese vs Cagliari",
-   "hls": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-iad-prod/enc/mp7c1feoiv/out/v1/08d49060e7c143bc8c9c1be423fa6f2c/ab22133a-4006-4671-bebe-6012c30331c3-cenc.mpd?aws_sessionId=fbf72655-b0b0-4352-ac4e-4756f862237f",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEIzTTIzQmd2SEVBRG5GREFSc09LZyIsImtpZCI6IjNkQ2tYM2MwbnNiZHo5Wmpza2doaUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "MotoGP [CH6]",
-   "tagline": "19 Sep 20:00 WIB - Austria - Tissot Sprint / Race Nr.1",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Deutsch: Bundesliga [CH1]",
-   "tagline": "19 Sep 20:30 WIB - SV Werder Bremen vs FC Augsburg",
-   "hls": "https://shahid-sports-4-enc.edgenextcdn.net/out/v1/f813ab47644d4c41a99285513f6c7409/index.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiRW1mNWx3VVJPbUxIZUN4TlVvR242dyIsImtpZCI6IlpIY1dBSFprUm5tdkVDaFRUd1AyZmcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Deutsch: Bundesliga [CH2]",
-   "tagline": "19 Sep 20:30 WIB - Borussia Monchengladbach vs 1. FSV Mainz 05",
-   "hls": "https://shahid-sports-2-enc.edgenextcdn.net/out/v1/589aa6b16ce942388695b5b214f4ae93/index.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiclhBQWFSTW1Ca2NHS0Jwd0MzMW5GQSIsImtpZCI6IlVLZnpyOEFLUUxPUHJPVGJZNTBPVEEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Deutsch: Bundesliga [CH3]",
-   "tagline": "19 Sep 20:30 WIB - Hamburger SV vs FC Köln",
-   "hls": "https://shahid-sports-3-enc.edgenextcdn.net/out/v1/2658c96bbfa54f339e357fe36361587e/index.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiaUlsd0hYQkFlTVRaRU8wVUNVRTltdyIsImtpZCI6IksyOXJOQXFvUm5lRjVPZ3ZreUQ3V2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Deutsch: Bundesliga [CH4]",
-   "tagline": "19 Sep 20:30 WIB - Eintracht Frankfurt vs SC Freiburg",
-   "hls": "https://shahid-sports-1-enc.edgenextcdn.net/out/v1/0169cfa282614ebe97ef0201da87bb04/index.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiM1ZGZ2tKTC84VjVvdVIzcjlkV1IrUSIsImtpZCI6InF3Z2FjRXF0UVlLYkVTT3dtMjdLL1EifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "EFL Championship [CH2]",
    "tagline": "19 Sep 21:00 WIB - Birmingham City vs Middlesbrough",
@@ -185,12 +101,12 @@
   {
    "name": "England: Premier League [CH5]",
    "tagline": "19 Sep 23:30 WIB - Nottingham Forest vs Coventry City",
-   "hls": "https://andro.evrenesoglu109.click/checklist/androstreamlivebs3.m3u8",
+   "hls": "http://43.152.182.139/live/channel1.flv",
    "is_live": "t",
    "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV"
   },
@@ -215,42 +131,6 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"https://dce-ac-live.cdn.indazn.com/\",\"Origin\":\"https://dce-ac-live.cdn.indazn.com\",\"User-Agent\":\"Roku/DVP-12.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiS0Y4U25GN0tBZDBJcGRXaFN0Z0J5QSIsImtpZCI6IkN0UUlETi80eGdzU003SWdoL0N6UUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "France: Ligue 1 [CH2]",
-   "tagline": "20 Sep 01:45 WIB - Lyon vs Stade Rennais FC",
-   "hls": "https://andro.evrenesoglu109.click/checklist/androstreamlivebs3.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "France: Ligue 1 [CH3]",
-   "tagline": "20 Sep 01:45 WIB - Toulouse FC vs Havre Athletic Club",
-   "hls": "https://andro.evrenesoglu109.click/checklist/androstreamlivebs4.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "France: Ligue 1 [CH5]",
-   "tagline": "20 Sep 01:45 WIB - Angers SCO vs Troyes",
-   "hls": "https://andro.evrenesoglu109.click/checklist/androstreamlivebs5.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
    "country": "Events",
    "code": "EV"
   },
@@ -375,6 +255,30 @@
    "code": "EV"
   },
   {
+   "name": "Indonesia: BRI Super League [CH1]",
+   "tagline": "20 Sep 15:30 WIB - Borneo FC Samarinda vs Bali United",
+   "hls": "http://43.152.182.139/live/channel18.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Indonesia: BRI Super League [CH2]",
+   "tagline": "20 Sep 15:30 WIB - Dewa United FC vs PSS Sleman",
+   "hls": "http://43.152.182.139/live/channel13.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
    "name": "MotoGP [CH8]",
    "tagline": "20 Sep 16:00 WIB - Austria - Race / Grand Prix",
    "hls": "https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_spotv2hd.mpd",
@@ -443,6 +347,18 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Indonesia: BRI Super League [CH3]",
+   "tagline": "20 Sep 19:00 WIB - Persijap Jepara vs Persib Bandung",
+   "hls": "http://43.152.136.207/live/channel20.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.livefeedtextbox.com\",\"Referer\":\"https://xlz.edgevaultmedia.com/\",\"Origin\":\"https://xlz.edgevaultmedia.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV"
   },
