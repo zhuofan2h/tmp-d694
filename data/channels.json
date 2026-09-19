@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-19T06:57:55Z",
- "count": 469,
+ "updated": "2026-09-19T11:45:01Z",
+ "count": 470,
  "channels": [
   {
    "name": "MotoGP [CH4]",
@@ -35,6 +35,18 @@
    "jenis": "ts",
    "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
    "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Indonesia: Pegadaian Championship [CH1]",
+   "tagline": "19 Sep 15:30 WIB - Dejan FC vs Rans Nusantara FC",
+   "hls": "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1789828625/ei/sUmuau6HAtK29fwP_o208QU/ip/2402%3A5680%3A9a4f%3Aaa04%3A%3A1/id/aa-rK0iebiQ.3/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/3600/manifest_duration/3600/demuxed/1/maudio/1/bui/AR3QkAkWVSUbumH-OuWVqD0tOmpiDJlZQ5EZHjFYv7CJ_bbaeCa75uwg8GL0VAQJNCBWu8XlrEreBDmV/spc/I-rgIViA4cduyfKBqbpfddbsyfFzxUUGYAWd5Ryq1H-AGxmaXRoZGL2rhA/vprv/1/go/1/rqh/5/reg/0/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51565116/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRAIgQfb0XfiN4HP_9jTVddLtmDpR0RWr97oaNhdkBYjkg2oCIC1Dc4TtCWWp2jjrwfCLpp3B2dz0ZgDXAZ3Uxnggv48n/file/index.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
    "country": "Events",
    "code": "EV"
   },
