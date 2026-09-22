@@ -1,28 +1,16 @@
 {
- "updated": "2026-09-22T01:39:32Z",
- "count": 434,
+ "updated": "2026-09-22T06:58:01Z",
+ "count": 433,
  "channels": [
-  {
-   "name": "Women Volleyball: Asian Games 2026 [CH1]",
-   "tagline": "22 Sep 08:00 WIB - Kazakhstan Women vs Vietnam Women",
-   "hls": "http://43.152.182.139/live/channel33.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "Women Volleyball: Asian Games 2026 [CH2]",
    "tagline": "22 Sep 11:00 WIB - Chinese Taipei Women vs Indonesia Women",
-   "hls": "http://43.152.182.139/live/channel33.flv",
+   "hls": "https://v101.sportcdn.live/live/live-10-5361363-0.flv?txSecret=1665f1db6170ce95796c333be9b7e5cb&txTime=6ab24015",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV"
   },
