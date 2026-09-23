@@ -1,7 +1,79 @@
 {
- "updated": "2026-09-23T01:34:06Z",
- "count": 433,
+ "updated": "2026-09-23T06:52:10Z",
+ "count": 439,
  "channels": [
+  {
+   "name": "Football: Asian Games 2026 [CH1]",
+   "tagline": "23 Sep 12:30 WIB - Iran U23 vs North Korea U23",
+   "hls": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQUNpMGZLWUZsSmtaRU1iMkJJeFJvQSIsImtpZCI6IlBhR1gwVDExUlFXSWVnU3UzUmVTTGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Football: Asian Games 2026 [CH2]",
+   "tagline": "23 Sep 12:30 WIB - China U23 vs United Arab Emirates U23",
+   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiM0EycC9mcmp4cHd5SzJmYklIcUhvUSIsImtpZCI6IkdvUHVDSTVUUTlDVnJIOU5qVHpaUlEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Football: Asian Games 2026 [CH3]",
+   "tagline": "23 Sep 17:30 WIB - Kyrgyzstan U23 vs Hong Kong U23",
+   "hls": "http://43.152.182.139/live/channel11.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Football: Asian Games 2026 [CH4]",
+   "tagline": "23 Sep 17:30 WIB - Japan U23 vs Thailand U23",
+   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiM0EycC9mcmp4cHd5SzJmYklIcUhvUSIsImtpZCI6IkdvUHVDSTVUUTlDVnJIOU5qVHpaUlEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH1]",
+   "tagline": "23 Sep 21:30 WIB - Iraq vs Oman",
+   "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "tagline": "24 Sep 01:00 WIB - Saudi Arabia vs Kuwait",
+   "hls": "http://43.152.182.139/live/channel23.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
   {
    "name": "UEFA Nations League [CH1]",
    "tagline": "25 Sep 01:45 WIB - Norway vs Denmark",
