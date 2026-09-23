@@ -1,40 +1,16 @@
 {
- "updated": "2026-09-23T06:52:10Z",
- "count": 439,
+ "updated": "2026-09-23T12:22:44Z",
+ "count": 437,
  "channels": [
-  {
-   "name": "Football: Asian Games 2026 [CH1]",
-   "tagline": "23 Sep 12:30 WIB - Iran U23 vs North Korea U23",
-   "hls": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQUNpMGZLWUZsSmtaRU1iMkJJeFJvQSIsImtpZCI6IlBhR1gwVDExUlFXSWVnU3UzUmVTTGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Football: Asian Games 2026 [CH2]",
-   "tagline": "23 Sep 12:30 WIB - China U23 vs United Arab Emirates U23",
-   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiM0EycC9mcmp4cHd5SzJmYklIcUhvUSIsImtpZCI6IkdvUHVDSTVUUTlDVnJIOU5qVHpaUlEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "Football: Asian Games 2026 [CH3]",
    "tagline": "23 Sep 17:30 WIB - Kyrgyzstan U23 vs Hong Kong U23",
-   "hls": "http://43.152.182.139/live/channel11.flv",
+   "hls": "https://v101.sportcdn.live/live/live-1-4594057-2.flv?txSecret=c2622c4dc0a5c2c35eaa871c091e69da&txTime=6ab3eb72",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV"
   },
