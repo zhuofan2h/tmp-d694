@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-23T23:16:07Z",
+ "updated": "2026-09-24T01:30:26Z",
  "count": 437,
  "channels": [
   {
-   "name": "Football: Asian Games 2026 [CH3]",
-   "tagline": "23 Sep 17:30 WIB - Kyrgyzstan U23 vs Hong Kong U23",
-   "hls": "https://v101.sportcdn.live/live/live-1-4594057-2.flv?txSecret=c2622c4dc0a5c2c35eaa871c091e69da&txTime=6ab3eb72",
+   "name": "Women Badminton: Asian Games 2026 [CH1]",
+   "tagline": "24 Sep 07:30 WIB - China vs Japan",
+   "hls": "https://v101.sportcdn.live/live/live-24-5364637-0.flv?txSecret=9e867d6c6a2f9e19d79050d1d9ce94be&txTime=6ab4b15a",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
@@ -15,20 +15,20 @@
    "code": "EV"
   },
   {
-   "name": "Football: Asian Games 2026 [CH4]",
-   "tagline": "23 Sep 17:30 WIB - Japan U23 vs Thailand U23",
-   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd",
+   "name": "Men Badminton: Asian Games 2026 [CH1]",
+   "tagline": "24 Sep 14:00 WIB -",
+   "hls": "https://v101.sportcdn.live/live/live-24-5364637-0.flv?txSecret=9e867d6c6a2f9e19d79050d1d9ce94be&txTime=6ab4b15a",
    "is_live": "t",
    "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiM0EycC9mcmp4cHd5SzJmYklIcUhvUSIsImtpZCI6IkdvUHVDSTVUUTlDVnJIOU5qVHpaUlEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "jenis": "ts",
+   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH1]",
-   "tagline": "23 Sep 21:30 WIB - Iraq vs Oman",
+   "tagline": "24 Sep 22:55 WIB - United Arab Emirates vs Yemen",
    "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
    "is_live": "t",
    "premium": "t",
@@ -40,7 +40,7 @@
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
-   "tagline": "24 Sep 01:00 WIB - Saudi Arabia vs Kuwait",
+   "tagline": "25 Sep 01:00 WIB - Qatar vs Bahrain",
    "hls": "http://43.152.182.139/live/channel23.flv",
    "is_live": "t",
    "premium": "t",
