@@ -1,28 +1,16 @@
 {
- "updated": "2026-09-24T06:52:17Z",
- "count": 437,
+ "updated": "2026-09-24T12:22:50Z",
+ "count": 436,
  "channels": [
   {
-   "name": "Women Badminton: Asian Games 2026 [CH1]",
-   "tagline": "24 Sep 07:30 WIB - China vs Japan",
-   "hls": "https://v101.sportcdn.live/live/live-24-5364637-0.flv?txSecret=9e867d6c6a2f9e19d79050d1d9ce94be&txTime=6ab4b15a",
+   "name": "FIFA Asean Cup [CH4]",
+   "tagline": "24 Sep 19:00 WIB - Myanmar vs Timor Leste",
+   "hls": "http://43.152.182.139/live/channel5.flv",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Men Badminton: Asian Games 2026 [CH1]",
-   "tagline": "24 Sep 14:00 WIB - Indonesia vs China",
-   "hls": "https://v101.sportcdn.live/live/live-24-5364637-0.flv?txSecret=9e867d6c6a2f9e19d79050d1d9ce94be&txTime=6ab4b15a",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV"
   },
