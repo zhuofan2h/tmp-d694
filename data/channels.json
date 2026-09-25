@@ -1,67 +1,7 @@
 {
- "updated": "2026-09-25T13:19:02Z",
- "count": 448,
+ "updated": "2026-09-25T17:59:55Z",
+ "count": 445,
  "channels": [
-  {
-   "name": "Formula 1 [CH2]",
-   "tagline": "25 Sep 19:00 WIB - Azerbaijan Grand Prix - Qualifying",
-   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSXFGRVN6MmhqaE9Sa1daYlBXVW9OUSIsImtpZCI6IkdaU3gzMzM5TG9xTmU1dnorNUFDaFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "FIFA Asean Cup [CH1]",
-   "tagline": "25 Sep 20:00 WIB - Indonesia vs Singapore",
-   "hls": "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1790359730/ei/UmS2at3lJNWj9fwPi92myQk/ip/2402%3A8780%3A103c%3Af85%3Afbcd%3A72ea%3A8d5a%3A5c41/id/EpKSy3ad2qs.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/ctier/SPL/playlist_duration/3600/manifest_duration/3600/demuxed/1/maudio/1/gcr/id/bui/AWzQHwqZrizbQujWfhtSZ330HPVY3ViNwRjpMx5PkmepIrDHD2NbbP8Ezt7LUbVbYy0LdHkrhapi9_dS/spc/I-rgIYl6SqGiMFQTzWq52W6m7XIWZFlgbq2uxLFUhIztKUbpiHcVAulsqw/vprv/1/go/1/rqh/5/reg/0/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51565116%2C52112904%2C52178456/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cctier%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRQIhAPUPZlaOdmW7JYD5RLPtsjcLflwRhz_qxo7LVeI7xn4iAiAO0JcTOP13fsQE8ZSLru5ygt0R8Q22FCAQaKEIzXCnLQ%3D%3D/file/index.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "FIFA Asean Cup [CH2]",
-   "tagline": "25 Sep 20:00 WIB - Indonesia vs Singapore",
-   "hls": "https://v101.sportcdn.live/live/live-1-4639753-0.flv?txSecret=28d51f5546201b2475d1c8194909898c&txTime=6ab6a8c3",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Referer\":\"https://www.aiscore.com/\",\"Origin\":\"https://www.aiscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "FIFA Asean Cup [CH3]",
-   "tagline": "25 Sep 20:00 WIB - Indonesia vs Singapore",
-   "hls": "http://43.152.182.139/live/channel15.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "FIFA Asean Cup [CH4]",
-   "tagline": "25 Sep 20:00 WIB - Indonesia vs Singapore",
-   "hls": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5768191_1.m3u8?auth_key=1790427667-0-0-a21299e12562c0b44a5440d562fe9026",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "UEFA Nations League [CH1]",
    "tagline": "25 Sep 23:00 WIB - Armenia vs Latvia",
@@ -111,6 +51,18 @@
    "code": "EV"
   },
   {
+   "name": "FIFA Asean Cup [CH1]",
+   "tagline": "26 Sep 16:00 WIB - Pakistan vs Thailand",
+   "hls": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"https://www.mewatch.sg/\",\"Origin\":\"https://www.mewatch.sg\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
    "name": "Formula 1 [CH3]",
    "tagline": "26 Sep 18:00 WIB - Azerbaijan Grand Prix - Race",
    "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
@@ -119,6 +71,18 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSXFGRVN6MmhqaE9Sa1daYlBXVW9OUSIsImtpZCI6IkdaU3gzMzM5TG9xTmU1dnorNUFDaFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "FIFA Asean Cup [CH2]",
+   "tagline": "26 Sep 19:30 WIB - Vietnam vs Philippines",
+   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
@@ -4265,7 +4229,7 @@
   {
    "name": "M-Live 5",
    "tagline": "Sports",
-   "hls": "https://tglmp04.akamaized.net/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "hls": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
@@ -4277,7 +4241,7 @@
   {
    "name": "M-Live 6",
    "tagline": "Sports",
-   "hls": "https://tglmp02.akamaized.net/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
