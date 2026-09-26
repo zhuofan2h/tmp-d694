@@ -1,7 +1,19 @@
 {
- "updated": "2026-09-25T23:58:56Z",
- "count": 441,
+ "updated": "2026-09-26T03:32:28Z",
+ "count": 449,
  "channels": [
+  {
+   "name": "Football: Asian Games 2026 [CH1]",
+   "tagline": "26 Sep 12:50 WIB - China U23 vs Thailand U23",
+   "hls": "https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVmJmdFRNSmZwSGIyYUN4RWV2RW8xUSIsImtpZCI6IjZoOS9obk10UitpWDQ0d3hhSVVWYVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
   {
    "name": "FIFA Asean Cup [CH1]",
    "tagline": "26 Sep 16:00 WIB - Pakistan vs Thailand",
@@ -11,6 +23,18 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"https://www.mewatch.sg/\",\"Origin\":\"https://www.mewatch.sg\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Football: Asian Games 2026 [CH2]",
+   "tagline": "26 Sep 17:30 WIB - Japan U23 vs North Korea U23",
+   "hls": "https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVmJmdFRNSmZwSGIyYUN4RWV2RW8xUSIsImtpZCI6IjZoOS9obk10UitpWDQ0d3hhSVVWYVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
@@ -29,12 +53,24 @@
   {
    "name": "FIFA Asean Cup [CH2]",
    "tagline": "26 Sep 19:30 WIB - Vietnam vs Philippines",
-   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "hls": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
    "is_live": "t",
    "premium": "t",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "header_iptv": "{\"Referer\":\"https://www.mewatch.sg/\",\"Origin\":\"https://www.mewatch.sg\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "UEFA Nations League [CH1]",
+   "tagline": "26 Sep 20:00 WIB - Slovenia vs Scotland",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
@@ -51,6 +87,30 @@
    "code": "EV"
   },
   {
+   "name": "UEFA Nations League [CH2]",
+   "tagline": "26 Sep 23:00 WIB - San Marino vs Finland",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "UEFA Nations League [CH3]",
+   "tagline": "26 Sep 23:00 WIB - Bulgaria vs Luxembourg",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSkwvWFhVTnN2M01XaWlvdHpOUUNnUSIsImtpZCI6Ik0xMnRkNEVKbFVVRDNMc2gzSklCWHcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
    "name": "WAFF Arabian Gulf Cup [CH2]",
    "tagline": "27 Sep 01:00 WIB - Oman vs Saudi Arabia",
    "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
@@ -59,6 +119,42 @@
    "jenis": "hls",
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "UEFA Nations League [CH4]",
+   "tagline": "27 Sep 01:45 WIB - Czechia vs Croatia",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "UEFA Nations League [CH6]",
+   "tagline": "27 Sep 01:45 WIB - England vs Spain",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "UEFA Nations League [CH7]",
+   "tagline": "27 Sep 01:45 WIB - North Macedonia vs Switzerland",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSkwvWFhVTnN2M01XaWlvdHpOUUNnUSIsImtpZCI6Ik0xMnRkNEVKbFVVRDNMc2gzSklCWHcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
