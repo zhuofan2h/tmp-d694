@@ -1,19 +1,7 @@
 {
- "updated": "2026-09-26T19:59:19Z",
- "count": 442,
+ "updated": "2026-09-26T22:23:03Z",
+ "count": 444,
  "channels": [
-  {
-   "name": "WAFF Arabian Gulf Cup [CH2]",
-   "tagline": "27 Sep 01:00 WIB - Oman vs Saudi Arabia",
-   "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "UEFA Nations League [CH4]",
    "tagline": "27 Sep 01:45 WIB - Czechia vs Croatia",
@@ -59,6 +47,18 @@
    "jenis": "ts",
    "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
    "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "UFC Fight Night [CH2]",
+   "tagline": "27 Sep 04:00 WIB - Raul Rosas Jr. vs Raoni Barcelos",
+   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEMvcXlLbVp2UWEvUUZtL00wRVhTUSIsImtpZCI6ImFhV3FnMW9HSE9aS1l3MFFSbkorUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
@@ -135,6 +135,18 @@
    "code": "EV"
   },
   {
+   "name": "FIFA Asean Cup [CH1]",
+   "tagline": "27 Sep 14:00 WIB - Hong Kong vs Laos",
+   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
    "name": "Volleyball: Asian Games 2026 [CH5]",
    "tagline": "27 Sep 14:00 WIB - India vs Vietnam",
    "hls": "http://43.152.182.139/live/channel33.flv",
@@ -155,6 +167,18 @@
    "jenis": "ts",
    "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
    "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "FIFA Asean Cup [CH2]",
+   "tagline": "27 Sep 17:00 WIB - Cambodia vs Myanmar",
+   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
