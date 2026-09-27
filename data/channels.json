@@ -1,31 +1,7 @@
 {
- "updated": "2026-09-27T05:56:28Z",
- "count": 435,
+ "updated": "2026-09-27T11:03:52Z",
+ "count": 433,
  "channels": [
-  {
-   "name": "Volleyball: Asian Games 2026 [CH3]",
-   "tagline": "27 Sep 11:00 WIB - Pakistan vs Kazakhstan",
-   "hls": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH4]",
-   "tagline": "27 Sep 11:00 WIB - South Korea vs Philippines",
-   "hls": "http://43.152.182.139/live/channel33.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "FIFA Asean Cup [CH1]",
    "tagline": "27 Sep 14:00 WIB - Hong Kong vs Laos",
@@ -53,12 +29,12 @@
   {
    "name": "Volleyball: Asian Games 2026 [CH6]",
    "tagline": "27 Sep 14:00 WIB - Indonesia vs Thailand",
-   "hls": "http://43.152.182.139/live/channel33.flv",
+   "hls": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
    "country": "Events",
    "code": "EV"
   },
