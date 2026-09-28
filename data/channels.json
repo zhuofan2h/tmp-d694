@@ -1,58 +1,10 @@
 {
- "updated": "2026-09-28T00:56:41Z",
- "count": 446,
+ "updated": "2026-09-28T06:09:36Z",
+ "count": 444,
  "channels": [
   {
-   "name": "Major League Soccer [CH1]",
-   "tagline": "28 Sep 06:00 WIB - Columbus Crew vs Inter Miami CF",
-   "hls": "http://43.152.182.139/live/channel19.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
    "name": "Volleyball: Asian Games 2026 [CH1]",
-   "tagline": "28 Sep 08:00 WIB - Indonesia vs Kyrgyzstan",
-   "hls": "http://43.152.182.139/live/channel33.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH2]",
-   "tagline": "28 Sep 08:00 WIB - India vs Hong Kong",
-   "hls": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH3]",
-   "tagline": "28 Sep 11:00 WIB - Pakistan vs Uzbekistan",
-   "hls": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH4]",
-   "tagline": "28 Sep 11:00 WIB - China vs Philippines",
+   "tagline": "28 Sep 14:00 WIB - Vietnam vs Qatar",
    "hls": "http://43.152.182.139/live/channel33.flv",
    "is_live": "t",
    "premium": "t",
@@ -65,7 +17,7 @@
   {
    "name": "Volleyball: Asian Games 2026 [CH5]",
    "tagline": "28 Sep 14:00 WIB - Thailand vs Iran",
-   "hls": "http://43.152.182.139/live/channel33.flv",
+   "hls": "http://43.152.182.139/live/channel25.flv",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
@@ -83,6 +35,30 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\":\"https://www.mewatch.sg/\",\"Origin\":\"https://www.mewatch.sg\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH2]",
+   "tagline": "28 Sep 17:00 WIB - Chinese Taipei vs South Korea",
+   "hls": "http://43.152.182.139/live/channel33.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\":\"live2.edgeburstcdn.com\",\"Referer\":\"https://xlz.morvexstream.com/\",\"Origin\":\"https://xlz.morvexstream.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH6]",
+   "tagline": "28 Sep 17:20 WIB - Kazakhstan vs Japan",
+   "hls": "http://42.117.246.9/live/channel81.flv?wsSecret=ee820e40eda54fd1d5c8dd1fe21a74f9&wsABSTime=1780609220",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
    "country": "Events",
    "code": "EV"
   },
