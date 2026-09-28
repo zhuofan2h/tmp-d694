@@ -1,43 +1,7 @@
 {
- "updated": "2026-09-28T14:14:21Z",
- "count": 449,
+ "updated": "2026-09-28T20:37:45Z",
+ "count": 446,
  "channels": [
-  {
-   "name": "FIFA Asean Cup [CH1]",
-   "tagline": "28 Sep 19:30 WIB - Malaysia vs Indonesia",
-   "hls": "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1790619427/ei/w1q6aq6LNJ_a3LUPn6qs-AI/ip/103.175.222.37/id/NfFHec8ETxQ.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/ctier/SPL/playlist_duration/3600/manifest_duration/3600/demuxed/1/maudio/1/gcr/id/bui/AWzQHwqkMC-u-FSiboMzqQs-IfieGYgDGijVMMD04wTH7rJfSGlmLDePfj94Db848NF5L2l6YCHqIe0c/spc/I-rgIRo3Tv-3HhrVfONj0st2x7XOGOfENY3pjKtuFx2JGTY2aPGGJf_cV7TqFZM/vprv/1/go/1/rqh/5/reg/0/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51565115%2C52178456%2C52227522/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cctier%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRAIgCluyse83cQhsrUc6gmfdFCO87Xwwq5euWBt5PdD64B0CIDHk7t5yzWIbvPnG1saB6xa7xoh8rnqDCoGd19xdUPC_/file/index.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "FIFA Asean Cup [CH2]",
-   "tagline": "28 Sep 19:30 WIB - Malaysia vs Indonesia",
-   "hls": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"https://www.mewatch.sg/\",\"Origin\":\"https://www.mewatch.sg\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV"
-  },
-  {
-   "name": "FIFA Asean Cup [CH5]",
-   "tagline": "28 Sep 19:30 WIB - Malaysia vs Indonesia",
-   "hls": "https://cxyznt3-cf.sbbol1011play.sbs/auth%3D60a965ca0f5b409b3a5362a3ff4de57af9c6c1a9258cf2ac36130bef1cde444e04cd2e6876e72f2adc27b58fee43ef8b51538ec09649e4fccf5e5391d1ed6fdee8e556307098c83600ae15c2d94d2876a48897ac2a0de70e87f2227a69f5600026b2283bfc14ca67e783faa48ba227b27134286125e8164535e9c38ef6734fc1896a005ae0ec4f8bd2d99e0126c952d53d904145ea28835691e3308468d0ca655c6e85577b7e862b9c9af1902e4ff4e40e479283107066b0437603dac91bbba0%26cid%3DJqCXuwT1O13WzVZ9KKx6W260912%26_v%3D2%26_r%3Dky13tQ%26_vis%3De1fe68ad208e3b4c117218e40eff04286367b91fd1f5b65b0eb1e5df388b4957%26_vvs%3D6c7c5ecb76a8bed6d4ba6dd0dc9f8759315c770b2be99260a11cc29c284e48ac%26_vas%3D808532ee316b77aaf1621a1335837d0ae0d780866e0aa499b626f5e89df875fc/app/c442017.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\":\"https://ppdd20.playaindg12.xyz/\",\"Origin\":\"https://ppdd20.playaindg12.xyz\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\",\"Sec-Fetch-Site\":\"cross-site\",\"Sec-Fetch-Mode\":\"cors\",\"Sec-Fetch-Dest\":\"empty\",\"Connection\":\"keep-alive\",\"Accept-Language\":\"en-US,en;q=0.9\",\"Accept-Encoding\":\"gzip, deflate, br, zstd\",\"Accept\":\"*/*\"}",
-   "url_license": "4b203316c47c370a1eb9097c070d7226:676e6783f23789cdf4ff0486386145ed",
-   "country": "Events",
-   "code": "EV"
-  },
   {
    "name": "CAF Africa Cup [CH1]",
    "tagline": "28 Sep 23:00 WIB - Zimbabwe vs DR the Congo",
