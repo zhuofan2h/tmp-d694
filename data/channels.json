@@ -1,22 +1,22 @@
 {
- "updated": "2026-09-29T13:09:27Z",
- "count": 444,
+ "updated": "2026-09-29T18:44:00Z",
+ "count": 446,
  "channels": [
   {
-   "name": "FIFA Asean Cup [CH4]",
-   "tagline": "29 Sep 19:30 WIB - Thailand vs Vietnam",
-   "hls": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "name": "CAF Africa Cup [CH1]",
+   "tagline": "29 Sep 23:00 WIB - Guinea Bissau vs Nigeria",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
    "is_live": "t",
    "premium": "t",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\":\"https://www.mewatch.sg/\",\"Origin\":\"https://www.mewatch.sg\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSkwvWFhVTnN2M01XaWlvdHpOUUNnUSIsImtpZCI6Ik0xMnRkNEVKbFVVRDNMc2gzSklCWHcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
   {
    "name": "CAF Africa Cup [CH2]",
-   "tagline": "29 Sep 20:00 WIB - Lesotho vs Morocco",
+   "tagline": "29 Sep 23:00 WIB - Cabo Verde vs Rwanda",
    "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
    "is_live": "t",
    "premium": "t",
@@ -28,7 +28,7 @@
   },
   {
    "name": "CAF Africa Cup [CH3]",
-   "tagline": "29 Sep 20:00 WIB - South Sudan vs Egypt",
+   "tagline": "29 Sep 23:00 WIB - Ghana vs Gambia",
    "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
    "is_live": "t",
    "premium": "t",
@@ -59,6 +59,30 @@
    "jenis": "ts",
    "header_iptv": "{\"Host\":\"live1.quickscoreboardz.com\",\"Referer\":\"https://xlz.livebytexscore.com/\",\"Origin\":\"https://xlz.livebytexscore.com\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
    "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH1]",
+   "tagline": "30 Sep 00:30 WIB - Oman vs Kuwait",
+   "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
+   "country": "Events",
+   "code": "EV"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "tagline": "30 Sep 00:30 WIB - Saudi Arabia vs Iraq",
+   "hls": "https://otte.cache.aiv-cdn.net/fra-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\":\"https://dce-ac-live.cdn.indazn.com/\",\"Origin\":\"https://dce-ac-live.cdn.indazn.com\",\"User-Agent\":\"Roku/DVP-12.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiS0Y4U25GN0tBZDBJcGRXaFN0Z0J5QSIsImtpZCI6IkN0UUlETi80eGdzU003SWdoL0N6UUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV"
   },
