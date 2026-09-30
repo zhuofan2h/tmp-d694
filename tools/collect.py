@@ -9,6 +9,7 @@ import binascii
 import hashlib
 import json
 import os
+import re
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -79,17 +80,176 @@ def esc_m3u(s):
     return re.sub(r'[\r\n]+', ' ', s or '').strip()
 
 
-def write_playlist(channels, out_dir, include_premium=False, skip_dead=True):
-    """Write playlist.m3u; every emitted entry carries its playback headers.
+# --------------------------------------------------------------------------
+# Header handling
+# --------------------------------------------------------------------------
+# Upstream ships `header_iptv` as a JSON string, but a few records are
+# malformed: the User-Agent appears as a KEY with no value, which is not
+# valid JSON at all ({"Referer":"...","Origin":"...","Mozilla/5.0 ..."}).
+# Those records silently parsed as {} -> the stream was requested without
+# any header and failed. Repair them instead of dropping them.
+_UA_CANDIDATE = re.compile(
+    r'(?<=[,{])\s*"((?:Mozilla|okhttp|Dalvik|Lavf/|VLC/|ExoPlayer|curl/|'
+    r'okhttp/|python-requests|Wget)[^"]*)"\s*(?=[,}])')
+
+
+def _looks_like_ua(s):
+    return bool(s) and bool(re.match(
+        r'(Mozilla/|okhttp|Dalvik|Lavf/|VLC/|ExoPlayer|curl/|python-requests|Wget)',
+        s.strip(), re.I))
+
+
+def repair_header_json(raw):
+    """Return a parseable JSON string for header_iptv (best effort)."""
+    if isinstance(raw, dict):
+        return json.dumps(raw, ensure_ascii=False)
+    s = (raw or '').strip()
+    if not s:
+        return '{}'
+    try:
+        json.loads(s)
+        return s
+    except Exception:
+        pass
+    fixed = _UA_CANDIDATE.sub(lambda m: '"User-Agent":"%s"' % m.group(1), s)
+    try:
+        json.loads(fixed)
+        return fixed
+    except Exception:
+        return s
+
+
+def normalize_headers(raw):
+    """header_iptv -> clean {Header-Name: value}; drops 'none'/empty/dupes."""
+    if isinstance(raw, dict):
+        obj = raw
+    else:
+        try:
+            obj = json.loads(repair_header_json(raw))
+        except Exception:
+            obj = {}
+    out = {}
+    for k, v in (obj or {}).items():
+        k = str(k).strip()
+        if not k or v is None or isinstance(v, (dict, list)):
+            continue
+        v = str(v).strip()
+        if _looks_like_ua(k):
+            # a UA used as the key: keep it as User-Agent (value wins when
+            # the value is itself a UA)
+            out.setdefault('User-Agent', v if _looks_like_ua(v) else k)
+            continue
+        if not v or v.lower() == 'none':
+            continue
+        out[k] = v
+    return out
+
+
+# --------------------------------------------------------------------------
+# Grouping
+# --------------------------------------------------------------------------
+# Upstream labels Indonesian content with pseudo-country codes so the same
+# nation ends up scattered over three group-titles ("Indonesia", "TVRI",
+# "TV Lokal"). Players show one folder per group-title -> the Indonesian
+# folder looked incomplete. Everything Indonesian lands in one group.
+GROUP_ALIASES = {'TVRI': 'Indonesia', 'TV Lokal': 'Indonesia'}
+CODE_GROUPS = {'ID': 'Indonesia', 'RI': 'Indonesia', 'LO': 'Indonesia'}
+
+
+def group_of(ch):
+    """group-title for a channel (fast, stable, no per-entry surprises).
+
+    A geo-locked channel still 403s from the checker's vantage point — it
+    may well open from the network it is meant for, so it is NOT dropped;
+    it goes to a separate `<group> (geo)` folder instead, keeping the main
+    folder 100% verified-playable."""
+    g = ch.get('group')
+    if not g:
+        code = ch.get('code')
+        if code in CODE_GROUPS:
+            g = CODE_GROUPS[code]
+        else:
+            country = ch.get('country') or ''
+            g = GROUP_ALIASES.get(country, country)
+    if ch.get('geo_limited'):
+        return f'{g} (geo)'
+    return g
+
+
+# --------------------------------------------------------------------------
+# Playlist writing
+# --------------------------------------------------------------------------
+# Two styles, because players disagree about how headers travel:
+#   'vlc'  -> #EXTVLCOPT/#KODIPROP tags + plain URL  (VLC, Kodi, ... )
+#   'pipe' -> URL|User-Agent=..&Referer=..           (OTT TV, Televizo,
+#             TiviMate, OTT Player, Smarters and friends on Android)
+# A header one style cannot carry (Cookie) only excludes the entry from
+# THAT style's file — never from the other one.
+PLAYLIST_FILES = {'vlc': 'playlist.m3u', 'pipe': 'playlist-pipe.m3u'}
+VLC_HEADER_KEYS = ('user-agent', 'referer', 'origin')
+
+
+def _uncarryable_headers(ch, allowed_keys):
+    """Headers whose NAME is outside `allowed_keys` (per style)."""
+    return [k for k in normalize_headers(ch.get('header_iptv'))
+            if k.lower() not in allowed_keys]
+
+
+def pipe_unusable_headers(ch):
+    """Values a `|Header=value&...` suffix cannot express (delimiters)."""
+    return [k for k, v in normalize_headers(ch.get('header_iptv')).items()
+            if '|' in v or '\r' in v or '\n' in v]
+
+
+def pipe_url(url, hdr):
+    """`https://x/index.m3u8|User-Agent=..&Referer=..` — the header syntax
+    understood by Android/IPTV players (VLC ignores it, hence two files).
+
+    Values are left raw (players decode inconsistently) except for the two
+    characters that would break parsing: `|` and `&` plus any newline.
+    """
+    order = ('User-Agent', 'Referer', 'Origin', 'Cookie', 'Authorization')
+    parts = []
+    for k in order:
+        v = hdr.get(k)
+        if v:
+            parts.append('%s=%s' % (k, v.replace('%', '%25').replace('|', '%7C')
+                                    .replace('&', '%26').replace('\r', '')
+                                    .replace('\n', '')))
+    for k, v in hdr.items():
+        if k in order:
+            continue
+        if not v:
+            continue
+        parts.append('%s=%s' % (k, v.replace('%', '%25').replace('|', '%7C')
+                                .replace('&', '%26').replace('\r', '')
+                                .replace('\n', '')))
+    return url + '|' + '&'.join(parts) if parts else url
+
+
+def write_playlist(channels, out_dir, include_premium=False, skip_dead=True,
+                   style='vlc'):
+    """Write the playlist for one style; every emitted entry carries its
+    playback headers.
 
     Shared by collect.py (initial write) and health.py (rewrite after probing).
     Returns the number of entries written.
     """
+    filename = PLAYLIST_FILES[style]
     lines = ['#EXTM3U']
     entries = 0
-    for ch in sorted(channels, key=lambda x: (x.get('country') or '', x.get('name') or '')):
-        if skip_dead and (ch.get('dead') or ch.get('no_playlist')):
-            # no_playlist = channel hidup tapi header-nya tak bisa dibawa M3U
+    for ch in sorted(channels,
+                     key=lambda x: (group_of(x), x.get('name') or '')):
+        if skip_dead and (ch.get('dead') or ch.get('no_playlist')
+                          or ch.get('drm')):
+            # no_playlist  = header tak bisa dibawa gaya mana pun
+            # drm          = manifest terenkripsi -> player biasa error
+            continue
+        if style == 'vlc' and (ch.get('pipe_only')
+                               or _uncarryable_headers(ch, VLC_HEADER_KEYS)):
+            # Cookie dsb. hanya bisa dibawa oleh gaya pipe
+            continue
+        if style == 'pipe' and pipe_unusable_headers(ch):
             continue
         if not include_premium and ch.get('premium') == 't':
             continue
@@ -100,25 +260,33 @@ def write_playlist(channels, out_dir, include_premium=False, skip_dead=True):
         gid = esc_m3u(ch.get('name') or 'tv').lower().replace(' ', '')[:24]
         entries += 1
         lines.append(f'#EXTINF:-1 tvg-id="{gid}" tvg-name="{esc_m3u(ch.get("name"))}" '
-                     f'group-title="{esc_m3u(ch.get("country"))}",{esc_m3u(ch.get("name"))}')
-        try:
-            hdr = json.loads(ch.get('header_iptv') or '{}')
-        except Exception:
-            hdr = {}
+                     f'group-title="{esc_m3u(group_of(ch))}",{esc_m3u(ch.get("name"))}')
+        hdr = normalize_headers(ch.get('header_iptv'))
         ua = hdr.get('User-Agent')
-        if ua and ua != 'none':
+        if ua:
             lines.append(f'#EXTVLCOPT:http-user-agent={ua}')
             lines.append(f'#KODIPROP:http-user-agent={ua}')
         ref = hdr.get('Referer')
-        if ref and ref != 'none':
+        if ref:
             lines.append(f'#EXTVLCOPT:http-referrer={ref}')
         origin = hdr.get('Origin')
-        if origin and origin != 'none':
+        if origin:
             lines.append(f'#KODIPROP:http-origin={origin}')
-        lines.append(hls)
-    with open(os.path.join(out_dir, 'playlist.m3u'), 'w') as f:
+        if style == 'pipe' and hdr:
+            lines.append(pipe_url(hls, hdr))
+        else:
+            lines.append(hls)
+    with open(os.path.join(out_dir, filename), 'w') as f:
         f.write('\n'.join(lines) + '\n')
     return entries
+
+
+def write_all_playlists(channels, out_dir, include_premium=False,
+                        skip_dead=True):
+    """Write BOTH styles. Returns {'vlc': n, 'pipe': n}."""
+    return {style: write_playlist(channels, out_dir, include_premium,
+                                  skip_dead, style)
+            for style in PLAYLIST_FILES}
 
 
 def main():
@@ -172,6 +340,7 @@ def main():
         names = {k: (v.replace('Bioskop BitTV', 'Movies').replace('BitTV', 'TV')) for k, v in names.items()}
         per_country[code] = names.get(code, code)
         for ch in dd.get('info') or []:
+            country = names.get(code, code)
             all_channels.append({
                 'name': ch.get('name'),
                 'tagline': ch.get('tagline'),
@@ -179,10 +348,15 @@ def main():
                 'is_live': ch.get('is_live'),
                 'premium': ch.get('premium'),
                 'jenis': ch.get('jenis'),
-                'header_iptv': ch.get('header_iptv'),
+                # normalised on ingest: malformed upstream JSON (UA used as
+                # the key) used to parse as {} and lose every header
+                'header_iptv': json.dumps(normalize_headers(ch.get('header_iptv')),
+                                          ensure_ascii=False),
                 'url_license': ch.get('url_license'),
-                'country': names.get(code, code),
+                'country': country,
                 'code': code,
+                # group-title shown by players (Indonesia keeps TVRI/TV Lokal)
+                'group': CODE_GROUPS.get(code, GROUP_ALIASES.get(country, country)),
             })
         print(code, len(dd.get('info') or []))
 
@@ -204,7 +378,8 @@ def main():
     with open(os.path.join(OUT_DIR, 'channels.json'), 'w') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
 
-    n_entries = write_playlist(uniq, OUT_DIR)
+    playlist_counts = write_all_playlists(uniq, OUT_DIR)
+    n_entries = playlist_counts['vlc']
 
     with open(os.path.join(OUT_DIR, 'countries.json'), 'w') as f:
         counts = {}
@@ -218,6 +393,8 @@ def main():
         json.dump({'updated': updated, 'unique': len(uniq),
                    'free': sum(1 for c in uniq if c['premium'] != 't'),
                    'premium': sum(1 for c in uniq if c['premium'] == 't'),
+                   'playlist_entries': n_entries,
+                   'playlist_pipe_entries': playlist_counts['pipe'],
                    'failed': failed}, f, indent=1)
     print(f'unique: {len(uniq)} playlist-entries: {n_entries} failed: {failed}')
 

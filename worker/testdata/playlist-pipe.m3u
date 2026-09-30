@@ -1,0 +1,8 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="freeone" tvg-name="Free One" group-title="Indonesia",Free One
+#EXTVLCOPT:http-user-agent=UA/1
+#EXTVLCOPT:http-referrer=https://r
+https://cdn.test/1.m3u8|User-Agent=UA/1&Referer=https://r
+#EXTINF:-1 tvg-id="trans7" tvg-name="Trans7" group-title="Indonesia",Trans7
+#EXTVLCOPT:http-user-agent=UA/1
+https://cdn.test/trans7.m3u8|User-Agent=UA/1&Referer=https://r&Cookie=dt=1

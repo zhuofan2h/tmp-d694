@@ -4,16 +4,48 @@ Scratch repo. Auto-updated data files.
 
 ## Usage
 
-Playlist (free channels, grouped by country):
+### Playlist untuk player (pilih gaya yang cocok)
+
+Dua file, karena player berbeda cara membaca header stream:
+
+| Gaya | File / URL | Untuk player |
+|---|---|---|
+| **VLC/Kodi** (tag `#EXTVLCOPT`/`#KODIPROP`) | `playlist.m3u` | VLC, Kodi, player desktop |
+| **Pipe Android** (`URL\|User-Agent=…&Referer=…`) | `playlist-pipe.m3u` | OTT TV, Televizo, OTT Player, TiviMate, IPTV Smarters, OTT Navigator |
 
 ```
+# via Worker (edge cache 15 menit)
 https://iptv-api.zhuofan2h.workers.dev/playlist.m3u
+https://iptv-api.zhuofan2h.workers.dev/playlist-pipe.m3u
+
+# langsung dari repo (tanpa cache; dipakai bila workers.dev diblokir)
+https://raw.githubusercontent.com/zhuofan2h/tmp-d694/main/data/playlist.m3u
+https://raw.githubusercontent.com/zhuofan2h/tmp-d694/main/data/playlist-pipe.m3u
+https://cdn.jsdelivr.net/gh/zhuofan2h/tmp-d694@main/data/playlist-pipe.m3u
 ```
+
+Catatan player:
+
+- **VLC tidak bisa** membaca `URL|…`, dan **player Android biasanya tidak
+  membaca** `#EXTVLCOPT` — sebabnya ada dua file. Pakai file sesuai player.
+- Channel yang butuh header tambahan (mis. `Cookie` Trans7/TransTV) hanya
+  ada di file **pipe** (ditandai `pipe_only` di API) — di file VLC memang
+  tidak akan bisa jalan.
+- Channel ber-**DRM** (`ContentProtection` di manifest-nya) **tidak
+  dipublish**: VLC/Televizo/OTT TV menolaknya, jadi kalau tetap dimasukkan
+  justru muncul error. Ditandai `drm: true` di `?dead=1`/API.
+- **Grup `Indonesia`** berisi SEMUA channel Indonesia: kode `ID` +
+  jaringan `TVRI` + `TV Lokal` (dulu terpecah jadi 3 folder).
+- Folder berakhiran **`(geo)`** = channel geo-restricted yang dari IP
+  pengece selalu 403. Tidak dibuang (mungkin hidup dari jaringan yang
+  ditujunya), tapi dipisah supaya folder utama **100% terverifikasi** —
+  buka `Indonesia (geo)` kalau di jaringanmu channelnya jalan.
 
 Filtered:
 
 ```
 https://iptv-api.zhuofan2h.workers.dev/m3u?country=ID
+https://iptv-api.zhuofan2h.workers.dev/m3u?country=ID&style=pipe
 https://iptv-api.zhuofan2h.workers.dev/m3u?country=ID,MY&premium=1
 https://iptv-api.zhuofan2h.workers.dev/m3u?premium=only      # hanya channel premium
 https://iptv-api.zhuofan2h.workers.dev/m3u?search=hbo&premium=1
@@ -59,26 +91,34 @@ Web: `https://iptv-web.zhuofan2h.workers.dev/`
      `403-geo` bila badan error eksplisit menyebut blokir negara (mis.
      CloudFront *"block access from your country"*), atau `403-blocked`
      untuk 403 generik.
-   - Channel yang hanya hidup dengan header yang **tidak bisa dibawa baris
-     M3U** (mis. `Cookie`) ditandai `no_playlist: true`: tetap hidup dan
-     tampil di API, tetapi dikeluarkan dari `playlist.m3u`. Contoh nyata:
-     Trans7/TransTV butuh `Cookie`.
-6. **Fase C (verifikasi artefak):** `playlist.m3u` yang baru ditulis
-   di-parse ulang dan **setiap entry di-probe lagi** (per-host, pelan,
-   dengan satu retry tenang untuk menampung throttle). Entry yang gagal →
-   channel dimatikan / ditandai `no_playlist` → playlist ditulis ulang →
-   diulang **selalu diakhiri sebuah pass verifikasi** (maks 5 drop).
+   - Header yang **hanya bisa dibawa gaya pipe** (mis. `Cookie`) → channel
+     ditandai `pipe_only: true`: keluar dari `playlist.m3u`, **tetap ada**
+     di `playlist-pipe.m3u`. Contoh nyata: Trans7/TransTV butuh `Cookie`
+     → kembali muncul untuk player Android.
+   - Header yang **tidak bisa dibawa gaya mana pun** (nilainya merusak
+     grammar `|a=b&c=d`) → `no_playlist: true`, keluar dari kedua file.
+   - **DRM** (`drm_check` membaca manifest; ada `ContentProtection`) →
+     `drm: true`, tidak dipublish di file mana pun (player biasa tetap
+     menolaknya — memasukkan = error di layar). Tetap hidup di API.
+6. **Fase C (verifikasi artefak):** KEDUA file (`playlist.m3u` +
+   `playlist-pipe.m3u`) yang baru ditulis di-parse ulang dan **setiap
+   entry di-probe seperti player sungguhan** (`probe_deep`): manifest →
+   playlist varian → **satu segmen media** — jadi URL yang menjawab 200
+   di manifest tapi 403/HTML di segmen tetap gugur. Per-host, pelan, satu
+   retry tenang. Gagal → channel dimatikan / `pipe_only` → ditulis ulang →
+   diulang, **selalu diakhiri sebuah pass verifikasi** (maks 5 drop).
    Kalau belum bersih, script exit 1 dan CI membiarkan data lama tetap
    terpublish — tidak pernah mempublikasikan playlist yang gagal
-   diverifikasi.
+   diverifikasi. `HEALTH_DEEP=0` menonaktifkan langkah segmen.
 7. Hasilnya ditulis ke `data/health.json` dan `stats.json`
-   (`playlist_verified: true/false`).
+   (`playlist_verified: true/false`, `playlist_entries` +
+   `playlist_pipe_entries`, `pipe_only`, `drm_excluded`).
 
-Konsekuensinya: **setiap entry di `playlist.m3u` sudah terverifikasi
-mengembalikan stream valid pada saat publish** — diverifikasi dua kali
-(fase B) dan ulang terhadap file hasil tulis (fase C). Channel
-mati/geo-block tetap ada di `data/channels.json` (lihat `?dead=1`),
-tidak dihapus.
+Konsekuensinya: **setiap entry di kedua playlist sudah terverifikasi
+mengembalikan media valid pada saat publish** — diverifikasi dua kali
+(fase B) dan ulang terhadap file hasil tulis sampai ke segmen (fase C).
+Channel mati/geo-block/DRM tetap ada di `data/channels.json`
+(lihat `?dead=1`), tidak dihapus.
 
 Jalankan lokal:
 
@@ -117,7 +157,7 @@ tetap jalan untuk penontonnya.
 
 | Nilai | Perilaku |
 |---|---|
-| `keep` | **Semua** 403 (`403`, `403-geo`, `403(vlc)` …) tidak membunuh channel: tetap hidup, tetap di playlist, ditandai `geo_limited: true` + `geo_status`. Fase C hanya menandainya. Satu-satunya 403 yang dikeluarkan dari playlist: yang penyebabnya header yang tak bisa dibawa M3U (mis. `Cookie`) → ditandai `no_playlist` (tetap hidup di API). |
+| `keep` | **Semua** 403 (`403`, `403-geo`, `403(vlc)` …) tidak membunuh channel: tetap hidup, tetap di playlist, ditandai `geo_limited: true` + `geo_status`. Fase C hanya menandainya. Satu-satunya 403 yang dikeluarkan dari playlist **VLC**: yang penyebabnya header yang tak bisa dibawa `#EXTVLCOPT` (mis. `Cookie`) → dipindah ke `playlist-pipe.m3u` (ditandai `pipe_only`, tetap hidup di API). |
 | `drop` | mode ketat: 403 diperlakukan seperti kegagalan lain, dikeluarkan dari playlist. |
 
 Yang tetap dianggap mati (bukan masalah IP): `404`, `400`, `401` (butuh API
@@ -131,20 +171,22 @@ label `403-geo` yang lebih akurat.
 ## Tests
 
 ```
-python -m unittest discover -s tools -p 'test_*.py'              # 42 tests
-node --test worker/test.mjs worker/integration.test.mjs          # 10 + 11 tests
+python -m unittest discover -s tools -p 'test_*.py'                        # 65 tests
+node --test worker/test.mjs worker/test-playercompat.mjs \
+              worker/integration.test.mjs                                  # 25 tests
 ```
 
 Keduanya dijalankan oleh cron sebelum data dipublish.
 
 ## Player setup
 
-| App | How |
-|---|---|
-| TiviMate | Settings → Playlists → Add → URL |
-| IPTV Smarters | Add Playlist → M3U URL |
-| VLC | Media → Open Network Stream |
-| Kodi | PVR IPTV Simple Client → M3U URL |
+| App | Playlist | How |
+|---|---|---|
+| OTT TV / OTT Navigator | `playlist-pipe.m3u` | Add playlist → URL |
+| Televizo | `playlist-pipe.m3u` | Tambah playlist → URL |
+| OTT Player / TiviMate / Smarters | `playlist-pipe.m3u` | Add M3U playlist → URL |
+| VLC (Android/desktop) | `playlist.m3u` | Media → Open Network Stream |
+| Kodi | `playlist.m3u` | PVR IPTV Simple Client → M3U URL |
 
 ## Notes
 

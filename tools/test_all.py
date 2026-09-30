@@ -590,29 +590,53 @@ class TestLocationDependent403(unittest.TestCase):
                 (health.probe, health.geo_reason, health.time.sleep,
                  health.GEO_MODE) = orig
 
-    def test_verify_still_drops_403_when_playlist_cannot_carry_headers(self):
-        """A 403 caused by a header the M3U cannot send (Cookie) is a
-        playlist limitation: drop from playlist, keep the channel alive."""
-        ch = {'name': 'CK', 'code': 'ck', 'premium': 'f',
-              'hls': 'https://cookie.example/x.m3u8',
-              'url': 'https://cookie.example/x.m3u8',
-              'header_iptv': json.dumps({'Cookie': 'a=1'}), 'group': 'XX'}
+    def test_cookie_channel_is_pipe_only_not_lost(self):
+        """Cookie cannot ride #EXTVLCOPT, but the pipe style carries it:
+        the channel leaves playlist.m3u and appears in playlist-pipe.m3u."""
+        chs = [ch(name='CK', header_iptv=json.dumps({'User-Agent': 'UA/1',
+                                                     'Cookie': 'a=1'}))]
         with tempfile.TemporaryDirectory() as tmp:
+            counts = collect.write_all_playlists(chs, tmp)
+            self.assertEqual(counts['vlc'], 0, 'vlc style must skip Cookie')
+            self.assertEqual(counts['pipe'], 1, 'pipe style must keep it')
+            vlc = open(os.path.join(tmp, 'playlist.m3u')).read()
+            pipe = open(os.path.join(tmp, 'playlist-pipe.m3u')).read()
+            self.assertNotIn(',CK', vlc)
+            self.assertIn(',CK', pipe)
+            self.assertIn('http://a/x.m3u8|User-Agent=UA/1&Cookie=a=1', pipe)
+
+    def test_verify_attributes_failure_to_its_style(self):
+        """A legacy vlc file containing a header-limited entry must be
+        reported as failed (so the pipeline can move it to the pipe file)."""
+        c = {'name': 'CK', 'code': 'ck', 'premium': 'f',
+             'hls': 'https://cookie.example/x.m3u8',
+             'url': 'https://cookie.example/x.m3u8',
+             'header_iptv': json.dumps({'Cookie': 'a=1'}), 'group': 'XX'}
+        with tempfile.TemporaryDirectory() as tmp:
+            # legacy behaviour: entry present in the VLC file
+            with open(os.path.join(tmp, 'playlist.m3u'), 'w',
+                      encoding='utf-8') as f:
+                f.write('#EXTM3U\n#EXTINF:-1,CK\n'
+                        'https://cookie.example/x.m3u8\n')
             with open(os.path.join(tmp, 'channels.json'), 'w',
                       encoding='utf-8') as f:
-                json.dump({'channels': [ch]}, f)
-            collect.write_playlist([ch], tmp)
-            orig = (health.probe, health.time.sleep, health.GEO_MODE)
+                json.dump({'channels': [c]}, f)
+            orig = (health.probe, health.probe_deep, health.time.sleep,
+                    health.GEO_MODE)
             health.time.sleep = lambda *_: None
             health.probe = lambda *a, **k: (False, 'httperror', 403, '')
+            health.probe_deep = health.probe
             health.GEO_MODE = 'keep'
             try:
                 total, failed, geo_ok = health.verify_published(tmp)
+                self.assertEqual(total, 1)
                 self.assertEqual(len(failed), 1,
                                  'header-limited 403 must be dropped')
+                self.assertEqual(failed[0][0]['style'], 'vlc')
                 self.assertEqual(geo_ok, [])
             finally:
-                (health.probe, health.time.sleep, health.GEO_MODE) = orig
+                (health.probe, health.probe_deep, health.time.sleep,
+                 health.GEO_MODE) = orig
 
     def test_merged_results_keeps_plain_403(self):
         ch = {'name': 'P', 'code': 'p'}
@@ -630,6 +654,228 @@ class TestLocationDependent403(unittest.TestCase):
                                  'plain 403 must survive the merge as alive')
             finally:
                 health.GEO_MODE = old
+
+
+class TestGeoGrouping(unittest.TestCase):
+    """geo-locked -> folder `<group> (geo)`, folder utama tetap bersih."""
+
+    def test_geo_channel_gets_separate_folder(self):
+        self.assertEqual(
+            collect.group_of({'group': 'Indonesia', 'geo_limited': True}),
+            'Indonesia (geo)')
+
+    def test_normal_channel_keeps_its_group(self):
+        self.assertEqual(collect.group_of({'group': 'Indonesia'}),
+                         'Indonesia')
+        self.assertEqual(collect.group_of({'code': 'ID'}), 'Indonesia')
+        self.assertEqual(collect.group_of({'code': 'RI'}), 'Indonesia')
+
+    def test_write_playlist_puts_geo_in_its_own_folder(self):
+        chans = [{'name': 'A', 'hls': 'http://x/a.m3u8', 'group': 'Indonesia',
+                  'header_iptv': '{}', 'code': 'ID', 'premium': 'f'},
+                 {'name': 'B', 'hls': 'http://x/b.m3u8', 'group': 'Indonesia',
+                  'header_iptv': '{}', 'code': 'ID', 'premium': 'f',
+                  'geo_limited': True}]
+        entries = collect.write_playlist(chans, self.tmp.name)
+        self.assertEqual(entries, 2, 'both channels must be written')
+        path = os.path.join(self.tmp.name,
+                            collect.PLAYLIST_FILES['vlc'])
+        body = open(path, encoding='utf-8').read()
+        self.assertIn('group-title="Indonesia"', body)
+        self.assertIn('group-title="Indonesia (geo)"', body)
+
+    def setUp(self):
+        import tempfile
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+
+
+class TestCanonicalize(unittest.TestCase):
+    """check_channel returns a repaired COPY — flags must reach the file."""
+
+    def test_repaired_copy_is_folded_back(self):
+        channels = [{'name': 'A', 'code': 'x', 'hls': 'http://old/a.m3u8',
+                     'header_iptv': '{}'},
+                    {'name': 'B', 'code': 'y', 'hls': 'http://old/b.m3u8',
+                     'header_iptv': '{}'}]
+        repaired = dict(channels[0], hls='http://new/a.m3u8')
+        results = [(repaired, 'ok:declared', 'vlc'), (channels[1], '404', None)]
+        out = health.canonicalize(results, channels)
+        self.assertIs(out[0][0], channels[0], 'must return the canonical object')
+        self.assertEqual(channels[0]['hls'], 'http://new/a.m3u8')
+        # flags set on the returned object must land on the canonical record
+        out[0][0]['drm'] = True
+        out[0][0]['pipe_only'] = True
+        self.assertTrue(channels[0]['drm'])
+        self.assertTrue(channels[0]['pipe_only'])
+        self.assertIs(out[1][0], channels[1])
+
+    def test_length_mismatch_is_left_alone(self):
+        results = [('a', 'ok', None)]
+        self.assertEqual(health.canonicalize(results, []), results)
+
+
+class TestPlayerCompat(unittest.TestCase):
+    """Two playlist styles + the guarantees players rely on."""
+
+    def test_malformed_header_json_is_repaired(self):
+        raw = ('{"Referer":"https://www.visionplus.id/",'
+               '"Origin":"https://www.visionplus.id/",'
+               '"Mozilla/5.0 (Linux; Android 13) Chrome/112.0.0.0"}')
+        hdr = collect.normalize_headers(raw)
+        self.assertEqual(hdr.get('Origin'), 'https://www.visionplus.id/')
+        self.assertTrue(hdr.get('User-Agent', '').startswith('Mozilla/5.0'))
+        # a WELL-formed header must not be rewritten
+        ok = json.dumps({'User-Agent': 'Mozilla/5.0 X', 'Referer': 'https://r'})
+        self.assertEqual(collect.normalize_headers(ok),
+                         {'User-Agent': 'Mozilla/5.0 X', 'Referer': 'https://r'})
+
+    def test_repair_header_json_keeps_valid_json_untouched(self):
+        raw = '{"User-Agent":"Mozilla/5.0","Referer":"https://r"}'
+        self.assertEqual(collect.repair_header_json(raw), raw)
+
+    def test_none_and_empty_headers_dropped(self):
+        self.assertEqual(collect.normalize_headers(
+            json.dumps({'User-Agent': 'none', 'Referer': '', 'X': '1'})),
+            {'X': '1'})
+
+    def test_indonesian_groups_are_merged(self):
+        for code, country in (('ID', 'Indonesia'), ('RI', 'TVRI'),
+                              ('LO', 'TV Lokal')):
+            c = {'code': code, 'country': country, 'name': 'N',
+                 'hls': 'http://a/x.m3u8', 'premium': 'f'}
+            self.assertEqual(collect.group_of(c), 'Indonesia',
+                             f'{code}/{country} must land in Indonesia')
+        other = {'code': 'BR', 'country': 'Brazil', 'name': 'N'}
+        self.assertEqual(collect.group_of(other), 'Brazil')
+        # a stored group always wins
+        self.assertEqual(collect.group_of({'group': 'Kids', 'country': 'X'}),
+                         'Kids')
+
+    def test_group_title_written_into_playlist(self):
+        chs = [ch(name='TVRI Aceh', country='TVRI', code='RI'),
+               ch(name='Bandung TV', country='TV Lokal', code='LO'),
+               ch(name='MetroTV', country='Indonesia', code='ID')]
+        with tempfile.TemporaryDirectory() as tmp:
+            collect.write_all_playlists(chs, tmp)
+            txt = open(os.path.join(tmp, 'playlist.m3u')).read()
+            self.assertEqual(txt.count('group-title="Indonesia"'), 3)
+
+    def test_pipe_url_format_and_escaping(self):
+        hdr = {'User-Agent': 'UA/1', 'Referer': 'https://r',
+               'Cookie': 'a=1; b=2'}
+        self.assertEqual(
+            collect.pipe_url('https://x/a.m3u8', hdr),
+            'https://x/a.m3u8|User-Agent=UA/1&Referer=https://r&Cookie=a=1; b=2')
+        # a `|` or `&` inside a value must not break the grammar
+        out = collect.pipe_url('https://x/a.m3u8', {'User-Agent': 'a|b&c'})
+        self.assertEqual(out.count('|'), 1)
+        self.assertIn('a%7Cb%26c', out)
+
+    def test_pipe_playlist_carries_every_header(self):
+        with_cookie = ch(name='CK', header_iptv=json.dumps(
+            {'User-Agent': 'UA/2', 'Referer': 'https://r',
+             'Origin': 'https://o', 'Cookie': 'k=v'}))
+        plain = ch(name='PL', header_iptv=json.dumps(
+            {'User-Agent': 'UA/2', 'Referer': 'https://r',
+             'Origin': 'https://o'}))
+        with tempfile.TemporaryDirectory() as tmp:
+            counts = collect.write_all_playlists([with_cookie, plain], tmp)
+            self.assertEqual(counts['pipe'], 2)
+            self.assertEqual(counts['vlc'], 1, 'Cookie entry leaves the vlc file')
+            pipe = open(os.path.join(tmp, 'playlist-pipe.m3u')).read()
+            line = [l for l in pipe.split('\n')
+                    if l.startswith('http') and 'x.m3u8' in l]
+            suffix = next(l.split('|', 1)[1] for l in line if 'Cookie' in l)
+            self.assertEqual(suffix.split('&'),
+                             ['User-Agent=UA/2', 'Referer=https://r',
+                              'Origin=https://o', 'Cookie=k=v'])
+            # VLC-style file still uses tags + plain URL
+            vlc = open(os.path.join(tmp, 'playlist.m3u')).read()
+            self.assertIn('#EXTVLCOPT:http-user-agent=UA/2', vlc)
+            self.assertNotIn(',CK', vlc)
+            self.assertNotIn('|', [l for l in vlc.split('\n')
+                                   if l.startswith('http')][0])
+
+    def test_parse_pipe_playlist_roundtrip(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            collect.write_all_playlists(
+                [ch(name='T', header_iptv=json.dumps(
+                    {'User-Agent': 'UA/3', 'Cookie': 'a=1'}))], tmp)
+            entries = health.parse_playlist(
+                os.path.join(tmp, 'playlist-pipe.m3u'))
+            self.assertEqual(len(entries), 1)
+            self.assertEqual(entries[0]['url'], 'http://a/x.m3u8')
+            self.assertEqual(entries[0]['headers']['User-Agent'], 'UA/3')
+            self.assertEqual(entries[0]['headers']['Cookie'], 'a=1')
+
+    def test_drm_channels_are_never_published(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            counts = collect.write_all_playlists(
+                [ch(name='Secret', drm=True), ch(name='Open')], tmp)
+            self.assertEqual(counts['vlc'], 1)
+            self.assertEqual(counts['pipe'], 1)
+            for f in ('playlist.m3u', 'playlist-pipe.m3u'):
+                txt = open(os.path.join(tmp, f)).read()
+                self.assertNotIn(',Secret', txt)
+                self.assertIn(',Open', txt)
+
+    def test_needs_extra_headers_vs_no_playlist(self):
+        cookie = ch(header_iptv=json.dumps({'User-Agent': 'UA',
+                                            'Cookie': 'a=1'}))
+        self.assertEqual(health.needs_extra_headers(cookie), ['Cookie'])
+        self.assertEqual(health.needs_no_playlist(cookie), [])
+        broken = ch(header_iptv=json.dumps({'User-Agent': 'a|b'}))
+        self.assertEqual(health.needs_no_playlist(broken), ['User-Agent'])
+
+    def test_probe_deep_follows_to_segment(self):
+        pages = {
+            'https://h/master.m3u8': b'#EXTM3U\n#EXT-X-STREAM-INF:BANDWIDTH=1\nvar.m3u8\n',
+            'https://h/var.m3u8': b'#EXTM3U\n#EXT-X-TARGETDURATION:4\n'
+                                  b'#EXTINF:4.0,\nseg1.ts\n',
+            'https://h/seg1.ts': b'\x47\x40\x00\x10payload',
+        }
+        orig_body, orig_probe = health.fetch_body, health.probe
+        health.probe = lambda url, hdr, t: (True, 'hls', 200, url)
+        health.fetch_body = lambda url, hdr, t, limit=65536: (
+            200, pages[url], url) if url in pages else (404, b'', url)
+        try:
+            ok, kind, status, _ = health.probe_deep(
+                'https://h/master.m3u8', {}, 5)
+            self.assertTrue(ok, 'manifest + segment must both be followed')
+            self.assertEqual(kind, 'hls+media')
+        finally:
+            health.fetch_body, health.probe = orig_body, orig_probe
+
+    def test_probe_deep_rejects_html_segment(self):
+        pages = {
+            'https://h2/m.m3u8': b'#EXTM3U\n#EXTINF:4,\nseg.ts\n',
+            'https://h2/seg.ts': b'<!DOCTYPE html><html>blocked</html>',
+        }
+        orig_body, orig_probe = health.fetch_body, health.probe
+        health.probe = lambda url, hdr, t: (True, 'hls', 200, url)
+        health.fetch_body = lambda url, hdr, t, limit=65536: (
+            200, pages[url], url) if url in pages else (404, b'', url)
+        try:
+            ok, kind, status, _ = health.probe_deep('https://h2/m.m3u8', {}, 5)
+            self.assertFalse(ok, 'an HTML segment is a playback error')
+            self.assertEqual(kind, 'sub-html')
+        finally:
+            health.fetch_body, health.probe = orig_body, orig_probe
+
+    def test_drm_check_reads_content_protection(self):
+        orig = health.fetch_body
+        health.fetch_body = lambda url, hdr, t, limit=65536: (
+            200, b'<MPD><ContentProtection/></MPD>', url)
+        try:
+            self.assertTrue(health.drm_check(ch(hls='https://d/x.mpd')))
+            health.fetch_body = lambda url, hdr, t, limit=65536: (
+                200, b'<MPD><BaseURL/></MPD>', url)
+            self.assertFalse(health.drm_check(ch(hls='https://d/x.mpd')))
+            health.fetch_body = lambda url, hdr, t, limit=65536: (403, b'', url)
+            self.assertIsNone(health.drm_check(ch(hls='https://d/x.mpd')))
+        finally:
+            health.fetch_body = orig
 
 
 if __name__ == '__main__':

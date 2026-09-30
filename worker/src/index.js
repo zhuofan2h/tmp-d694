@@ -17,6 +17,12 @@
 const DEFAULT_DATA_BASE = 'https://raw.githubusercontent.com/zhuofan2h/tmp-d694/main/data/';
 const TTL = 900; // 15 min edge cache
 
+// Upstream labels Indonesian content with pseudo-country codes; players show
+// one folder per group-title, so keep every Indonesian channel together.
+const GROUP_ALIASES = { TVRI: 'Indonesia', 'TV Lokal': 'Indonesia' };
+const CODE_GROUPS = { ID: 'Indonesia', RI: 'Indonesia', LO: 'Indonesia' };
+const VLC_HEADER_KEYS = new Set(['user-agent', 'referer', 'origin']);
+
 const JSON_HEADERS = {
   'content-type': 'application/json; charset=utf-8',
   'access-control-allow-origin': '*',
@@ -50,15 +56,19 @@ export default {
         return json({ ok: true, ts: new Date().toISOString() }, {}, head);
       }
 
-      if (path === '/playlist.m3u' || path === '/m3u' || path === '/playlist') {
-        if (!q.toString()) {
-          const raw = await fetchText('playlist.m3u', ctx, base);
+      if (path === '/playlist.m3u' || path === '/m3u' || path === '/playlist'
+          || path === '/playlist-pipe.m3u') {
+        const pipe = path === '/playlist-pipe.m3u' || q.get('style') === 'pipe';
+        if (!q.toString() || (pipe && q.toString() === 'style=pipe')) {
+          // canonical files (pre-verified by the health pipeline)
+          const raw = await fetchText(pipe ? 'playlist-pipe.m3u' : 'playlist.m3u',
+                                      ctx, base);
           return text(raw, M3U_HEADERS, head);
         }
         // filtered playlist: re-derive from channels.json
         const data = await fetchJSON('channels.json', ctx, base);
         const chans = filterChannels(data.channels, q);
-        return text(buildM3U(chans), M3U_HEADERS, head);
+        return text(buildM3U(chans, pipe ? 'pipe' : 'vlc'), M3U_HEADERS, head);
       }
 
       if (path === '/api/channels') {
@@ -89,7 +99,9 @@ export default {
         error: 'not found',
         endpoints: [
           '/playlist.m3u',
+          '/playlist-pipe.m3u',
           '/m3u?country=ID&search=tv',
+          '/m3u?country=ID&style=pipe',
           '/m3u?premium=only',
           '/api/channels?country=ID&limit=100',
           '/api/countries',
@@ -176,28 +188,96 @@ function filterChannels(chans, q) {
   return out;
 }
 
-function buildM3U(chans) {
+// header_iptv -> clean object; also repairs upstream's malformed variant where
+// the User-Agent is a KEY with no value (invalid JSON that used to parse as {}).
+function normalizeHeaders(raw) {
+  let obj = null;
+  if (raw && typeof raw === 'object') obj = raw;
+  else {
+    const s = (raw || '').trim();
+    if (!s) return {};
+    try {
+      obj = JSON.parse(s);
+    } catch {
+      try {
+        obj = JSON.parse(s.replace(
+          /([,{])\s*"((?:Mozilla|okhttp|Dalvik|Lavf\/|VLC\/|ExoPlayer|curl\/)[^"]*)"\s*(?=[,}])/g,
+          '$1"User-Agent":"$2"'));
+      } catch {
+        return {};
+      }
+    }
+  }
+  const uaLike = (s) => /^(Mozilla\/|okhttp|Dalvik|Lavf\/|VLC\/|ExoPlayer|curl\/)/i.test(String(s || ''));
+  const out = {};
+  for (const [k0, v0] of Object.entries(obj || {})) {
+    const k = String(k0).trim();
+    if (!k || v0 === null || v0 === undefined || typeof v0 === 'object') continue;
+    const v = String(v0).trim();
+    if (uaLike(k)) {
+      if (!out['User-Agent']) out['User-Agent'] = uaLike(v) ? v : k;
+      continue;
+    }
+    if (!v || v.toLowerCase() === 'none') continue;
+    out[k] = v;
+  }
+  return out;
+}
+
+function groupOf(ch) {
+  let g = ch.group;
+  if (!g) {
+    if (CODE_GROUPS[ch.code]) {
+      g = CODE_GROUPS[ch.code];
+    } else {
+      const c = ch.country || '';
+      g = GROUP_ALIASES[c] || c;
+    }
+  }
+  // geo-locked: 403 dari vantage pengece (mungkin hidup dari jaringan yang
+  // ditujunya) -> folder terpisah, folder utama tetap 100% terverifikasi
+  if (ch.geo_limited) return `${g} (geo)`;
+  return g;
+}
+
+// `URL|User-Agent=..&Referer=..` — header syntax for Android/IPTV players
+function pipeUrl(url, hdr) {
+  const order = ['User-Agent', 'Referer', 'Origin', 'Cookie', 'Authorization'];
+  const esc = (v) => String(v).replace(/%/g, '%25').replace(/\|/g, '%7C')
+    .replace(/&/g, '%26').replace(/[\r\n]/g, '');
+  const parts = [];
+  for (const k of order) if (hdr[k]) parts.push(`${k}=${esc(hdr[k])}`);
+  for (const [k, v] of Object.entries(hdr)) {
+    if (!order.includes(k) && v) parts.push(`${k}=${esc(v)}`);
+  }
+  return parts.length ? `${url}|${parts.join('&')}` : url;
+}
+
+function buildM3U(chans, style = 'vlc') {
   const esc = s => (s || '').replace(/[\r\n]+/g, ' ').trim();
   const lines = ['#EXTM3U'];
   for (const ch of chans) {
-    // dead = stream mati; no_playlist = hidup tapi butuh header yang tak bisa
-    // dibawa baris M3U (Cookie dsb) — keduanya tidak boleh dipublikasikan
-    if (ch.dead || ch.no_playlist) continue;
+    // dead = stream mati; no_playlist = tak bisa dibawa gaya mana pun;
+    // drm = manifest terenkripsi -> player biasa (VLC/Televizo) menolak
+    if (ch.dead || ch.no_playlist || ch.drm) continue;
+    const hdr = normalizeHeaders(ch.header_iptv);
+    if (style === 'vlc') {
+      // Cookie dsb. hanya bisa dibawa oleh gaya pipe
+      if (ch.pipe_only) continue;
+      if (Object.keys(hdr).some(k => !VLC_HEADER_KEYS.has(k.toLowerCase()))) continue;
+    }
     if (!ch.hls || !ch.hls.startsWith('http')) continue;
     const gid = (ch.name || 'tv').toLowerCase().replace(/\s+/g, '').slice(0, 24);
-    lines.push(`#EXTINF:-1 tvg-id="${gid}" tvg-name="${esc(ch.name)}" group-title="${esc(ch.country)}",${esc(ch.name)}`);
-    let hdr = {};
-    try { hdr = JSON.parse(ch.header_iptv || '{}'); } catch {}
+    lines.push(`#EXTINF:-1 tvg-id="${gid}" tvg-name="${esc(ch.name)}" group-title="${esc(groupOf(ch))}",${esc(ch.name)}`);
     const ua = hdr['User-Agent'];
-    if (ua && ua !== 'none') {
+    if (ua) {
       lines.push(`#EXTVLCOPT:http-user-agent=${ua}`);
       lines.push(`#KODIPROP:http-user-agent=${ua}`);
     }
-    const ref = hdr.Referer;
-    if (ref && ref !== 'none') lines.push(`#EXTVLCOPT:http-referrer=${ref}`);
-    const origin = hdr.Origin;
-    if (origin && origin !== 'none') lines.push(`#KODIPROP:http-origin=${origin}`);
-    lines.push(ch.hls);
+    if (hdr.Referer) lines.push(`#EXTVLCOPT:http-referrer=${hdr.Referer}`);
+    if (hdr.Origin) lines.push(`#KODIPROP:http-origin=${hdr.Origin}`);
+    lines.push(style === 'pipe' && Object.keys(hdr).length
+      ? pipeUrl(ch.hls, hdr) : ch.hls);
   }
   return lines.join('\n') + '\n';
 }

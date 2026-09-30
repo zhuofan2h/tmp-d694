@@ -36,7 +36,7 @@ import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin, unquote
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import collect  # noqa: E402  (config + write_playlist)
@@ -94,11 +94,7 @@ def classify(head: bytes) -> str:
 
 
 def declared_headers(ch):
-    try:
-        hdr = json.loads(ch.get('header_iptv') or '{}')
-    except Exception:
-        hdr = {}
-    return {k: v for k, v in hdr.items() if v and v != 'none'}
+    return collect.normalize_headers(ch.get('header_iptv'))
 
 
 def variants(ch):
@@ -212,10 +208,7 @@ def check_channel(ch):
             if final.split('?')[0] == url.split('?')[0]:
                 out['hls'] = final
         if label != 'declared':
-            try:
-                hdr = json.loads(ch.get('header_iptv') or '{}')
-            except Exception:
-                hdr = {}
+            hdr = collect.normalize_headers(ch.get('header_iptv'))
             hdr['User-Agent'] = headers.get('User-Agent', hdr.get('User-Agent'))
             if label == 'no-ref':
                 hdr.pop('Referer', None)
@@ -243,24 +236,33 @@ def confirm(ch, timeout=None):
     return ok, status
 
 
-# M3U can only carry these (via #EXTVLCOPT / #KODIPROP). A channel that
-# NEEDS anything else (Cookie, Authorization, custom tokens) plays fine with
-# the API/headers but can never play from a plain playlist entry.
+# #EXTVLCOPT/#KODIPROP can only express these three. A channel that NEEDS
+# anything else (Cookie, Authorization, custom tokens) cannot be published in
+# the VLC/Kodi file — but the pipe-style playlist (`URL|Header=value`) carries
+# ANY header, so such a channel is `pipe_only`, never simply dropped.
 PLAYLIST_HEADER_KEYS = {'user-agent', 'referer', 'origin'}
 
 
 def needs_extra_headers(ch):
-    """Headers the playlist cannot express; [] means it is playlist-safe."""
-    try:
-        hdr = json.loads(ch.get('header_iptv') or '{}')
-    except Exception:
-        return []
-    return [k for k, v in hdr.items()
-            if k.lower() not in PLAYLIST_HEADER_KEYS and v not in ('none', None, '')]
+    """Headers the VLC-style playlist cannot express; [] = vlc-playlist-safe.
+
+    These channels belong in playlist-pipe.m3u only (flagged `pipe_only`).
+    """
+    return [k for k in collect.normalize_headers(ch.get('header_iptv'))
+            if k.lower() not in PLAYLIST_HEADER_KEYS]
+
+
+def needs_no_playlist(ch):
+    """Headers NO style can express (value breaks the `|a=b&c=d` grammar)."""
+    return collect.pipe_unusable_headers(ch)
 
 
 def parse_playlist(path):
-    """Parse playlist.m3u into [{'name','url','headers'}]."""
+    """Parse a playlist file (either style) into [{'name','url','headers'}].
+
+    The pipe style (`https://x/a.m3u8|User-Agent=..&Referer=..`) is decoded
+    back into headers so the verifier sends EXACTLY what the player would.
+    """
     entries, cur = [], None
     with open(path, encoding='utf-8', errors='replace') as f:
         for line in f:
@@ -276,24 +278,149 @@ def parse_playlist(path):
             elif line.startswith('#'):
                 continue
             elif line.startswith('http') and cur is not None:
-                cur['url'] = line
+                url, sep, suffix = line.partition('|')
+                if sep and suffix:
+                    for kv in suffix.split('&'):
+                        if '=' in kv:
+                            k, v = kv.split('=', 1)
+                            cur['headers'].setdefault(unquote(k), unquote(v))
+                cur['url'] = url
                 entries.append(cur)
                 cur = None
     return entries
 
 
+def fetch_body(url, headers, timeout, limit=65536):
+    """GET -> (status, body, final_url); status is None on transport errors."""
+    req = urllib.request.Request(url, headers=headers, method='GET')
+    try:
+        r = urllib.request.urlopen(req, timeout=timeout)
+        return r.status, r.read(limit), r.geturl()
+    except urllib.error.HTTPError as e:
+        try:
+            body = e.read(4000)
+        except Exception:
+            body = b''
+        return e.code, body, url
+    except socket.timeout:
+        return None, b'', url
+    except Exception:
+        return None, b'', url
+
+
+ERROR_MARKERS = ('error', 'forbidden', 'not found', 'expired', 'denied',
+                 'blocked', 'unauthor', 'failed')
+
+
+def _error_payload(body):
+    """True only for a TEXT payload that reads like an error page — the
+    failure mode a player actually shows. Unknown binary = media."""
+    head = body[:600]
+    try:
+        text = head.decode('utf-8')
+    except UnicodeDecodeError:
+        return False                    # binary -> media
+    if not text.isprintable() and '\n' not in text and '\t' not in text:
+        return False
+    low = text.lower()
+    return any(m in low for m in ERROR_MARKERS)
+
+
+def _first_uri(text):
+    """First non-comment line of an M3U8 (variant URI or media segment)."""
+    for line in text.splitlines():
+        line = line.strip()
+        if line and not line.startswith('#'):
+            return line
+    return None
+
+
+DEEP = os.environ.get('HEALTH_DEEP', '1').lower() != '0'
+
+
+def probe_deep(url, headers, timeout):
+    """Verify what a PLAYER actually needs: manifest AND its media.
+
+    'playlist entry answers 200' is not enough — a master playlist whose
+    variant/segment answers 403 or HTML still shows a playback error in
+    VLC/Televizo/OTT TV. Follows up to three levels and reads one segment.
+    Returns the same (ok, kind, status, final_url) tuple as probe().
+    """
+    ok, kind, status, final = probe(url, headers, timeout)
+    if not ok or not DEEP or kind not in ('hls', 'dash'):
+        return ok, kind, status, final
+    cur = final or url
+    fin = final
+    for _ in range(3):                       # master -> media -> segment
+        st, body, fin = fetch_body(cur, headers, timeout)
+        if st is None or not (200 <= st < 300):
+            time.sleep(1.0)                  # calm retry before condemning
+            st, body, fin = fetch_body(cur, headers, timeout)
+            if st is None or not (200 <= st < 300):
+                return False, f'sub:{st}', st if st else 'error', cur
+        text = body[:200000].decode('utf-8', 'replace')
+        sub = classify(body[:512])
+        if sub in ('json', 'html'):
+            return False, f'sub-{sub}', st, cur
+        if sub == 'hls':
+            uri = _first_uri(text)
+            if not uri:
+                return False, 'hls-no-media', st, cur
+            cur = urljoin(cur, uri)
+            continue
+        if sub == 'dash':
+            return True, 'dash', status, fin    # manifest ok (DRM checked apart)
+        # real media bytes: MPEG-TS, fMP4/CMAF (box header 'ftyp' at any
+        # offset in the first bytes), ADTS audio, ID3 — anything that is NOT
+        # an error payload. Binary-but-unrecognised must count as media:
+        # classifying it as a failure would kill healthy CMAF/fMP4 streams.
+        if sub == 'other' and not _error_payload(body):
+            return True, f'{kind}+media', status, fin
+        if sub in ('flv', 'ts') or b'ftyp' in body[:16] \
+                or body[:1] == b'\xff' or body[:3] == b'ID3':
+            return True, f'{kind}+media', status, fin
+        return False, f'segment-{sub or "unknown"}', st, cur
+    return True, f'{kind}+media', status, fin
+
+
+def drm_check(ch, timeout=None):
+    """True/False/None(unknown): does the MPD declare ContentProtection?
+
+    DRM streams (Widevine/ClearKey) are refused by VLC, Televizo, OTT TV and
+    friends — publishing them as playable entries is exactly the 'channel
+    error' users see. Only a positive detection marks the channel.
+    """
+    hdr = declared_headers(ch)
+    hdr.setdefault('User-Agent', BROWSER_UA)
+    st, body, _ = fetch_body(ch.get('hls') or '', hdr, timeout or TIMEOUT, 120000)
+    if st is None or not (200 <= st < 300) or not body:
+        return None
+    text = body[:120000].decode('utf-8', 'replace')
+    if '<MPD' not in text and '<?xml' not in text[:2000]:
+        return None
+    return 'ContentProtection' in text
+
+
 def verify_published(out_dir, threads=None, gap=0.4):
-    """Phase C: probe EVERY entry of the just-written playlist, one host at a
-    time per slot with a small gap (a real player is gentle too). Returns
-    (total, [(entry, status)] failures)."""
-    entries = parse_playlist(os.path.join(out_dir, 'playlist.m3u'))
+    """Phase C: probe EVERY entry of BOTH just-written playlists (the VLC/Kodi
+    file and the Android pipe file), one host at a time per slot with a small
+    gap (a real player is gentle too). Each entry carries `style` so a failure
+    can be attributed to the right file. Returns (total, failed, geo_ok)."""
+    entries = []
+    for style, fname in collect.PLAYLIST_FILES.items():
+        path = os.path.join(out_dir, fname)
+        if not os.path.exists(path):
+            continue
+        for e in parse_playlist(path):
+            e['style'] = style
+            entries.append(e)
     by_host = {}
     for e in entries:
         by_host.setdefault(urlparse(e['url']).netloc.lower(), []).append(e)
 
-    # url -> headers the playlist CANNOT carry (Cookie etc). A 403 on such
-    # an entry is a playlist limitation, NOT a geo problem: it must be
-    # dropped from the playlist (but stays alive for API consumers).
+    # url -> headers the VLC-style playlist CANNOT carry (Cookie etc). A 403 on
+    # such an entry is a style limitation, NOT a geo problem: the channel moves
+    # to the pipe file (pipe_only) instead of being dropped everywhere.
     extra_by_url = {}
     src = os.path.join(out_dir, 'channels.json')
     if os.path.exists(src):
@@ -310,14 +437,15 @@ def verify_published(out_dir, threads=None, gap=0.4):
         for e in items:
             hdr = dict(e['headers'])
             hdr.setdefault('User-Agent', BROWSER_UA)
-            ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
+            ok, kind, status, _ = probe_deep(e['url'], hdr, TIMEOUT)
             if not ok:
                 # calm retry: phase A+B just hammered this host, throttling
                 # right now does not mean the channel is dead
                 time.sleep(2.0)
-                ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
+                ok, kind, status, _ = probe_deep(e['url'], hdr, TIMEOUT)
             if not ok:
-                playlist_limited = extra_by_url.get(e['url'])
+                playlist_limited = (e['style'] == 'vlc'
+                                    and extra_by_url.get(e['url']))
                 if location_dependent(status) and not playlist_limited:
                     # 403 from the checker's IP: viewer's IP decides, so
                     # keep it published (flagged) instead of dropping it
@@ -325,6 +453,7 @@ def verify_published(out_dir, threads=None, gap=0.4):
                              else '403-blocked')
                     geo.append((e, label))
                 else:
+                    e['kind'] = kind
                     bad.append((e, status))
             time.sleep(gap)
         return bad, geo
@@ -484,6 +613,24 @@ def probe_all(channels):
     return results
 
 
+def canonicalize(results, channels):
+    """check_channel() returns a repaired COPY on success (`out = dict(ch)`),
+    so every flag/repair set on it was silently lost before reaching
+    channels.json — DRM/pipe_only/repairs never persisted. Fold the copy
+    back into the canonical record, index by index (order is preserved by
+    both probe_all and merged_results)."""
+    if len(results) != len(channels):
+        return results
+    out = []
+    for i, (ch, status, variant) in enumerate(results):
+        base = channels[i]
+        if ch is not base:
+            base.update(ch)
+            ch = base
+        out.append((ch, status, variant))
+    return out
+
+
 def main():
     src = os.path.join(OUT_DIR, 'channels.json')
     if not os.path.exists(src):
@@ -496,9 +643,9 @@ def main():
     if frag_spec:
         # merge mode: verdicts already gathered from several vantage points
         # -> no local probing at all
-        results = merged_results(channels, frag_spec)
+        results = canonicalize(merged_results(channels, frag_spec), channels)
     else:
-        results = probe_all(channels)
+        results = canonicalize(probe_all(channels), channels)
 
         # --- fragment mode: report only, never touch data/ ---------------
         if HEALTH_MODE == 'fragment':
@@ -511,6 +658,7 @@ def main():
     repaired = []
     unplayable = []
     geo_kept = []
+    drm_kept = []
     playable = 0
     for ch, status, variant in results:
         was_dead = bool(ch.get('dead'))
@@ -525,6 +673,24 @@ def main():
             if was_dead:
                 repaired.append({'name': ch.get('name'), 'code': ch.get('code'),
                                  'variant': 'revived', 'url': ch.get('hls')})
+            # --- which playlist styles may carry this channel? -------------
+            if needs_extra_headers(ch):
+                # Cookie etc.: VLC/Kodi file can't send it, the pipe file can
+                ch['pipe_only'] = True
+                ch['pipe_only_reason'] = 'needs headers: ' + ','.join(
+                    needs_extra_headers(ch))
+                ch.pop('no_playlist', None)
+                ch.pop('no_playlist_reason', None)
+            elif needs_no_playlist(ch):
+                ch['no_playlist'] = True
+                ch['no_playlist_reason'] = 'header value breaks pipe syntax'
+                ch.pop('pipe_only', None)
+                ch.pop('pipe_only_reason', None)
+            else:
+                ch.pop('pipe_only', None)
+                ch.pop('pipe_only_reason', None)
+                ch.pop('no_playlist', None)
+                ch.pop('no_playlist_reason', None)
         elif location_dependent(status):
             # 403 from the CHECKER's IP — the viewer's IP is what counts.
             # Keep it alive, flag it, publish it; never kill it.
@@ -546,6 +712,27 @@ def main():
                                'premium': ch.get('premium'), 'status': status,
                                'dead': bool(ch.get('dead')), 'url': ch.get('hls')})
 
+    # --- DRM pass (mode-agnostic: works for local AND merged/CI runs) -----
+    # A DASH manifest with ContentProtection is Widevine/ClearKey protected:
+    # VLC, Televizo and OTT TV refuse it, so publishing it IS the "channel
+    # error" users report. Only a positive detection excludes the channel —
+    # it stays alive in the API (flagged `drm`) for capable players.
+    for ch in channels:
+        if ch.get('dead') or ch.get('no_playlist'):
+            continue
+        hls = (ch.get('hls') or '').lower()
+        jenis = (ch.get('jenis') or '').lower()
+        if '.mpd' not in hls and 'dash' not in jenis:
+            continue
+        is_drm = drm_check(ch)
+        if is_drm:
+            if not ch.get('drm'):
+                drm_kept.append({'name': ch.get('name'), 'code': ch.get('code'),
+                                 'url': ch.get('hls')})
+            ch['drm'] = True
+        elif is_drm is False:
+            ch.pop('drm', None)
+
     free_live = [c for c in channels if c.get('premium') != 't' and not c.get('dead')
                  and (c.get('hls') or '').startswith('http')]
     if not free_live:
@@ -553,7 +740,9 @@ def main():
               'keeping previous playlist')
         return 1
 
-    entries = collect.write_playlist(channels, OUT_DIR)   # free + alive only
+    counts = collect.write_all_playlists(channels, OUT_DIR)  # free + alive only
+    entries = counts['vlc']
+    entries_pipe = counts['pipe']
 
     # --- Phase C: the published artifact must prove itself ---------------
     # Probe every entry of the playlist we just wrote; anything that fails is
@@ -589,40 +778,68 @@ def main():
         drops += 1
         print(f'phase C round {rounds}: {len(failed)}/{total} entries failed '
               f'verification -> dropping', flush=True)
-        bad_urls = set()
+        # url -> {'styles': {vlc, pipe}, 'statuses': [...]}
+        bad = {}
         for e, st in failed:
-            bad_urls.add(e['url'])
+            slot = bad.setdefault(e['url'], {'styles': set(), 'statuses': []})
+            slot['styles'].add(e['style'])
+            slot['statuses'].append(str(st))
             verify_fail.append({'name': e['name'], 'url': e['url'],
+                                'style': e['style'], 'kind': e.get('kind'),
                                 'status': str(st)})
-            print(f'  verify-fail {st} {e["name"][:40]}', flush=True)
+            print(f'  verify-fail [{e["style"]}] {st} '
+                  f'{e.get("kind") or ""} {e["name"][:40]}', flush=True)
         changed = False
         for c in channels:
-            if c.get('hls') not in bad_urls or c.get('dead') or c.get('no_playlist'):
+            slot = bad.get(c.get('hls'))
+            if not slot or c.get('dead') or c.get('no_playlist'):
                 continue
-            extra = needs_extra_headers(c)
-            if extra:
-                # it played during phase A/B with its full headers — the
-                # playlist simply cannot carry them (e.g. Cookie): keep the
-                # channel alive for API consumers, keep it OUT of playlist.m3u
+            styles = slot['styles']
+            if 'pipe' in styles and needs_no_playlist(c):
+                # header value the pipe grammar cannot express -> no style
+                # can carry it: alive in the API, out of every playlist
                 c['no_playlist'] = True
-                c['no_playlist_reason'] = f'needs headers: {",".join(extra)}'
-                print(f'  no-playlist {c.get("name")} needs {extra}', flush=True)
+                c['no_playlist_reason'] = 'header value breaks pipe syntax'
+                print(f'  no-playlist {c.get("name")}', flush=True)
+            elif 'pipe' in styles and not needs_extra_headers(c) \
+                    and 'vlc' in styles:
+                # BOTH files failed with identical headers -> the stream is bad
+                c['dead'] = True
+                c['dead_reason'] = 'verify-failed'
+                c['fail_count'] = FAIL_THRESHOLD
+                print(f'  dead {c.get("name")} ({",".join(slot["statuses"])})',
+                      flush=True)
+            elif 'vlc' in styles and needs_extra_headers(c):
+                # the VLC file simply cannot send this channel's Cookie:
+                # keep it alive, publish it in the pipe file only
+                c['pipe_only'] = True
+                c['pipe_only_reason'] = 'needs headers: ' + ','.join(
+                    needs_extra_headers(c))
+                c.pop('no_playlist', None)
+                print(f'  pipe-only {c.get("name")}', flush=True)
             else:
                 c['dead'] = True
                 c['dead_reason'] = 'verify-failed'
                 c['fail_count'] = FAIL_THRESHOLD
+                print(f'  dead {c.get("name")} ({",".join(slot["statuses"])})',
+                      flush=True)
             changed = True
         if not changed:
             break                      # failures we cannot attribute -> give up
-        entries = collect.write_playlist(channels, OUT_DIR)
+        counts = collect.write_all_playlists(channels, OUT_DIR)
+        entries, entries_pipe = counts['vlc'], counts['pipe']
 
     dead_count = sum(1 for c in channels if c.get('dead'))
     no_playlist_count = sum(1 for c in channels if c.get('no_playlist'))
+    pipe_only_count = sum(1 for c in channels if c.get('pipe_only'))
+    drm_count = sum(1 for c in channels if c.get('drm'))
     geo_count = sum(1 for c in channels if c.get('geo_limited'))
     data['channels'] = channels
     data['health'] = {'checked': now, 'playable': playable,
                       'total': len(channels), 'dead': dead_count,
-                      'playlist_entries': entries, 'verified': verify_ok}
+                      'playlist_entries': entries,
+                      'playlist_pipe_entries': entries_pipe,
+                      'verified': verify_ok}
     with open(src, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 
@@ -632,14 +849,18 @@ def main():
         'playable': playable,
         'dead': dead_count,
         'no_playlist': no_playlist_count,
+        'pipe_only': pipe_only_count,
+        'drm_excluded': drm_count,
         'geo_limited': geo_count,
         'geo_mode': GEO_MODE,
         'repaired': len(repaired),
         'playlist_entries': entries,
+        'playlist_pipe_entries': entries_pipe,
         'playlist_verified': verify_ok,
         'verify_rounds': rounds,
         'verify_failures': verify_fail,
         'repairs': repaired,
+        'drm': drm_kept,
         'unplayable': unplayable,
     }
     with open(os.path.join(OUT_DIR, 'health.json'), 'w', encoding='utf-8') as f:
@@ -650,15 +871,19 @@ def main():
         stats = json.load(open(stats_path, encoding='utf-8'))
         stats.update({'health_checked': now, 'playable': playable,
                       'dead': dead_count, 'no_playlist': no_playlist_count,
+                      'pipe_only': pipe_only_count, 'drm_excluded': drm_count,
                       'geo_limited': geo_count, 'geo_mode': GEO_MODE,
                       'playlist_entries': entries,
+                      'playlist_pipe_entries': entries_pipe,
                       'playlist_verified': verify_ok})
         with open(stats_path, 'w', encoding='utf-8') as f:
             json.dump(stats, f, ensure_ascii=False, indent=1)
 
     print(f'playable: {playable}/{len(channels)} | dead: {dead_count} | '
-          f'no-playlist: {no_playlist_count} | geo-limited: {geo_count} | '
-          f'repaired: {len(repaired)} | playlist entries: {entries} | '
+          f'pipe-only: {pipe_only_count} | no-playlist: {no_playlist_count} | '
+          f'drm-excluded: {drm_count} | geo-limited: {geo_count} | '
+          f'repaired: {len(repaired)} | playlist(vlc): {entries} | '
+          f'playlist(pipe): {entries_pipe} | '
           f'verified: {verify_ok} ({rounds} round(s), {drops} drop(s))')
     if not verify_ok:
         print('FATAL: playlist could not be fully verified; '

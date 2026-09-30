@@ -47,6 +47,10 @@
     <option value="1">Include premium</option>
     <option value="only">Premium only</option>
   </select>
+  <select id="fmt" title="Sesuaikan format dengan player kamu">
+    <option value="vlc">Format: VLC / Kodi</option>
+    <option value="pipe">Format: Android (OTT TV, Televizo, …)</option>
+  </select>
 </header>
 <main>
   <div id="toolbar">
@@ -82,7 +86,9 @@ function playlistURL() {
   if (c) qs.set('country', c);
   if (p) qs.set('premium', p);   // '1' = semua, 'only' = hanya premium
   const s = qs.toString();
-  return `${API}/playlist.m3u${s ? '?' + s : ''}`;
+  // gaya pipe (URL|User-Agent=…) untuk player Android; tag EXTVLCOPT untuk VLC
+  const file = $('#fmt').value === 'pipe' ? 'playlist-pipe.m3u' : 'playlist.m3u';
+  return `${API}/${file}${s ? '?' + s : ''}`;
 }
 
 function render() {
@@ -149,6 +155,7 @@ async function load() {
 $('#search').addEventListener('input', render);
 $('#country').addEventListener('change', () => { $('#playlist-url').textContent = playlistURL(); $('#plink').textContent = playlistURL(); render(); });
 $('#premium').addEventListener('change', () => { $('#playlist-url').textContent = playlistURL(); $('#plink').textContent = playlistURL(); render(); });
+$('#fmt').addEventListener('change', () => { $('#playlist-url').textContent = playlistURL(); $('#plink').textContent = playlistURL(); });
 $('#copy').addEventListener('click', async () => {
   const url = playlistURL();
   try { await navigator.clipboard.writeText(url); $('#copy').textContent = 'Tersalin!'; }

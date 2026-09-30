@@ -124,3 +124,4 @@ test('502 when upstream fixture is missing', async () => {
     { DATA_BASE: 'https://missing.test/' }, ctx);
   assert.equal(r.status, 502);
 });
+
