@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T13:21:08Z",
+ "updated": "2026-09-30T14:21:20Z",
  "count": 518,
  "channels": [
   {
@@ -124,9 +124,7 @@
    "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH3]",
@@ -139,9 +137,7 @@
    "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH4]",
@@ -305,9 +301,7 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "UEFA Nations League [CH7]",
@@ -321,9 +315,7 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "International Friendly [CH3]",
@@ -337,8 +329,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "UFC Fight Night [CH2]",
@@ -366,9 +359,7 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "International Friendly [CH4]",
@@ -414,9 +405,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: Host"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH3]",
@@ -430,9 +420,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: Host"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH4]",
@@ -618,9 +607,9 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:200"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -667,7 +656,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -694,9 +683,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoibnhqU1lwSFpJd2d6VUI5L2dpOW9kUSIsImtpZCI6IjhvZzRES1RPK2EwL0o2a3FDT203aXcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "Events"
   },
   {
    "name": "England: Premier League [CH1]",
@@ -737,7 +724,8 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiTjc0RGRkeWY1VVREeHQ1cUVGOThDZyIsImtpZCI6IjU0ZHAySHBCNFZBMnBQdUwvZkUzSGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "United Arab Emirates (the)",
    "code": "AE",
-   "group": "United Arab Emirates (the)"
+   "group": "United Arab Emirates (the)",
+   "drm": true
   },
   {
    "name": "Abu Dhabi Sports 2",
@@ -751,9 +739,7 @@
    "country": "United Arab Emirates (the)",
    "code": "AE",
    "group": "United Arab Emirates (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "Asean Club Championship [CH1]",
@@ -964,9 +950,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Football: Asian Games 2026 [CH3]",
@@ -995,7 +980,8 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicHNHaTZCL3BRYW5pNzlLOHJRMFZNZyIsImtpZCI6Ijh6clBNNDdKUnYyU0dvWDRjR05qbVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Asian Games 2026",
    "code": "AN",
-   "group": "Asian Games 2026"
+   "group": "Asian Games 2026",
+   "drm": true
   },
   {
    "name": "Asian Games 2026 [CH7]",
@@ -1009,9 +995,7 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "Depor TV",
@@ -1182,10 +1166,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVGE5Rlc3Y2hxUWRySHN6dTFjbFJHUSIsImtpZCI6Im84Y1puY0xJc3IzRkVTalF5U1ZCUkEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Argentina",
    "code": "AR",
-   "group": "Argentina",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:400"
+   "group": "Argentina"
   },
   {
    "name": "VIVO D-Sports 2 AR",
@@ -1302,9 +1283,9 @@
    "country": "Australia",
    "code": "AU",
    "group": "Australia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "ABC Australia",
@@ -1487,7 +1468,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Anime TV",
@@ -1535,7 +1519,7 @@
    "group": "Brazil",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:200"
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "Canal do Inter",
@@ -1564,10 +1548,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "group": "Brazil"
   },
   {
    "name": "Canal Gov",
@@ -1715,10 +1696,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Elemental Channel",
@@ -1943,9 +1921,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Rede Brasil",
@@ -2006,10 +1984,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Rede QDM",
@@ -2038,10 +2013,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Rede Sul",
@@ -2103,9 +2075,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:200"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2179,10 +2151,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Terra Viva",
@@ -2253,10 +2222,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "TV Brasil Oeste",
@@ -2542,10 +2508,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error timed out>(https)"
+   "group": "Brazil"
   },
   {
    "name": "TV Passo Fundo",
@@ -2629,7 +2592,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TVNBN",
@@ -2638,14 +2604,11 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:200"
+   "group": "Brazil"
   },
   {
    "name": "Food Travel",
@@ -2807,10 +2770,7 @@
    "code": "SG",
    "group": "Singapore",
    "geo_limited": true,
-   "geo_status": "403(no-ref)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "Animax HD",
@@ -2867,10 +2827,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq Documentary",
@@ -2883,10 +2840,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq News",
@@ -2915,10 +2869,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "group": "Saudi Arabia"
   },
   {
    "name": "Astro Awani",
@@ -3153,10 +3104,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Cartoon Network Japan",
@@ -3214,10 +3162,7 @@
    "code": "SG",
    "group": "Singapore",
    "geo_limited": true,
-   "geo_status": "403(no-ref)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "Channel 8",
@@ -3964,9 +3909,9 @@
    "country": "TV Lokal",
    "code": "LO",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "tv1",
@@ -4508,9 +4453,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "KompasTV",
@@ -4524,9 +4469,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MetroTV",
@@ -4578,10 +4523,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "CNN",
@@ -4716,8 +4658,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiM2JtWFZlQyt2WmpKTEg2cmwwdnhZUSIsImtpZCI6Ing3T0ZMWnlFUVkrVUtTUGtIREhtTXcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "drm": true
+   "group": "Indonesia"
   },
   {
    "name": "Galaxy Premium",
@@ -4762,10 +4703,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "HBO Cinemax",
@@ -4778,10 +4716,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "HBO Family",
@@ -4794,10 +4729,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "HBO Hits",
@@ -4810,10 +4742,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "HBO Signature",
@@ -4826,10 +4755,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "HITS Movies",
@@ -4875,8 +4801,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "geo_limited": true,
-   "geo_status": "403-geo(no-ref)"
+   "drm": true
   },
   {
    "name": "Rock Action",
@@ -4970,8 +4895,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "geo_limited": true,
-   "geo_status": "403-geo(no-ref)"
+   "drm": true
   },
   {
    "name": "Zee Bioskop",
@@ -5047,9 +4971,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Indosiar",
@@ -5092,9 +5016,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "mOji",
@@ -5121,9 +5045,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "SCTV",
@@ -5137,9 +5061,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:504"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Trans7",
@@ -5231,7 +5155,8 @@
    "country": "China",
    "code": "CN",
    "group": "China",
-   "drm": true
+   "geo_limited": true,
+   "geo_status": "403-geo(verify)"
   },
   {
    "name": "JTV",
@@ -5275,8 +5200,7 @@
    "country": "China",
    "code": "CN",
    "group": "China",
-   "geo_limited": true,
-   "geo_status": "403-geo(verify)"
+   "drm": true
   },
   {
    "name": "beIN Sports AU 1 A+",
@@ -5737,7 +5661,8 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiUzRCeVRRNzRhOHNzSWZlWm5XZHpuUSIsImtpZCI6IkVTSXpSRlZtZDRpWkFCRWlNMFJWWmcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "drm": true
   },
   {
    "name": "ON Sports Thao",
@@ -5764,9 +5689,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoic1RSbWlqdlh3S001b245U1d3UWN1QSIsImtpZCI6IndGcFg2TkNzYmsvTnhIcmV0cU5qdFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "United States of America (the)",
    "code": "US",
-   "group": "United States of America (the)",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "United States of America (the)"
   },
   {
    "name": "Premier Sports 1",
@@ -5835,9 +5758,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVkZueFhDd1JrTmxmNUpkdXhwcm9kUSIsImtpZCI6InNDNXNrV3pKUlQraU9tcHgyaW43L3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "Sports TV"
   },
   {
    "name": "Sky Sports EPL",
@@ -5969,9 +5890,7 @@
    "country": "Philippines (the)",
    "code": "PH",
    "group": "Philippines (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "SPOTV PH2",
@@ -5999,8 +5918,7 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "drm": true
   },
   {
    "name": "TNT Sports 1",
@@ -6097,7 +6015,8 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicjYxSjBnNnpsbkRwUGpjY0hXYVpJUSIsImtpZCI6IitMSUh3UTgvZHE2Nk1xTmc3Rks1NUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Uruguay",
    "code": "UY",
-   "group": "Uruguay"
+   "group": "Uruguay",
+   "drm": true
   },
   {
    "name": "Azteca 7 HD",
@@ -6196,9 +6115,7 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403-geo(verify)"
+   "group": "Sports TV"
   },
   {
    "name": "Fight Sports",
@@ -6213,7 +6130,7 @@
    "code": "SP",
    "group": "Sports TV",
    "geo_limited": true,
-   "geo_status": "403-geo(verify)"
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "FS1",
@@ -6361,9 +6278,7 @@
    "country": "Singapore",
    "code": "SG",
    "group": "Singapore",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "M-Live 5",
@@ -6405,9 +6320,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! ARENA",
@@ -6416,7 +6331,7 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Lavf/60.16.100\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiTk0zVzgrRy9hcCtkVk9rV1dyK01DUSIsImtpZCI6Im1EbXhjTFQ4T0U4a08vL1lrcHR4b2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
@@ -6432,7 +6347,7 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiTlpPa29yKzlmWldGNy84SU8zYWM5USIsImtpZCI6IlpnbzNxUnFnQzM0dUM4ZmNvMG01Z2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
@@ -6453,9 +6368,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6464,14 +6379,14 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiemFHTlRTQ3IxY3gzZ3hXcjRuZit1USIsImtpZCI6InpuejVzbzBhallkS3pPdkVUWDRmelEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -6485,9 +6400,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! IGRA",
@@ -6496,14 +6411,14 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSlh0OTU0UVRnVTFuSW45NmcwcXZCQSIsImtpZCI6IkIyL1QxV2lOUjNXT3p4U29rMWducUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -6512,14 +6427,14 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Lavf/60.16.100\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQWZLbzhSdllrV1ZhZFN3WFNmUjQ3QSIsImtpZCI6Iks3ZXpGSGNlMWU3ZDJQUkttcVFuUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! STRANA",
@@ -6533,7 +6448,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "Mediaset Italy",
@@ -6602,10 +6519,7 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Sports TV"
   },
   {
    "name": "Premiere Brazil 1",
@@ -6717,9 +6631,7 @@
    "country": "Slovakia",
    "code": "SK",
    "group": "Slovakia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:timeout"
+   "drm": true
   },
   {
    "name": "Sports 2 SK",
@@ -6761,9 +6673,7 @@
    "country": "Philippines (the)",
    "code": "PH",
    "group": "Philippines (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "TMC",
@@ -6906,9 +6816,7 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "TV4 Sweden",
@@ -6922,9 +6830,7 @@
    "country": "Sweden",
    "code": "SE",
    "group": "Sweden",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "451(no-ref)"
+   "drm": true
   },
   {
    "name": "Universo (West)",
@@ -6938,11 +6844,7 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "drm": true
   },
   {
    "name": "Cartoon Network",
@@ -6955,9 +6857,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWmxuKzFISlVRb210N3Boc0hUUDZlUSIsImtpZCI6ImhkQnJvb1B6c1l1eFQ1K05XYmo3Z2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Kids",
    "code": "KD",
-   "group": "Kids",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "Kids"
   },
   {
    "name": "Dreamworks HD",
@@ -7073,8 +6973,7 @@
    "country": "Kids",
    "code": "KD",
    "group": "Kids",
-   "geo_limited": true,
-   "geo_status": "403-geo(verify)"
+   "drm": true
   },
   {
    "name": "Oktolidays",
@@ -7088,9 +6987,7 @@
    "country": "Kids",
    "code": "KD",
    "group": "Kids",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error _ssl.c:999: The handshake operation timed out>"
+   "drm": true
   },
   {
    "name": "VTV Indonesia",
@@ -7158,9 +7055,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "UG.tv",
@@ -7554,9 +7451,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSVV2UmRvTW9jak9jNFlRemd5RDVvZyIsImtpZCI6IkJsQlJ1WnYxejQyYU85NWN2ZWFxK1EifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Formula 1 [CH5]",
@@ -7672,12 +7567,12 @@
   }
  ],
  "health": {
-  "checked": "2026-09-30T13:24:57Z",
-  "playable": 311,
+  "checked": "2026-09-30T14:25:00Z",
+  "playable": 347,
   "total": 518,
-  "dead": 228,
-  "playlist_entries": 152,
-  "playlist_pipe_entries": 154,
+  "dead": 194,
+  "playlist_entries": 164,
+  "playlist_pipe_entries": 166,
   "verified": true
  }
 }
