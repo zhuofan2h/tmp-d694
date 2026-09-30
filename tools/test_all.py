@@ -228,5 +228,31 @@ class TestHealthConfirm(unittest.TestCase):
         self.assertIn('Mozilla', seen['User-Agent'])
 
 
+class TestParsePlaylist(unittest.TestCase):
+    def test_parse_fixture(self):
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            '..', 'worker', 'testdata', 'playlist.m3u')
+        entries = health.parse_playlist(path)
+        self.assertEqual(len(entries), 1)
+        e = entries[0]
+        self.assertEqual(e['name'], 'Free One')
+        self.assertEqual(e['url'], 'https://cdn.test/1.m3u8')
+        self.assertEqual(e['headers'].get('User-Agent'), 'UA/1')
+        self.assertEqual(e['headers'].get('Referer'), 'https://r')
+
+    def test_parse_ignores_junk_lines(self):
+        import tempfile
+        txt = ('#EXTM3U\n#EXTINF:-1 tvg-id="a",A\n'
+               '#EXTVLCOPT:http-user-agent=UA/1\n#KODIPROP:x=y\n'
+               '#EXTINF:-1,B\nhttps://x/b.m3u8\n')
+        d = tempfile.mkdtemp()
+        p = os.path.join(d, 'p.m3u')
+        with open(p, 'w') as f:
+            f.write(txt)
+        entries = health.parse_playlist(p)
+        self.assertEqual([e['name'] for e in entries], ['B'])
+        self.assertEqual(entries[0]['url'], 'https://x/b.m3u8')
+
+
 if __name__ == '__main__':
     unittest.main()

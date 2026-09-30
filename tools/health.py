@@ -27,12 +27,16 @@ Exit codes: 0 ok, 1 nothing playable / missing input.
 """
 import json
 import os
+import re
 import socket
 import sys
+import threading
+import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import collect  # noqa: E402  (config + write_playlist)
@@ -99,6 +103,29 @@ def variants(ch):
         yield 'https', 'https://' + url[7:], mk(ua), TIMEOUT
 
 
+# Several channels live behind the SAME CDN host; firing 20 parallel probes at
+# one host makes it rate-limit us and produces fake "dead" verdicts. Cap
+# concurrent requests per host (a real player opens one stream at a time).
+_SEMAPHORES = {}
+_SEMAPHORES_LOCK = threading.Lock()
+MAX_PER_HOST = int(os.environ.get('HEALTH_PER_HOST', '2'))
+
+
+def _host_sem(url):
+    host = urlparse(url).netloc.lower()
+    with _SEMAPHORES_LOCK:
+        sem = _SEMAPHORES.get(host)
+        if sem is None:
+            sem = threading.BoundedSemaphore(MAX_PER_HOST)
+            _SEMAPHORES[host] = sem
+        return sem
+
+
+def probe_limited(url, headers, timeout):
+    with _host_sem(url):
+        return probe(url, headers, timeout)
+
+
 def probe(url, headers, timeout):
     """Return (ok, kind, status, final_url). Follows redirects."""
     req = urllib.request.Request(url, headers=headers, method='GET')
@@ -119,7 +146,7 @@ def check_channel(ch):
     """Probe with repairs. Returns (channel, status_label, variant_used)."""
     last_status = None
     for label, url, headers, timeout in variants(ch):
-        ok, kind, status, final = probe(url, headers, timeout)
+        ok, kind, status, final = probe_limited(url, headers, timeout)
         last_status = f'{status}' if label == 'declared' else f'{status}({label})'
         if not ok:
             continue
@@ -155,8 +182,58 @@ def confirm(ch, timeout=None):
     url = ch.get('hls') or ''
     hdr = declared_headers(ch)
     hdr.setdefault('User-Agent', BROWSER_UA)
-    ok, kind, status, _ = probe(url, hdr, timeout or TIMEOUT)
+    ok, kind, status, _ = probe_limited(url, hdr, timeout or TIMEOUT)
     return ok, status
+
+
+def parse_playlist(path):
+    """Parse playlist.m3u into [{'name','url','headers'}]."""
+    entries, cur = [], None
+    with open(path, encoding='utf-8', errors='replace') as f:
+        for line in f:
+            line = line.rstrip('\n')
+            if line.startswith('#EXTINF'):
+                m = re.search(r',(.*)$', line)
+                cur = {'name': (m.group(1) if m else '').strip(),
+                       'headers': {}, 'url': None}
+            elif cur is not None and line.startswith('#EXTVLCOPT:http-user-agent='):
+                cur['headers']['User-Agent'] = line.split('=', 1)[1]
+            elif cur is not None and line.startswith('#EXTVLCOPT:http-referrer='):
+                cur['headers']['Referer'] = line.split('=', 1)[1]
+            elif line.startswith('#'):
+                continue
+            elif line.startswith('http') and cur is not None:
+                cur['url'] = line
+                entries.append(cur)
+                cur = None
+    return entries
+
+
+def verify_published(out_dir, threads=None, gap=0.4):
+    """Phase C: probe EVERY entry of the just-written playlist, one host at a
+    time per slot with a small gap (a real player is gentle too). Returns
+    (total, [(entry, status)] failures)."""
+    entries = parse_playlist(os.path.join(out_dir, 'playlist.m3u'))
+    by_host = {}
+    for e in entries:
+        by_host.setdefault(urlparse(e['url']).netloc.lower(), []).append(e)
+
+    def run_host(items):
+        bad = []
+        for e in items:
+            hdr = dict(e['headers'])
+            hdr.setdefault('User-Agent', BROWSER_UA)
+            ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
+            if not ok:
+                bad.append((e, status))
+            time.sleep(gap)
+        return bad
+
+    failed = []
+    with ThreadPoolExecutor(max_workers=threads or THREADS) as ex:
+        for bad in ex.map(run_host, list(by_host.values())):
+            failed.extend(bad)
+    return len(entries), failed
 
 
 def main():
@@ -231,20 +308,61 @@ def main():
               'keeping previous playlist')
         return 1
 
+    entries = collect.write_playlist(channels, OUT_DIR)   # free + alive only
+
+    # --- Phase C: the published artifact must prove itself ---------------
+    # Probe every entry of the playlist we just wrote; anything that fails is
+    # marked dead and the playlist is rewritten. Repeat until clean, so the
+    # file we commit is 100% verified — not just the channel list.
+    verify_ok = False
+    rounds = 0
+    max_rounds = int(os.environ.get('HEALTH_VERIFY_ROUNDS', '3'))
+    verify_fail = []
+    while rounds < max_rounds:
+        rounds += 1
+        total, failed = verify_published(OUT_DIR)
+        if not failed:
+            verify_ok = True
+            print(f'phase C: playlist verified {total}/{total} entries '
+                  f'(round {rounds})', flush=True)
+            break
+        print(f'phase C round {rounds}: {len(failed)}/{total} entries failed '
+              f'verification -> dropping', flush=True)
+        bad_urls = set()
+        for e, st in failed:
+            bad_urls.add(e['url'])
+            verify_fail.append({'name': e['name'], 'url': e['url'],
+                                'status': str(st)})
+            print(f'  verify-fail {st} {e["name"][:40]}', flush=True)
+        changed = False
+        for c in channels:
+            if c.get('hls') in bad_urls and not c.get('dead'):
+                c['dead'] = True
+                c['dead_reason'] = 'verify-failed'
+                c['fail_count'] = FAIL_THRESHOLD
+                changed = True
+        if not changed:
+            break                      # failures we cannot attribute -> give up
+        entries = collect.write_playlist(channels, OUT_DIR)
+
+    dead_count = sum(1 for c in channels if c.get('dead'))
     data['channels'] = channels
-    data['health'] = {'checked': now, 'playable': playable, 'total': len(channels)}
+    data['health'] = {'checked': now, 'playable': playable,
+                      'total': len(channels), 'dead': dead_count,
+                      'playlist_entries': entries, 'verified': verify_ok}
     with open(src, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-
-    entries = collect.write_playlist(channels, OUT_DIR)   # free + alive only
 
     health = {
         'updated': now,
         'checked': len(channels),
         'playable': playable,
-        'dead': sum(1 for c in channels if c.get('dead')),
+        'dead': dead_count,
         'repaired': len(repaired),
         'playlist_entries': entries,
+        'playlist_verified': verify_ok,
+        'verify_rounds': rounds,
+        'verify_failures': verify_fail,
         'repairs': repaired,
         'unplayable': unplayable,
     }
@@ -255,12 +373,18 @@ def main():
     if os.path.exists(stats_path):
         stats = json.load(open(stats_path, encoding='utf-8'))
         stats.update({'health_checked': now, 'playable': playable,
-                      'dead': health['dead'], 'playlist_entries': entries})
+                      'dead': dead_count, 'playlist_entries': entries,
+                      'playlist_verified': verify_ok})
         with open(stats_path, 'w', encoding='utf-8') as f:
             json.dump(stats, f, ensure_ascii=False, indent=1)
 
-    print(f'playable: {playable}/{len(channels)} | dead: {health["dead"]} | '
-          f'repaired: {len(repaired)} | playlist entries: {entries}')
+    print(f'playable: {playable}/{len(channels)} | dead: {dead_count} | '
+          f'repaired: {len(repaired)} | playlist entries: {entries} | '
+          f'verified: {verify_ok} ({rounds} round(s))')
+    if not verify_ok:
+        print('FATAL: playlist could not be fully verified; '
+              'keeping previous published data')
+        return 1
     return 0
 
 

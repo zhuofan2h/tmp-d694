@@ -53,11 +53,18 @@ Web: `https://iptv-web.zhuofan2h.workers.dev/`
 5. Channel yang tetap gagal ditandai `dead: true` dan **dikeluarkan dari
    `playlist.m3u`**; begitu hidup lagi (lolos 2 probe), otomatis masuk
    kembali. `HEALTH_CONFIRM=0` menonaktifkan fase B.
-6. Hasilnya ditulis ke `data/health.json` dan `stats.json`.
+6. **Fase C (verifikasi artefak):** `playlist.m3u` yang baru ditulis
+   di-parse ulang dan **setiap entry di-probe lagi** (per-host, pelan).
+   Entry yang gagal → channel dimatikan → playlist ditulis ulang →
+   diulang sampai bersih (maks 3 putaran). Kalau belum bersih, script
+   exit 1 dan CI membiarkan data lama tetap terpublish.
+7. Hasilnya ditulis ke `data/health.json` dan `stats.json`
+   (`playlist_verified: true/false`).
 
 Konsekuensinya: **setiap entry di `playlist.m3u` sudah terverifikasi
-mengembalikan stream valid dua kali berturut-turut pada saat publish.**
-Channel mati/geo-block tetap ada di `data/channels.json` (lihat `?dead=1`),
+mengembalikan stream valid pada saat publish** — diverifikasi dua kali
+(fase B) dan ulang terhadap file hasil tulis (fase C). Channel
+mati/geo-block tetap ada di `data/channels.json` (lihat `?dead=1`),
 tidak dihapus.
 
 Jalankan lokal:
@@ -65,7 +72,9 @@ Jalankan lokal:
 ```
 pip install pycryptodome
 python tools/collect.py && python tools/health.py
-OUT_DIR=data python tools/health.py   # override: HEALTH_THREADS, HEALTH_TIMEOUT, HEALTH_FAILS
+OUT_DIR=data python tools/health.py   # override: HEALTH_THREADS, HEALTH_TIMEOUT,
+                                      # HEALTH_FAILS, HEALTH_PER_HOST,
+                                      # HEALTH_CONFIRM, HEALTH_VERIFY_ROUNDS
 ```
 
 `HEALTH_FAILS=2` bila ingin toleransi 2 run gagal berturut-turut sebelum
@@ -74,8 +83,8 @@ channel ditandai mati (default: 1 = jaminan ketat).
 ## Tests
 
 ```
-python -m unittest discover -s tools -p 'test_*.py'   # 22 tests
-node --test worker/test.mjs                            # 9 tests
+python -m unittest discover -s tools -p 'test_*.py'              # 27 tests
+node --test worker/test.mjs worker/integration.test.mjs          # 9 + 11 tests
 ```
 
 Keduanya dijalankan oleh cron sebelum data dipublish.

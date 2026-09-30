@@ -28,7 +28,7 @@ jobs:
       - name: Tests
         run: |
           python -m unittest discover -s tools -p 'test_*.py'
-          node --test worker/test.mjs
+          node --test worker/test.mjs worker/integration.test.mjs
 
       - run: python tools/collect.py
         env:

@@ -1,0 +1,1878 @@
+{
+ "updated": "2026-09-30T04:43:57Z",
+ "checked": 437,
+ "playable": 219,
+ "dead": 230,
+ "repaired": 3,
+ "playlist_entries": 149,
+ "playlist_verified": true,
+ "verify_rounds": 3,
+ "verify_failures": [
+  {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "status": "200"
+  },
+  {
+   "name": "ElyTV",
+   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
+   "status": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+  },
+  {
+   "name": "MATCH!",
+   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! ARENA",
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! FOOTBALL 1",
+   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! STRANA",
+   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "SBT Interior",
+   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
+   "status": "200"
+  },
+  {
+   "name": "TVNBN",
+   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
+   "status": "200"
+  },
+  {
+   "name": "TV Brasil Oeste",
+   "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8?checkedby:iptvcat.com",
+   "status": "403"
+  },
+  {
+   "name": "TVRI Jatim",
+   "url": "https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "TVRI Jogja",
+   "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "TVRI Kalbar",
+   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Cartoon Network Japan",
+   "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25&checkedby:iptvcat.com",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Disney Channel JP",
+   "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24&checkedby:iptvcat.com",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! IGRA",
+   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! PREMIERE",
+   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "Sports 1 SK",
+   "url": "https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd",
+   "status": "Remote end closed connection without response"
+  },
+  {
+   "name": "Sports 2 SK",
+   "url": "https://dash2.antik.sk/stream/nvidia_sport2/playlist_cenc.mpd",
+   "status": "<urlopen error [Errno 101] Network is unreachable>"
+  },
+  {
+   "name": "Premiere Brazil 5",
+   "url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/1obktrybht/out/v1/08265453c8f64d9fbeb3cf43764403a8/cenc.mpd",
+   "status": "<urlopen error [Errno 101] Network is unreachable>"
+  }
+ ],
+ "repairs": [
+  {
+   "name": "Caze TV",
+   "code": "SP",
+   "variant": "slow",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/vzeco5ty0v/out/v1/44c6b8f31a2544e3b2a9bb41ed5e241e/cenc.mpd"
+  },
+  {
+   "name": "Adesso TV",
+   "code": "BR",
+   "variant": "vlc",
+   "url": "https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "MATCH! IGRA",
+   "code": "RU",
+   "variant": "slow",
+   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd"
+  }
+ ],
+ "unplayable": [
+  {
+   "name": "FIFA Asean Cup [CH1]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel1.flv"
+  },
+  {
+   "name": "FIFA Asean Cup [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel15.flv"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH1]",
+   "code": "EV",
+   "premium": "t",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Pro Futsal League Putera [CH1]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
+  },
+  {
+   "name": "Pro Futsal League Putera [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
+  },
+  {
+   "name": "Pro Futsal League Putera [CH3]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
+  },
+  {
+   "name": "Pro Futsal League Putera [CH4]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
+  },
+  {
+   "name": "Pro Futsal League Putera [CH5]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
+  },
+  {
+   "name": "Susah Sinyal",
+   "code": "MI",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Fwatch%3Fchannel%3Dvplus%26cluster_name%3Dfilm-bioskop-indonesia%26id%3DDLVY4833325997005458"
+  },
+  {
+   "name": "Sindo News",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D5"
+  },
+  {
+   "name": "ANTV HD",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D10"
+  },
+  {
+   "name": "GTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/video/live/api/v1/live/3/url?appierid=null"
+  },
+  {
+   "name": "Indosiar",
+   "code": "ID",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/SW5kb3NpYXI/manifest.mpd"
+  },
+  {
+   "name": "iNews",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/video/live/api/v1/live/4/url?appierid=null"
+  },
+  {
+   "name": "KompasTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D13"
+  },
+  {
+   "name": "MD.tv",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D23"
+  },
+  {
+   "name": "MNCTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/video/live/api/v1/live/2/url?appierid=null"
+  },
+  {
+   "name": "RCTI",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/video/live/api/v1/live/1/url?appierid=null"
+  },
+  {
+   "name": "SCTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/U0NUVi1teQ/manifest.mpd"
+  },
+  {
+   "name": "Trans7",
+   "code": "ID",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://video.detik.com/trans7-sec/smil:trans7.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786603871648&wowzatokenhash=9mTM8_TkKcUD9L7m4YXEfSqNPFXcGdu0jWN6Jx5_D4g%3D"
+  },
+  {
+   "name": "TransTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://video.detik.com/transtv-sec/smil:transtv.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786603947733&wowzatokenhash=QCkmM-TeVM2eAsdCHoRX2nU0qlygmalvFzJoxWBvbYk%3D"
+  },
+  {
+   "name": "Animax HD",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D65"
+  },
+  {
+   "name": "AXN",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D79"
+  },
+  {
+   "name": "Celestial Classic",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D45"
+  },
+  {
+   "name": "Celestial Movies",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D44"
+  },
+  {
+   "name": "CNBC",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/Q05CQy1JbmRvbmVzaWE/manifest.mpd"
+  },
+  {
+   "name": "Discovery Channel",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnbal1.indihometv.com/atm/DASH/disco/master.mpd"
+  },
+  {
+   "name": "Food Travel",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D71"
+  },
+  {
+   "name": "Galaxy Premium",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D48"
+  },
+  {
+   "name": "Galaxy TV",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D49"
+  },
+  {
+   "name": "HBO",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/SEJPLW15/manifest.mpd"
+  },
+  {
+   "name": "HBO Cinemax",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/Q2luZW1heA/manifest.mpd"
+  },
+  {
+   "name": "HBO Family",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/SEJPLUZhbWlseS1teQ/manifest.mpd"
+  },
+  {
+   "name": "HBO Hits",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/SEJPIEhpdHM/manifest.mpd"
+  },
+  {
+   "name": "HBO Signature",
+   "code": "ID",
+   "premium": "t",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/SEJPLVNpZ25hdHVyZS1teQ/manifest.mpd"
+  },
+  {
+   "name": "HITS Movies",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D42"
+  },
+  {
+   "name": "IMC Premium",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D50"
+  },
+  {
+   "name": "Love Nature V+",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D105"
+  },
+  {
+   "name": "Music TV",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D142"
+  },
+  {
+   "name": "Premium Movies",
+   "code": "ID",
+   "premium": "t",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/bde0a6d8d3fd4d77ae5093ad2e6699dc/index.mpd"
+  },
+  {
+   "name": "Rock Action",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D93"
+  },
+  {
+   "name": "Rock Entertainment",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D92"
+  },
+  {
+   "name": "Thrill.TV",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D41"
+  },
+  {
+   "name": "tVN Movies",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D46"
+  },
+  {
+   "name": "tVN Premium",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D73"
+  },
+  {
+   "name": "Uniquest (V+)",
+   "code": "ID",
+   "premium": "t",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/bde0a6d8d3fd4d77ae5093ad2e6699dc/index.mpd"
+  },
+  {
+   "name": "Vision Prime HD",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D87"
+  },
+  {
+   "name": "Zee Bioskop",
+   "code": "ID",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D47"
+  },
+  {
+   "name": "BTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D15"
+  },
+  {
+   "name": "Citra Muslim",
+   "code": "ID",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://atemecdnbalancer-voe.sysln.id/live/eds/CitraMuslimHD/mediampd/CitraMuslimHD.mpd"
+  },
+  {
+   "name": "RTV",
+   "code": "ID",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d84q7nw4qf3j3.cloudfront.net/out/v1/b0eebcecfb12424cb5f3c3cdb239f3c1/index.mpd"
+  },
+  {
+   "name": "beIN Sports ID 1 V+",
+   "code": "SP",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D122"
+  },
+  {
+   "name": "beIN Sports ID 2 V+",
+   "code": "SP",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D123"
+  },
+  {
+   "name": "beIN Sports ID 3 V+",
+   "code": "SP",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D124"
+  },
+  {
+   "name": "Rai Sport",
+   "code": "SP",
+   "premium": "t",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://atemeshield1-voe.sysln.id/live/eds/RaiItalia/mediampd/RaiItalia.mpd"
+  },
+  {
+   "name": "Sky Sports EPL",
+   "code": "SP",
+   "premium": "t",
+   "status": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.(https)",
+   "dead": true,
+   "url": "http://etvhosts.site:55337/live/6CwsnaTJM/hUERme4GrSZu/16559.ts"
+  },
+  {
+   "name": "SPOTV ID1",
+   "code": "SP",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D119"
+  },
+  {
+   "name": "SPOTV ID2",
+   "code": "SP",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D120"
+  },
+  {
+   "name": "Telemundo",
+   "code": "SP",
+   "premium": "t",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s-v2/Live/channel(KVDA)/master.mpd"
+  },
+  {
+   "name": "F1 Apple TV",
+   "code": "SP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://a96aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xferskoxad/out/v1/5ad37e90cba5492facdcdb1dcdee5ec5/cenc.mpd"
+  },
+  {
+   "name": "FIFA Plus [CH1]",
+   "code": "SP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8"
+  },
+  {
+   "name": "Fight Sports",
+   "code": "SP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd"
+  },
+  {
+   "name": "ITV1",
+   "code": "SP",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://cdn.stmify.com/primevideo/stream/ITV1/cenc.mpd"
+  },
+  {
+   "name": "ITV2",
+   "code": "SP",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://cdn.stmify.com/primevideo/stream/ITV2/cenc.mpd"
+  },
+  {
+   "name": "ITV3",
+   "code": "SP",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://cdn.stmify.com/primevideo/stream/ITV3/cenc.mpd"
+  },
+  {
+   "name": "Oman Sports",
+   "code": "SP",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Sharjah Sports",
+   "code": "SP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://svs.itworkscdn.net/smc4sportslive/smc4.smil/smc4sportspublish/smc4tv_720p/chunks.m3u8"
+  },
+  {
+   "name": "TUDN MX Sports",
+   "code": "SP",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://qw.live.pv-cdn.net/OTTB/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
+  },
+  {
+   "name": "TUDN USA Sports",
+   "code": "SP",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://otte-qw.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/ntkdl68eob/out/v1/bd5dfb7676994383881bc6e71877d29d/cenc.mpd"
+  },
+  {
+   "name": "TV4 Sportkanalen",
+   "code": "SP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://live.streaming.a2d.tv/asset/20465728.isml/dash.mpd"
+  },
+  {
+   "name": "Universo (West)",
+   "code": "SP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s/Live//channel(universo-west)/master.mpd"
+  },
+  {
+   "name": "Depor TV",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(deportv_arg)/variant.mpd"
+  },
+  {
+   "name": "Eltrece",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(eltrece_arg)/variant.mpd"
+  },
+  {
+   "name": "STAR Channel",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(starchannel_arg)/manifest.mpd"
+  },
+  {
+   "name": "Telefe AR",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(telefe_arg)/manifest.mpd"
+  },
+  {
+   "name": "TNT Sports Argentina",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(tnt_arg)/variant.mpd"
+  },
+  {
+   "name": "TNT Sports Premium",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(tntsports_arg)/manifest.mpd"
+  },
+  {
+   "name": "TV Publica",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(tvpublica_arg)/manifest.mpd"
+  },
+  {
+   "name": "TyC Sports",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(tycsports_arg)/manifest.mpd"
+  },
+  {
+   "name": "Universal TV",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(universal_arg)/variant.mpd"
+  },
+  {
+   "name": "VIVO D-Sports 1 AR",
+   "code": "AR",
+   "premium": "t",
+   "status": "flaky:504",
+   "dead": true,
+   "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/gvy1a4vy7l/out/v1/f2b9732c6f04452492e03f1f849093e7/cenc-sd.mpd"
+  },
+  {
+   "name": "VIVO D-Sports 2 AR",
+   "code": "AR",
+   "premium": "t",
+   "status": "flaky:504",
+   "dead": true,
+   "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/amz5dwei2a/out/v1/3140ebc29a9e4683b480e5dba8588608/cenc-sd.mpd"
+  },
+  {
+   "name": "VIVO D-Sports+",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(dsports_arg)/variant.mpd"
+  },
+  {
+   "name": "VIVO D-Sports+ 2",
+   "code": "AR",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(dsports2_arg)/variant.mpd"
+  },
+  {
+   "name": "ABC Australia",
+   "code": "AU",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://atemecdnbalancer-voe.sysln.id/live/eds/ABC_Australia/mpd/ABC_Australia.mpd"
+  },
+  {
+   "name": "Channel 9 Adelaide [Geo-blocked]",
+   "code": "AU",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/adl/ch9/hls/r1/index.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Channel 9 Brisbane [Geo-blocked]",
+   "code": "AU",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/bne/ch9/hls/r1/index.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Racing.com",
+   "code": "AU",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://racingvic-i.akamaized.net/hls/live/598695/racingvic/index1500.m3u8"
+  },
+  {
+   "name": "Anime TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://stmv1.srvif.com/animetv/animetv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Band Minas",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -5] No address associated with hostname>(https)",
+   "dead": true,
+   "url": "http://evpp.mm.uol.com.br:1935/bandpracas/debatemg/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal 38",
+   "code": "BR",
+   "premium": "f",
+   "status": "flaky:200",
+   "dead": true,
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal do Inter",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://video01.soultv.com.br/internacional/internacional/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal Libras",
+   "code": "BR",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://canallibras-stream.ebc.com.br/mux_video_ts/index-1.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal Ricos",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://5d82644094cc0.streamlock.net/ricostv/ricostv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal Rural",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.(https)",
+   "dead": true,
+   "url": "http://168.205.87.198:8555/live/michele/123456/166.ts?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal Saúde",
+   "code": "BR",
+   "premium": "f",
+   "status": "503(no-ref)",
+   "dead": true,
+   "url": "https://arkyvbre1g.zoeweb.tv/fiocruz/fiocruz.stream/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Central TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://tv02.zas.media:1936/centraltv/centraltv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "CWB TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://59d39900ebfb8.streamlock.net/cwbtv/cwbtv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Elemental Channel",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://5d82644094cc0.streamlock.net/8116/8116/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Lavras CE TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://stmv1.srvstm.com/igor8605/igor8605/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Master Show TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://mastershowtv.videovox.pw/master6123/master6123/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "MKK Web TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://video01.logicahost.com.br/mkkwebtv/mkkwebtv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "NDTV Criciuma",
+   "code": "BR",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://caikron.com.br:19360/criciuma/criciuma.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Nova TV Agrotour",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal (no-ref)",
+   "dead": true,
+   "url": "https://video01.kshost.com.br/marcelo6682/marcelo6682/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Novo Tempo",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno 113] No route to host>(https)",
+   "dead": true,
+   "url": "http://stream.novotempo.com:1935/tv/smil:tvnovotempo.smil/manifest.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Pandamax Channel",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno 101] Network is unreachable>(no-ref)",
+   "dead": true,
+   "url": "https://stream.wifiexpert.cl/telenorte/pandamaxch/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Perú Channel",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://a.cdni.live/peruchanel/peruchanel/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "RDC TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://br5093.streamingdevideo.com.br/datavideo01/datavideo01/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "RecordTV",
+   "code": "BR",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Rede Brasil",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://5cf4a2c2512a2.streamlock.net/rbtv/rbtv/.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Rede Mais",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)",
+   "dead": true,
+   "url": "https://5a0c3936c25c8.streamlock.net/8010/8010/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Rede Meio Norte",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(https)",
+   "dead": true,
+   "url": "http://streaming.jornalmn.com.br/live/tvmn.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Rede QDM",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)",
+   "dead": true,
+   "url": "https://59f1cbe63db89.streamlock.net:1443/tvkidmais/_definst_/tvkidmais/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Rede Sul",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://video05.logicahost.com.br/tvurbana/tvurbana/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Rede UTV",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)",
+   "dead": true,
+   "url": "https://59f1cbe63db89.streamlock.net:1443/canalvirtual08/_definst_/canalvirtual08/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Santa Cecilia TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(https)",
+   "dead": true,
+   "url": "http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "SÉRIES CLÁSSICAS",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.(https)",
+   "dead": true,
+   "url": "http://168.205.87.198:8555/live/michele/123456/160.ts?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Sertão TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://wz4.dnip.com.br/sertaotv/sertaotv.sdp/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "STZ TV",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdn.jmvstream.com/w/AVJ-12952/playlist/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Terra Viva",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -5] No address associated with hostname>(https)",
+   "dead": true,
+   "url": "http://evpp.mm.uol.com.br:1935/band_live/terraviva/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV A7 Plus",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://srv3.zcast.com.br/wellington7720/wellington7720/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Caravelas",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)",
+   "dead": true,
+   "url": "https://59f1cbe63db89.streamlock.net:1443/tvcaravelas/_definst_/tvcaravelas/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Cidade de Petrópolis",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://video01.kshost.com.br:4443/inside2133/inside2133/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Cinec",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.(https)",
+   "dead": true,
+   "url": "http://tv01.logicahost.com.br:1935/tvcinec/tvcinec/live.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV CN Agitos",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://serv2.videovox.pw/cnagitos/cnagitos/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV COM Santos",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://srv1.zcast.com.br/tvcomsantos/tvcomsantos/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Cordeiro",
+   "code": "BR",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://stmv2.voxtvhd.com.br/tvcordeiro/tvcordeiro/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Difusora São Luis",
+   "code": "BR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://stream.amsolution.net.br:8443/live/60ce4ae4b9d4c/index.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Educativa de Porto Alegre",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(https)",
+   "dead": true,
+   "url": "http://selpro1348.procergs.com.br:1935/tve/stve/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Empire Magazine",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://5d82644094cc0.streamlock.net/empiremagazinetv/empiremagazinetv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Japi",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://stmv1.paineltv.net/tvjapi/tvjapi/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Liberdade",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://srv1.paineldevideo.com/liberdaderadioetv/liberdaderadioetv/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Metropolitana Rio",
+   "code": "BR",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://stmv1.srvstm.com/luis5346/luis5346/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Paraná Turismo",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error timed out>(https)",
+   "dead": true,
+   "url": "http://200.189.113.201/hls/tve.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Sandegi",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal (no-ref)",
+   "dead": true,
+   "url": "https://video01.kshost.com.br/antonio9510/antonio9510/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Thathi",
+   "code": "BR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "CTV News",
+   "code": "CA",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://otte-tim.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/72sjo8hygl/out/v1/3079be34d72a4985852d299a02406a0c/cenc.mpd"
+  },
+  {
+   "name": "Xing Komg",
+   "code": "CN",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/a1dc0cb4b4f14a3094088b16366bbeed/index.mpd"
+  },
+  {
+   "name": "Cartoon Network",
+   "code": "KD",
+   "premium": "t",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://nog-live1-ott.izzigo.tv/4/out/u/dash/CARTOONNETWORKHD/default.mpd"
+  },
+  {
+   "name": "Dunia Anak",
+   "code": "KD",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://cdn08jtedge.indihometv.com/dassdvr/130/duniaanak/manifest_wuseetv.mpd"
+  },
+  {
+   "name": "Kids.tv",
+   "code": "KD",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D56"
+  },
+  {
+   "name": "Mentari TV",
+   "code": "KD",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d84q7nw4qf3j3.cloudfront.net/out/v1/703a71abac3844748b1e68166242d4f3/index.mpd"
+  },
+  {
+   "name": "Nick JR",
+   "code": "KD",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d84q7nw4qf3j3.cloudfront.net/out/v1/27163af9499b4bcca2da96677b158efe/index.mpd"
+  },
+  {
+   "name": "Nickelodeon V+",
+   "code": "KD",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/3fe6d9eb97ed455c942eb8d3d1c2c2e8/index.mpd"
+  },
+  {
+   "name": "Claro Sport",
+   "code": "CO",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(clarosports)/variant.mpd"
+  },
+  {
+   "name": "ABCテレビニュース",
+   "code": "JP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1748365788/ei/fJ01aIHEDPnc3LUPjtHXqAw/ip/114.125.220.74/id/-29O-q6Qfm8.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AY1jyLPyZ01c-yJVHQjbyTKuClg0si7xSdMw9_H_s2W-qD9BSCcaOjVnFpex1uJvUJd9tal14H8naXj5/spc/l3OVKR24sAQ-uhEkPeKkgqnhDbgPDo7Jyc90kQpovn5wfftY4OOoRBRzbZv9z3JDXME/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51355912%2C51466643/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgSXu_voOxiO4GURtI79wVEC1S3M-lP2PMZh9oRjfb5okCID85RjlR1Inlpe9itNnRVvR8VlBzUR0F0fX3kGZssolq/file/index.m3u8"
+  },
+  {
+   "name": "GSTV",
+   "code": "JP",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://japaneast.av.mk.io/mediakindcdn-mediakind/b8278d70-0a5f-400c-9b16-c7acf7004355/index.qfm/manifest(format=m3u8-cmaf)"
+  },
+  {
+   "name": "NHK World Japan",
+   "code": "JP",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://atemeshield1-voe.sysln.id/live/eds/NHKWorldJapanHD/mpd/NHKWorldJapanHD.mpd"
+  },
+  {
+   "name": "Arirang",
+   "code": "KR",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D164"
+  },
+  {
+   "name": "KBS World",
+   "code": "KR",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://kbsworld-ott.akamaized.net:443/hls/live/2002341/kbsworld/01.m3u8"
+  },
+  {
+   "name": "MBC",
+   "code": "KR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8"
+  },
+  {
+   "name": "TVWorkNet",
+   "code": "KR",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(https)",
+   "dead": true,
+   "url": "http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "8TV",
+   "code": "MY",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://unifi-live08.secureswiftcontent.com/UnifiHD/live08.mpd"
+  },
+  {
+   "name": "Berita RTM",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:berita/manifest.mpd"
+  },
+  {
+   "name": "Dunia Sinema",
+   "code": "MY",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://unifi-live05.secureswiftcontent.com/UnifiHD/live27-1080FHD.m3u8"
+  },
+  {
+   "name": "Okey RTM",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd"
+  },
+  {
+   "name": "One HD",
+   "code": "MY",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://slive.mana2.my/OneHD/index.mpd"
+  },
+  {
+   "name": "RTM Asean",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/chunklist_b2596000_slENG.m3u8"
+  },
+  {
+   "name": "RTM Parlimen (Dewan Negara)",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8"
+  },
+  {
+   "name": "RTM Parlimen (Dewan Rakyat)",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7"
+  },
+  {
+   "name": "Sukan RTM",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd"
+  },
+  {
+   "name": "tv1",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/manifest.mpd"
+  },
+  {
+   "name": "tv2",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/manifest.mpd"
+  },
+  {
+   "name": "tv3",
+   "code": "MY",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://tonton-live-switch-ssar.akamaized.net/stream-tv3/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311"
+  },
+  {
+   "name": "tv6",
+   "code": "MY",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd"
+  },
+  {
+   "name": "tv9",
+   "code": "MY",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://unifi-live09.secureswiftcontent.com/UnifiHD/live09.mpd"
+  },
+  {
+   "name": "tvIKIM",
+   "code": "MY",
+   "premium": "f",
+   "status": "<urlopen error [Errno 113] No route to host>(no-ref)",
+   "dead": true,
+   "url": "https://edge-sg1.vediostream.com/abr/tvikim/playlist.m3u8"
+  },
+  {
+   "name": "Azteca 7 HD",
+   "code": "MX",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(azteca7hd)/variant.mpd"
+  },
+  {
+   "name": "Azteca Cinema",
+   "code": "MX",
+   "premium": "f",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(aztecacinemahd)/variant.mpd"
+  },
+  {
+   "name": "America TV",
+   "code": "PY",
+   "premium": "t",
+   "status": "400(no-ref)",
+   "dead": true,
+   "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(tntsports_arg)/manifest.mpd"
+  },
+  {
+   "name": "MATCH!",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! ARENA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! FIGHT",
+   "code": "RU",
+   "premium": "f",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel377.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! FOOTBALL 1",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! FOOTBALL 3",
+   "code": "RU",
+   "premium": "f",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! STRANA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MIR BASKETBOLA",
+   "code": "RU",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel423.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "Al Quran Al Kareem TV",
+   "code": "SA",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D153"
+  },
+  {
+   "name": "Bedaya TV",
+   "code": "SA",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://shls-live-enc.edgenextcdn.net/out/v1/97427be47b79457b9ca245e22a8db23a/index.m3u8"
+  },
+  {
+   "name": "MBC Max",
+   "code": "SA",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://mbc-max-prod-dub-enc.edgenextcdn.net:443/out/v1/d63172e8402640c4a6fa442aa0ea2cb8/index.mpd"
+  },
+  {
+   "name": "Animax (sg)",
+   "code": "SG",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://tglmp01.akamaized.net/out/v1/de55fad9216e4fe7ad8d2eed456ba1ec/manifest.mpd"
+  },
+  {
+   "name": "Channel 5",
+   "code": "SG",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://tglmp02.akamaized.net/out/v1/5081e069e08140c9b95f89a1659cf4dd/manifest.mpd"
+  },
+  {
+   "name": "Channel 8",
+   "code": "SG",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://tglmp02.akamaized.net/out/v1/4f6561ad194b49ae93f4e1b075afdf41/manifest.mpd"
+  },
+  {
+   "name": "Mediacorp",
+   "code": "SG",
+   "premium": "f",
+   "status": "<urlopen error [Errno -5] No address associated with hostname>(no-ref)",
+   "dead": true,
+   "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mediacorp-entertainment-english/manifest.m3u8"
+  },
+  {
+   "name": "Suria",
+   "code": "SG",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://d19h5fcpqoh625.cloudfront.net/out/v1/00ac947de8174a54bd0f52226115d1db/manifest.mpd"
+  },
+  {
+   "name": "TV4 Sweden",
+   "code": "SE",
+   "premium": "f",
+   "status": "451(no-ref)",
+   "dead": true,
+   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd"
+  },
+  {
+   "name": "BEN Television",
+   "code": "GB",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://webstreaming-11.viewmedia.tv/web_153/Stream/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "CBS tv",
+   "code": "GB",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://thecarolburnettshow-zype.amagi.tv/playlist1080p.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Channel S",
+   "code": "GB",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Eman Channel",
+   "code": "GB",
+   "premium": "f",
+   "status": "<urlopen error timed out>(no-ref)",
+   "dead": true,
+   "url": "https://ap02.iqplay.tv:8082/iqb8002/3m9n/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "EUA",
+   "code": "GB",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://johnnycarson-zype.amagi.tv/playlistR288p.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "FOX News",
+   "code": "GB",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungus-fox-newsnow-samsung/playlist.m3u8"
+  },
+  {
+   "name": "Samsung Wild Life",
+   "code": "GB",
+   "premium": "f",
+   "status": "<urlopen error [Errno -5] No address associated with hostname>(no-ref)",
+   "dead": true,
+   "url": "https://d1vp12yk4i8ou5.cloudfront.net/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "ESPN US 1",
+   "code": "US",
+   "premium": "t",
+   "status": "<urlopen error [Errno 111] Connection refused>(https)",
+   "dead": true,
+   "url": "http://147.78.1.28/xview/espn_hd.mpd"
+  },
+  {
+   "name": "ESPN US 2",
+   "code": "US",
+   "premium": "t",
+   "status": "<urlopen error [Errno 111] Connection refused>(https)",
+   "dead": true,
+   "url": "http://147.78.1.28/xview/espn_2_hd.mpd"
+  },
+  {
+   "name": "ESPN US 3",
+   "code": "US",
+   "premium": "t",
+   "status": "<urlopen error [Errno 111] Connection refused>(https)",
+   "dead": true,
+   "url": "http://147.78.1.28/xview/espn_3_hd.mpd"
+  },
+  {
+   "name": "Paramount+",
+   "code": "US",
+   "premium": "t",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://a122aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/2lyeyh0csz/out/v1/b530ff33ac684451854cb35e5ef371dc/cenc.mpd"
+  },
+  {
+   "name": "BalikpapanTV",
+   "code": "LO",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://5bf7b725107e5.streamlock.net/btv/btv/playlist.m3u8"
+  },
+  {
+   "name": "Banten TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/sabantentv/myStream/chunklist_w1424683093.m3u8"
+  },
+  {
+   "name": "Batam TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch5/myStream/chunklist_w1096211175.m3u8"
+  },
+  {
+   "name": "Jakarta Globe",
+   "code": "LO",
+   "premium": "f",
+   "status": "403(no-ref)",
+   "dead": true,
+   "url": "https://atemecdnbalancer-voe.sysln.id/live/eds/JakartaGlobeHD/mediampd/JakartaGlobeHD.mpd"
+  },
+  {
+   "name": "JakTV",
+   "code": "LO",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D25"
+  },
+  {
+   "name": "Jambi TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://ams.juraganstreaming.com:5443/LiveApp/streams/jambitv.m3u8"
+  },
+  {
+   "name": "Jawapos TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://jawapostv.siar.us/jawapostv/live/playlist.m3u8"
+  },
+  {
+   "name": "JITV Jogja",
+   "code": "LO",
+   "premium": "f",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)",
+   "dead": true,
+   "url": "https://mam.jogjaprov.go.id:1937/tv/jitv_720p/chunklist_w850229424.m3u8"
+  },
+  {
+   "name": "JPM TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch6/myStream/chunklist_w448347974.m3u8"
+  },
+  {
+   "name": "JTV",
+   "code": "LO",
+   "premium": "f",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D24"
+  },
+  {
+   "name": "Kawanua TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch18/myStream/chunklist_w1055048719.m3u8"
+  },
+  {
+   "name": "Kilisuci TV Kediri",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://5bf7b725107e5.streamlock.net:443/kstv/kstv/playlist.m3u8"
+  },
+  {
+   "name": "Natuna TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/natuna/myStream/chunklist_w1179708856.m3u8"
+  },
+  {
+   "name": "Padang TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch16/myStream/chunklist_w1993412302.m3u8"
+  },
+  {
+   "name": "PJTV Bandung",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch30/myStream/chunklist_w38627436.m3u8"
+  },
+  {
+   "name": "pktv",
+   "code": "LO",
+   "premium": "f",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "dead": true,
+   "url": "https://ams.juraganstreaming.com:5443/LiveApp/streams/pktv.m3u8"
+  },
+  {
+   "name": "PON TV Pontianak",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch15/myStream/chunklist_w330464297.m3u8"
+  },
+  {
+   "name": "Sumedang TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/ch25/myStream/chunklist_w500135136.m3u8"
+  },
+  {
+   "name": "Surabaya TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://e.siar.us/live/surabayatv.m3u8"
+  },
+  {
+   "name": "Timor TV",
+   "code": "LO",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://63b2dc7196c38.streamlock.net:1937/timortv/myStream/chunklist_w689544014.m3u8"
+  }
+ ]
+}
