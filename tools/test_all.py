@@ -545,5 +545,92 @@ class TestFragmentAndMerge(unittest.TestCase):
                         os.environ[key] = val
 
 
+class TestLocationDependent403(unittest.TestCase):
+    """403 = decided by the VIEWER's IP, never killed by the checker's."""
+
+    def test_403_family_never_kills_in_keep_mode(self):
+        old = health.GEO_MODE
+        health.GEO_MODE = 'keep'
+        try:
+            for st in (403, '403', '403-geo:CF', '403(vlc)', '403(httperror)'):
+                self.assertTrue(health.location_dependent(st), f'{st!r} must be kept')
+            for st in ('404', '400', '401', 'timeout', 'flaky:403', 'ok:hls'):
+                self.assertFalse(health.location_dependent(st), f'{st!r} is not IP-dependent')
+        finally:
+            health.GEO_MODE = old
+
+    def test_strict_drop_mode_kills_403(self):
+        old = health.GEO_MODE
+        health.GEO_MODE = 'drop'
+        try:
+            self.assertFalse(health.location_dependent(403))
+        finally:
+            health.GEO_MODE = old
+
+    def test_verify_keeps_generic_403_when_keep(self):
+        """Even a 403 with NO geo text in the body must stay published."""
+        ch = {'name': 'G2', 'code': 'g2', 'premium': 'f',
+              'hls': 'https://gen403.example/x.m3u8',
+              'url': 'https://gen403.example/x.m3u8',
+              'header_iptv': '{}', 'group': 'XX'}
+        with tempfile.TemporaryDirectory() as tmp:
+            collect.write_playlist([ch], tmp)
+            orig = (health.probe, health.geo_reason, health.time.sleep,
+                    health.GEO_MODE)
+            health.time.sleep = lambda *_: None
+            health.probe = lambda *a, **k: (False, 'httperror', 403, '')
+            health.geo_reason = lambda *a, **k: None   # no geo text at all
+            health.GEO_MODE = 'keep'
+            try:
+                total, failed, geo_ok = health.verify_published(tmp)
+                self.assertEqual(failed, [], 'generic 403 must not drop the entry')
+                self.assertEqual(len(geo_ok), 1)
+                self.assertEqual(geo_ok[0][1], '403-blocked')
+            finally:
+                (health.probe, health.geo_reason, health.time.sleep,
+                 health.GEO_MODE) = orig
+
+    def test_verify_still_drops_403_when_playlist_cannot_carry_headers(self):
+        """A 403 caused by a header the M3U cannot send (Cookie) is a
+        playlist limitation: drop from playlist, keep the channel alive."""
+        ch = {'name': 'CK', 'code': 'ck', 'premium': 'f',
+              'hls': 'https://cookie.example/x.m3u8',
+              'url': 'https://cookie.example/x.m3u8',
+              'header_iptv': json.dumps({'Cookie': 'a=1'}), 'group': 'XX'}
+        with tempfile.TemporaryDirectory() as tmp:
+            with open(os.path.join(tmp, 'channels.json'), 'w',
+                      encoding='utf-8') as f:
+                json.dump({'channels': [ch]}, f)
+            collect.write_playlist([ch], tmp)
+            orig = (health.probe, health.time.sleep, health.GEO_MODE)
+            health.time.sleep = lambda *_: None
+            health.probe = lambda *a, **k: (False, 'httperror', 403, '')
+            health.GEO_MODE = 'keep'
+            try:
+                total, failed, geo_ok = health.verify_published(tmp)
+                self.assertEqual(len(failed), 1,
+                                 'header-limited 403 must be dropped')
+                self.assertEqual(geo_ok, [])
+            finally:
+                (health.probe, health.time.sleep, health.GEO_MODE) = orig
+
+    def test_merged_results_keeps_plain_403(self):
+        ch = {'name': 'P', 'code': 'p'}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, 'f.json')
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump({'vantage': 'us', 'results': [
+                    {'name': 'P', 'code': 'p', 'ok': False, 'status': '403'}]},
+                    f)
+            old = health.GEO_MODE
+            health.GEO_MODE = 'keep'
+            try:
+                res = health.merged_results([ch], os.path.join(tmp, '*.json'))
+                self.assertEqual(res[0][1], 'ok:geo-kept',
+                                 'plain 403 must survive the merge as alive')
+            finally:
+                health.GEO_MODE = old
+
+
 if __name__ == '__main__':
     unittest.main()

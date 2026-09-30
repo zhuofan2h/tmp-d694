@@ -53,8 +53,12 @@ Web: `https://iptv-web.zhuofan2h.workers.dev/`
 5. Channel yang tetap gagal ditandai `dead: true` dan **dikeluarkan dari
    `playlist.m3u`**; begitu hidup lagi (lolos 2 probe), otomatis masuk
    kembali. `HEALTH_CONFIRM=0` menonaktifkan fase B.
-   - 403 yang badan errornya menyebut blokir negara otomatis diberi label
-     `403-geo` (mis. CloudFront *"block access from your country"*).
+   - **Setiap 403 tidak membunuh channel** (`HEALTH_GEO_MODE=keep`): 403
+     hanya berarti *"tidak boleh dari IP checker"* — penonton lah yang
+     memutuskan. Channel ditandai `geo_limited: true`; `geo_status` berisi
+     `403-geo` bila badan error eksplisit menyebut blokir negara (mis.
+     CloudFront *"block access from your country"*), atau `403-blocked`
+     untuk 403 generik.
    - Channel yang hanya hidup dengan header yang **tidak bisa dibawa baris
      M3U** (mis. `Cookie`) ditandai `no_playlist: true`: tetap hidup dan
      tampil di API, tetapi dikeluarkan dari `playlist.m3u`. Contoh nyata:
@@ -104,15 +108,25 @@ windows / macos di `.github/workflows/cron.yml`):
   geo-block di satu negara tidak menyembunyikannya dari negara yang bisa
   menonton.
 
-`HEALTH_GEO_MODE` (default **`keep`**):
+`HEALTH_GEO_MODE` (default **`keep`**) — aturan intinya: **403 = urusan IP
+penonton, bukan vonis mati.** URL stream di-fetch player dari koneksi
+penonton, jadi yang menentukan bisa/tidaknya adalah IP penonton — bukan IP
+checker (CI/Cloudflare). Contoh: API disajikan Cloudflare dari AS, penonton
+buka lewat WiFi rumah di Indonesia → channel Indonesia yang 403 dari checker
+tetap jalan untuk penontonnya.
 
 | Nilai | Perilaku |
 |---|---|
-| `keep` | `403-geo` tidak membunuh channel: tetap di playlist, ditandai `geo_limited: true`, fase C hanya menandainya |
-| `drop` | mode ketat: geo diperlakukan seperti kegagalan lain |
+| `keep` | **Semua** 403 (`403`, `403-geo`, `403(vlc)` …) tidak membunuh channel: tetap hidup, tetap di playlist, ditandai `geo_limited: true` + `geo_status`. Fase C hanya menandainya. Satu-satunya 403 yang dikeluarkan dari playlist: yang penyebabnya header yang tak bisa dibawa M3U (mis. `Cookie`) → ditandai `no_playlist` (tetap hidup di API). |
+| `drop` | mode ketat: 403 diperlakukan seperti kegagalan lain, dikeluarkan dari playlist. |
+
+Yang tetap dianggap mati (bukan masalah IP): `404`, `400`, `401` (butuh API
+key), timeout, dan host yang tidak konsisten (`flaky:*`).
 
 Egress lain (mis. dari Indonesia/Malaysia) bisa dipakai lewat env standar
-urllib: `HTTPS_PROXY=http://host:port` (simpan sebagai repo secret).
+urllib: `HTTPS_PROXY=http://host:port` (simpan sebagai repo secret) — bukan
+untuk menentukan hidup/mati (403 selalu dipertahankan), melainkan untuk
+label `403-geo` yang lebih akurat.
 
 ## Tests
 

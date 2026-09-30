@@ -48,11 +48,24 @@ THREADS = int(os.environ.get('HEALTH_THREADS', '20'))
 # playlist immediately (strict "everything published plays" guarantee).
 # Raise HEALTH_FAILS to 2+ if you prefer tolerance for transient blips.
 FAIL_THRESHOLD = int(os.environ.get('HEALTH_FAILS', '1'))
-# 'keep' (default): a 403 that is explicitly geo-based does NOT kill the
-# channel — geo depends on WHERE THE VIEWER IS, not on the checker. Such
-# channels stay alive, stay in playlist.m3u and are flagged `geo_limited`.
-# 'drop': strict mode, geo-blocked channels are excluded like any failure.
+# 'keep' (default): ANY 403 must NOT kill the channel. A 403 only means
+# 'not from the CHECKER's IP' — playability is decided by the VIEWER's IP,
+# because the player fetches the stream URL from its own connection (e.g.
+# API served by Cloudflare US, viewer on home WiFi in ID -> ID channels
+# that 403 from the checker still play for the viewer). Such channels stay
+# alive, stay in playlist.m3u and are flagged `geo_limited`.
+# 'drop': strict mode — 403s are excluded like any other failure.
 GEO_MODE = os.environ.get('HEALTH_GEO_MODE', 'keep').lower()
+
+
+def location_dependent(status):
+    """True when a failed status must NOT kill the channel.
+
+    403-family answers depend on WHO asks: the viewer's IP decides, never
+    the checker's. Under HEALTH_GEO_MODE=keep these are kept alive and
+    flagged `geo_limited` instead of being marked dead.
+    """
+    return GEO_MODE == 'keep' and str(status).startswith('403')
 # 'fragment': probe only and write HEALTH_FRAGMENT (used by CI matrix jobs)
 # 'full'    : probe + publish (or merge HEALTH_FRAGMENTS if provided)
 HEALTH_MODE = os.environ.get('HEALTH_MODE', 'full').lower()
@@ -278,6 +291,20 @@ def verify_published(out_dir, threads=None, gap=0.4):
     for e in entries:
         by_host.setdefault(urlparse(e['url']).netloc.lower(), []).append(e)
 
+    # url -> headers the playlist CANNOT carry (Cookie etc). A 403 on such
+    # an entry is a playlist limitation, NOT a geo problem: it must be
+    # dropped from the playlist (but stays alive for API consumers).
+    extra_by_url = {}
+    src = os.path.join(out_dir, 'channels.json')
+    if os.path.exists(src):
+        try:
+            for c in json.load(open(src, encoding='utf-8')).get('channels', []):
+                extra = needs_extra_headers(c)
+                if extra:
+                    extra_by_url[c.get('hls')] = extra
+        except Exception:
+            extra_by_url = {}
+
     def run_host(items):
         bad, geo = [], []
         for e in items:
@@ -290,9 +317,13 @@ def verify_published(out_dir, threads=None, gap=0.4):
                 time.sleep(2.0)
                 ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
             if not ok:
-                if GEO_MODE == 'keep' and geo_reason(e['url'], hdr):
-                    # geo-restriction, not a broken stream -> still publishable
-                    geo.append((e, status))
+                playlist_limited = extra_by_url.get(e['url'])
+                if location_dependent(status) and not playlist_limited:
+                    # 403 from the checker's IP: viewer's IP decides, so
+                    # keep it published (flagged) instead of dropping it
+                    label = ('403-geo' if geo_reason(e['url'], hdr)
+                             else '403-blocked')
+                    geo.append((e, label))
                 else:
                     bad.append((e, status))
             time.sleep(gap)
@@ -403,8 +434,9 @@ def merged_results(channels, frag_spec):
             status = str(m['status'])           # 'ok:merged'
         else:
             status = str(m['status'])
-            if GEO_MODE == 'keep' and status.startswith('403-geo'):
-                # geo-blocked by the CHECKER is not a dead stream
+            if location_dependent(status):
+                # 403 from a checker IP is not a dead stream: the viewer
+                # decides (playlist phase C refines header-limited ones)
                 status = 'ok:geo-kept'
                 geo_kept += 1
         results.append((ch, status, None))
@@ -493,9 +525,9 @@ def main():
             if was_dead:
                 repaired.append({'name': ch.get('name'), 'code': ch.get('code'),
                                  'variant': 'revived', 'url': ch.get('hls')})
-        elif GEO_MODE == 'keep' and str(status).startswith('403-geo'):
-            # geo-blocked from the CHECKER's country — the stream itself is
-            # fine where it is licensed. Keep it alive, flag it, publish it.
+        elif location_dependent(status):
+            # 403 from the CHECKER's IP — the viewer's IP is what counts.
+            # Keep it alive, flag it, publish it; never kill it.
             ch.pop('dead', None)
             ch.pop('dead_reason', None)
             ch.pop('fail_count', None)
@@ -540,11 +572,12 @@ def main():
             verify_ok = True
             # flag (never drop) the geo-restricted ones we just saw
             if GEO_MODE == 'keep' and geo_ok:
-                geo_urls = {e['url'] for e, _st in geo_ok}
+                geo_labels = {e['url']: st for e, st in geo_ok}
                 for c in channels:
-                    if c.get('hls') in geo_urls:
+                    st = geo_labels.get(c.get('hls'))
+                    if st:
                         c['geo_limited'] = True
-                        c['geo_status'] = '403-geo(verify)'
+                        c['geo_status'] = f'{st}(verify)'
                         geo_flagged += 1
             print(f'phase C: playlist verified {total}/{total} entries '
                   f'(round {rounds}; {len(geo_ok)} geo-limited)', flush=True)

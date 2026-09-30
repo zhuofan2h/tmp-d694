@@ -1,15 +1,15 @@
 {
- "updated": "2026-09-30T05:25:06Z",
- "unique": 437,
+ "updated": "2026-09-30T05:57:17Z",
+ "unique": 459,
  "free": 316,
- "premium": 121,
+ "premium": 143,
  "failed": [],
- "health_checked": "2026-09-30T05:39:33Z",
- "playable": 238,
- "dead": 201,
+ "health_checked": "2026-09-30T06:00:06Z",
+ "playable": 289,
+ "dead": 174,
  "no_playlist": 2,
- "geo_limited": 16,
+ "geo_limited": 34,
  "geo_mode": "keep",
- "playlist_entries": 175,
+ "playlist_entries": 196,
  "playlist_verified": true
 }
