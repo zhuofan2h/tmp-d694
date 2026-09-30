@@ -1,0 +1,8 @@
+{
+  "updated": "2026-09-30T00:00:00Z",
+  "countries": [
+    { "code": "ID", "name": "Indonesia" },
+    { "code": "MY", "name": "Malaysia" }
+  ],
+  "counts": { "Indonesia": 3, "Malaysia": 2 }
+}

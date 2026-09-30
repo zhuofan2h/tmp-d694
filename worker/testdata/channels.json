@@ -1,0 +1,16 @@
+{
+  "updated": "2026-09-30T00:00:00Z",
+  "count": 5,
+  "channels": [
+    { "name": "Free One", "code": "ID", "country": "Indonesia", "premium": "f", "is_live": "t",
+      "hls": "https://cdn.test/1.m3u8", "header_iptv": "{\"User-Agent\":\"UA/1\",\"Referer\":\"https://r\"}" },
+    { "name": "Free Dead", "code": "ID", "country": "Indonesia", "premium": "f", "dead": true,
+      "dead_reason": "404", "hls": "https://cdn.test/dead.m3u8", "header_iptv": "{}" },
+    { "name": "HBO", "code": "ID", "country": "Indonesia", "premium": "t",
+      "hls": "https://cdn.test/hbo.mpd", "header_iptv": "{}" },
+    { "name": "HBO Hits", "code": "MY", "country": "Malaysia", "premium": "t",
+      "hls": "https://cdn.test/hbohits.mpd", "header_iptv": "{}" },
+    { "name": "Free Two", "code": "MY", "country": "Malaysia", "premium": "f",
+      "hls": "http://cdn.test/2.m3u8", "header_iptv": "{}" }
+  ]
+}

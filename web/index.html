@@ -45,6 +45,7 @@
   <select id="premium">
     <option value="">Free only</option>
     <option value="1">Include premium</option>
+    <option value="only">Premium only</option>
   </select>
 </header>
 <main>
@@ -79,7 +80,7 @@ function playlistURL() {
   const p = $('#premium').value;
   const qs = new URLSearchParams();
   if (c) qs.set('country', c);
-  if (p) qs.set('premium', p);
+  if (p) qs.set('premium', p);   // '1' = semua, 'only' = hanya premium
   const s = qs.toString();
   return `${API}/playlist.m3u${s ? '?' + s : ''}`;
 }
@@ -87,8 +88,8 @@ function playlistURL() {
 function render() {
   const q = ($('#search').value || '').toLowerCase();
   const country = $('#country').value;
-  const inclPrem = $('#premium').value === '1';
-  let rows = state.all.filter(c => inclPrem || c.premium !== 't');
+  const mode = $('#premium').value;   // '' free | '1' semua | 'only' premium
+  let rows = state.all.filter(c => (mode === '1') || (mode === 'only' ? c.premium === 't' : c.premium !== 't'));
   if (country) rows = rows.filter(c => c.code === country);
   if (q) rows = rows.filter(c => (c.name || '').toLowerCase().includes(q));
   $('#rows').innerHTML = rows.slice(0, 500).map((c, i) => `
@@ -126,7 +127,9 @@ function play(url) {
 }
 
 async function load() {
-  const data = await fetch(`${API}/api/channels?limit=1000`).then(r => r.json());
+  // ambil SEMUA channel (free + premium) — dulu endpoint default hanya free,
+  // sehingga channel premium tak pernah bisa dicari/ditampilkan di UI ini
+  const data = await fetch(`${API}/api/channels?premium=1&limit=2000`).then(r => r.json());
   state.all = data.channels;
   const countries = await fetch(`${API}/api/countries`).then(r => r.json());
   const sel = $('#country');
@@ -135,7 +138,9 @@ async function load() {
     o.value = code; o.textContent = name;
     sel.appendChild(o);
   }
-  $('#stats').textContent = `${data.count} channel · updated ${data.updated}`;
+  const nFree = state.all.filter(c => c.premium !== 't').length;
+  const nPrem = state.all.length - nFree;
+  $('#stats').textContent = `${state.all.length} channel (${nFree} free · ${nPrem} premium) · updated ${data.updated}`;
   $('#playlist-url').textContent = playlistURL();
   $('#plink').textContent = playlistURL();
   render();

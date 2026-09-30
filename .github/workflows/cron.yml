@@ -19,11 +19,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - run: pip install pycryptodome
+
+      # gate: never publish broken code
+      - name: Tests
+        run: |
+          python -m unittest discover -s tools -p 'test_*.py'
+          node --test worker/test.mjs
+
       - run: python tools/collect.py
         env:
           OUT_DIR: data
           RC_TOKEN: ${{ secrets.RC_TOKEN }}
+
+      # probe every channel, repair what we can, drop what is dead
+      - run: python tools/health.py
+        env:
+          OUT_DIR: data
+
       - name: Commit if changed
         run: |
           git config user.name "bot"

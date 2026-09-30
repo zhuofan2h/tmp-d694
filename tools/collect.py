@@ -11,6 +11,7 @@ import json
 import os
 import sys
 import urllib.request
+from datetime import datetime, timezone
 
 from Crypto.Cipher import AES
 
@@ -67,6 +68,56 @@ def read_cert():
     p = os.path.join(os.path.dirname(__file__), 'config.bin')
     # cert der embedded in config blob
     return D2(CFG['cert'])
+
+
+def esc_m3u(s):
+    """Channel names/taglines must never contain CR/LF (breaks strict players).
+
+    A CRLF run collapses to a single space so names stay readable.
+    """
+    import re
+    return re.sub(r'[\r\n]+', ' ', s or '').strip()
+
+
+def write_playlist(channels, out_dir, include_premium=False, skip_dead=True):
+    """Write playlist.m3u; every emitted entry carries its playback headers.
+
+    Shared by collect.py (initial write) and health.py (rewrite after probing).
+    Returns the number of entries written.
+    """
+    lines = ['#EXTM3U']
+    entries = 0
+    for ch in sorted(channels, key=lambda x: (x.get('country') or '', x.get('name') or '')):
+        if skip_dead and ch.get('dead'):
+            continue
+        if not include_premium and ch.get('premium') == 't':
+            continue
+        hls = ch.get('hls') or ''
+        if not hls.startswith('http'):
+            continue
+        # tvg-id must be sanitized too — a CRLF in the name used to leak into it
+        gid = esc_m3u(ch.get('name') or 'tv').lower().replace(' ', '')[:24]
+        entries += 1
+        lines.append(f'#EXTINF:-1 tvg-id="{gid}" tvg-name="{esc_m3u(ch.get("name"))}" '
+                     f'group-title="{esc_m3u(ch.get("country"))}",{esc_m3u(ch.get("name"))}')
+        try:
+            hdr = json.loads(ch.get('header_iptv') or '{}')
+        except Exception:
+            hdr = {}
+        ua = hdr.get('User-Agent')
+        if ua and ua != 'none':
+            lines.append(f'#EXTVLCOPT:http-user-agent={ua}')
+            lines.append(f'#KODIPROP:http-user-agent={ua}')
+        ref = hdr.get('Referer')
+        if ref and ref != 'none':
+            lines.append(f'#EXTVLCOPT:http-referrer={ref}')
+        origin = hdr.get('Origin')
+        if origin and origin != 'none':
+            lines.append(f'#KODIPROP:http-origin={origin}')
+        lines.append(hls)
+    with open(os.path.join(out_dir, 'playlist.m3u'), 'w') as f:
+        f.write('\n'.join(lines) + '\n')
+    return entries
 
 
 def main():
@@ -140,41 +191,19 @@ def main():
 
     seen = {}
     for ch in all_channels:
-        seen.setdefault((ch['name'], ch['hls']), ch)
+        # (name, hls): the same event feed is republished under every country
+        # code with an identical URL — dedupe on the URL, not on the country.
+        # Same name with a DIFFERENT URL (e.g. Animax HD ID vs JP) is kept.
+        seen.setdefault((ch.get('name'), ch.get('hls')), ch)
     uniq = list(seen.values())
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    updated = __import__('datetime').datetime.now(__import__('datetime').timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    updated = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     payload = {'updated': updated, 'count': len(uniq), 'channels': uniq}
     with open(os.path.join(OUT_DIR, 'channels.json'), 'w') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
 
-    def esc_m3u(s):
-        return (s or '').replace('\n', ' ').strip()
-
-    lines = ['#EXTM3U']
-    for ch in sorted(uniq, key=lambda x: (x['country'] or '', x['name'] or '')):
-        if ch['premium'] == 't':
-            continue
-        hls = ch['hls'] or ''
-        if not hls.startswith('http'):
-            continue
-        gid = (ch['name'] or 'tv').lower().replace(' ', '')[:24]
-        lines.append(f'#EXTINF:-1 tvg-id="{gid}" tvg-name="{esc_m3u(ch["name"])}" group-title="{esc_m3u(ch["country"])}",{esc_m3u(ch["name"])}')
-        try:
-            hdr = json.loads(ch['header_iptv'] or '{}')
-        except Exception:
-            hdr = {}
-        ua = hdr.get('User-Agent')
-        if ua and ua != 'none':
-            lines.append(f'#EXTVLCOPT:http-user-agent={ua}')
-            lines.append(f'#KODIPROP:http-user-agent={ua}')
-        ref = hdr.get('Referer')
-        if ref and ref != 'none':
-            lines.append(f'#EXTVLCOPT:http-referrer={ref}')
-        lines.append(hls)
-    with open(os.path.join(OUT_DIR, 'playlist.m3u'), 'w') as f:
-        f.write('\n'.join(lines) + '\n')
+    n_entries = write_playlist(uniq, OUT_DIR)
 
     with open(os.path.join(OUT_DIR, 'countries.json'), 'w') as f:
         counts = {}
@@ -189,7 +218,7 @@ def main():
                    'free': sum(1 for c in uniq if c['premium'] != 't'),
                    'premium': sum(1 for c in uniq if c['premium'] == 't'),
                    'failed': failed}, f, indent=1)
-    print('unique:', len(uniq), 'failed:', failed)
+    print(f'unique: {len(uniq)} playlist-entries: {n_entries} failed: {failed}')
 
 
 if __name__ == '__main__':
