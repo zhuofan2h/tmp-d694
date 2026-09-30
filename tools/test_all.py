@@ -878,5 +878,57 @@ class TestPlayerCompat(unittest.TestCase):
             health.fetch_body = orig
 
 
+class TestExtraChannels(unittest.TestCase):
+    """Channel tambahan (stream pengganti) + pengelompokan per-entri."""
+
+    def test_extra_file_loads_and_is_valid(self):
+        rows = collect.load_extra_channels()
+        self.assertGreaterEqual(len(rows), 7)
+        for r in rows:
+            self.assertTrue(r['hls'].startswith('http'), r['name'])
+            self.assertEqual(r['code'], 'ID')
+            self.assertEqual(r['group'], 'Indonesia')
+            self.assertEqual(r['source'], 'extra')
+
+    def test_extra_headers_are_normalized(self):
+        rows = {r['name']: r for r in collect.load_extra_channels()}
+        hdr = json.loads(rows['RCTI']['header_iptv'])
+        self.assertTrue(hdr.get('User-Agent'))
+        self.assertTrue(hdr.get('Referer', '').startswith('http'))
+        # a row without headers stays header-less, not '{}'-parsed junk
+        self.assertEqual(json.loads(rows['KompasTV']['header_iptv']), {})
+
+    def test_extra_row_survives_dedupe_against_different_url(self):
+        upstream = {'name': 'RCTI', 'hls': 'https://toutatis.../url', 'code': 'C4'}
+        seen = {(upstream['name'], upstream['hls']): upstream}
+        for r in collect.load_extra_channels():
+            seen.setdefault((r['name'], r['hls']), r)
+        urls = sorted(v['hls'] for k, v in seen.items() if k[0] == 'RCTI')
+        self.assertEqual(len(urls), 2, 'upstream + pengganti sama-sama ada')
+
+    def test_extra_row_replaces_identical_upstream_url(self):
+        extra = collect.load_extra_channels()[0]
+        seen = {(extra['name'], extra['hls']): {'code': 'ID'}}
+        for r in collect.load_extra_channels():
+            seen.setdefault((r['name'], r['hls']), r)
+        self.assertEqual(len(seen), len(collect.load_extra_channels()))
+
+    def test_bucket_file_entry_keeps_its_own_folder(self):
+        """Entri ID di dalam file bucket C0 harus tetap grup Indonesia."""
+        names = {'ID': 'Indonesia', 'BR': 'Brazil', 'EV': 'Events',
+                 'SP': 'Sports TV'}
+        code, country, group = collect.classify_entry(
+            {'alpha_2_code': 'ID', 'country_name': 'Uncategorized'}, names, 'C0')
+        self.assertEqual((code, country, group), ('ID', 'Indonesia', 'Indonesia'))
+        # bucket tanpa alpha_2_code jatuh ke kode file + label file
+        code, country, group = collect.classify_entry({}, names, 'C0')
+        self.assertEqual(code, 'C0')
+        self.assertEqual(group, 'C0')
+        # label pseudo (TVRI/TV Lokal) tetap digabung ke Indonesia
+        code, country, group = collect.classify_entry(
+            {'alpha_2_code': 'RI'}, names, 'RI')
+        self.assertEqual(group, 'Indonesia')
+
+
 if __name__ == '__main__':
     unittest.main()

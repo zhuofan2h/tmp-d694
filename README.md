@@ -40,6 +40,15 @@ Catatan player:
   pengece selalu 403. Tidak dibuang (mungkin hidup dari jaringan yang
   ditujunya), tapi dipisah supaya folder utama **100% terverifikasi** —
   buka `Indonesia (geo)` kalau di jaringanmu channelnya jalan.
+- **Channel pengganti** (`tools/extra_channels.json`): upstream BitTV hanya
+  punya stream DRM (SCTV/Indosiar) atau API ber-token (RCTI/MNCTV/GTV/
+  iNews/KompasTV) sehingga tidak bisa diputar. Daftar ini menyimpan stream
+  alternatifnya — semuanya diuji `ffmpeg` decode **dan** dicek visual
+  (screenshot frame → identitas logo channel), lalu divalidasi lagi oleh
+  `tools/health.py` tiap cron. Ditandai `source: "extra"` di API.
+- Semua **51 kode negara** upstream ikut diambil (termasuk file bucket
+  `C0`..`C9`); folder ditentukan dari `alpha_2_code` tiap entri sehingga
+  channel Indonesia tetap menumpuk di satu folder, bukan di `C0`/`C5`.
 
 Filtered:
 

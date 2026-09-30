@@ -17,6 +17,8 @@ from datetime import datetime, timezone
 from Crypto.Cipher import AES
 
 OUT_DIR = os.environ.get('OUT_DIR', os.path.join(os.path.dirname(__file__), '..', 'data'))
+EXTRA_FILE = os.environ.get(
+    'EXTRA_CHANNELS', os.path.join(os.path.dirname(__file__), 'extra_channels.json'))
 
 _cfg = base64.b64decode(open(os.path.join(os.path.dirname(__file__), 'config.bin')).read().strip()).decode()
 CFG = json.loads(_cfg)
@@ -69,6 +71,39 @@ def read_cert():
     p = os.path.join(os.path.dirname(__file__), 'config.bin')
     # cert der embedded in config blob
     return D2(CFG['cert'])
+
+
+def load_extra_channels():
+    """Channel tambahan yang lolos verifikasi tapi tak ada di upstream.
+
+    Upstream hanya menyediakan stream DRM / API ber-token untuk sebagian
+    channel Indonesia (SCTV, RCTI, dst.) sehingga tak bisa diputar. File ini
+    berisi pengganti yang sudah diuji `ffmpeg` + dicek visual identitasnya.
+    """
+    if not os.path.exists(EXTRA_FILE):
+        return []
+    with open(EXTRA_FILE) as f:
+        rows = json.load(f)
+    out = []
+    for r in rows:
+        if not (r.get('hls') or '').startswith('http'):
+            continue
+        out.append({
+            'name': r.get('name'),
+            'tagline': r.get('tagline'),
+            'hls': r.get('hls'),
+            'is_live': r.get('is_live', True),
+            'premium': r.get('premium', 'f'),
+            'jenis': r.get('jenis', 'hls'),
+            'header_iptv': json.dumps(normalize_headers(r.get('header_iptv')),
+                                      ensure_ascii=False),
+            'url_license': r.get('url_license', 'none'),
+            'country': r.get('country', 'Indonesia'),
+            'code': r.get('code', 'ID'),
+            'group': r.get('group', 'Indonesia'),
+            'source': 'extra',
+        })
+    return out
 
 
 def esc_m3u(s):
@@ -154,6 +189,21 @@ def normalize_headers(raw):
 # folder looked incomplete. Everything Indonesian lands in one group.
 GROUP_ALIASES = {'TVRI': 'Indonesia', 'TV Lokal': 'Indonesia'}
 CODE_GROUPS = {'ID': 'Indonesia', 'RI': 'Indonesia', 'LO': 'Indonesia'}
+
+
+def classify_entry(ch, names, file_code):
+    """(code, country, group-title) for one upstream record.
+
+    Upstream splits the catalogue across bucket files (C0..C9), so the folder
+    code lives on the record itself (`alpha_2_code`), never on the file name —
+    grouping by file would scatter Indonesia into "C0"/"C5"/... folders.
+    `names` is the file's `country_list` (alpha_2_code -> label).
+    """
+    entry_code = (ch.get('alpha_2_code') or '').strip() or file_code
+    country = (names.get(entry_code) or ch.get('country_name')
+               or names.get(file_code, file_code))
+    return entry_code, country, CODE_GROUPS.get(
+        entry_code, GROUP_ALIASES.get(country, country))
 
 
 def group_of(ch):
@@ -340,7 +390,10 @@ def main():
         names = {k: (v.replace('Bioskop BitTV', 'Movies').replace('BitTV', 'TV')) for k, v in names.items()}
         per_country[code] = names.get(code, code)
         for ch in dd.get('info') or []:
-            country = names.get(code, code)
+            # Upstream memecah channel ke banyak file "bucket" (C0..C9), jadi
+            # kode folder yang benar ada di tiap entri (alpha_2_code), bukan di
+            # nama file. Tanpa ini channel Indonesia terpecah jadi grup "C0".
+            entry_code, country, group = classify_entry(ch, names, code)
             all_channels.append({
                 'name': ch.get('name'),
                 'tagline': ch.get('tagline'),
@@ -354,11 +407,16 @@ def main():
                                           ensure_ascii=False),
                 'url_license': ch.get('url_license'),
                 'country': country,
-                'code': code,
+                'code': entry_code,
                 # group-title shown by players (Indonesia keeps TVRI/TV Lokal)
-                'group': CODE_GROUPS.get(code, GROUP_ALIASES.get(country, country)),
+                'group': group,
             })
         print(code, len(dd.get('info') or []))
+
+    extras = load_extra_channels()
+    if extras:
+        all_channels.extend(extras)
+        print('extra:', len(extras))
 
     if not all_channels:
         print('FATAL: zero channels; keeping old data')

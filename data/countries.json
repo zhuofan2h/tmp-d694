@@ -1,21 +1,29 @@
 {
- "updated": "2026-09-30T08:27:21Z",
+ "updated": "2026-09-30T13:21:08Z",
  "countries": [
   {
-   "code": "EV",
-   "name": "Events"
+   "code": "A1",
+   "name": "A1"
   },
   {
-   "code": "MI",
-   "name": "Movies"
+   "code": "A2",
+   "name": "A2"
   },
   {
-   "code": "ID",
-   "name": "Indonesia"
+   "code": "AA",
+   "name": "AA"
   },
   {
-   "code": "SP",
-   "name": "Sports TV"
+   "code": "AE",
+   "name": "United Arab Emirates (the)"
+  },
+  {
+   "code": "AG",
+   "name": "AG"
+  },
+  {
+   "code": "AN",
+   "name": "Asian Games 2026"
   },
   {
    "code": "AR",
@@ -34,6 +42,46 @@
    "name": "Brazil"
   },
   {
+   "code": "C0",
+   "name": "C0"
+  },
+  {
+   "code": "C1",
+   "name": "C1"
+  },
+  {
+   "code": "C2",
+   "name": "C2"
+  },
+  {
+   "code": "C3",
+   "name": "C3"
+  },
+  {
+   "code": "C4",
+   "name": "C4"
+  },
+  {
+   "code": "C5",
+   "name": "C5"
+  },
+  {
+   "code": "C6",
+   "name": "C6"
+  },
+  {
+   "code": "C7",
+   "name": "C7"
+  },
+  {
+   "code": "C8",
+   "name": "C8"
+  },
+  {
+   "code": "C9",
+   "name": "C9"
+  },
+  {
    "code": "CA",
    "name": "Canada"
   },
@@ -42,16 +90,24 @@
    "name": "China"
   },
   {
-   "code": "KD",
-   "name": "Kids"
-  },
-  {
    "code": "CO",
    "name": "Colombia"
   },
   {
+   "code": "EV",
+   "name": "Events"
+  },
+  {
    "code": "FR",
    "name": "France"
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom"
+  },
+  {
+   "code": "ID",
+   "name": "Indonesia"
   },
   {
    "code": "IN",
@@ -66,6 +122,10 @@
    "name": "Japan"
   },
   {
+   "code": "KD",
+   "name": "Kids"
+  },
+  {
    "code": "KR",
    "name": "South Korea"
   },
@@ -74,16 +134,20 @@
    "name": "Kuwait"
   },
   {
-   "code": "MY",
-   "name": "Malaysia"
+   "code": "LO",
+   "name": "TV Lokal"
+  },
+  {
+   "code": "MI",
+   "name": "Movies"
   },
   {
    "code": "MX",
    "name": "Mexico"
   },
   {
-   "code": "PY",
-   "name": "Paraguay"
+   "code": "MY",
+   "name": "Malaysia"
   },
   {
    "code": "PH",
@@ -94,12 +158,24 @@
    "name": "Portugal"
   },
   {
+   "code": "PY",
+   "name": "Paraguay"
+  },
+  {
+   "code": "RI",
+   "name": "TVRI"
+  },
+  {
    "code": "RU",
    "name": "Russian Federation (the)"
   },
   {
    "code": "SA",
    "name": "Saudi Arabia"
+  },
+  {
+   "code": "SE",
+   "name": "Sweden"
   },
   {
    "code": "SG",
@@ -110,20 +186,12 @@
    "name": "Slovakia"
   },
   {
-   "code": "VN",
-   "name": "Viet Nam"
-  },
-  {
-   "code": "SE",
-   "name": "Sweden"
+   "code": "SP",
+   "name": "Sports TV"
   },
   {
    "code": "TH",
    "name": "Thailand"
-  },
-  {
-   "code": "GB",
-   "name": "United Kingdom"
   },
   {
    "code": "US",
@@ -134,49 +202,48 @@
    "name": "Uruguay"
   },
   {
-   "code": "RI",
-   "name": "TVRI"
-  },
-  {
-   "code": "LO",
-   "name": "TV Lokal"
+   "code": "VN",
+   "name": "Viet Nam"
   }
  ],
  "counts": {
-  "Events": 34,
-  "Movies": 2,
-  "Indonesia": 54,
-  "Sports TV": 54,
+  "Events": 73,
+  "Movies": 3,
+  "Asian Games 2026": 7,
+  "All Country": 2,
+  "United Arab Emirates (the)": 2,
   "Argentina": 15,
   "Australia": 15,
   "Belgium": 1,
   "Brazil": 77,
-  "Canada": 7,
-  "China": 2,
-  "Kids": 11,
-  "Colombia": 1,
-  "France": 1,
-  "India": 3,
-  "Italy": 1,
-  "Japan": 15,
-  "South Korea": 10,
-  "Kuwait": 1,
+  "Indonesia": 61,
+  "United Kingdom": 15,
   "Malaysia": 17,
-  "Mexico": 7,
-  "Paraguay": 1,
-  "Philippines (the)": 3,
-  "Portugal": 1,
-  "Russian Federation (the)": 10,
+  "Japan": 15,
   "Saudi Arabia": 19,
   "Singapore": 11,
+  "South Korea": 10,
+  "TV Lokal": 26,
+  "TVRI": 31,
+  "India": 3,
+  "Mexico": 7,
+  "Paraguay": 1,
+  "China": 2,
+  "Sports TV": 54,
+  "Colombia": 1,
+  "United States of America (the)": 4,
   "Slovakia": 3,
   "Viet Nam": 1,
-  "Sweden": 1,
-  "Thailand": 4,
-  "United Kingdom": 15,
-  "United States of America (the)": 4,
+  "Philippines (the)": 3,
   "Uruguay": 2,
-  "TVRI": 31,
-  "TV Lokal": 26
+  "Canada": 7,
+  "Thailand": 4,
+  "Kuwait": 1,
+  "Russian Federation (the)": 10,
+  "Italy": 1,
+  "France": 1,
+  "Sweden": 1,
+  "Kids": 11,
+  "Portugal": 1
  }
 }
