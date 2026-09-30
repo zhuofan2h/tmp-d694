@@ -95,6 +95,19 @@ test('buildM3U: skips dead, strips CR/LF, keeps headers (bug #6, #7)', () => {
   assert.ok(urls.every(u => /^https?:\/\//.test(u)));
 });
 
+test('buildM3U skips channels whose headers M3U cannot carry (no_playlist)', () => {
+  const chans = [
+    { name: 'Ok', country: 'X', premium: 'f', hls: 'https://a/1.m3u8', header_iptv: '{}' },
+    { name: 'NeedsCookie', country: 'X', premium: 'f', hls: 'https://a/2.m3u8',
+      header_iptv: '{"Cookie":"a=1"}', no_playlist: true },
+  ];
+  const m3u = buildM3U(chans);
+  assert.ok(m3u.includes('https://a/1.m3u8'));
+  assert.ok(!m3u.includes('NeedsCookie'), 'no_playlist channel must not be published');
+  // ...but it must still be visible via the API
+  assert.equal(filterChannels(chans, q({})).length, 2);
+});
+
 test('buildM3U emits Origin as KODIPROP when present', () => {
   const ch = [{ name: 'X', country: 'Y', premium: 'f', hls: 'https://z/x.m3u8',
                 header_iptv: '{"Origin":"https://o.example"}' }];

@@ -53,11 +53,20 @@ Web: `https://iptv-web.zhuofan2h.workers.dev/`
 5. Channel yang tetap gagal ditandai `dead: true` dan **dikeluarkan dari
    `playlist.m3u`**; begitu hidup lagi (lolos 2 probe), otomatis masuk
    kembali. `HEALTH_CONFIRM=0` menonaktifkan fase B.
+   - 403 yang badan errornya menyebut blokir negara otomatis diberi label
+     `403-geo` (mis. CloudFront *"block access from your country"*).
+   - Channel yang hanya hidup dengan header yang **tidak bisa dibawa baris
+     M3U** (mis. `Cookie`) ditandai `no_playlist: true`: tetap hidup dan
+     tampil di API, tetapi dikeluarkan dari `playlist.m3u`. Contoh nyata:
+     Trans7/TransTV butuh `Cookie`.
 6. **Fase C (verifikasi artefak):** `playlist.m3u` yang baru ditulis
-   di-parse ulang dan **setiap entry di-probe lagi** (per-host, pelan).
-   Entry yang gagal → channel dimatikan → playlist ditulis ulang →
-   diulang sampai bersih (maks 3 putaran). Kalau belum bersih, script
-   exit 1 dan CI membiarkan data lama tetap terpublish.
+   di-parse ulang dan **setiap entry di-probe lagi** (per-host, pelan,
+   dengan satu retry tenang untuk menampung throttle). Entry yang gagal →
+   channel dimatikan / ditandai `no_playlist` → playlist ditulis ulang →
+   diulang **selalu diakhiri sebuah pass verifikasi** (maks 5 drop).
+   Kalau belum bersih, script exit 1 dan CI membiarkan data lama tetap
+   terpublish — tidak pernah mempublikasikan playlist yang gagal
+   diverifikasi.
 7. Hasilnya ditulis ke `data/health.json` dan `stats.json`
    (`playlist_verified: true/false`).
 
@@ -83,8 +92,8 @@ channel ditandai mati (default: 1 = jaminan ketat).
 ## Tests
 
 ```
-python -m unittest discover -s tools -p 'test_*.py'              # 27 tests
-node --test worker/test.mjs worker/integration.test.mjs          # 9 + 11 tests
+python -m unittest discover -s tools -p 'test_*.py'              # 36 tests
+node --test worker/test.mjs worker/integration.test.mjs          # 10 + 11 tests
 ```
 
 Keduanya dijalankan oleh cron sebelum data dipublish.

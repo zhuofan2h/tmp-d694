@@ -88,7 +88,8 @@ def write_playlist(channels, out_dir, include_premium=False, skip_dead=True):
     lines = ['#EXTM3U']
     entries = 0
     for ch in sorted(channels, key=lambda x: (x.get('country') or '', x.get('name') or '')):
-        if skip_dead and ch.get('dead'):
+        if skip_dead and (ch.get('dead') or ch.get('no_playlist')):
+            # no_playlist = channel hidup tapi header-nya tak bisa dibawa M3U
             continue
         if not include_premium and ch.get('premium') == 't':
             continue

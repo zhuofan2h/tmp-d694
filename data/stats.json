@@ -1,12 +1,13 @@
 {
- "updated": "2026-09-30T04:41:06Z",
+ "updated": "2026-09-30T05:04:18Z",
  "unique": 437,
  "free": 316,
  "premium": 121,
  "failed": [],
- "health_checked": "2026-09-30T04:43:57Z",
- "playable": 219,
- "dead": 230,
- "playlist_entries": 149,
+ "health_checked": "2026-09-30T05:07:12Z",
+ "playable": 223,
+ "dead": 218,
+ "no_playlist": 2,
+ "playlist_entries": 159,
  "playlist_verified": true
 }

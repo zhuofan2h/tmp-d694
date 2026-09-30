@@ -88,10 +88,13 @@ def variants(ch):
     ref, org = hdr.get('Referer'), hdr.get('Origin')
 
     def mk(user_agent, with_ref=True):
-        h = {'User-Agent': user_agent}
-        if with_ref:
-            if ref: h['Referer'] = ref
-            if org: h['Origin'] = org
+        # forward EVERY declared header (Cookie, Authorization, custom tokens...)
+        # — dropping them is what made e.g. Trans7/TransTV answer 403
+        h = {k: v for k, v in hdr.items() if k != 'User-Agent'}
+        h['User-Agent'] = user_agent
+        if not with_ref:
+            h.pop('Referer', None)
+            h.pop('Origin', None)
         return h
 
     yield 'declared', url, mk(ua), TIMEOUT
@@ -126,6 +129,32 @@ def probe_limited(url, headers, timeout):
         return probe(url, headers, timeout)
 
 
+GEO_MARKERS = (
+    'block access from your country',
+    'access from your country',
+    'not available in your country',
+    'unavailable in your country',
+    'banned your access based on your country',
+    'geo-restricted',
+)
+
+
+def geo_reason(url, headers, timeout=8):
+    """Return '403-geo' when the 403 body explicitly says it is geo-based."""
+    try:
+        req = urllib.request.Request(url, headers=headers or {}, method='GET')
+        body = urllib.request.urlopen(req, timeout=timeout).read(4000)
+    except urllib.error.HTTPError as e:
+        try:
+            body = e.read(4000)
+        except Exception:
+            return None
+    except Exception:
+        return None
+    text = body.decode('utf-8', errors='replace').lower()
+    return '403-geo' if any(m in text for m in GEO_MARKERS) else None
+
+
 def probe(url, headers, timeout):
     """Return (ok, kind, status, final_url). Follows redirects."""
     req = urllib.request.Request(url, headers=headers, method='GET')
@@ -145,7 +174,10 @@ def probe(url, headers, timeout):
 def check_channel(ch):
     """Probe with repairs. Returns (channel, status_label, variant_used)."""
     last_status = None
+    last_headers = None
+    last_url = None
     for label, url, headers, timeout in variants(ch):
+        last_headers, last_url = headers, url
         ok, kind, status, final = probe_limited(url, headers, timeout)
         last_status = f'{status}' if label == 'declared' else f'{status}({label})'
         if not ok:
@@ -169,6 +201,10 @@ def check_channel(ch):
                 hdr.pop('Origin', None)
             out['header_iptv'] = json.dumps(hdr, ensure_ascii=False)
         return out, f'ok:{kind}', label
+    if last_status and str(last_status).startswith('403'):
+        # distinguish a hard geo-block from a plain 403 (token/auth)
+        if geo_reason(last_url, last_headers):
+            last_status = '403-geo' + str(last_status)[3:]
     return ch, last_status or 'unknown', None
 
 
@@ -184,6 +220,22 @@ def confirm(ch, timeout=None):
     hdr.setdefault('User-Agent', BROWSER_UA)
     ok, kind, status, _ = probe_limited(url, hdr, timeout or TIMEOUT)
     return ok, status
+
+
+# M3U can only carry these (via #EXTVLCOPT / #KODIPROP). A channel that
+# NEEDS anything else (Cookie, Authorization, custom tokens) plays fine with
+# the API/headers but can never play from a plain playlist entry.
+PLAYLIST_HEADER_KEYS = {'user-agent', 'referer', 'origin'}
+
+
+def needs_extra_headers(ch):
+    """Headers the playlist cannot express; [] means it is playlist-safe."""
+    try:
+        hdr = json.loads(ch.get('header_iptv') or '{}')
+    except Exception:
+        return []
+    return [k for k, v in hdr.items()
+            if k.lower() not in PLAYLIST_HEADER_KEYS and v not in ('none', None, '')]
 
 
 def parse_playlist(path):
@@ -224,6 +276,11 @@ def verify_published(out_dir, threads=None, gap=0.4):
             hdr = dict(e['headers'])
             hdr.setdefault('User-Agent', BROWSER_UA)
             ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
+            if not ok:
+                # calm retry: phase A+B just hammered this host, throttling
+                # right now does not mean the channel is dead
+                time.sleep(2.0)
+                ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
             if not ok:
                 bad.append((e, status))
             time.sleep(gap)
@@ -316,9 +373,10 @@ def main():
     # file we commit is 100% verified — not just the channel list.
     verify_ok = False
     rounds = 0
-    max_rounds = int(os.environ.get('HEALTH_VERIFY_ROUNDS', '3'))
+    drops = 0
+    max_drops = int(os.environ.get('HEALTH_VERIFY_ROUNDS', '5'))
     verify_fail = []
-    while rounds < max_rounds:
+    while True:                       # the LAST action is always a verify pass
         rounds += 1
         total, failed = verify_published(OUT_DIR)
         if not failed:
@@ -326,6 +384,11 @@ def main():
             print(f'phase C: playlist verified {total}/{total} entries '
                   f'(round {rounds})', flush=True)
             break
+        if drops >= max_drops:
+            print(f'phase C: giving up after {drops} drops, '
+                  f'{len(failed)} entries still failing', flush=True)
+            break
+        drops += 1
         print(f'phase C round {rounds}: {len(failed)}/{total} entries failed '
               f'verification -> dropping', flush=True)
         bad_urls = set()
@@ -336,16 +399,27 @@ def main():
             print(f'  verify-fail {st} {e["name"][:40]}', flush=True)
         changed = False
         for c in channels:
-            if c.get('hls') in bad_urls and not c.get('dead'):
+            if c.get('hls') not in bad_urls or c.get('dead') or c.get('no_playlist'):
+                continue
+            extra = needs_extra_headers(c)
+            if extra:
+                # it played during phase A/B with its full headers — the
+                # playlist simply cannot carry them (e.g. Cookie): keep the
+                # channel alive for API consumers, keep it OUT of playlist.m3u
+                c['no_playlist'] = True
+                c['no_playlist_reason'] = f'needs headers: {",".join(extra)}'
+                print(f'  no-playlist {c.get("name")} needs {extra}', flush=True)
+            else:
                 c['dead'] = True
                 c['dead_reason'] = 'verify-failed'
                 c['fail_count'] = FAIL_THRESHOLD
-                changed = True
+            changed = True
         if not changed:
             break                      # failures we cannot attribute -> give up
         entries = collect.write_playlist(channels, OUT_DIR)
 
     dead_count = sum(1 for c in channels if c.get('dead'))
+    no_playlist_count = sum(1 for c in channels if c.get('no_playlist'))
     data['channels'] = channels
     data['health'] = {'checked': now, 'playable': playable,
                       'total': len(channels), 'dead': dead_count,
@@ -358,6 +432,7 @@ def main():
         'checked': len(channels),
         'playable': playable,
         'dead': dead_count,
+        'no_playlist': no_playlist_count,
         'repaired': len(repaired),
         'playlist_entries': entries,
         'playlist_verified': verify_ok,
@@ -373,14 +448,16 @@ def main():
     if os.path.exists(stats_path):
         stats = json.load(open(stats_path, encoding='utf-8'))
         stats.update({'health_checked': now, 'playable': playable,
-                      'dead': dead_count, 'playlist_entries': entries,
+                      'dead': dead_count, 'no_playlist': no_playlist_count,
+                      'playlist_entries': entries,
                       'playlist_verified': verify_ok})
         with open(stats_path, 'w', encoding='utf-8') as f:
             json.dump(stats, f, ensure_ascii=False, indent=1)
 
     print(f'playable: {playable}/{len(channels)} | dead: {dead_count} | '
-          f'repaired: {len(repaired)} | playlist entries: {entries} | '
-          f'verified: {verify_ok} ({rounds} round(s))')
+          f'no-playlist: {no_playlist_count} | repaired: {len(repaired)} | '
+          f'playlist entries: {entries} | verified: {verify_ok} '
+          f'({rounds} round(s), {drops} drop(s))')
     if not verify_ok:
         print('FATAL: playlist could not be fully verified; '
               'keeping previous published data')

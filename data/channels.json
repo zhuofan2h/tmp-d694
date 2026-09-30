@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T04:41:06Z",
+ "updated": "2026-09-30T05:04:18Z",
  "count": 437,
  "channels": [
   {
@@ -67,9 +67,9 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Events",
    "code": "EV",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -370,9 +370,8 @@
    "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
    "country": "Indonesia",
    "code": "ID",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "403(no-ref)"
+   "no_playlist": true,
+   "no_playlist_reason": "needs headers: Cookie"
   },
   {
    "name": "TransTV",
@@ -385,9 +384,8 @@
    "url_license": "334950781f60a66f5e58324b70ac675d:73caca97be8999ce9cfeb3babad8669d",
    "country": "Indonesia",
    "code": "ID",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "403(no-ref)"
+   "no_playlist": true,
+   "no_playlist_reason": "needs headers: Cookie"
   },
   {
    "name": "tvOne",
@@ -732,7 +730,7 @@
    "code": "ID",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Rock Action",
@@ -822,7 +820,7 @@
    "code": "ID",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Vision Prime HD",
@@ -933,7 +931,7 @@
    "code": "ID",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "TV9 Nusantara",
@@ -1395,7 +1393,7 @@
    "code": "SP",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Fight Sports",
@@ -1410,7 +1408,7 @@
    "code": "SP",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "FS1",
@@ -1504,9 +1502,9 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -1566,10 +1564,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMFdtTTJqMEVENUJSRWxwaGRGdFphdyIsImtpZCI6Ik15OWk2enl1Z2s2WXBCSk5vcHA5TVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Sports TV",
-   "code": "SP",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "SP"
   },
   {
    "name": "RedBull",
@@ -2334,10 +2329,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "",
    "country": "Brazil",
-   "code": "BR",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "BR"
   },
   {
    "name": "Fala Litoral",
@@ -2521,9 +2513,9 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Rede Brasil",
@@ -3162,10 +3154,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "",
    "country": "Brazil",
-   "code": "BR",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "BR"
   },
   {
    "name": "CTV News",
@@ -3279,7 +3268,7 @@
    "code": "CN",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Cartoon Network",
@@ -3363,7 +3352,7 @@
    "code": "KD",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "MyKids",
@@ -3390,7 +3379,7 @@
    "code": "KD",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Nickelodeon V+",
@@ -3405,7 +3394,7 @@
    "code": "KD",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Oktolidays",
@@ -3615,10 +3604,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\"}",
    "url_license": "6344a8272809245e3fa9d926099528c3:93b6c4ff420c6864a6294f6d223d9b2c",
    "country": "Japan",
-   "code": "JP",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "JP"
   },
   {
    "name": "CGNTV Japan",
@@ -3666,10 +3652,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\"}",
    "url_license": "6344a8272809245e3fa9d926099528c3:93b6c4ff420c6864a6294f6d223d9b2c",
    "country": "Japan",
-   "code": "JP",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "JP"
   },
   {
    "name": "GSTV",
@@ -3885,7 +3868,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Dunia Sinema",
@@ -3927,7 +3910,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "One HD",
@@ -3957,7 +3940,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "RTM Parlimen (Dewan Negara)",
@@ -3972,7 +3955,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "RTM Parlimen (Dewan Rakyat)",
@@ -3987,7 +3970,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "Sukan RTM",
@@ -4002,7 +3985,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "tv1",
@@ -4017,7 +4000,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "tv2",
@@ -4032,7 +4015,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "tv3",
@@ -4062,7 +4045,7 @@
    "code": "MY",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "403(no-ref)"
+   "dead_reason": "403-geo(no-ref)"
   },
   {
    "name": "tv9",
@@ -4273,9 +4256,9 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiTk0zVzgrRy9hcCtkVk9rV1dyK01DUSIsImtpZCI6Im1EbXhjTFQ4T0U4a08vL1lrcHR4b2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
   },
   {
    "name": "MATCH! FIGHT",
@@ -4333,9 +4316,9 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiaEVodUxvNWYzdUx2Z2tBQm1TTUhqQSIsImtpZCI6ImJQdFZzU3FxbmZGaWFvcmFwUEpqS1EifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! IGRA",
@@ -4348,9 +4331,9 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSlh0OTU0UVRnVTFuSW45NmcwcXZCQSIsImtpZCI6IkIyL1QxV2lOUjNXT3p4U29rMWducUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -4395,7 +4378,7 @@
    "code": "RU",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
   },
   {
    "name": "MBC Shahid Sports 1",
@@ -4803,10 +4786,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiUzRCeVRRNzRhOHNzSWZlWm5XZHpuUSIsImtpZCI6IkVTSXpSRlZtZDRpWkFCRWlNMFJWWmcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Slovakia",
-   "code": "SK",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "SK"
   },
   {
    "name": "Sports 2 SK",
@@ -4818,10 +4798,7 @@
    "header_iptv": "{\"Referer\":\"none\",\"Origin\":\"none\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiUzRCeVRRNzRhOHNzSWZlWm5XZHpuUSIsImtpZCI6IkVTSXpSRlZtZDRpWkFCRWlNMFJWWmcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Slovakia",
-   "code": "SK",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "SK"
   },
   {
    "name": "ON Sports Thao",
@@ -5313,10 +5290,7 @@
    "header_iptv": "{\"Referer\":\"https://klik.tvri.go.id/\",\"Origin\":\"https://klik.tvri.go.id/\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "",
    "country": "TVRI",
-   "code": "RI",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "RI"
   },
   {
    "name": "TVRI Jogja",
@@ -5328,10 +5302,7 @@
    "header_iptv": "{\"Referer\":\"https://klik.tvri.go.id/\",\"Origin\":\"https://klik.tvri.go.id/\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "",
    "country": "TVRI",
-   "code": "RI",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "RI"
   },
   {
    "name": "TVRI Kalbar",
@@ -5343,10 +5314,7 @@
    "header_iptv": "{\"Referer\":\"https://klik.tvri.go.id/\",\"Origin\":\"https://klik.tvri.go.id/\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "",
    "country": "TVRI",
-   "code": "RI",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "code": "RI"
   },
   {
    "name": "TVRI Kalsel",
@@ -5938,11 +5906,11 @@
   }
  ],
  "health": {
-  "checked": "2026-09-30T04:43:57Z",
-  "playable": 219,
+  "checked": "2026-09-30T05:07:12Z",
+  "playable": 223,
   "total": 437,
-  "dead": 230,
-  "playlist_entries": 149,
+  "dead": 218,
+  "playlist_entries": 159,
   "verified": true
  }
 }

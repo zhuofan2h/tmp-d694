@@ -7,6 +7,7 @@ import os
 import sys
 import tempfile
 import unittest
+import urllib.error
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -252,6 +253,111 @@ class TestParsePlaylist(unittest.TestCase):
         entries = health.parse_playlist(p)
         self.assertEqual([e['name'] for e in entries], ['B'])
         self.assertEqual(entries[0]['url'], 'https://x/b.m3u8')
+
+
+class TestHeaderForwarding(unittest.TestCase):
+    def test_variants_forward_every_declared_header(self):
+        h = json.dumps({'User-Agent': 'UA/5', 'Cookie': 'a=1',
+                        'Referer': 'https://r', 'Origin': 'https://o'})
+        declared = [v for v in health.variants(ch(header_iptv=h))
+                    if v[0] == 'declared'][0][2]
+        self.assertEqual(declared.get('Cookie'), 'a=1')     # the Trans7 bug
+        self.assertEqual(declared.get('Referer'), 'https://r')
+        self.assertEqual(declared.get('Origin'), 'https://o')
+        self.assertEqual(declared['User-Agent'], 'UA/5')
+
+    def test_no_ref_variant_keeps_cookie_drops_referrer(self):
+        h = json.dumps({'User-Agent': 'UA/5', 'Cookie': 'a=1',
+                        'Referer': 'https://r'})
+        nr = [v for v in health.variants(ch(header_iptv=h))
+              if v[0] == 'no-ref'][0][2]
+        self.assertNotIn('Referer', nr)
+        self.assertEqual(nr.get('Cookie'), 'a=1')
+
+    def test_vlc_variant_still_keeps_cookie(self):
+        h = json.dumps({'User-Agent': 'UA/5', 'Cookie': 'a=1'})
+        vlc = [v for v in health.variants(ch(header_iptv=h))
+               if v[0] == 'vlc'][0][2]
+        self.assertTrue(vlc['User-Agent'].startswith('VLC'))
+        self.assertEqual(vlc.get('Cookie'), 'a=1')
+
+
+class TestGeoReason(unittest.TestCase):
+    GEO = b'<H1>403 ERROR</H1> The Amazon CloudFront distribution is configured to ' \
+          b'block access from your country.'
+
+    def _patch_urlopen(self, body=None, exc=None):
+        orig = health.urllib.request.urlopen
+
+        def fake(*a, **k):
+            if exc:
+                raise exc
+            class R:
+                def read(self, n): return body
+            return R()
+        health.urllib.request.urlopen = fake
+        return orig
+
+    def test_geo_body_detected(self):
+        import io
+        err = urllib.error.HTTPError('http://x', 403, 'Forbidden', {}, io.BytesIO(self.GEO))
+        orig = self._patch_urlopen(exc=err)
+        try:
+            self.assertEqual(health.geo_reason('http://x', {}), '403-geo')
+        finally:
+            health.urllib.request.urlopen = orig
+
+    def test_plain_403_not_marked_geo(self):
+        import io
+        err = urllib.error.HTTPError('http://x', 403, 'Forbidden', {},
+                                     io.BytesIO(b'<h1>403 Forbidden</h1><h1>nginx</h1>'))
+        orig = self._patch_urlopen(exc=err)
+        try:
+            self.assertIsNone(health.geo_reason('http://x', {}))
+        finally:
+            health.urllib.request.urlopen = orig
+
+    def test_check_channel_labels_403_geo(self):
+        import io
+        err = urllib.error.HTTPError('http://x', 403, 'Forbidden', {}, io.BytesIO(self.GEO))
+        orig_probe, orig_url = health.probe, None
+        health.probe = lambda *a, **k: (False, 'httperror', 403, 'x')
+        orig_url = self._patch_urlopen(exc=err)
+        try:
+            _, status, variant = health.check_channel(ch())
+        finally:
+            health.probe = orig_probe
+            health.urllib.request.urlopen = orig_url
+        self.assertTrue(status.startswith('403-geo'), status)
+
+
+class TestNoPlaylist(unittest.TestCase):
+    def test_needs_extra_headers_detects_cookie(self):
+        self.assertEqual(
+            health.needs_extra_headers(
+                ch(header_iptv=json.dumps({'User-Agent': 'UA', 'Cookie': 'a=1'}))),
+            ['Cookie'])
+        self.assertEqual(
+            health.needs_extra_headers(
+                ch(header_iptv=json.dumps({'User-Agent': 'UA',
+                                           'Referer': 'https://r',
+                                           'Origin': 'https://o'}))), [])
+        self.assertEqual(
+            health.needs_extra_headers(
+                ch(header_iptv=json.dumps({'Cookie': 'none'}))), [])
+
+    def test_needs_extra_headers_survives_bad_json(self):
+        self.assertEqual(health.needs_extra_headers(ch(header_iptv='{oops')), [])
+
+    def test_write_playlist_skips_no_playlist(self):
+        d = tempfile.mkdtemp()
+        chs = [ch(name='Alive'), ch(name='Cookie', no_playlist=True),
+               ch(name='Dead', dead=True)]
+        self.assertEqual(collect.write_playlist(chs, d), 1)
+        txt = open(os.path.join(d, 'playlist.m3u')).read()
+        self.assertIn('Alive', txt)
+        self.assertNotIn('Cookie', txt)
+        self.assertNotIn('Dead', txt)
 
 
 if __name__ == '__main__':

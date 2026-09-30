@@ -180,7 +180,9 @@ function buildM3U(chans) {
   const esc = s => (s || '').replace(/[\r\n]+/g, ' ').trim();
   const lines = ['#EXTM3U'];
   for (const ch of chans) {
-    if (ch.dead) continue;
+    // dead = stream mati; no_playlist = hidup tapi butuh header yang tak bisa
+    // dibawa baris M3U (Cookie dsb) — keduanya tidak boleh dipublikasikan
+    if (ch.dead || ch.no_playlist) continue;
     if (!ch.hls || !ch.hls.startsWith('http')) continue;
     const gid = (ch.name || 'tv').toLowerCase().replace(/\s+/g, '').slice(0, 24);
     lines.push(`#EXTINF:-1 tvg-id="${gid}" tvg-name="${esc(ch.name)}" group-title="${esc(ch.country)}",${esc(ch.name)}`);
