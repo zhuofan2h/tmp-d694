@@ -4,15 +4,16 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
+# Default: read-only. Only the publish job may write to the repo.
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: cron
   cancel-in-progress: true
 
 jobs:
-  run:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,22 +24,92 @@ jobs:
         with:
           node-version: '20'
       - run: pip install pycryptodome
-
-      # gate: never publish broken code
       - name: Tests
         run: |
           python -m unittest discover -s tools -p 'test_*.py'
           node --test worker/test.mjs worker/integration.test.mjs
 
+  collect:
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pycryptodome
       - run: python tools/collect.py
         env:
           OUT_DIR: data
           RC_TOKEN: ${{ secrets.RC_TOKEN }}
+      # one canonical dataset, probed by every vantage below
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dataset
+          path: data/
+          retention-days: 1
 
-      # probe every channel, repair what we can, drop what is dead
-      - run: python tools/health.py
+  # Probe the same dataset from several runner locations. A channel counts as
+  # alive if ANY vantage can play it — geo-blocked in one country must not hide
+  # it from the country that CAN watch it (merge rule in tools/health.py).
+  probe:
+    needs: collect
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pycryptodome
+      - uses: actions/download-artifact@v4
+        with:
+          name: dataset
+          path: data
+      - name: Probe (fragment)
+        run: python tools/health.py
         env:
           OUT_DIR: data
+          HEALTH_MODE: fragment
+          HEALTH_FRAGMENT: health-fragment.json
+          HEALTH_VANTAGE: ${{ matrix.os }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frag-${{ matrix.os }}
+          path: health-fragment.json
+          retention-days: 1
+
+  publish:
+    needs: probe
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pycryptodome
+      - uses: actions/download-artifact@v4
+        with:
+          name: dataset
+          path: data
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: frag-*
+          path: frags
+          merge-multiple: true
+      # merge vantage verdicts (alive if any vantage passes), build the
+      # playlist, verify every published entry, mark geo-limited channels
+      - name: Health (merge + verify + publish)
+        run: python tools/health.py
+        env:
+          OUT_DIR: data
+          HEALTH_FRAGMENTS: 'frags/*.json'
+          HEALTH_GEO_MODE: keep
 
       - name: Commit if changed
         run: |

@@ -360,5 +360,190 @@ class TestNoPlaylist(unittest.TestCase):
         self.assertNotIn('Dead', txt)
 
 
+class TestMultiVantage(unittest.TestCase):
+    """Fragment / merge verdicts across checker locations."""
+
+    @staticmethod
+    def _frag(tmp, name, vantage, rows):
+        path = os.path.join(tmp, name)
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump({'vantage': vantage, 'results': rows}, f)
+        return path
+
+    def test_alive_if_any_vantage_passes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            a = self._frag(tmp, 'a.json', 'sg', [
+                {'name': 'RTM', 'code': '1', 'ok': False, 'status': '403-geo:blocked'},
+                {'name': 'Gone', 'code': '2', 'ok': False, 'status': '404'}])
+            b = self._frag(tmp, 'b.json', 'my', [
+                {'name': 'RTM', 'code': '1', 'ok': True, 'status': 'ok:declared'},
+                {'name': 'Gone', 'code': '2', 'ok': False, 'status': '404'}])
+            m = health.merge_fragments([a, b])
+            self.assertTrue(m[('RTM', '1')]['ok'], 'one vantage passing must keep it alive')
+            self.assertIn('my', m[('RTM', '1')]['vantages_ok'])
+            self.assertFalse(m[('Gone', '2')]['ok'])
+            self.assertEqual(m[('Gone', '2')]['status'], '404')
+
+    def test_geo_label_survives_merge(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            a = self._frag(tmp, 'a.json', 'sg', [
+                {'name': 'X', 'code': '7', 'ok': False, 'status': '404'}])
+            b = self._frag(tmp, 'b.json', 'id', [
+                {'name': 'X', 'code': '7', 'ok': False, 'status': '403-geo:blocked'}])
+            m = health.merge_fragments([a, b])
+            self.assertTrue(m[('X', '7')]['status'].startswith('403-geo'),
+                            'explicit geo verdict must upgrade the label')
+
+    def test_fragment_paths_glob_and_list(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p1 = self._frag(tmp, 'f-1.json', 'a', [])
+            p2 = self._frag(tmp, 'f-2.json', 'b', [])
+            self.assertEqual(health.fragment_paths(os.path.join(tmp, 'f-*.json')),
+                             sorted([p1, p2]))
+            self.assertEqual(health.fragment_paths(f'{p1}:{p2}'), sorted([p1, p2]))
+
+    def test_write_fragment_creates_parent_dir(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = os.path.join(tmp, 'nested', 'deep', 'frag.json')
+            health.write_fragment(out, 'v', [({'name': 'n'}, 'ok:x', None)])
+            self.assertTrue(os.path.exists(out))
+
+    def test_write_fragment_roundtrip(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = os.path.join(tmp, 'frag.json')
+            ch = {'name': 'A', 'code': 'x', 'hls': 'https://e/x.m3u8'}
+            health.write_fragment(out, 'ubuntu-latest',
+                                  [(ch, 'ok:declared', 'declared'),
+                                   (ch, '403-geo:CF', None)])
+            # write_fragment stores one row per result; rebuild via json
+            health.write_fragment(out, 'ubuntu-latest', [(ch, 'ok:declared', 'declared')])
+            fr = json.load(open(out, encoding='utf-8'))
+            self.assertEqual(fr['vantage'], 'ubuntu-latest')
+            self.assertTrue(fr['results'][0]['ok'])
+            self.assertEqual(fr['results'][0]['name'], 'A')
+
+
+class TestGeoMode(unittest.TestCase):
+    """GEO_MODE=keep: geo-restricted entries stay publishable."""
+
+    def test_verify_counts_geo_as_pass_when_keep(self):
+        ch = {'name': 'G', 'code': 'g', 'premium': 'f',
+              'hls': 'https://geo.example/x.m3u8', 'url': 'https://geo.example/x.m3u8',
+              'header_iptv': '{}', 'group': 'XX'}
+        with tempfile.TemporaryDirectory() as tmp:
+            collect.write_playlist([ch], tmp)
+            orig_probe, orig_geo, orig_sleep = (
+                health.probe, health.geo_reason, health.time.sleep)
+            health.time.sleep = lambda *_: None
+            health.probe = lambda *a, **k: (False, 'httperror', 403, '')
+            health.geo_reason = lambda *a, **k: '403-geo:country'
+            health.GEO_MODE = 'keep'
+            try:
+                total, failed, geo_ok = health.verify_published(tmp)
+                self.assertEqual(total, 1)
+                self.assertEqual(failed, [], 'geo entry must not fail verify')
+                self.assertEqual(len(geo_ok), 1)
+            finally:
+                health.probe, health.geo_reason, health.time.sleep = (
+                    orig_probe, orig_geo, orig_sleep)
+                health.GEO_MODE = os.environ.get('HEALTH_GEO_MODE', 'keep').lower()
+
+    def test_verify_drops_geo_when_strict(self):
+        ch = {'name': 'G', 'code': 'g', 'premium': 'f',
+              'hls': 'https://geo.example/x.m3u8', 'url': 'https://geo.example/x.m3u8',
+              'header_iptv': '{}', 'group': 'XX'}
+        with tempfile.TemporaryDirectory() as tmp:
+            collect.write_playlist([ch], tmp)
+            orig_probe, orig_geo, orig_sleep = (
+                health.probe, health.geo_reason, health.time.sleep)
+            health.time.sleep = lambda *_: None
+            health.probe = lambda *a, **k: (False, 'httperror', 403, '')
+            health.geo_reason = lambda *a, **k: '403-geo:country'
+            health.GEO_MODE = 'drop'
+            try:
+                total, failed, geo_ok = health.verify_published(tmp)
+                self.assertEqual(len(failed), 1, 'strict mode must fail the entry')
+                self.assertEqual(geo_ok, [])
+            finally:
+                health.probe, health.geo_reason, health.time.sleep = (
+                    orig_probe, orig_geo, orig_sleep)
+                health.GEO_MODE = os.environ.get('HEALTH_GEO_MODE', 'keep').lower()
+
+
+class TestFragmentAndMerge(unittest.TestCase):
+    """HEALTH_MODE=fragment and HEALTH_FRAGMENTS orchestration."""
+
+    def test_merged_results_marks_geo_kept(self):
+        ch = {'name': 'X', 'code': '7'}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, 'f.json')
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump({'vantage': 'sg', 'results': [
+                    {'name': 'X', 'code': '7', 'ok': False,
+                     'status': '403-geo:CF'}]}, f)
+            old = health.GEO_MODE
+            health.GEO_MODE = 'keep'
+            try:
+                res = health.merged_results([ch], os.path.join(tmp, '*.json'))
+                self.assertEqual(res[0][1], 'ok:geo-kept',
+                                 'geo-fail must stay alive when mode=keep')
+            finally:
+                health.GEO_MODE = old
+
+    def test_merged_results_dead_when_all_vantages_fail(self):
+        ch = {'name': 'Y', 'code': '8'}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, 'f.json')
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump({'vantage': 'sg', 'results': [
+                    {'name': 'Y', 'code': '8', 'ok': False, 'status': '404'}]}, f)
+            res = health.merged_results([ch], os.path.join(tmp, '*.json'))
+            self.assertEqual(res[0][1], '404')
+
+    def test_fragment_mode_writes_fragment_without_publishing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = os.path.join(tmp, 'data')
+            os.makedirs(out)
+            ch = {'name': 'A', 'code': 'a', 'hls': 'https://e/a.m3u8'}
+            with open(os.path.join(out, 'channels.json'), 'w') as f:
+                json.dump({'channels': [ch]}, f)
+            frag = os.path.join(tmp, 'frag', 'f.json')
+
+            saved = (health.OUT_DIR, health.HEALTH_MODE,
+                     os.environ.get('HEALTH_FRAGMENT'),
+                     os.environ.get('HEALTH_VANTAGE'),
+                     os.environ.get('HEALTH_FRAGMENTS'))
+            saved_probe = health.probe_all
+            health.OUT_DIR = out
+            health.HEALTH_MODE = 'fragment'
+            health.probe_all = lambda channels: [(c, 'ok:declared', None)
+                                                 for c in channels]
+            os.environ['HEALTH_FRAGMENT'] = frag
+            os.environ['HEALTH_VANTAGE'] = 'unit'
+            os.environ.pop('HEALTH_FRAGMENTS', None)
+            try:
+                rc = health.main()
+                self.assertEqual(rc, 0, 'fragment mode must succeed')
+                self.assertTrue(os.path.exists(frag), 'fragment file written')
+                fr = json.load(open(frag, encoding='utf-8'))
+                self.assertEqual(fr['vantage'], 'unit')
+                self.assertTrue(fr['results'][0]['ok'])
+                # never publishes: no playlist, no dead flags in data/
+                self.assertFalse(os.path.exists(os.path.join(out, 'playlist.m3u')))
+                reloaded = json.load(open(os.path.join(out, 'channels.json'),
+                                          encoding='utf-8'))
+                self.assertNotIn('dead', reloaded['channels'][0])
+            finally:
+                health.probe_all = saved_probe
+                health.OUT_DIR, health.HEALTH_MODE = saved[0], saved[1]
+                for key, val in (('HEALTH_FRAGMENT', saved[2]),
+                                 ('HEALTH_VANTAGE', saved[3]),
+                                 ('HEALTH_FRAGMENTS', saved[4])):
+                    if val is None:
+                        os.environ.pop(key, None)
+                    else:
+                        os.environ[key] = val
+
+
 if __name__ == '__main__':
     unittest.main()

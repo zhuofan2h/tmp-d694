@@ -83,16 +83,41 @@ pip install pycryptodome
 python tools/collect.py && python tools/health.py
 OUT_DIR=data python tools/health.py   # override: HEALTH_THREADS, HEALTH_TIMEOUT,
                                       # HEALTH_FAILS, HEALTH_PER_HOST,
-                                      # HEALTH_CONFIRM, HEALTH_VERIFY_ROUNDS
+                                      # HEALTH_CONFIRM, HEALTH_VERIFY_ROUNDS,
+                                      # HEALTH_GEO_MODE, HEALTH_MODE,
+                                      # HEALTH_FRAGMENTS, HTTPS_PROXY
 ```
 
 `HEALTH_FAILS=2` bila ingin toleransi 2 run gagal berturut-turut sebelum
 channel ditandai mati (default: 1 = jaminan ketat).
 
+## Multi-lokasi & geo-block
+
+Cron menjalankan checker dari **beberapa lokasi** (matrix runner ubuntu /
+windows / macos di `.github/workflows/cron.yml`):
+
+- tiap runner probe dalam mode fragment (`HEALTH_MODE=fragment`,
+  `HEALTH_FRAGMENT=…`, `HEALTH_VANTAGE=…`) dan mengunggah hasilnya;
+- job `publish` menggabungkan semua fragment
+  (`HEALTH_FRAGMENTS='frags/*.json'`) lalu membangun playlist + fase C;
+- **aturan merge: channel HIDUP kalau satu lokasi saja bisa memutarnya** —
+  geo-block di satu negara tidak menyembunyikannya dari negara yang bisa
+  menonton.
+
+`HEALTH_GEO_MODE` (default **`keep`**):
+
+| Nilai | Perilaku |
+|---|---|
+| `keep` | `403-geo` tidak membunuh channel: tetap di playlist, ditandai `geo_limited: true`, fase C hanya menandainya |
+| `drop` | mode ketat: geo diperlakukan seperti kegagalan lain |
+
+Egress lain (mis. dari Indonesia/Malaysia) bisa dipakai lewat env standar
+urllib: `HTTPS_PROXY=http://host:port` (simpan sebagai repo secret).
+
 ## Tests
 
 ```
-python -m unittest discover -s tools -p 'test_*.py'              # 36 tests
+python -m unittest discover -s tools -p 'test_*.py'              # 42 tests
 node --test worker/test.mjs worker/integration.test.mjs          # 10 + 11 tests
 ```
 
@@ -111,8 +136,10 @@ Keduanya dijalankan oleh cron sebelum data dipublish.
 
 - Some streams need specific headers — already embedded as
   `#EXTVLCOPT`/`#KODIPROP` (User-Agent, Referer, Origin).
-- Some streams are geo-restricted; the health check runs from the CI
-  vantage point, so a channel may still work better from your country.
+- Some streams are geo-restricted. Under the default `HEALTH_GEO_MODE=keep`
+  they stay in the playlist flagged `geo_limited: true` — playability from
+  your country may differ from the checker's. `stats.json` shows the count
+  and the mode.
 - `.mpd`/`.flv` formats need a capable player (Kodi, TiviMate, ExoPlayer
   apps). Browsers: `.m3u8` only.
 - Data refreshed automatically every 30 minutes.

@@ -48,6 +48,14 @@ THREADS = int(os.environ.get('HEALTH_THREADS', '20'))
 # playlist immediately (strict "everything published plays" guarantee).
 # Raise HEALTH_FAILS to 2+ if you prefer tolerance for transient blips.
 FAIL_THRESHOLD = int(os.environ.get('HEALTH_FAILS', '1'))
+# 'keep' (default): a 403 that is explicitly geo-based does NOT kill the
+# channel — geo depends on WHERE THE VIEWER IS, not on the checker. Such
+# channels stay alive, stay in playlist.m3u and are flagged `geo_limited`.
+# 'drop': strict mode, geo-blocked channels are excluded like any failure.
+GEO_MODE = os.environ.get('HEALTH_GEO_MODE', 'keep').lower()
+# 'fragment': probe only and write HEALTH_FRAGMENT (used by CI matrix jobs)
+# 'full'    : probe + publish (or merge HEALTH_FRAGMENTS if provided)
+HEALTH_MODE = os.environ.get('HEALTH_MODE', 'full').lower()
 BROWSER_UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) '
               'Gecko/20100101 Firefox/153.0')
 
@@ -271,7 +279,7 @@ def verify_published(out_dir, threads=None, gap=0.4):
         by_host.setdefault(urlparse(e['url']).netloc.lower(), []).append(e)
 
     def run_host(items):
-        bad = []
+        bad, geo = [], []
         for e in items:
             hdr = dict(e['headers'])
             hdr.setdefault('User-Agent', BROWSER_UA)
@@ -282,25 +290,135 @@ def verify_published(out_dir, threads=None, gap=0.4):
                 time.sleep(2.0)
                 ok, kind, status, _ = probe(e['url'], hdr, TIMEOUT)
             if not ok:
-                bad.append((e, status))
+                if GEO_MODE == 'keep' and geo_reason(e['url'], hdr):
+                    # geo-restriction, not a broken stream -> still publishable
+                    geo.append((e, status))
+                else:
+                    bad.append((e, status))
             time.sleep(gap)
-        return bad
+        return bad, geo
 
-    failed = []
+    failed, geo_ok = [], []
     with ThreadPoolExecutor(max_workers=threads or THREADS) as ex:
-        for bad in ex.map(run_host, list(by_host.values())):
+        for bad, geo in ex.map(run_host, list(by_host.values())):
             failed.extend(bad)
-    return len(entries), failed
+            geo_ok.extend(geo)
+    return len(entries), failed, geo_ok
 
 
-def main():
-    src = os.path.join(OUT_DIR, 'channels.json')
-    if not os.path.exists(src):
-        print('FATAL: no channels.json — run collect.py first')
-        return 1
-    data = json.load(open(src, encoding='utf-8'))
-    channels = data['channels']
+def write_fragment(path, vantage, results):
+    """Persist one vantage point's verdicts (used by CI matrix jobs)."""
+    frag = {
+        'vantage': vantage,
+        'ts': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'results': [
+            {'name': ch.get('name'), 'code': ch.get('code'),
+             'hls': ch.get('hls'), 'ok': status.startswith('ok:'),
+             'status': status}
+            for ch, status, _variant in results
+        ],
+    }
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(frag, f, ensure_ascii=False)
+    ok = sum(1 for r in frag['results'] if r['ok'])
+    print(f'fragment written: {path} ({vantage}: {ok}/{len(frag["results"])} ok)')
+    return path
 
+
+def merge_fragments(paths):
+    """Combine verdicts from several vantage points.
+
+    A channel is ALIVE if ANY vantage can play it (geo-block in one country
+    must not hide a channel from the country that CAN watch it). Failures are
+    kept per-vantage for reporting; the label prefers '403-geo' when that is
+    what every vantage saw.
+
+    Returns {(name, code): {'ok': bool, 'status': str,
+                            'vantages_ok': [...], 'vantages_fail': {...}}}
+    """
+    merged = {}
+    loaded = 0
+    for path in paths:
+        try:
+            fr = json.load(open(path, encoding='utf-8'))
+        except Exception as ex:
+            print(f'  skip fragment {path}: {ex}')
+            continue
+        loaded += 1
+        vantage = fr.get('vantage') or path
+        for r in fr.get('results', []):
+            key = (r.get('name'), r.get('code'))
+            m = merged.setdefault(key, {'ok': False, 'status': None,
+                                        'vantages_ok': [], 'vantages_fail': {}})
+            if r.get('ok'):
+                m['ok'] = True
+                m['status'] = 'ok:merged'
+                m['vantages_ok'].append(vantage)
+            else:
+                m['vantages_fail'][vantage] = str(r.get('status'))
+                if not m['ok']:
+                    st = str(r.get('status'))
+                    cur = str(m['status'] or '')
+                    # first failure is the default label; an explicit geo
+                    # verdict from ANY vantage upgrades the label
+                    if m['status'] is None \
+                            or (st.startswith('403-geo') and not cur.startswith('403-geo')):
+                        m['status'] = st
+    print(f'merged {loaded} fragment(s) -> {len(merged)} channels')
+    return merged
+
+
+def fragment_paths(spec):
+    """'frags/*.json' or 'a.json:b.json' -> sorted list of files."""
+    import glob as _glob
+    paths = []
+    for part in str(spec).replace(';', ':').split(':'):
+        part = part.strip()
+        if not part:
+            continue
+        hits = _glob.glob(part)
+        paths.extend(hits if hits else [part])
+    return sorted(dict.fromkeys(paths))
+
+
+def merged_results(channels, frag_spec):
+    """Turn merged vantage fragments into [(channel, status, variant), ...].
+
+    A channel is alive when ANY vantage reported it playable; a 403-geo seen
+    anywhere becomes 'ok:geo-kept' when HEALTH_GEO_MODE=keep.
+    """
+    merged = merge_fragments(fragment_paths(frag_spec))
+    results = []
+    missing = 0
+    geo_kept = 0
+    for ch in channels:
+        m = merged.get((ch.get('name'), ch.get('code')))
+        if m is None:
+            status = 'not-checked'              # absent from every fragment
+            missing += 1
+        elif m['ok']:
+            status = str(m['status'])           # 'ok:merged'
+        else:
+            status = str(m['status'])
+            if GEO_MODE == 'keep' and status.startswith('403-geo'):
+                # geo-blocked by the CHECKER is not a dead stream
+                status = 'ok:geo-kept'
+                geo_kept += 1
+        results.append((ch, status, None))
+    alive = sum(1 for _, s, _ in results if s.startswith('ok'))
+    print(f'merge mode: {alive} alive of {len(results)} '
+          f'({geo_kept} geo-kept, {missing} not in any fragment)', flush=True)
+    return results
+
+
+def probe_all(channels):
+    """Phase A + B: probe every channel from THIS vantage point.
+    Returns [(channel, status, repaired_variant), ...]; mutates the
+    channel dicts in memory (repairs) but writes nothing to disk.
+    """
     print(f'probing {len(channels)} channels with {THREADS} threads '
           f'(timeout {TIMEOUT}s, dead after {FAIL_THRESHOLD} bad runs)...')
 
@@ -331,9 +449,36 @@ def main():
                     results[idx] = (ch, st, None)
                     print(f'  flaky: {ch.get("name")} -> {st}', flush=True)
 
+    return results
+
+
+def main():
+    src = os.path.join(OUT_DIR, 'channels.json')
+    if not os.path.exists(src):
+        print('FATAL: no channels.json — run collect.py first')
+        return 1
+    data = json.load(open(src, encoding='utf-8'))
+    channels = data['channels']
+
+    frag_spec = os.environ.get('HEALTH_FRAGMENTS', '')
+    if frag_spec:
+        # merge mode: verdicts already gathered from several vantage points
+        # -> no local probing at all
+        results = merged_results(channels, frag_spec)
+    else:
+        results = probe_all(channels)
+
+        # --- fragment mode: report only, never touch data/ ---------------
+        if HEALTH_MODE == 'fragment':
+            frag_out = os.environ.get('HEALTH_FRAGMENT', 'health-fragment.json')
+            vantage = os.environ.get('HEALTH_VANTAGE', 'local')
+            write_fragment(frag_out, vantage, results)
+            return 0
+
     now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     repaired = []
     unplayable = []
+    geo_kept = []
     playable = 0
     for ch, status, variant in results:
         was_dead = bool(ch.get('dead'))
@@ -348,6 +493,17 @@ def main():
             if was_dead:
                 repaired.append({'name': ch.get('name'), 'code': ch.get('code'),
                                  'variant': 'revived', 'url': ch.get('hls')})
+        elif GEO_MODE == 'keep' and str(status).startswith('403-geo'):
+            # geo-blocked from the CHECKER's country — the stream itself is
+            # fine where it is licensed. Keep it alive, flag it, publish it.
+            ch.pop('dead', None)
+            ch.pop('dead_reason', None)
+            ch.pop('fail_count', None)
+            ch['geo_limited'] = True
+            ch['geo_status'] = str(status)
+            playable += 1
+            geo_kept.append({'name': ch.get('name'), 'code': ch.get('code'),
+                             'status': str(status), 'url': ch.get('hls')})
         else:
             fails = int(ch.get('fail_count') or 0) + 1
             ch['fail_count'] = fails
@@ -376,13 +532,22 @@ def main():
     drops = 0
     max_drops = int(os.environ.get('HEALTH_VERIFY_ROUNDS', '5'))
     verify_fail = []
+    geo_flagged = 0
     while True:                       # the LAST action is always a verify pass
         rounds += 1
-        total, failed = verify_published(OUT_DIR)
+        total, failed, geo_ok = verify_published(OUT_DIR)
         if not failed:
             verify_ok = True
+            # flag (never drop) the geo-restricted ones we just saw
+            if GEO_MODE == 'keep' and geo_ok:
+                geo_urls = {e['url'] for e, _st in geo_ok}
+                for c in channels:
+                    if c.get('hls') in geo_urls:
+                        c['geo_limited'] = True
+                        c['geo_status'] = '403-geo(verify)'
+                        geo_flagged += 1
             print(f'phase C: playlist verified {total}/{total} entries '
-                  f'(round {rounds})', flush=True)
+                  f'(round {rounds}; {len(geo_ok)} geo-limited)', flush=True)
             break
         if drops >= max_drops:
             print(f'phase C: giving up after {drops} drops, '
@@ -420,6 +585,7 @@ def main():
 
     dead_count = sum(1 for c in channels if c.get('dead'))
     no_playlist_count = sum(1 for c in channels if c.get('no_playlist'))
+    geo_count = sum(1 for c in channels if c.get('geo_limited'))
     data['channels'] = channels
     data['health'] = {'checked': now, 'playable': playable,
                       'total': len(channels), 'dead': dead_count,
@@ -433,6 +599,8 @@ def main():
         'playable': playable,
         'dead': dead_count,
         'no_playlist': no_playlist_count,
+        'geo_limited': geo_count,
+        'geo_mode': GEO_MODE,
         'repaired': len(repaired),
         'playlist_entries': entries,
         'playlist_verified': verify_ok,
@@ -449,15 +617,16 @@ def main():
         stats = json.load(open(stats_path, encoding='utf-8'))
         stats.update({'health_checked': now, 'playable': playable,
                       'dead': dead_count, 'no_playlist': no_playlist_count,
+                      'geo_limited': geo_count, 'geo_mode': GEO_MODE,
                       'playlist_entries': entries,
                       'playlist_verified': verify_ok})
         with open(stats_path, 'w', encoding='utf-8') as f:
             json.dump(stats, f, ensure_ascii=False, indent=1)
 
     print(f'playable: {playable}/{len(channels)} | dead: {dead_count} | '
-          f'no-playlist: {no_playlist_count} | repaired: {len(repaired)} | '
-          f'playlist entries: {entries} | verified: {verify_ok} '
-          f'({rounds} round(s), {drops} drop(s))')
+          f'no-playlist: {no_playlist_count} | geo-limited: {geo_count} | '
+          f'repaired: {len(repaired)} | playlist entries: {entries} | '
+          f'verified: {verify_ok} ({rounds} round(s), {drops} drop(s))')
     if not verify_ok:
         print('FATAL: playlist could not be fully verified; '
               'keeping previous published data')
