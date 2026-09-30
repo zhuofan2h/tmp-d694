@@ -1,7 +1,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildM3U } from './src/index.js';
+import { buildM3U, filterChannels } from './src/index.js';
 
 // --- player-compat: two styles, Indonesian group, DRM -----------------------
 test('buildM3U merges Indonesian pseudo-groups into one group-title', () => {
@@ -59,6 +59,28 @@ test('buildM3U: drm / pipe_only / no_playlist rules per style', () => {
   assert.ok(!vlc.includes(',CookieOnly'), 'pipe_only stays out of the vlc file');
   assert.ok(pipe.includes(',CookieOnly'));
   assert.ok(pipe.includes('https://a/2.m3u8|Cookie=a=1'));
+});
+
+test('filterChannels: country=ID covers every Indonesian channel, not only code ID', () => {
+  const chans = [
+    { name: 'A', code: 'ID', group: 'Indonesia', country: 'Indonesia', premium: 'f' },
+    { name: 'B', code: 'RI', group: 'Indonesia', country: 'TVRI', premium: 'f' },
+    { name: 'C', code: 'LO', group: 'Indonesia', country: 'TV Lokal', premium: 'f' },
+    { name: 'D', code: 'MY', country: 'Malaysia', premium: 'f' },
+  ];
+  const out = filterChannels(chans, new URLSearchParams('country=ID'));
+  assert.deepEqual(out.map(c => c.name), ['A', 'B', 'C']);
+  const my = filterChannels(chans, new URLSearchParams('country=MY'));
+  assert.deepEqual(my.map(c => c.name), ['D']);
+});
+
+test('filterChannels: group=Indonesia finds the merged folder', () => {
+  const chans = [
+    { name: 'A', code: 'ID', group: 'Indonesia', country: 'Indonesia', premium: 'f' },
+    { name: 'D', code: 'MY', country: 'Malaysia', premium: 'f' },
+  ];
+  const out = filterChannels(chans, new URLSearchParams('group=Indonesia'));
+  assert.deepEqual(out.map(c => c.name), ['A']);
 });
 
 test('geo-locked channel lands in its own "<group> (geo)" folder', () => {

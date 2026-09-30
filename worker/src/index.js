@@ -161,12 +161,18 @@ function filterChannels(chans, q) {
   const country = q.get('country');
   if (country) {
     const set = new Set(country.split(',').map(s => s.trim().toLowerCase()));
-    out = out.filter(c => set.has((c.code || '').toLowerCase()));
+    // Indonesia upstream memakai kode pseudo (ID, RI, LO) yang semuanya sudah
+    // digabung ke satu folder "Indonesia" — ?country=ID harus ikut semuanya,
+    // bukan hanya channel berkode ID.
+    out = out.filter(c => set.has((c.code || '').toLowerCase())
+      || (set.has('id') && (c.group || '').toLowerCase() === 'indonesia'));
   }
   const group = q.get('group');
   if (group) {
     const g = group.toLowerCase();
-    out = out.filter(c => (c.country || '').toLowerCase().includes(g));
+    // folder gabungan (group) dulu, label negara lama sebagai cadangan
+    out = out.filter(c => (c.group || '').toLowerCase().includes(g)
+      || (c.country || '').toLowerCase().includes(g));
   }
   const search = q.get('search');
   if (search) {
