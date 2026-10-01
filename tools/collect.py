@@ -226,6 +226,28 @@ def group_of(ch):
     return g
 
 
+def apply_extra_overrides(uniq, extras):
+    """Curated extras beat raw upstream rows shown in the same folder.
+
+    Without this a live upstream "SCTV" (and "JTV", whose upstream record
+    carries code LO yet groups to Indonesia) publishes the channel twice.
+    Returns (rows, dropped_count); every extra row is guaranteed present —
+    the (name, hls) dedupe above may have kept the upstream row for a pair
+    the extra shares, which dropping would then delete entirely."""
+    extra_keys = {(e.get('name'), group_of(e)) for e in extras
+                  if e.get('source') == 'extra'}
+    if not extra_keys:
+        return uniq, 0
+    kept = [c for c in uniq
+            if c.get('source') == 'extra'
+            or (c.get('name'), group_of(c)) not in extra_keys]
+    dropped = len(uniq) - len(kept)
+    have = {(c.get('name'), c.get('hls')) for c in kept}
+    kept += [e for e in extras
+             if (e.get('name'), e.get('hls')) not in have]
+    return kept, dropped
+
+
 # --------------------------------------------------------------------------
 # Playlist writing
 # --------------------------------------------------------------------------
@@ -429,6 +451,9 @@ def main():
         # Same name with a DIFFERENT URL (e.g. Animax HD ID vs JP) is kept.
         seen.setdefault((ch.get('name'), ch.get('hls')), ch)
     uniq = list(seen.values())
+    uniq, dropped = apply_extra_overrides(uniq, extras)
+    if dropped:
+        print('extra-override:', dropped, 'upstream dup dropped')
 
     os.makedirs(OUT_DIR, exist_ok=True)
     updated = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')

@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-01T18:22:11Z",
- "count": 530,
+ "updated": "2026-10-01T19:12:05Z",
+ "count": 517,
  "channels": [
   {
    "name": "CAF Africa Cup [CH2]",
@@ -540,9 +540,9 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:200"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -590,7 +590,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -1098,11 +1098,14 @@
    "is_live": "f",
    "premium": "t",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "header_iptv": "{\"Referer\": \"https://tukangdonlot.com/\", \"Origin\": \"https://tukangdonlot.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVGE5Rlc3Y2hxUWRySHN6dTFjbFJHUSIsImtpZCI6Im84Y1puY0xJc3IzRkVTalF5U1ZCUkEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Argentina",
    "code": "AR",
-   "group": "Argentina"
+   "group": "Argentina",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:400"
   },
   {
    "name": "VIVO D-Sports 2 AR",
@@ -1404,10 +1407,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Anime TV",
@@ -1448,14 +1448,14 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:200"
   },
   {
    "name": "Canal do Inter",
@@ -1855,7 +1855,7 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Lavf/60.16.100\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
@@ -1923,7 +1923,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Rede QDM",
@@ -2090,7 +2093,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Terra Viva",
@@ -2148,7 +2154,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TV Boqueirão",
@@ -2161,7 +2170,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TV Brasil Oeste",
@@ -2535,7 +2547,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TVNBN",
@@ -2551,7 +2566,7 @@
    "group": "Brazil",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "Food Travel",
@@ -2770,7 +2785,10 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia"
+   "group": "Saudi Arabia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Asharq Documentary",
@@ -4384,38 +4402,6 @@
    "dead_reason": "401(no-ref)"
   },
   {
-   "name": "iNews",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/video/live/api/v1/live/4/url?appierid=null",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "KompasTV",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D13",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
    "name": "MetroTV",
    "tagline": "Indonesia",
    "hls": "https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8",
@@ -4453,51 +4439,6 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia"
-  },
-  {
-   "name": "CNBC",
-   "tagline": "Indonesia",
-   "hls": "https://cdnjktcyber05.transvision.co.id/riutx01-2c1fa8682342c878f128b4149a675281/dash/Q05CQy1JbmRvbmVzaWE/manifest.mpd?signature=YTk1ZmIwOGZiNzJmY2MwOTVhMTg1ZDdmNmJmYWY2YjE=\\u0026time=77777777777\\u0026device_id=5LLYcjaiHzf4ZrVqPeZIxlhLX_Y46fBHO562BIliada-K1S-33nh",
-   "is_live": "f",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://www.cubmu.com/\", \"Origin\": \"https://www.cubmu.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64)\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiU3I4ZjBtNk1SYVcydXVZTTl2L0N1USIsImtpZCI6ImIvdWNVNjhvVDlXUUlYN2VIcnAyWGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "CNN",
-   "tagline": "Indonesia",
-   "hls": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
-   "is_live": "f",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\": \"https://www.cnnindonesia.com/\", \"Origin\": \"https://www.cnnindonesia.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0\"}",
-   "url_license": "",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia"
-  },
-  {
-   "name": "BTV",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D15",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
   },
   {
    "name": "Nusantara TV",
@@ -4923,57 +4864,12 @@
    "dead_reason": "401(no-ref)"
   },
   {
-   "name": "GTV",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/video/live/api/v1/live/3/url?appierid=null",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "Indosiar",
-   "tagline": "Indonesia",
-   "hls": "https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia"
-  },
-  {
    "name": "MD.tv",
    "tagline": "Indonesia",
    "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D23",
    "is_live": "f",
    "premium": "f",
    "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "MNCTV",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/video/live/api/v1/live/2/url?appierid=null",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "rcti_plus",
    "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
    "url_license": "none",
    "country": "Indonesia",
@@ -4995,65 +4891,6 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia"
-  },
-  {
-   "name": "RCTI",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/video/live/api/v1/live/1/url?appierid=null",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "SCTV",
-   "tagline": "Indonesia",
-   "hls": "https://cdnbal1.indihometv.com/atm/DASH/sctv/sctv-avc1_2500000=7-3277707030000000.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia"
-  },
-  {
-   "name": "Trans7",
-   "tagline": "Indonesia",
-   "hls": "https://video.detik.com/trans7-sec/smil:trans7.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786603871648&wowzatokenhash=9mTM8_TkKcUD9L7m4YXEfSqNPFXcGdu0jWN6Jx5_D4g%3D",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\": \"https://20.detik.com/\", \"Origin\": \"https://20.detik.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\", \"Cookie\": \"dtklucx=gen_33bc1464-62d8-1ab5-55ad-2ef807616998; __dtma=146380193.249217803.1786518838.1786518838.1786518838.1; cshx=3bcdb206; __dtmc=146380193\"}",
-   "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Cookie"
-  },
-  {
-   "name": "TransTV",
-   "tagline": "Indonesia",
-   "hls": "https://video.detik.com/transtv-sec/smil:transtv.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786603947733&wowzatokenhash=QCkmM-TeVM2eAsdCHoRX2nU0qlygmalvFzJoxWBvbYk%3D",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\": \"https://20.detik.com/\", \"Origin\": \"https://20.detik.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\", \"Cookie\": \"dtklucx=gen_33bc1464-62d8-1ab5-55ad-2ef807616998; __dtma=146380193.249217803.1786518838.1786518838.1786518838.1; cshx=3bcdb206; __dtmc=146380193\"}",
-   "url_license": "334950781f60a66f5e58324b70ac675d:73caca97be8999ce9cfeb3babad8669d",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Cookie"
   },
   {
    "name": "America TV",
@@ -5116,22 +4953,6 @@
    "code": "CN",
    "group": "China",
    "drm": true
-  },
-  {
-   "name": "JTV",
-   "tagline": "TV Lokal",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D24",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
   },
   {
    "name": "M-Live 8",
@@ -6112,7 +5933,8 @@
    "code": "SP",
    "group": "Sports TV",
    "pipe_only": true,
-   "pipe_only_reason": "needs headers: Accept"
+   "pipe_only_reason": "needs headers: Accept",
+   "drm": true
   },
   {
    "name": "FS2",
@@ -6170,9 +5992,8 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "200(no-ref)"
+   "geo_limited": true,
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "ITV2",
@@ -6186,9 +6007,8 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "200(no-ref)"
+   "geo_limited": true,
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "ITV3",
@@ -6202,9 +6022,8 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "200(no-ref)"
+   "geo_limited": true,
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "Kuwait Sport",
@@ -6286,9 +6105,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! ARENA",
@@ -6297,7 +6116,7 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiTk0zVzgrRy9hcCtkVk9rV1dyK01DUSIsImtpZCI6Im1EbXhjTFQ4T0U4a08vL1lrcHR4b2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
@@ -6334,9 +6153,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6345,14 +6164,14 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Lavf/60.16.100\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiemFHTlRTQ3IxY3gzZ3hXcjRuZit1USIsImtpZCI6InpuejVzbzBhallkS3pPdkVUWDRmelEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -6366,9 +6185,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! IGRA",
@@ -6393,14 +6212,12 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Lavf/60.16.100\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQWZLbzhSdllrV1ZhZFN3WFNmUjQ3QSIsImtpZCI6Iks3ZXpGSGNlMWU3ZDJQUkttcVFuUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! STRANA",
@@ -6409,7 +6226,7 @@
    "is_live": "f",
    "premium": "f",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"VLC/3.0.20 LibVLC/3.0.20\"}",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoidnJUN3cwdnBzY1gvRXBaSU1BQXNpUSIsImtpZCI6IjJ0cW1sMklyQ3RBSU9zeWJiZERDbEEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
@@ -6488,7 +6305,7 @@
    "group": "Sports TV",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "flaky:200"
   },
   {
    "name": "Premiere Brazil 1",
@@ -6785,9 +6602,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403(no-ref)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:403"
   },
   {
    "name": "TV4 Sweden",
@@ -7019,22 +6836,6 @@
    "group": "Indonesia",
    "geo_limited": true,
    "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "RTV",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D11",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
   },
   {
    "name": "UG.tv",
@@ -7786,15 +7587,29 @@
    "code": "ID",
    "group": "Indonesia",
    "source": "extra"
+  },
+  {
+   "name": "Indosiar",
+   "tagline": "Entertainment",
+   "hls": "https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-dash-extra",
+   "header_iptv": "{}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
   }
  ],
  "health": {
-  "checked": "2026-10-01T18:24:59Z",
-  "playable": 342,
-  "total": 530,
-  "dead": 201,
-  "playlist_entries": 186,
-  "playlist_pipe_entries": 189,
+  "checked": "2026-10-01T19:14:58Z",
+  "playable": 340,
+  "total": 517,
+  "dead": 197,
+  "playlist_entries": 182,
+  "playlist_pipe_entries": 182,
   "verified": true
  }
 }

@@ -929,6 +929,56 @@ class TestExtraChannels(unittest.TestCase):
             {'alpha_2_code': 'RI'}, names, 'RI')
         self.assertEqual(group, 'Indonesia')
 
+    def test_override_drops_upstream_dup_in_same_folder(self):
+        """Upstream beda-URL dengan nama+folder sama tidak boleh dobel."""
+        up = {'name': 'SCTV', 'hls': 'https://up/sctv.mpd', 'group': 'Indonesia'}
+        ex = {'name': 'SCTV', 'hls': 'https://ex/sctv.m3u8', 'group': 'Indonesia',
+              'source': 'extra'}
+        kept, dropped = collect.apply_extra_overrides([up, ex], [ex])
+        self.assertEqual(dropped, 1)
+        self.assertEqual([r['source'] for r in kept], ['extra'])
+
+    def test_override_keeps_extra_sharing_upstream_url(self):
+        """Extra yang URL-nya sama persis dengan upstream (Indosiar) tetap ada."""
+        same = 'https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar.mpd'
+        up = {'name': 'Indosiar', 'hls': same, 'group': 'Indonesia'}
+        ex = {'name': 'Indosiar', 'hls': same, 'group': 'Indonesia',
+              'source': 'extra'}
+        # dedupe (name, hls) mempertahankan baris upstream
+        kept, dropped = collect.apply_extra_overrides([up], [ex])
+        self.assertEqual(dropped, 1)
+        self.assertEqual(len([r for r in kept if r['name'] == 'Indosiar']), 1)
+        self.assertEqual(kept[-1].get('source'), 'extra')
+
+    def test_override_ignores_rows_from_other_folder(self):
+        """Nama sama di folder lain (mis. JTV vs JTV lain) tidak tersentuh."""
+        other = {'name': 'SCTV', 'hls': 'https://up/x.m3u8', 'group': 'Sports TV'}
+        ex = {'name': 'SCTV', 'hls': 'https://ex/sctv.m3u8', 'group': 'Indonesia',
+              'source': 'extra'}
+        kept, dropped = collect.apply_extra_overrides([other, ex], [ex])
+        self.assertEqual(dropped, 0)
+        self.assertEqual(len(kept), 2)
+
+    def test_published_playlists_have_no_duplicate_in_folder(self):
+        """Satu nama channel tidak boleh tampil dua kali dalam satu folder."""
+        import re
+        checked = 0
+        for pl in ('data/playlist.m3u', 'data/playlist-pipe.m3u'):
+            if not os.path.exists(pl):
+                continue
+            checked += 1
+            with open(pl, encoding='utf8', errors='replace') as fh:
+                rows = [b.splitlines()[0]
+                        for b in fh.read().split('#EXTINF')[1:]]
+            seen = set()
+            for row in rows:
+                g = re.search(r'group-title="([^"]*)"', row)
+                key = ((g.group(1) if g else ''), row.split(',')[-1].strip())
+                self.assertNotIn(key, seen, f'{key} tampil dua kali di {pl}')
+                seen.add(key)
+        if not checked:
+            self.skipTest('data/playlist*.m3u belum digenerate')
+
 
 if __name__ == '__main__':
     unittest.main()
