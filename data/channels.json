@@ -1,84 +1,19 @@
 {
- "updated": "2026-10-01T09:08:42Z",
- "count": 510,
+ "updated": "2026-10-01T13:54:46Z",
+ "count": 531,
  "channels": [
   {
-   "name": "Volleyball: Asian Games 2026 [CH5]",
-   "tagline": "01 Okt 14:00 WIB - Vietnam vs Uzbekistan",
-   "hls": "http://43.152.182.139/live/channel33.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH6]",
-   "tagline": "01 Okt 14:00 WIB - Thailand vs China",
-   "hls": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH7]",
-   "tagline": "01 Okt 17:00 WIB - Philippines vs Indonesia",
-   "hls": "http://43.152.182.139/live/channel33.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH8]",
-   "tagline": "01 Okt 17:20 WIB - Japan vs Qatar",
-   "hls": "http://43.152.182.139/live/channel33.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
    "name": "FIFA Asean Cup [CH1]",
-   "tagline": "01 Okt 19:30 WIB - Malaysia vs Singapore",
-   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "tagline": "01 Okt 19:30 WIB - Indonesia vs Bangladesh",
+   "hls": "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1790878242/ei/wk2-avjrL43b9fwPu9EO/ip/2402%3A8780%3A103c%3A77a1%3A4626%3Aba72%3A3830%3Adb0f/id/uDHMIZZF5mY.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/ctier/SPL/playlist_duration/30/manifest_duration/30/demuxed/1/maudio/1/gcr/id/bui/AWzQHwpfzqLCsnVbPNeBpFXlmWMWL5Jkbmlbd3gHF_zO6_yJiGaJzfoB0KMnMA-_1l5HAnfIxYJEppra/spc/I-rgIVgGEjfq2gQhbBWAFC7Rh-ZzQlzMp_OB5rZl0Y8sxQHQGOXgQcU41wt03vA/vprv/1/go/1/rqh/5/reg/0/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51565115%2C52112904%2C52184227%2C52227522%2C52250513/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cctier%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRAIgL96yq6qpbrn-n8RjFCKzMeL5a9hsjr1ofNUHwAto4msCIErR8ztv8tNwONxZtjO_SjtMUg2wffHQHrITLOn03QgA/file/index.m3u8",
    "is_live": "t",
    "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "drm": true
+   "group": "Events"
   },
   {
    "name": "FIFA Asean Cup [CH2]",
@@ -89,6 +24,48 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"Referer\": \"https://www.mewatch.sg/\", \"Origin\": \"https://www.mewatch.sg\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "FIFA Asean Cup [CH3]",
+   "tagline": "01 Okt 19:30 WIB - Indonesia vs Bangladesh",
+   "hls": "https://cxyznt3-cf.sbbol1011play.sbs/auth%3Ddc5cc9870e915ed360b7d7d48ee6c216d29f93ac4067e6328f8d8e3667251e8b88052189d179bd0bb57524ea49ded8e50fb184963dd3b312d8690a04b9adec9d5f95f25c86d5b880b53576f9a7ab91449d5352649ff7ed039d356829303687377281c28464c49e0f1ae803cd2791c7643b36b5b64d5895d8190bc8594d6ed5fa055c155c9a62995b9f820cc581c649eb4b0b9f925e5bfa5c2a61f7661259e2b3d14a1c879f9655a215c9acbe25f1a954bcfe20bbc97b214c83600c20aafec5e17f8e9ffb9cee72c16f5004bcf14f159c7f9243bc282205099760e706fc6fbd84%26cid%3DF7ZB8Q8veV-Fzh3lV6cIq261001%26_v%3D2%26_r%3Dikxiok%26_vis%3D948c07647a640740113026de530efad3ac1afe21ecb9ecab943aaf74534c83dd%26_vvs%3De5df56fc766a87109392b1f5b523a5edc7fc5180ab476923a30c213fffbd51e0%26_vas%3Da519463d4d5fdbc037156e08a61e0a6ef217d34dd1f6ef1dcbd4a37287f3ef19/app/c442518.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\": \"https://ppdd20.playaindg12.xyz/\", \"Origin\": \"https://ppdd20.playaindg12.xyz\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\", \"Sec-Fetch-Site\": \"cross-site\", \"Sec-Fetch-Mode\": \"cors\", \"Sec-Fetch-Dest\": \"empty\", \"Connection\": \"keep-alive\", \"Accept-Language\": \"en-US,en;q=0.9\", \"Accept-Encoding\": \"gzip, deflate, br, zstd\", \"Accept\": \"*/*\"}",
+   "url_license": "4b203316c47c370a1eb9097c070d7226:676e6783f23789cdf4ff0486386145ed",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: Sec-Fetch-Site,Sec-Fetch-Mode,Sec-Fetch-Dest,Connection,Accept-Language,Accept-Encoding,Accept"
+  },
+  {
+   "name": "FIFA Asean Cup [CH4]",
+   "tagline": "01 Okt 19:30 WIB - Indonesia vs Bangladesh",
+   "hls": "https://v101.sportcdn.live/live/live-1-4639764-2.flv?txSecret=98035cac5a7600abd4876f15a9e7d1e9&txTime=6abe8b85",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Referer\": \"https://www.aiscore.com/\", \"Origin\": \"https://www.aiscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://chn.starlive.workers.dev/live/ballbar_36370.m3u8",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
+  },
+  {
+   "name": "FIFA Asean Cup [CH5]",
+   "tagline": "01 Okt 19:30 WIB - Malaysia vs Singapore",
+   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -211,6 +188,20 @@
   {
    "name": "Formula 1 [CH1]",
    "tagline": "02 Okt 11:30 WIB - Bahrain - Practice 1",
+   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSXFGRVN6MmhqaE9Sa1daYlBXVW9OUSIsImtpZCI6IkdaU3gzMzM5TG9xTmU1dnorNUFDaFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "Formula 1 [CH2]",
+   "tagline": "02 Okt 15:00 WIB - Bahrain - Practice 2",
    "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
    "is_live": "t",
    "premium": "t",
@@ -388,6 +379,36 @@
    "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
+   "name": "FIFA Asean Cup [CH1]",
+   "tagline": "27 Sep 14:00 WIB - Hong Kong vs Laos",
+   "hls": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYnRiK0p0cWt1U2FCQ0duL1lDVk91dyIsImtpZCI6IjFCajNNKzBpVDV1NXdyRlluYklxSUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH5]",
+   "tagline": "27 Sep 14:00 WIB - India vs Vietnam",
+   "hls": "http://43.152.182.139/live/channel33.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
    "name": "Volleyball: Asian Games 2026 [CH6]",
    "tagline": "27 Sep 14:00 WIB - Indonesia vs Thailand",
    "hls": "http://43.152.182.139/live/channel33.flv",
@@ -416,6 +437,38 @@
    "code": "EV",
    "group": "Events",
    "drm": true
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH7]",
+   "tagline": "27 Sep 17:00 WIB - China vs Chinese Taipei",
+   "hls": "http://43.152.182.139/live/channel33.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH8]",
+   "tagline": "27 Sep 17:20 WIB - Japan vs Uzbekistan",
+   "hls": "http://43.152.182.139/live/channel33.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Asian Games 2026 [CH1]",
@@ -555,7 +608,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "All Country",
    "code": "AA",
-   "group": "All Country"
+   "group": "All Country",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -569,9 +625,8 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -603,7 +658,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -1867,7 +1922,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Rede Brasil",
@@ -2019,9 +2077,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:200"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2366,10 +2424,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "TV Japi",
@@ -3500,10 +3555,7 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "South Korea"
   },
   {
    "name": "MBC Max",
@@ -4491,9 +4543,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Nusantara TV",
@@ -5844,7 +5896,8 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiYUVqdllGZFZlYjlOUVYyeEF5RlQ3USIsImtpZCI6ImZ1cHkxZ2RTUmFtZTR5VldBOVdJVXcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Philippines (the)",
    "code": "PH",
-   "group": "Philippines (the)"
+   "group": "Philippines (the)",
+   "drm": true
   },
   {
    "name": "Telemundo",
@@ -6260,9 +6313,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! ARENA",
@@ -6276,9 +6327,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! FIGHT",
@@ -6323,10 +6372,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiemFHTlRTQ3IxY3gzZ3hXcjRuZit1USIsImtpZCI6InpuejVzbzBhallkS3pPdkVUWDRmelEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
-   "group": "Russian Federation (the)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Russian Federation (the)"
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -6356,9 +6402,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -6459,7 +6505,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -7129,22 +7178,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSVVNcVk3bUgwNGtKODBGYlZwYkFzUSIsImtpZCI6IjdMNDlmWWxOVEQyKzlITFdvOVFMc3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Portugal",
    "code": "PT",
-   "group": "Portugal",
-   "drm": true
-  },
-  {
-   "name": "Formula 1 [CH2]",
-   "tagline": "02 Okt 15:00 WIB - Bahrain - Practice 2",
-   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSXFGRVN6MmhqaE9Sa1daYlBXVW9OUSIsImtpZCI6IkdaU3gzMzM5TG9xTmU1dnorNUFDaFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
+   "group": "Portugal"
   },
   {
    "name": "MotoGP [CH4]",
@@ -7448,15 +7482,267 @@
    "code": "ID",
    "group": "Indonesia",
    "source": "extra"
+  },
+  {
+   "name": "MDTV",
+   "tagline": "Entertainment",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/6cdb3402d11f58c.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\", \"Referer\": \"https://www.dens.tv\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "RTV",
+   "tagline": "Entertainment",
+   "hls": "https://rtvstream.rtv.co.id:4555/hls/rtv.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "Jogja TV",
+   "tagline": "Local",
+   "hls": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "Jawa Pos TV",
+   "tagline": "Local",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/459caa984301138.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\", \"Referer\": \"https://www.indihometv.com\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "BTV",
+   "tagline": "Entertainment",
+   "hls": "http://cdn.nng.cloudns.us/live/m3u8/id/270f72deeb5843f.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "BeritaSatu",
+   "tagline": "News",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/270f72deeb5843g.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "Magna Channel",
+   "tagline": "Entertainment",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/6183ec225226cce.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\", \"Referer\": \"https://www.dens.tv\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "TVRI Sport",
+   "tagline": "Entertainment",
+   "hls": "https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "BN Channel",
+   "tagline": "News",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/6183ec225226ccf.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "SIN PO TV",
+   "tagline": "Entertainment",
+   "hls": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-dash-extra",
+   "header_iptv": "{\"User-Agent\": \"YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "DAAI TV",
+   "tagline": "Local",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/0525ed2747e3162.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "Elshinta TV",
+   "tagline": "News",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/383fb71f4a76ab2.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "JTV",
+   "tagline": "Local",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/226fe77699e03c6.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "JAKTV",
+   "tagline": "Local",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/a6e7e966ea54cd3.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "TVKU",
+   "tagline": "Local",
+   "hls": "http://khano.nng.cloudns.us/live/m3u8/id/29afb26faff1ccd.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "TVMU",
+   "tagline": "Entertainment",
+   "hls": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0/v2206\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "MQTV",
+   "tagline": "Religious",
+   "hls": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/bee477ab862965d0c4c8217e84d0dcb3919353f5/55b1da7f755ebf7.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0/v2206\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
+  },
+  {
+   "name": "Indonesiana TV",
+   "tagline": "Entertainment",
+   "hls": "https://gist.githubusercontent.com/warningfm/f951716f1dfd96d4480dbdad6a000eeb/raw/65169ac6d2221de0cf3346bac07e65c6e67b3fc9/indonesiana.m3u8",
+   "is_live": true,
+   "premium": "f",
+   "jenis": "hls-dash-extra",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "none",
+   "country": "Indonesia",
+   "code": "ID",
+   "group": "Indonesia",
+   "source": "extra"
   }
  ],
  "health": {
-  "checked": "2026-10-01T09:12:12Z",
-  "playable": 340,
-  "total": 510,
-  "dead": 189,
-  "playlist_entries": 166,
-  "playlist_pipe_entries": 168,
+  "checked": "2026-10-01T13:58:22Z",
+  "playable": 367,
+  "total": 531,
+  "dead": 185,
+  "playlist_entries": 186,
+  "playlist_pipe_entries": 188,
   "verified": true
  }
 }
