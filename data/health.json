@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-02T13:21:26Z",
+ "updated": "2026-10-02T18:37:54Z",
  "checked": 527,
- "playable": 362,
- "dead": 217,
+ "playable": 358,
+ "dead": 197,
  "no_playlist": 0,
- "pipe_only": 13,
- "drm_excluded": 130,
- "geo_limited": 45,
+ "pipe_only": 14,
+ "drm_excluded": 129,
+ "geo_limited": 44,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 154,
- "playlist_pipe_entries": 154,
+ "playlist_entries": 175,
+ "playlist_pipe_entries": 175,
  "playlist_verified": true,
- "verify_rounds": 6,
+ "verify_rounds": 4,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -57,139 +57,6 @@
    "status": "404"
   },
   {
-   "name": "SIC TV",
-   "url": "https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error timed out>"
-  },
-  {
-   "name": "SIC TV",
-   "url": "https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error timed out>"
-  },
-  {
-   "name": "TV Cidade Verde",
-   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TV Cidade Verde",
-   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TMC",
-   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "TMC",
-   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "MATCH! IGRA",
-   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "Abdulmajeed Abdullah",
-   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Abdulmajeed Abdullah",
-   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Saudiya",
-   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Saudiya",
-   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Sunnah Al Nabawiyah TV",
-   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Sunnah Al Nabawiyah TV",
-   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Asharq News",
-   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Asharq News",
-   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "M-Live 5",
-   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "M-Live 5",
-   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
    "name": "RecordTV",
    "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
@@ -197,444 +64,10 @@
    "status": "200"
   },
   {
-   "name": "MATCH! FOOTBALL 1",
-   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "ElyTV",
-   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "ElyTV",
-   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Babel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8",
-   "style": "vlc",
-   "kind": "timeout",
-   "status": "timeout"
-  },
-  {
-   "name": "TVRI Bali",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8",
+   "name": "TVNBN",
+   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
    "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Bengkulu",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8",
-   "style": "vlc",
-   "kind": "timeout",
-   "status": "timeout"
-  },
-  {
-   "name": "TVRI DKI",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Gorontalo",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Jabar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Jambi",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Jateng",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Jatim",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Jogja",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Kalbar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Kalsel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Kalteng",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Kaltim",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Lampung",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI NTB",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI NTT",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Nasional",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Papua",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Papua barat",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Riau",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Riau/hlstl/Riau.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sport",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sulbar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sulsel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sulteng",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sultra",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sulut",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sumbar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sumsel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sumsel/hls/Sumsel.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Sumut",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI World",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Aceh",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "504"
-  },
-  {
-   "name": "TVRI Ambon",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Babel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Bali",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Bengkulu",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "502"
-  },
-  {
-   "name": "TVRI DKI",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Gorontalo",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Jabar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Jambi",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Jateng",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Jatim",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Jogja",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Kalbar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Kalsel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Kalteng",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Kaltim",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Lampung",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI NTB",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI NTT",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Nasional",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Papua",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Papua barat",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Riau",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Riau/hlstl/Riau.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Sport",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Sulbar",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Sulsel",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Sulteng",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Canal 38",
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "Asharq Documentary",
-   "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
    "status": "404"
   },
   {
@@ -643,6 +76,272 @@
    "style": "pipe",
    "kind": "other",
    "status": "200"
+  },
+  {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "TVNBN",
+   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "ElyTV",
+   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "timeout",
+   "status": "timeout"
+  },
+  {
+   "name": "ElyTV",
+   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "timeout",
+   "status": "timeout"
+  },
+  {
+   "name": "Rede SPTV",
+   "url": "https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "SIC TV",
+   "url": "https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "SIC TV",
+   "url": "https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TV Cidade Verde",
+   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TV Cidade Verde",
+   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TV Sim Cachoeiro",
+   "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TV Sim Cachoeiro",
+   "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TMC",
+   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+  },
+  {
+   "name": "TMC",
+   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+  },
+  {
+   "name": "Bungo TV",
+   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Bungo TV",
+   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "RTV",
+   "url": "http://op-flashcon-digdayahd-1.dens.tv/h/h10/index.m3u8",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "Abdulmajeed Abdullah",
+   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Abdulmajeed Abdullah",
+   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Saudiya",
+   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Saudiya",
+   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Sunnah Al Nabawiyah TV",
+   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Sunnah Al Nabawiyah TV",
+   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Asharq News",
+   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Asharq News",
+   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "M-Live 5",
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "M-Live 5",
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Gugbang TV",
+   "url": "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Gugbang TV",
+   "url": "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Oman Sports",
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "TV Rio Preto",
+   "url": "https://video02.logicahost.com.br/tvriopreto/tvriopreto/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "tvOne",
+   "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h40/01.m3u8",
+   "style": "pipe",
+   "kind": "sub:None",
+   "status": "error"
+  },
+  {
+   "name": "Asharq Documentary",
+   "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
   }
  ],
  "repairs": [],
@@ -873,6 +572,11 @@
    "url": "https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/live.isml/.mpd"
   },
   {
+   "name": "HBO",
+   "code": "ID",
+   "url": "https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c6856b6088c3016b87d64b970b53/manifest.mpd"
+  },
+  {
    "name": "Premium Movies",
    "code": "ID",
    "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/bde0a6d8d3fd4d77ae5093ad2e6699dc/index.mpd"
@@ -911,11 +615,6 @@
    "name": "beIN Sports AU 3 A+",
    "code": "SP",
    "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
-  },
-  {
-   "name": "Caze TV",
-   "code": "SP",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/vzeco5ty0v/out/v1/44c6b8f31a2544e3b2a9bb41ed5e241e/cenc.mpd"
   },
   {
    "name": "CBS Golazo",
@@ -1156,11 +855,6 @@
    "name": "M-Live 6",
    "code": "SG",
    "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
-  },
-  {
-   "name": "MATCH! FOOTBALL 2",
-   "code": "RU",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd"
   },
   {
    "name": "Mediaset Italy",
@@ -1404,12 +1098,12 @@
    "url": "http://43.152.182.139/live/channel33.flv"
   },
   {
-   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "name": "WAFF Arabian Gulf Cup [CH1]",
    "code": "AA",
    "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "status": "flaky:200",
    "dead": true,
-   "url": "http://43.152.182.139/live/channel23.flv"
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -1423,7 +1117,7 @@
    "name": "Italy: Serie-A [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)",
+   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
    "dead": true,
    "url": "https://live2.pro2cdnlive.com/live/channel21.flv"
   },
@@ -2068,6 +1762,14 @@
    "url": "https://kbsworld-ott.akamaized.net:443/hls/live/2002341/kbsworld/01.m3u8"
   },
   {
+   "name": "MBC",
+   "code": "KR",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8"
+  },
+  {
    "name": "MBC Max",
    "code": "SA",
    "premium": "f",
@@ -2508,12 +2210,28 @@
    "url": "https://video.beeline.tv/live/d/channel377.isml/manifest-stb.mpd"
   },
   {
+   "name": "MATCH! FOOTBALL 1",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd"
+  },
+  {
    "name": "MATCH! FOOTBALL 3",
    "code": "RU",
    "premium": "f",
    "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
    "dead": true,
    "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! IGRA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -2599,7 +2317,7 @@
    "name": "International Friendly [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "flaky:404",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://43.152.182.139/live/channel12.flv"
   },
@@ -2618,6 +2336,14 @@
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://43.152.182.139/live/channel28.flv"
+  },
+  {
+   "name": "Jogja TV",
+   "code": "ID",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
   }
  ]
 }
