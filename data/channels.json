@@ -1,65 +1,7 @@
 {
- "updated": "2026-10-02T22:39:24Z",
- "count": 527,
+ "updated": "2026-10-03T01:31:05Z",
+ "count": 523,
  "channels": [
-  {
-   "name": "UEFA Nations League [CH1]",
-   "tagline": "02 Okt 21:00 WIB - Kazakhstan vs Moldova",
-   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://cricrex.live/\", \"Origin\": \"https://cricrex.live\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0\", \"Accept\": \"*/*\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoibU0vNVlBbVYramdjZHYyczg4ZnRyZyIsImtpZCI6IkNVVTg2Q0RXWDd4blhlTVlYNTVGVEEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Accept",
-   "drm": true
-  },
-  {
-   "name": "UEFA Nations League [CH2]",
-   "tagline": "03 Okt 01:45 WIB - Belgium vs Turkiye",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Nations League [CH3]",
-   "tagline": "03 Okt 01:45 WIB - France vs Italy",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Nations League [CH4]",
-   "tagline": "03 Okt 01:45 WIB - Bosnia and Herzegovina vs Sweden",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiSkwvWFhVTnN2M01XaWlvdHpOUUNnUSIsImtpZCI6Ik0xMnRkNEVKbFVVRDNMc2gzSklCWHcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
   {
    "name": "MotoGP [CH4]",
    "tagline": "03 Okt 06:40 WIB - Japan - Free Practice Nr. 2",
@@ -77,17 +19,17 @@
   {
    "name": "International Friendly [CH2]",
    "tagline": "03 Okt 07:00 WIB - Colombia vs Paraguay",
-   "hls": "http://43.152.182.139/live/channel16.flv",
+   "hls": "http://42.117.246.9/live/channel12.flv?wsSecret=0730653ea97067e9bd389fb9ab4e33ee&wsABSTime=1775336089",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
    "country": "Events",
    "code": "EV",
    "group": "Events",
    "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "pipe_only_reason": "needs headers: Host"
   },
   {
    "name": "MotoGP [CH5]",
@@ -152,12 +94,12 @@
   {
    "name": "Football: Asian Games 2026 [CH1]",
    "tagline": "03 Okt 13:00 WIB - China U23 vs Uzbekistan U23",
-   "hls": "https://tglmp01.akamaized.net/out/v1/d43dbc5da1334ec088ed9eb5796eee7c/manifest.mpd",
+   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd",
    "is_live": "t",
    "premium": "t",
    "jenis": "dash-clearkey",
    "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicHNHaTZCL3BRYW5pNzlLOHJRMFZNZyIsImtpZCI6Ijh6clBNNDdKUnYyU0dvWDRjR05qbVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicjQ4Y2FzN2NORlVhZ3ZPN1NhMzk2ZyIsImtpZCI6Ims5ekxPUGpJVFVTTlduUWk2MFJHS3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -241,12 +183,12 @@
   {
    "name": "Football: Asian Games 2026 [CH2]",
    "tagline": "03 Okt 17:30 WIB - South Korea U23 vs Japan U23",
-   "hls": "https://tglmp01.akamaized.net/out/v1/d43dbc5da1334ec088ed9eb5796eee7c/manifest.mpd",
+   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd",
    "is_live": "t",
    "premium": "t",
    "jenis": "dash-clearkey",
    "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicHNHaTZCL3BRYW5pNzlLOHJRMFZNZyIsImtpZCI6Ijh6clBNNDdKUnYyU0dvWDRjR05qbVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicjQ4Y2FzN2NORlVhZ3ZPN1NhMzk2ZyIsImtpZCI6Ims5ekxPUGpJVFVTTlduUWk2MFJHS3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -295,6 +237,95 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "401(no-ref)"
+  },
+  {
+   "name": "FIFA Club Friendly [CH5]",
+   "tagline": "03 Okt 20:30 WIB - FC St. Pauli vs Borussia Monchengladbach",
+   "hls": "https://fastly.live.brightcove.com/6374054671112/eu-west-1/6058004203001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYXplMnp5LmVncmVzcy55ODN1ZWIiLCJhY2NvdW50X2lkIjoiNjA1ODAwNDIwMzAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU4MDA0MjAzMDAxIl0sImp0aSI6IjYzNzQwNTQ2NzExMTIifQ.3FmuTna3DAmY7xlhK5fk6LMrosrtrR5VsU2QOgYO5y4/playlist-dash.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
+   "url_license": "94f0b3d645c64f0dbe2e0990ec290cdf:0dc311915f9decffaf7dfee30c4d8482",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
+  },
+  {
+   "name": "International Friendly [CH1]",
+   "tagline": "03 Okt 21:00 WIB - India vs Brazil",
+   "hls": "http://43.152.182.139/live/channel12.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "International Friendly [CH3]",
+   "tagline": "03 Okt 22:00 WIB - Russia vs Namibia",
+   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiaUNQM0U3cHYyNXUrQ2lyWUxUQ2FTdyIsImtpZCI6IlVjRHZJN0Z5bCtYQUhOZnpiZENtemcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "International Friendly [CH4]",
+   "tagline": "04 Okt 01:00 WIB - Canada vs Peru",
+   "hls": "http://42.117.246.9/live/channel36.flv?wsSecret=6e6f31d453f273f58f6d6b30d7b22388&wsABSTime=1790727702",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "International Friendly [CH5]",
+   "tagline": "04 Okt 02:00 WIB - Tunisia vs Mali",
+   "hls": "http://43.152.182.139/live/channel22.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "UFC 332 [CH1]",
+   "tagline": "04 Okt 03:00 WIB - Silva vs Wang",
+   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEMvcXlLbVp2UWEvUUZtL00wRVhTUSIsImtpZCI6ImFhV3FnMW9HSE9aS1l3MFFSbkorUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
   },
   {
    "name": "Kungfu Soccer",
@@ -719,10 +750,7 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "All Country",
    "code": "AA",
-   "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:200"
+   "group": "All Country"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -769,7 +797,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -1486,10 +1514,7 @@
    "url_license": "",
    "country": "Australia",
    "code": "AU",
-   "group": "Australia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Australia"
   },
   {
    "name": "Racing.com",
@@ -1584,10 +1609,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Anime TV",
@@ -2190,10 +2212,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -3040,7 +3059,10 @@
    "url_license": "",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Banten TV",
@@ -3676,7 +3698,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "MBC Max",
@@ -6239,10 +6264,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiUzZYWnJyb2lPYlFsMGM5N1JVZERNdyIsImtpZCI6IlhoeDVpeGJTVGNqTC9IZ1pxL2Q3VFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
-   "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "group": "Russian Federation (the)"
   },
   {
    "name": "MATCH! ARENA",
@@ -6256,9 +6278,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! FIGHT",
@@ -6304,9 +6324,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "drm": true
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -6439,10 +6457,7 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Sports TV"
   },
   {
    "name": "Premiere Brazil 1",
@@ -6755,9 +6770,7 @@
    "country": "Sweden",
    "code": "SE",
    "group": "Sweden",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "451(no-ref)"
+   "drm": true
   },
   {
    "name": "Universo (West)",
@@ -7103,94 +7116,6 @@
    "group": "Portugal"
   },
   {
-   "name": "FIFA Club Friendly [CH5]",
-   "tagline": "03 Okt 20:30 WIB - FC St. Pauli vs Borussia Monchengladbach",
-   "hls": "https://fastly.live.brightcove.com/6374054671112/eu-west-1/6058004203001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYXplMnp5LmVncmVzcy55ODN1ZWIiLCJhY2NvdW50X2lkIjoiNjA1ODAwNDIwMzAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU4MDA0MjAzMDAxIl0sImp0aSI6IjYzNzQwNTQ2NzExMTIifQ.3FmuTna3DAmY7xlhK5fk6LMrosrtrR5VsU2QOgYO5y4/playlist-dash.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0\"}",
-   "url_license": "94f0b3d645c64f0dbe2e0990ec290cdf:0dc311915f9decffaf7dfee30c4d8482",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events"
-  },
-  {
-   "name": "International Friendly [CH1]",
-   "tagline": "03 Okt 21:00 WIB - India vs Brazil",
-   "hls": "http://43.152.182.139/live/channel12.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "International Friendly [CH3]",
-   "tagline": "03 Okt 22:00 WIB - Russia vs Namibia",
-   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiaUNQM0U3cHYyNXUrQ2lyWUxUQ2FTdyIsImtpZCI6IlVjRHZJN0Z5bCtYQUhOZnpiZENtemcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "International Friendly [CH4]",
-   "tagline": "04 Okt 01:00 WIB - Canada vs Peru",
-   "hls": "http://42.117.246.9/live/channel36.flv?wsSecret=6e6f31d453f273f58f6d6b30d7b22388&wsABSTime=1790727702",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "International Friendly [CH5]",
-   "tagline": "04 Okt 02:00 WIB - Tunisia vs Mali",
-   "hls": "http://43.152.182.139/live/channel22.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
-  },
-  {
-   "name": "UFC 332 [CH1]",
-   "tagline": "04 Okt 03:00 WIB - Silva vs Wang",
-   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEMvcXlLbVp2UWEvUUZtL00wRVhTUSIsImtpZCI6ImFhV3FnMW9HSE9aS1l3MFFSbkorUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
    "name": "International Friendly [CH6]",
    "tagline": "04 Okt 07:00 WIB - Argentina vs Burkina Faso",
    "hls": "http://43.152.182.139/live/channel28.flv",
@@ -7202,9 +7127,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "MotoGP [CH7]",
@@ -7695,16 +7619,19 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   }
  ],
  "health": {
-  "checked": "2026-10-02T22:42:52Z",
-  "playable": 354,
-  "total": 527,
-  "dead": 191,
-  "playlist_entries": 184,
-  "playlist_pipe_entries": 184,
+  "checked": "2026-10-03T01:34:48Z",
+  "playable": 353,
+  "total": 523,
+  "dead": 185,
+  "playlist_entries": 186,
+  "playlist_pipe_entries": 186,
   "verified": true
  }
 }
