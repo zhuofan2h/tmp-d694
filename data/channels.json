@@ -1,68 +1,7 @@
 {
- "updated": "2026-10-03T12:39:02Z",
- "count": 522,
+ "updated": "2026-10-03T16:50:07Z",
+ "count": 499,
  "channels": [
-  {
-   "name": "Football: Asian Games 2026 [CH2]",
-   "tagline": "03 Okt 17:30 WIB - South Korea U23 vs Japan U23",
-   "hls": "https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicjQ4Y2FzN2NORlVhZ3ZPN1NhMzk2ZyIsImtpZCI6Ims5ekxPUGpJVFVTTlduUWk2MFJHS3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "Pro Futsal League Putera [CH5]",
-   "tagline": "03 Okt 19:00 WIB - Unggul FC vs Blacksteel Papua",
-   "hls": "https://www.visionplus.id/streamlocators/multirights/getPlayableUrlAndLicense?adsProfile=premium_ultimate&drm=WV&packaging=DASH&provisioningData=eyJwcm92aXNpb25pbmciOlt7InN5c3RlbSI6InZlcmltYXRyaXgiLCJkYXRhIjpbeyJuYW1lIjoidnVpZCIsInZhbHVlIjoiZjRhODRlOTctMzc4ZS00ZjE1LTgwZWQtZjQzNTFkMTBlY2NhIn1dfV19&url=multirights%3Amediapackage%2Flive%2F%2FEG_d2xz2v5wuvgur6%2FDASH%2F63c0da12bb4d48afbaf053f51dff2353%2FHLS%2Fb9fc626578f34e0db7ff123168ace53a%2F00000000000000000115&userSessionToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjQ4NDE0MzMwLCJ0eSI6IlVTRVIiLCJwY2kiOiIzNzczNzQzOCIsImh3SWQiOiJmNGE4NGU5Ny0zNzhlLTRmMTUtODBlZC1mNDM1MWQxMGVjY2EiLCJleHAiOjE3OTEwNDM3MzksInBuIjoiTU5DIiwiY2lkIjoyMTYxNzE3Njh9.sLzX4zsw-0_g_J6D9IS1rSed2CLpZ3fp-q4b9NWeGHI",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "drm_vision_plus",
-   "header_iptv": "{\"Referer\": \"https://www.visionplus.id/\", \"Origin\": \"https://www.visionplus.id\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "UEFA Nations League [CH1]",
-   "tagline": "03 Okt 20:00 WIB - Finland vs Albania",
-   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://cricrex.live/\", \"Origin\": \"https://cricrex.live\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0\", \"Accept\": \"*/*\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoibU0vNVlBbVYramdjZHYyczg4ZnRyZyIsImtpZCI6IkNVVTg2Q0RXWDd4blhlTVlYNTVGVEEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Accept",
-   "drm": true
-  },
-  {
-   "name": "FIFA Club Friendly [CH5]",
-   "tagline": "03 Okt 20:30 WIB - FC St. Pauli vs Borussia Monchengladbach",
-   "hls": "http://43.152.136.207/live/channel16.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.livefeedtextbox.com\", \"Referer\": \"https://xlz.edgevaultmedia.com/\", \"Origin\": \"https://xlz.edgevaultmedia.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
-  },
   {
    "name": "International Friendly [CH1]",
    "tagline": "03 Okt 21:00 WIB - India vs Brazil",
@@ -78,19 +17,20 @@
    "drm": true
   },
   {
-   "name": "International Friendly [CH3]",
-   "tagline": "03 Okt 22:00 WIB - Russia vs Namibia",
-   "hls": "http://43.152.182.139/live/channel13.flv",
+   "name": "WAFF Arabian Gulf Cup [CH1]",
+   "tagline": "03 Okt 22:55 WIB - Saudi Arabia vs Qatar",
+   "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
    "is_live": "t",
    "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "UEFA Nations League [CH2]",
@@ -135,22 +75,6 @@
    "pipe_only": true,
    "pipe_only_reason": "needs headers: Accept",
    "drm": true
-  },
-  {
-   "name": "WAFF Arabian Gulf Cup [CH1]",
-   "tagline": "04 Okt 00:00 WIB - Saudi Arabia vs Qatar",
-   "hls": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
   },
   {
    "name": "International Friendly [CH4]",
@@ -456,8 +380,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "UFC Fight Night [CH2]",
@@ -560,8 +485,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "FIFA Asean Cup [CH1]",
@@ -589,8 +515,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH6]",
@@ -604,8 +531,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "FIFA Asean Cup [CH2]",
@@ -633,8 +561,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH8]",
@@ -648,8 +577,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Asian Games 2026 [CH1]",
@@ -806,8 +736,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -823,7 +754,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -1891,10 +1822,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Fala Litoral",
@@ -2323,7 +2251,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Terra Viva",
@@ -2765,7 +2696,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TVNBN",
@@ -2779,38 +2713,6 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil"
-  },
-  {
-   "name": "Food Travel",
-   "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D71",
-   "is_live": "f",
-   "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "none",
-   "country": "Indonesia",
-   "code": "ID",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "[testo]1",
-   "tagline": "Sports TV",
-   "hls": "https://www.youtube.com/watch?v=Kz5Q5-E2_II",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "yt",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0\"}",
-   "url_license": "none",
-   "country": "Sports TV",
-   "code": "SP",
-   "group": "Sports TV",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "200(no-ref)"
   },
   {
    "name": "360 TV HD",
@@ -3027,7 +2929,10 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia"
+   "group": "Saudi Arabia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Asharq News",
@@ -3083,66 +2988,6 @@
    "country": "Saudi Arabia",
    "code": "SA",
    "group": "Saudi Arabia"
-  },
-  {
-   "name": "BalikpapanTV",
-   "tagline": "TV Lokal",
-   "hls": "https://5bf7b725107e5.streamlock.net/btv/btv/playlist.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "Bandung TV",
-   "tagline": "TV Lokal",
-   "hls": "http://202.150.153.254:65500/bandungtvWEBSITE.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia"
-  },
-  {
-   "name": "Banten TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/sabantentv/myStream/chunklist_w1424683093.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "Batam TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch5/myStream/chunklist_w1096211175.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
   },
   {
    "name": "Bedaya TV",
@@ -3281,22 +3126,6 @@
    "geo_status": "403-blocked(verify)"
   },
   {
-   "name": "Bungo TV",
-   "tagline": "TV Lokal",
-   "hls": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
-  },
-  {
    "name": "Cartoon Network Japan",
    "tagline": "Japan",
    "hls": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25&checkedby:iptvcat.com",
@@ -3414,19 +3243,6 @@
    "group": "Japan",
    "geo_limited": true,
    "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "Dhoho TV",
-   "tagline": "TV Lokal",
-   "hls": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8?checkedby:iptvcat.com",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia"
   },
   {
    "name": "Disney Channel JP",
@@ -3604,99 +3420,6 @@
    "group": "United Kingdom"
   },
   {
-   "name": "Jambi TV",
-   "tagline": "TV Lokal",
-   "hls": "https://ams.juraganstreaming.com:5443/LiveApp/streams/jambitv.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
-  },
-  {
-   "name": "Jawapos TV",
-   "tagline": "TV Lokal",
-   "hls": "https://jawapostv.siar.us/jawapostv/live/playlist.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "JITV Jogja",
-   "tagline": "TV Lokal",
-   "hls": "https://mam.jogjaprov.go.id:1937/tv/jitv_720p/chunklist_w850229424.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)"
-  },
-  {
-   "name": "Jowo Channel",
-   "tagline": "TV Lokal",
-   "hls": "https://raw.githubusercontent.com/warningfm/streams/refs/heads/master/live/m3u8/id/1de333734b1b7e0.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0\"}",
-   "url_license": "f2c9087e5432ce2c2f4ae8e1fd77ae4c:f7a50262991ca7d505fce1572a7f0c2a",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia"
-  },
-  {
-   "name": "JPM TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch6/myStream/chunklist_w448347974.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "Kawanua TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch18/myStream/chunklist_w1055048719.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
    "name": "KBS World",
    "tagline": "South Korea",
    "hls": "https://kbsworld-ott.akamaized.net:443/hls/live/2002341/kbsworld/01.m3u8",
@@ -3711,19 +3434,6 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "400(no-ref)"
-  },
-  {
-   "name": "Kilisuci TV Kediri",
-   "tagline": "TV Lokal",
-   "hls": "https://5bf7b725107e5.streamlock.net:443/kstv/kstv/playlist.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia"
   },
   {
    "name": "Maah TV",
@@ -3749,7 +3459,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "MBC Max",
@@ -3782,22 +3495,6 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "<urlopen error [Errno -5] No address associated with hostname>(no-ref)"
-  },
-  {
-   "name": "Natuna TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/natuna/myStream/chunklist_w1179708856.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
   },
   {
    "name": "NBS",
@@ -3857,83 +3554,6 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
-  },
-  {
-   "name": "Padang TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch16/myStream/chunklist_w1993412302.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "PJTV Bandung",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch30/myStream/chunklist_w38627436.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "pktv",
-   "tagline": "TV Lokal",
-   "hls": "https://ams.juraganstreaming.com:5443/LiveApp/streams/pktv.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "https://drm.dtsport.pro/MjU=",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
-  },
-  {
-   "name": "PON TV Pontianak",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch15/myStream/chunklist_w330464297.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "RCTV (Radar Cirebon)",
-   "tagline": "TV Lokal",
-   "hls": "https://v10.siar.us/rctv/live/playlist.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\": \"https://cdn.siar.us/\", \"Origin\": \"https://cdn.siar.us\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0\"}",
-   "url_license": "",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia"
   },
   {
    "name": "RTM Asean",
@@ -4025,38 +3645,6 @@
    "geo_status": "403-geo(verify)"
   },
   {
-   "name": "Sumedang TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/ch25/myStream/chunklist_w500135136.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0\"}",
-   "url_license": "bad8efff688c0dbb3711e4a7114c22a3:6ba800673b20776c0c850130d45e1920",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "Surabaya TV",
-   "tagline": "TV Lokal",
-   "hls": "https://e.siar.us/live/surabayatv.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
    "name": "Suria",
    "tagline": "Singapore",
    "hls": "https://d19h5fcpqoh625.cloudfront.net/out/v1/00ac947de8174a54bd0f52226115d1db/manifest.mpd",
@@ -4070,35 +3658,6 @@
    "group": "Singapore",
    "geo_limited": true,
    "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "Timor TV",
-   "tagline": "TV Lokal",
-   "hls": "https://63b2dc7196c38.streamlock.net:1937/timortv/myStream/chunklist_w689544014.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0\"}",
-   "url_license": "bad8efff688c0dbb3711e4a7114c22a3:6ba800673b20776c0c850130d45e1920",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
-  {
-   "name": "TV Tabalong",
-   "tagline": "TV Lokal",
-   "hls": "https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
-   "country": "TV Lokal",
-   "code": "LO",
-   "group": "Indonesia"
   },
   {
    "name": "tv1",
@@ -4639,10 +4198,7 @@
    "url_license": "c64493155d8b443c834a13d4970cf834:509294911ac3c2d779ae2225a23460b4",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "tvOne",
@@ -5122,9 +4678,9 @@
    "dead_reason": "400(no-ref)"
   },
   {
-   "name": "Vision Prime HD",
+   "name": "Food Travel",
    "tagline": "Indonesia",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D87",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D71",
    "is_live": "f",
    "premium": "t",
    "jenis": "drm_rcti_plus",
@@ -5138,16 +4694,16 @@
    "dead_reason": "401(no-ref)"
   },
   {
-   "name": "JakTV",
-   "tagline": "TV Lokal",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D25",
+   "name": "Vision Prime HD",
+   "tagline": "Indonesia",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D87",
    "is_live": "f",
-   "premium": "f",
+   "premium": "t",
    "jenis": "drm_rcti_plus",
    "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
    "url_license": "none",
-   "country": "TV Lokal",
-   "code": "LO",
+   "country": "Indonesia",
+   "code": "ID",
    "group": "Indonesia",
    "fail_count": 1,
    "dead": true,
@@ -6364,9 +5920,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6442,9 +5998,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "Mediaset Italy",
@@ -7015,6 +6571,45 @@
    "group": "Singapore"
   },
   {
+   "name": "Bandung TV",
+   "tagline": "TV Lokal",
+   "hls": "http://202.150.153.254:65500/bandungtvWEBSITE.m3u8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{}",
+   "url_license": "",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
+  },
+  {
+   "name": "Bungo TV",
+   "tagline": "TV Lokal",
+   "hls": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
+  },
+  {
+   "name": "Dhoho TV",
+   "tagline": "TV Lokal",
+   "hls": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8?checkedby:iptvcat.com",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
+  },
+  {
    "name": "Garuda TV",
    "tagline": "Indonesia",
    "hls": "https://hgmtv.com:19360/garudatvlivestreaming/720p.m3u8",
@@ -7028,19 +6623,72 @@
    "group": "Indonesia"
   },
   {
-   "name": "Jakarta Globe",
+   "name": "JakTV",
    "tagline": "TV Lokal",
-   "hls": "https://atemecdnbalancer-voe.sysln.id/live/eds/JakartaGlobeHD/mediampd/JakartaGlobeHD.mpd",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D25",
    "is_live": "f",
    "premium": "f",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://www.firstmedia.com/\", \"Origin\": \"https://www.firstmedia.com\", \"User-Agent\": \"ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoic2VZNzM5VG9uOFF1cEJZMXF5dkRxUSIsImtpZCI6IlA3OE5VTVNLUnIrL0tIY1ZLVzhYNVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "none",
    "country": "TV Lokal",
    "code": "LO",
    "group": "Indonesia",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
+  },
+  {
+   "name": "Jowo Channel",
+   "tagline": "TV Lokal",
+   "hls": "https://raw.githubusercontent.com/warningfm/streams/refs/heads/master/live/m3u8/id/1de333734b1b7e0.m3u8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0\"}",
+   "url_license": "f2c9087e5432ce2c2f4ae8e1fd77ae4c:f7a50262991ca7d505fce1572a7f0c2a",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
+  },
+  {
+   "name": "Kilisuci TV Kediri",
+   "tagline": "TV Lokal",
+   "hls": "https://5bf7b725107e5.streamlock.net:443/kstv/kstv/playlist.m3u8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\"}",
+   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
+  },
+  {
+   "name": "RCTV (Radar Cirebon)",
+   "tagline": "TV Lokal",
+   "hls": "https://v10.siar.us/rctv/live/playlist.m3u8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\": \"https://cdn.siar.us/\", \"Origin\": \"https://cdn.siar.us\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0\"}",
+   "url_license": "",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
+  },
+  {
+   "name": "TV Tabalong",
+   "tagline": "TV Lokal",
+   "hls": "https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
+   "country": "TV Lokal",
+   "code": "LO",
+   "group": "Indonesia"
   },
   {
    "name": "UG.tv",
@@ -7219,7 +6867,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "MNCTV",
@@ -7233,7 +6884,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "GTV",
@@ -7247,7 +6901,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "iNews",
@@ -7261,7 +6918,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "KompasTV",
@@ -7289,7 +6949,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "ANTV",
@@ -7303,7 +6966,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "MDTV",
@@ -7345,7 +7011,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "Jawa Pos TV",
@@ -7513,7 +7182,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MQTV",
@@ -7632,12 +7304,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-03T12:42:41Z",
-  "playable": 362,
-  "total": 522,
-  "dead": 186,
-  "playlist_entries": 180,
-  "playlist_pipe_entries": 180,
+  "checked": "2026-10-03T16:56:03Z",
+  "playable": 340,
+  "total": 499,
+  "dead": 185,
+  "playlist_entries": 169,
+  "playlist_pipe_entries": 169,
   "verified": true
  }
 }
