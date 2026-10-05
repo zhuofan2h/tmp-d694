@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-05T02:43:21Z",
- "count": 488,
+ "updated": "2026-10-05T09:43:36Z",
+ "count": 489,
  "channels": [
   {
    "name": "FIFA Asean Cup [CH2]",
@@ -485,9 +485,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -514,7 +513,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "All Country",
    "code": "AA",
-   "group": "All Country"
+   "group": "All Country",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -737,7 +739,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   {
    "name": "AFC Champions League Elite [CH4]",
@@ -871,9 +875,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1420,9 +1423,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Canal do Inter",
@@ -1823,10 +1826,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Rede Brasil",
@@ -1978,9 +1978,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:200"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2057,10 +2057,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Terra Viva",
@@ -2515,10 +2512,23 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
+   "group": "Brazil"
+  },
+  {
+   "name": "[testo]1",
+   "tagline": "Sports TV",
+   "hls": "https://www.youtube.com/watch?v=zfEVhQapPz8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "yt",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0\"}",
+   "url_license": "none",
+   "country": "Sports TV",
+   "code": "SP",
+   "group": "Sports TV",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "360 TV HD",
@@ -2721,10 +2731,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq Documentary",
@@ -2737,7 +2744,10 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia"
+   "group": "Saudi Arabia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Asharq News",
@@ -3809,10 +3819,7 @@
    "url_license": "",
    "country": "TVRI",
    "code": "RI",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "TVRI Papua barat",
@@ -5674,9 +5681,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! ARENA",
@@ -5722,9 +5727,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -5738,7 +5743,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -5752,7 +5759,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
   },
   {
    "name": "MATCH! IGRA",
@@ -5782,9 +5791,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! STRANA",
@@ -5798,7 +5807,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "Mediaset Italy",
@@ -5867,7 +5878,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -6290,10 +6304,7 @@
    "url_license": "a2dd864fc95998efd52979e5f732e029:4f705ca934ba3ef5513fea618d4f938d",
    "country": "Kids",
    "code": "KD",
-   "group": "Kids",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Kids"
   },
   {
    "name": "Nick JR",
@@ -6926,7 +6937,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Elshinta TV",
@@ -7092,7 +7106,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "302(no-ref)"
   },
   {
    "name": "Indosiar",
@@ -7110,12 +7127,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-05T02:46:53Z",
-  "playable": 342,
-  "total": 488,
-  "dead": 170,
-  "playlist_entries": 176,
-  "playlist_pipe_entries": 176,
+  "checked": "2026-10-05T09:47:26Z",
+  "playable": 343,
+  "total": 489,
+  "dead": 171,
+  "playlist_entries": 178,
+  "playlist_pipe_entries": 178,
   "verified": true
  }
 }
