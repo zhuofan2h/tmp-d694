@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-06T13:47:50Z",
- "checked": 505,
- "playable": 350,
- "dead": 174,
+ "updated": "2026-10-06T19:14:34Z",
+ "checked": 507,
+ "playable": 349,
+ "dead": 182,
  "no_playlist": 0,
- "pipe_only": 12,
+ "pipe_only": 11,
  "drm_excluded": 128,
- "geo_limited": 44,
+ "geo_limited": 46,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 181,
- "playlist_pipe_entries": 181,
+ "playlist_entries": 177,
+ "playlist_pipe_entries": 177,
  "playlist_verified": true,
- "verify_rounds": 2,
+ "verify_rounds": 5,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -43,34 +43,6 @@
    "status": "404"
   },
   {
-   "name": "RecordTV",
-   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "RecordTV",
-   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "Rede NGT",
-   "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Rede NGT",
-   "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
    "name": "TV Cidade Verde",
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "vlc",
@@ -97,6 +69,20 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+  },
+  {
+   "name": "Bungo TV",
+   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Bungo TV",
+   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
   },
   {
    "name": "CNBC",
@@ -155,23 +141,16 @@
    "status": "429"
   },
   {
-   "name": "Rodja.tv",
-   "url": "https://rodjatv.com/rodjatv/live.m3u8",
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
    "style": "vlc",
-   "kind": "httperror",
+   "kind": "sub:404",
    "status": "404"
   },
   {
-   "name": "Rodja.tv",
-   "url": "https://rodjatv.com/rodjatv/live.m3u8",
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
    "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TVRI Papua barat",
-   "url": "https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8",
-   "style": "vlc",
    "kind": "sub:404",
    "status": "404"
   },
@@ -188,6 +167,34 @@
    "style": "pipe",
    "kind": "sub:404",
    "status": "404"
+  },
+  {
+   "name": "MATCH! ARENA",
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! ARENA",
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "Abdulmajeed Abdullah",
@@ -232,13 +239,6 @@
    "status": "404"
   },
   {
-   "name": "Asharq Documentary",
-   "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
    "name": "Asharq News",
    "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
    "style": "vlc",
@@ -264,6 +264,48 @@
    "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
    "style": "pipe",
    "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Oman Sports",
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "Oman Sports",
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "Adesso TV",
+   "url": "https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "ElyTV",
+   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "Rede NGT",
+   "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "sub:404",
    "status": "404"
   }
  ],
@@ -912,20 +954,20 @@
  ],
  "unplayable": [
   {
-   "name": "International Friendly [CH1]",
+   "name": "Basketball: NBA [CH1]",
    "code": "EV",
    "premium": "t",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "http://43.152.182.139/live/channel6.flv"
+   "url": "http://43.152.182.139/live/channel29.flv"
   },
   {
    "name": "Basketball: NBA [CH2]",
    "code": "EV",
    "premium": "t",
-   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "https://live2.pro2cdnlive.com/live/channel29.flv"
+   "url": "http://43.152.182.139/live/channel27.flv"
   },
   {
    "name": "Basketball: NBA [CH3]",
@@ -933,7 +975,7 @@
    "premium": "t",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "http://42.117.246.9/live/channel27.flv?wsSecret=50e670653f45a651437a8edeb243a81d&wsABSTime=1775093313"
+   "url": "http://43.152.182.139/live/channel25.flv"
   },
   {
    "name": "Basketball: NBA [CH4]",
@@ -941,7 +983,31 @@
    "premium": "t",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "http://42.117.246.9/live/channel27.flv?wsSecret=50e670653f45a651437a8edeb243a81d&wsABSTime=1775093313"
+   "url": "http://43.152.182.139/live/channel29.flv"
+  },
+  {
+   "name": "Asean Club Championship [CH1]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1002"
+  },
+  {
+   "name": "Asean Club Championship [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1012"
+  },
+  {
+   "name": "Asean Club Championship [CH3]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1010"
   },
   {
    "name": "Susah Sinyal",
@@ -2144,12 +2210,12 @@
    "url": "http://42.117.246.9/live/channel29.flv?wsSecret=83ebcb9d700aa4c856c3214eaee8531e&wsABSTime=1775093077"
   },
   {
-   "name": "Mentari TV",
+   "name": "Jogja TV",
    "code": "ID",
    "premium": "f",
-   "status": "flaky:302",
+   "status": "404(no-ref)",
    "dead": true,
-   "url": "https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237"
+   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
   }
  ]
 }
