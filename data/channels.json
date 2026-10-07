@@ -1,56 +1,11 @@
 {
- "updated": "2026-10-07T09:27:58Z",
- "count": 500,
+ "updated": "2026-10-07T16:45:16Z",
+ "count": 497,
  "channels": [
-  {
-   "name": "Basketball: NBA [CH3]",
-   "tagline": "07 Okt 08:00 WIB - Utah Jazz vs Denver Nuggets",
-   "hls": "http://43.152.182.139/live/channel25.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
-  },
-  {
-   "name": "Basketball: NBA [CH4]",
-   "tagline": "07 Okt 09:00 WIB - Golden State Warriors vs Los Angeles Lakers",
-   "hls": "http://43.152.182.139/live/channel29.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
-  },
-  {
-   "name": "International Friendly [CH1]",
-   "tagline": "07 Okt 09:30 WIB - Mexico vs Chile",
-   "hls": "http://43.152.182.139/live/channel28.flv",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
-  },
   {
    "name": "Asean Club Championship [CH1]",
    "tagline": "07 Okt 19:00 WIB - Ratchaburi FC vs Cong An Ho Chi Minh City",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1002",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112",
    "is_live": "t",
    "premium": "t",
    "jenis": "drm_rcti_plus",
@@ -66,44 +21,40 @@
   {
    "name": "Asean Club Championship [CH2]",
    "tagline": "07 Okt 19:00 WIB - Buriram United vs Borneo FC Samarinda",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1012",
+   "hls": "https://midcache-nt.rctiplus.id/abvia/bola/manifest.m3u8",
    "is_live": "t",
    "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com/\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
    "url_license": "",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Asean Club Championship [CH3]",
    "tagline": "07 Okt 20:00 WIB - Kuching City FC vs Tampines Rovers FC",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1010",
+   "hls": "http://43.152.136.207/live/channel5.flv",
    "is_live": "t",
    "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.livefeedtextbox.com\", \"Referer\": \"https://xlz.edgevaultmedia.com/\", \"Origin\": \"https://xlz.edgevaultmedia.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Basketball: NBA [CH5]",
    "tagline": "08 Okt 06:00 WIB - Indiana Pacers vs Minnesota Timberwolves",
-   "hls": "http://42.117.246.9/live/channel42.flv?wsSecret=5562d64e02fd9ed4ac10714ef61c3e38&wsABSTime=1775093244",
+   "hls": "http://43.152.182.139/live/channel29.flv",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -114,12 +65,12 @@
   {
    "name": "Basketball: NBA [CH6]",
    "tagline": "08 Okt 07:00 WIB - Oklahoma City Thunder vs Milwaukee Bucks",
-   "hls": "http://42.117.246.9/live/channel25.flv?wsSecret=0062069919e96aaa78381ec1f8ab3913&wsABSTime=1775094195",
+   "hls": "http://43.152.182.139/live/channel25.flv",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -130,12 +81,12 @@
   {
    "name": "Basketball: NBA [CH7]",
    "tagline": "08 Okt 07:00 WIB - Chicago Bulls vs Phoenix Suns",
-   "hls": "http://42.117.246.9/live/channel26.flv?wsSecret=46d8e471facefb9a368a299a297a2389&wsABSTime=1775094113",
+   "hls": "http://43.152.182.139/live/channel27.flv",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -146,12 +97,27 @@
   {
    "name": "Basketball: NBA [CH8]",
    "tagline": "08 Okt 07:00 WIB - Memphis Grizzlies vs Orlando Magic",
-   "hls": "http://42.117.246.9/live/channel52.flv?wsSecret=fb1ca7c56c2deedb91e44e498caf0994&wsABSTime=1775867721",
+   "hls": "http://43.152.182.139/live/channel1.flv",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
+  },
+  {
+   "name": "Basketball: NBA [CH9]",
+   "tagline": "08 Okt 09:00 WIB - Portland Trail Blazers vs Golden State Warriors",
+   "hls": "http://43.152.182.139/live/channel29.flv",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"host\": \"live2.edgeburstcdn.com\", \"Referer\": \"https://xlz.morvexstream.com/\", \"Origin\": \"https://xlz.morvexstream.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -160,20 +126,18 @@
    "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
-   "name": "Basketball: NBA [CH9]",
-   "tagline": "08 Okt 09:00 WIB - Portland Trail Blazers vs Golden State Warriors",
-   "hls": "http://42.117.246.9/live/channel55.flv?wsSecret=02047b90f1d0305f325de09c90364677&wsABSTime=1776062984",
+   "name": "MotoGP [CH1]",
+   "tagline": "08 Okt 14:30 WIB - Indonesia - Gear UP / Pre-Event Press Conference",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
    "is_live": "t",
    "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "drm": true
   },
   {
    "name": "Kungfu Soccer",
@@ -570,8 +534,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -599,9 +564,9 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:200"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -958,8 +923,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1507,9 +1473,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "Canal do Inter",
@@ -2603,7 +2569,10 @@
    "url_license": "",
    "country": "United Kingdom",
    "code": "GB",
-   "group": "United Kingdom"
+   "group": "United Kingdom",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "8TV",
@@ -3262,10 +3231,7 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "South Korea"
   },
   {
    "name": "Hala London",
@@ -5743,9 +5709,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! ARENA",
@@ -5806,10 +5772,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiemFHTlRTQ3IxY3gzZ3hXcjRuZit1USIsImtpZCI6InpuejVzbzBhallkS3pPdkVUWDRmelEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
-   "group": "Russian Federation (the)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Russian Federation (the)"
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -5839,9 +5802,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! PREMIERE",
@@ -5942,10 +5903,7 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Sports TV"
   },
   {
    "name": "Premiere Brazil 1",
@@ -6534,10 +6492,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6698,20 +6653,6 @@
    "group": "Portugal",
    "geo_limited": true,
    "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "MotoGP [CH1]",
-   "tagline": "08 Okt 14:30 WIB - Indonesia - Gear UP / Pre-Event Press Conference",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
   },
   {
    "name": "Basketball: NBA [CH10]",
@@ -6994,7 +6935,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "Jawa Pos TV",
@@ -7168,7 +7112,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MQTV",
@@ -7299,12 +7246,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-07T09:31:37Z",
-  "playable": 345,
-  "total": 500,
-  "dead": 178,
-  "playlist_entries": 179,
-  "playlist_pipe_entries": 179,
+  "checked": "2026-10-07T16:48:53Z",
+  "playable": 342,
+  "total": 497,
+  "dead": 175,
+  "playlist_entries": 180,
+  "playlist_pipe_entries": 180,
   "verified": true
  }
 }
