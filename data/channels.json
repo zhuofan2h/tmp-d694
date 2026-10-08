@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T21:41:01Z",
+ "updated": "2026-10-08T01:24:57Z",
  "count": 497,
  "channels": [
   {
@@ -59,9 +59,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Basketball: NBA [CH6]",
@@ -75,9 +74,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Basketball: NBA [CH7]",
@@ -91,9 +89,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Basketball: NBA [CH8]",
@@ -123,9 +120,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "MotoGP [CH1]",
@@ -140,6 +136,22 @@
    "code": "EV",
    "group": "Events",
    "drm": true
+  },
+  {
+   "name": "Basketball: NBA [CH10]",
+   "tagline": "09 Okt 06:00 WIB - Cleveland Cavaliers vs Boston Celtics",
+   "hls": "http://42.117.246.9/live/channel27.flv?wsSecret=50e670653f45a651437a8edeb243a81d&wsABSTime=1775093313",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Kungfu Soccer",
@@ -579,9 +591,8 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -613,7 +624,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -1183,7 +1194,8 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoibHlpQUNqbFpxdjNWc0x6NzgzYUlFUSIsImtpZCI6IjBhRmprVTI0LzYwc1BwVDVlWWxxRFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Argentina",
    "code": "AR",
-   "group": "Argentina"
+   "group": "Argentina",
+   "drm": true
   },
   {
    "name": "Discovery Channel Asia",
@@ -1425,7 +1437,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Anime TV",
@@ -1470,7 +1485,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "Canal do Inter",
@@ -2025,10 +2043,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2131,10 +2146,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "TV A7 Plus",
@@ -5726,9 +5738,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FIGHT",
@@ -5806,9 +5818,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! PREMIERE",
@@ -6391,10 +6403,7 @@
    "url_license": "12fee297311f4bab91367d0e9c3a0a2f:656071dbdffbda440a6fde4fda56de21",
    "country": "Kids",
    "code": "KD",
-   "group": "Kids",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Kids"
   },
   {
    "name": "Zoo Moo Asia",
@@ -6433,10 +6442,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Dhoho TV",
@@ -6504,7 +6510,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6543,10 +6552,7 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Al Quran Al Kareem TV",
@@ -6590,7 +6596,10 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TV9 Nusantara",
@@ -6665,22 +6674,6 @@
    "group": "Portugal",
    "geo_limited": true,
    "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "Basketball: NBA [CH10]",
-   "tagline": "09 Okt 06:00 WIB - Cleveland Cavaliers vs Boston Celtics",
-   "hls": "http://42.117.246.9/live/channel27.flv?wsSecret=50e670653f45a651437a8edeb243a81d&wsABSTime=1775093313",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Basketball: NBA [CH11]",
@@ -7051,7 +7044,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)"
+   "dead_reason": "<urlopen error [Errno 61] Connection refused>(no-ref)"
   },
   {
    "name": "DAAI TV",
@@ -7079,7 +7072,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "JTV",
@@ -7166,10 +7162,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "Trans7",
@@ -7183,10 +7176,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "CNN",
@@ -7200,10 +7190,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "CNBC",
@@ -7217,10 +7204,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "Mentari TV",
@@ -7255,12 +7239,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-07T21:44:45Z",
-  "playable": 341,
+  "checked": "2026-10-08T01:28:29Z",
+  "playable": 344,
   "total": 497,
-  "dead": 180,
-  "playlist_entries": 177,
-  "playlist_pipe_entries": 177,
+  "dead": 171,
+  "playlist_entries": 181,
+  "playlist_pipe_entries": 181,
   "verified": true
  }
 }
