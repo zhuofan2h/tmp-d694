@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T13:56:58Z",
+ "updated": "2026-10-09T19:10:05Z",
  "count": 490,
  "channels": [
   {
@@ -28,8 +28,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Indonesia: BRI Super League [CH3]",
@@ -45,7 +46,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "Basketball: NBA [CH5]",
@@ -59,8 +60,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -607,7 +609,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -928,8 +930,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicHNHaTZCL3BRYW5pNzlLOHJRMFZNZyIsImtpZCI6Ijh6clBNNDdKUnYyU0dvWDRjR05qbVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Asian Games 2026",
    "code": "AN",
-   "group": "Asian Games 2026",
-   "drm": true
+   "group": "Asian Games 2026"
   },
   {
    "name": "Asian Games 2026 [CH7]",
@@ -1466,9 +1467,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "Canal do Inter",
@@ -1674,7 +1675,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Fala Litoral",
@@ -2185,9 +2189,8 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:403"
+   "geo_limited": true,
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "TV Caravelas",
@@ -2774,10 +2777,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq News",
@@ -3233,7 +3233,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Hala London",
@@ -4439,8 +4442,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiZUVVTEVUZ1RRTUtYMld3VEdEMDNSQSIsImtpZCI6IlpjTmpNVmRYUTJHeGtRV2VSdWNwYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "India",
    "code": "IN",
-   "group": "India",
-   "drm": true
+   "group": "India"
   },
   {
    "name": "Azteca Cinema",
@@ -5792,9 +5794,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! IGRA",
@@ -6435,7 +6437,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Dhoho TV",
@@ -6844,7 +6849,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "Jawa Pos TV",
@@ -6945,7 +6953,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 111] Connection refused>(no-ref)"
+   "dead_reason": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)"
   },
   {
    "name": "DAAI TV",
@@ -7015,7 +7023,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MQTV",
@@ -7146,12 +7157,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-09T14:00:34Z",
-  "playable": 342,
+  "checked": "2026-10-09T19:13:36Z",
+  "playable": 340,
   "total": 490,
-  "dead": 172,
-  "playlist_entries": 176,
-  "playlist_pipe_entries": 176,
+  "dead": 177,
+  "playlist_entries": 173,
+  "playlist_pipe_entries": 173,
   "verified": true
  }
 }
