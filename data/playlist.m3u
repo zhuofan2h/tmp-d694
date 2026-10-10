@@ -57,10 +57,6 @@ https://5c483b9d1019c.streamlock.net/8054/8054/playlist.m3u8?checkedby:iptvcat.c
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://stmv1.samcast.com.br/demaistv6503/demaistv6503/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:-1 tvg-id="elytv" tvg-name="ElyTV" group-title="Brazil",ElyTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
-https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-id="falalitoral" tvg-name="Fala Litoral" group-title="Brazil",Fala Litoral
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
@@ -85,6 +81,14 @@ https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:-1 tvg-id="sictv" tvg-name="SIC TV" group-title="Brazil",SIC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:-1 tvg-id="tcm10hd" tvg-name="TCM 10 HD" group-title="Brazil",TCM 10 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+https://live.tcm10.com.br/tcm10hd/stream.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-id="tvafolha" tvg-name="TV A Folha" group-title="Brazil",TV A Folha
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
@@ -109,6 +113,10 @@ https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8?checkedby:iptvcat.c
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://stmv2.voxtvhd.com.br/tvcordeiro/tvcordeiro/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:-1 tvg-id="tvguaraparí" tvg-name="TV Guaraparí" group-title="Brazil",TV Guaraparí
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+http://video.welltecnologia.com.br:1935/tvguarapari/tvguarapari/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-id="tvmaismaricá" tvg-name="TV Mais Maricá" group-title="Brazil",TV Mais Maricá
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
@@ -153,6 +161,11 @@ https://otte-tim.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/72sjo8hygl/out/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 https://d2xz2v5wuvgur6.cloudfront.net/out/v1/ccc51c0317284496b6cde9f7bd670b80/index.mpd
+#EXTINF:-1 tvg-id="antv" tvg-name="ANTV" group-title="Indonesia",ANTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 14; SM-A245F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.204 Mobile Safari/537.36
+#KODIPROP:http-user-agent=Mozilla/5.0 (Linux; Android 14; SM-A245F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.204 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.vidio.com/
+https://beetv.my.id/xstreamx/vd.m3u8?ch=antv
 #EXTINF:-1 tvg-id="bnchannel" tvg-name="BN Channel" group-title="Indonesia",BN Channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
@@ -167,10 +180,6 @@ http://202.150.153.254:65500/bandungtvWEBSITE.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 http://khano.nng.cloudns.us/live/m3u8/id/270f72deeb5843g.m3u8
-#EXTINF:-1 tvg-id="bungotv" tvg-name="Bungo TV" group-title="Indonesia",Bungo TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
-https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8
 #EXTINF:-1 tvg-id="citramuslim" tvg-name="Citra Muslim" group-title="Indonesia",Citra Muslim
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -189,10 +198,11 @@ https://dhohotv.siar.us/dhohotv/live/playlist.m3u8?checkedby:iptvcat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 http://khano.nng.cloudns.us/live/m3u8/id/383fb71f4a76ab2.m3u8
-#EXTINF:-1 tvg-id="garudatv" tvg-name="Garuda TV" group-title="Indonesia",Garuda TV
-#EXTVLCOPT:http-user-agent=VLC/3.0.9 LibVLC/3.0.9 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#KODIPROP:http-user-agent=VLC/3.0.9 LibVLC/3.0.9 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://hgmtv.com:19360/garudatvlivestreaming/720p.m3u8
+#EXTINF:-1 tvg-id="gtv" tvg-name="GTV" group-title="Indonesia",GTV
+#EXTVLCOPT:http-user-agent=android-R+
+#KODIPROP:http-user-agent=android-R+
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=gtv
 #EXTINF:-1 tvg-id="indonesianatv" tvg-name="Indonesiana TV" group-title="Indonesia",Indonesiana TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
@@ -225,6 +235,11 @@ https://op-flashcon-digdayahd-1.dens.tv/s/s104/index.m3u8
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #EXTVLCOPT:http-referrer=https://www.dens.tv
 http://khano.nng.cloudns.us/live/m3u8/id/6cdb3402d11f58c.m3u8
+#EXTINF:-1 tvg-id="mnctv" tvg-name="MNCTV" group-title="Indonesia",MNCTV
+#EXTVLCOPT:http-user-agent=android-R+
+#KODIPROP:http-user-agent=android-R+
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=mnctv
 #EXTINF:-1 tvg-id="mqtv" tvg-name="MQTV" group-title="Indonesia",MQTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0/v2206
 #KODIPROP:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0/v2206
@@ -234,12 +249,21 @@ https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/ra
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #EXTVLCOPT:http-referrer=https://www.dens.tv
 http://khano.nng.cloudns.us/live/m3u8/id/6183ec225226cce.m3u8
+#EXTINF:-1 tvg-id="mentaritv" tvg-name="Mentari TV" group-title="Indonesia",Mentari TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237
 #EXTINF:-1 tvg-id="metrotv" tvg-name="MetroTV" group-title="Indonesia",MetroTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="nusantaratv" tvg-name="Nusantara TV" group-title="Indonesia",Nusantara TV
 https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="rcti" tvg-name="RCTI" group-title="Indonesia",RCTI
+#EXTVLCOPT:http-user-agent=android-R+
+#KODIPROP:http-user-agent=android-R+
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=rcti
 #EXTINF:-1 tvg-id="rctv(radarcirebon)" tvg-name="RCTV (Radar Cirebon)" group-title="Indonesia",RCTV (Radar Cirebon)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
@@ -252,6 +276,11 @@ https://v10.siar.us/rctv/live/playlist.m3u8
 http://op-flashcon-digdayahd-1.dens.tv/h/h10/index.m3u8
 #EXTINF:-1 tvg-id="rodja.tv" tvg-name="Rodja.tv" group-title="Indonesia",Rodja.tv
 https://rodjatv.com/rodjatv/live.m3u8
+#EXTINF:-1 tvg-id="sctv" tvg-name="SCTV" group-title="Indonesia",SCTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 14; SM-A245F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.204 Mobile Safari/537.36
+#KODIPROP:http-user-agent=Mozilla/5.0 (Linux; Android 14; SM-A245F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.204 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.vidio.com/
+https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv
 #EXTINF:-1 tvg-id="tvtabalong" tvg-name="TV Tabalong" group-title="Indonesia",TV Tabalong
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
@@ -454,6 +483,11 @@ https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8
 #EXTVLCOPT:http-referrer=https://klik.tvri.go.id/
 #KODIPROP:http-origin=https://klik.tvri.go.id/
 https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
+#EXTINF:-1 tvg-id="inews" tvg-name="iNews" group-title="Indonesia",iNews
+#EXTVLCOPT:http-user-agent=android-R+
+#KODIPROP:http-user-agent=android-R+
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=inews
 #EXTINF:-1 tvg-id="moji" tvg-name="mOji" group-title="Indonesia",mOji
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -582,10 +616,6 @@ https://list.iptvcat.com/my_list/s/a926b15c41be836d52526e91145407ae.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 https://mn-nl.mncdn.com/khalij/khalij/playlist.m3u8
-#EXTINF:-1 tvg-id="asharqdiscovery" tvg-name="Asharq Discovery" group-title="Saudi Arabia",Asharq Discovery
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="asharqradio" tvg-name="Asharq Radio" group-title="Saudi Arabia",Asharq Radio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
@@ -662,10 +692,6 @@ https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/in
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 https://fastly.live.brightcove.com/6374054671112/eu-west-1/6058004203001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYXplMnp5LmVncmVzcy55ODN1ZWIiLCJhY2NvdW50X2lkIjoiNjA1ODAwNDIwMzAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU4MDA0MjAzMDAxIl0sImp0aSI6IjYzNzQwNTQ2NzExMTIifQ.3FmuTna3DAmY7xlhK5fk6LMrosrtrR5VsU2QOgYO5y4/playlist-dash.mpd
-#EXTINF:-1 tvg-id="omansports" tvg-name="Oman Sports" group-title="Sports TV",Oman Sports
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
-https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-id="redbull" tvg-name="RedBull" group-title="Sports TV",RedBull
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
 #EXTINF:-1 tvg-id="sharjahsports" tvg-name="Sharjah Sports" group-title="Sports TV",Sharjah Sports
