@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-15T06:05:05Z",
- "checked": 495,
- "playable": 273,
- "dead": 241,
+ "updated": "2026-10-15T11:03:33Z",
+ "checked": 496,
+ "playable": 339,
+ "dead": 177,
  "no_playlist": 0,
- "pipe_only": 6,
- "drm_excluded": 82,
- "geo_limited": 43,
+ "pipe_only": 12,
+ "drm_excluded": 114,
+ "geo_limited": 44,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 155,
- "playlist_pipe_entries": 155,
+ "playlist_entries": 176,
+ "playlist_pipe_entries": 176,
  "playlist_verified": true,
- "verify_rounds": 4,
+ "verify_rounds": 2,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -50,6 +50,20 @@
    "status": "200"
   },
   {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
    "name": "Fala Litoral",
    "url": "https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
@@ -61,6 +75,13 @@
    "url": "https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
    "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "ElyTV",
+   "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "sub:404",
    "status": "404"
   },
   {
@@ -90,6 +111,34 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+  },
+  {
+   "name": "Bungo TV",
+   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Bungo TV",
+   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
   },
   {
    "name": "Indosiar",
@@ -145,26 +194,12 @@
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
    "style": "pipe",
    "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
    "status": "404"
   },
   {
    "name": "MATCH! FOOTBALL 2",
    "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
-   "style": "vlc",
+   "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
@@ -237,31 +272,75 @@
    "style": "pipe",
    "kind": "httperror",
    "status": "404"
-  },
-  {
-   "name": "Oman Sports",
-   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "Nusantara TV",
-   "url": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Nusantara TV",
-   "url": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
   }
  ],
  "repairs": [],
  "drm": [
+  {
+   "name": "AFC Champions League Two [CH6]",
+   "code": "EV",
+   "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
+  },
+  {
+   "name": "UEFA Nations League [CH4]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
+  },
+  {
+   "name": "UEFA Nations League [CH6]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
+  },
+  {
+   "name": "UEFA Nations League [CH7]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd"
+  },
+  {
+   "name": "UFC Fight Night [CH2]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
+  },
+  {
+   "name": "International Friendly [CH2]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd"
+  },
+  {
+   "name": "FIFA Asean Cup [CH1]",
+   "code": "EV",
+   "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
+  },
+  {
+   "name": "FIFA Asean Cup [CH2]",
+   "code": "EV",
+   "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
+  },
+  {
+   "name": "Asian Games 2026 [CH1]",
+   "code": "AN",
+   "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd"
+  },
+  {
+   "name": "Asian Games 2026 [CH2]",
+   "code": "AN",
+   "url": "https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd"
+  },
+  {
+   "name": "Asian Games 2026 [CH3]",
+   "code": "AN",
+   "url": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd"
+  },
+  {
+   "name": "Asian Games 2026 [CH4]",
+   "code": "AN",
+   "url": "https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd"
+  },
+  {
+   "name": "Asian Games 2026 [CH5]",
+   "code": "AN",
+   "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd"
+  },
   {
    "name": "Football: Asian Games 2026 [CH1]",
    "code": "EV",
@@ -271,6 +350,61 @@
    "name": "Football: Asian Games 2026 [CH2]",
    "code": "EV",
    "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd"
+  },
+  {
+   "name": "Football: Asian Games 2026 [CH4]",
+   "code": "EV",
+   "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd"
+  },
+  {
+   "name": "Spain: La Liga [CH1]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
+  },
+  {
+   "name": "Spain: La Liga [CH4]",
+   "code": "EV",
+   "url": "http://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd?encoding=segmentBase"
+  },
+  {
+   "name": "Abu Dhabi Sports 1",
+   "code": "AE",
+   "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv/abudhabi_sports_1/abudhabi_sports_1_dash_enc/index.mpd"
+  },
+  {
+   "name": "Abu Dhabi Sports 2",
+   "code": "AE",
+   "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv/abudhabi_sports_2/abudhabi_sports_2_dash_enc/index.mpd"
+  },
+  {
+   "name": "Italy: Serie-A [CH1]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
+  },
+  {
+   "name": "Italy: Serie-A [CH2]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
+  },
+  {
+   "name": "Italy: Serie-A [CH3]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
+  },
+  {
+   "name": "Spain: La Liga [CH1]",
+   "code": "EV",
+   "url": "http://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd?encoding=segmentBase"
+  },
+  {
+   "name": "Asian Games 2026 [CH6]",
+   "code": "AN",
+   "url": "https://tglmp01.akamaized.net/out/v1/d43dbc5da1334ec088ed9eb5796eee7c/manifest.mpd"
+  },
+  {
+   "name": "Asian Games 2026 [CH7]",
+   "code": "AN",
+   "url": "https://tglmp02.akamaized.net/out/v1/ce69826a52c84c64ade5487a1e38f82d/manifest.mpd"
   },
   {
    "name": "VIVO D-Sports 1 AR",
@@ -296,6 +430,11 @@
    "name": "Vrt 1",
    "code": "BE",
    "url": "https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/live.isml/.mpd"
+  },
+  {
+   "name": "NBC 4 New York",
+   "code": "US",
+   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dx5hfbpk7u/out/v1/c14185a397544650b9761d43ad2e8e91/cenc.mpd"
   },
   {
    "name": "HBO",
@@ -358,6 +497,11 @@
    "url": "https://ac-003.live.p7s1video.net/63f8995e/t_003/dazn-fast-hd/cenc-default.mpd"
   },
   {
+   "name": "F1 Channel",
+   "code": "SP",
+   "url": "https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd"
+  },
+  {
    "name": "Fancode 1",
    "code": "IN",
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd"
@@ -398,6 +542,11 @@
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xtkswns2yn/out/v1/9c348c1bc962495a9420f01ac0964a86/cenc.mpd"
   },
   {
+   "name": "fubo SPORTS 4",
+   "code": "SP",
+   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd"
+  },
+  {
    "name": "JOJ-Sports",
    "code": "SK",
    "url": "https://dash2.antik.sk/stream/nvidia_joj_sport/playlist_cenc.mpd"
@@ -426,6 +575,11 @@
    "name": "MBC Shahid Sports 5",
    "code": "SA",
    "url": "https://shahid-sports-5-enc.edgenextcdn.net/out/v1/ae00715d1c2c4432852b44a254c04a3d/index.mpd"
+  },
+  {
+   "name": "MotoGP Channel",
+   "code": "SP",
+   "url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wjeweupwyc/out/v1/8197c8e055c94a868623653ac55c10bf/cenc.mpd"
   },
   {
    "name": "nova SPORT1 HD",
@@ -573,6 +727,11 @@
    "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
   },
   {
+   "name": "MATCH!",
+   "code": "RU",
+   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
+  },
+  {
    "name": "Mediaset Italy",
    "code": "IT",
    "url": "https://live03p-seg.msf.cdn.mediaset.net/live/ch-i1/i1-dash-widevine.isml/manifest.mpd"
@@ -648,6 +807,21 @@
    "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd"
   },
   {
+   "name": "TUDN Cambiale 5",
+   "code": "SP",
+   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ntkdl68eob/out/v1/bd5dfb7676994383881bc6e71877d29d/cenc.mpd"
+  },
+  {
+   "name": "TUDN Deportes",
+   "code": "SP",
+   "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
+  },
+  {
+   "name": "TV4 Sweden",
+   "code": "SE",
+   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd"
+  },
+  {
    "name": "Universo (West)",
    "code": "SP",
    "url": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s/Live//channel(universo-west)/master.mpd"
@@ -675,98 +849,82 @@
  ],
  "unplayable": [
   {
-   "name": "Basketball: NBA [CH7]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel29.m3u8"
-  },
-  {
-   "name": "KOVO Cup Women [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel33.flv"
-  },
-  {
    "name": "Denmark Open [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "http://42.117.246.9/live/channel61.flv?wsSecret=a30ef0032a9cef643240193f542e466b&wsABSTime=1779841809"
+   "url": "http://42.117.246.9/live/channel60.flv?wsSecret=3d163ddc4dcff7a40f74c75f1ffe1132&wsABSTime=1784406214"
   },
   {
    "name": "Denmark Open [CH2]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "http://42.117.246.9/live/channel62.flv?wsSecret=25cd4400de51813709eb06b0cde96067&wsABSTime=1779993721"
+   "url": "http://42.117.246.9/live/channel61.flv?wsSecret=a30ef0032a9cef643240193f542e466b&wsABSTime=1779841809"
   },
   {
    "name": "Denmark Open [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "http://42.117.246.9/live/channel63.flv?wsSecret=2297749b2f1c32928891a0cc3f8908ad&wsABSTime=1780006551"
+   "url": "http://42.117.246.9/live/channel62.flv?wsSecret=25cd4400de51813709eb06b0cde96067&wsABSTime=1779993721"
   },
   {
    "name": "AFC Champions League Two [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "404(no-ref)",
    "dead": true,
-   "url": "https://tglmp02.akamaized.net/out/v1/3170252e3fb0453085f2f4b0f8401a6b/manifest.mpd"
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd"
   },
   {
    "name": "AFC Champions League Two [CH2]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
-   "url": "https://toutatis.rctiplus.com/video/live/api/v1/live/1/url?appierid=null"
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D113"
+  },
+  {
+   "name": "KOVO Cup Women [CH3]",
+   "code": "EV",
+   "premium": "t",
+   "status": "401(no-ref)",
+   "dead": true,
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112"
   },
   {
    "name": "AFC Champions League Two [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1791999414/ei/VmnPaqrBHYeI4t4P--bb8Qg/ip/2402%3A8780%3A103c%3A279f%3Acaf3%3Ad286%3A39ee%3Ac0eb/id/hnsZXZ-hlw0.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/3600/manifest_duration/3600/demuxed/1/maudio/1/gcr/id/bui/AWzQHwpLfPZqno9cna1OWdfRw0YMtozJjIWqRyoDStJlCirl1N8ru4VLGEE413xeDsbvDZfi25WnIPx8/spc/I-rgIbncJSInriIvR_EuYF3b-fib1iIA7Q_bJ_Jjf6L-H1PHIXVZPr3Jqzeh/vprv/1/go/1/rqh/5/reg/0/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51565116%2C52184231/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRAIgMIUtGAlkq78N5IZA08DM6qk4M56vO87nVIOm5GWyv84CIHSauwZJlT89PTpp_QniLShriHnqopUW9GSqOTD0wo0t/file/index.m3u8"
+   "url": "http://43.152.182.139/live/channel16.flv"
   },
   {
    "name": "AFC Champions League Two [CH4]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
-   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1011"
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112"
   },
   {
    "name": "AFC Champions League Two [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
-   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D1010"
-  },
-  {
-   "name": "AFC Champions League Two [CH6]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://v101.sportcdn.live/live/live-1-4621339-2.flv?txSecret=b88137edb6bd9a6f6b26256e78c08d71&txTime=6aaaf6a6"
+   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D113"
   },
   {
    "name": "Copa das Nacoes de Futsal 2026 [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -779,58 +937,18 @@
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Fwatch%3Fchannel%3Dvplus%26cluster_name%3Dfilm-bioskop-indonesia%26id%3DDLVY4833325997005458"
   },
   {
-   "name": "UEFA Nations League [CH4]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
-  },
-  {
-   "name": "UEFA Nations League [CH6]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
-  },
-  {
-   "name": "UEFA Nations League [CH7]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd"
-  },
-  {
    "name": "International Friendly [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://42.117.246.9/live/channel31.flv?wsSecret=bde0737318f6003b7cd07558f1c080d2&wsABSTime=1785712424"
-  },
-  {
-   "name": "UFC Fight Night [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
-  },
-  {
-   "name": "International Friendly [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd"
   },
   {
    "name": "International Friendly [CH4]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://42.117.246.9/live/channel28.flv?wsSecret=e2f19be44cfa85ce3ca8bcfe3e4ef8a4&wsABSTime=1775408982"
   },
@@ -843,202 +961,34 @@
    "url": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954"
   },
   {
-   "name": "Volleyball: Asian Games 2026 [CH4]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel33.flv"
-  },
-  {
-   "name": "FIFA Asean Cup [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH5]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel33.flv"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH6]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel33.flv"
-  },
-  {
-   "name": "FIFA Asean Cup [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH7]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel33.flv"
-  },
-  {
-   "name": "Volleyball: Asian Games 2026 [CH8]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel33.flv"
-  },
-  {
-   "name": "Asian Games 2026 [CH1]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd"
-  },
-  {
-   "name": "Asian Games 2026 [CH2]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd"
-  },
-  {
-   "name": "Asian Games 2026 [CH3]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd"
-  },
-  {
-   "name": "Asian Games 2026 [CH4]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd"
-  },
-  {
-   "name": "Asian Games 2026 [CH5]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd"
-  },
-  {
    "name": "Football: Asian Games 2026 [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://43.152.182.139/live/channel11.flv"
-  },
-  {
-   "name": "Football: Asian Games 2026 [CH4]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd"
-  },
-  {
-   "name": "WAFF Arabian Gulf Cup [CH1]",
-   "code": "AA",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
    "code": "AA",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://43.152.182.139/live/channel23.flv"
-  },
-  {
-   "name": "Volleyball Asian Championship Women [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://43.152.136.207/live/channel33.flv"
   },
   {
    "name": "Italy: Serie-A [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)",
    "dead": true,
    "url": "https://live2.pro2cdnlive.com/live/channel21.flv"
-  },
-  {
-   "name": "Spain: La Liga [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
-  },
-  {
-   "name": "Italy: Serie-A [CH6]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://abkv2pxaaaaaaaamms3xu2tu2eynb.ta.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/fb6jy4pxts/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd"
-  },
-  {
-   "name": "England: Premier League [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3b7qwiqzk3/out/v1/9f14895badca43e6a716db021dcd0c31/cenc.mpd"
-  },
-  {
-   "name": "Spain: La Liga [CH4]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd?encoding=segmentBase"
-  },
-  {
-   "name": "Abu Dhabi Sports 1",
-   "code": "AE",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv/abudhabi_sports_1/abudhabi_sports_1_dash_enc/index.mpd"
-  },
-  {
-   "name": "Abu Dhabi Sports 2",
-   "code": "AE",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv/abudhabi_sports_2/abudhabi_sports_2_dash_enc/index.mpd"
   },
   {
    "name": "Asean Club Championship [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -1046,7 +996,7 @@
    "name": "AFC Champions League Elite [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -1054,7 +1004,7 @@
    "name": "AFC Champions League Elite [CH2]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -1062,31 +1012,15 @@
    "name": "AFC Champions League Elite [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112"
-  },
-  {
-   "name": "Italy: Serie-A [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
-  },
-  {
-   "name": "Italy: Serie-A [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
   },
   {
    "name": "AFC Champions League Elite [CH4]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112"
   },
@@ -1094,7 +1028,7 @@
    "name": "AFC Champions League Elite [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -1102,57 +1036,17 @@
    "name": "AFC Champions League Elite [CH6]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D113"
-  },
-  {
-   "name": "Italy: Serie-A [CH3]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
-  },
-  {
-   "name": "England: Premier League [CH3]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3b7qwiqzk3/out/v1/9f14895badca43e6a716db021dcd0c31/cenc.mpd"
-  },
-  {
-   "name": "Spain: La Liga [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd?encoding=segmentBase"
   },
   {
    "name": "Football: Asian Games 2026 [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://43.152.182.139/live/channel12.flv"
-  },
-  {
-   "name": "Asian Games 2026 [CH6]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://tglmp01.akamaized.net/out/v1/d43dbc5da1334ec088ed9eb5796eee7c/manifest.mpd"
-  },
-  {
-   "name": "Asian Games 2026 [CH7]",
-   "code": "AN",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://tglmp02.akamaized.net/out/v1/ce69826a52c84c64ade5487a1e38f82d/manifest.mpd"
   },
   {
    "name": "Depor TV",
@@ -1281,14 +1175,6 @@
    "status": "<urlopen error [Errno -5] No address associated with hostname>(https)",
    "dead": true,
    "url": "http://evpp.mm.uol.com.br:1935/bandpracas/debatemg/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "Canal 38",
-   "code": "BR",
-   "premium": "f",
-   "status": "200(no-ref)",
-   "dead": true,
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "Canal do Inter",
@@ -1523,14 +1409,6 @@
    "url": "https://srv3.zcast.com.br/wellington7720/wellington7720/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
-   "name": "TV Brasil Oeste",
-   "code": "BR",
-   "premium": "f",
-   "status": "flaky:403",
-   "dead": true,
-   "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
    "name": "TV Caravelas",
    "code": "BR",
    "premium": "f",
@@ -1609,14 +1487,6 @@
    "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
    "dead": true,
    "url": "https://srv1.paineldevideo.com/liberdaderadioetv/liberdaderadioetv/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "TV Paraná Turismo",
-   "code": "BR",
-   "premium": "f",
-   "status": "<urlopen error timed out>(https)",
-   "dead": true,
-   "url": "http://200.189.113.201/hls/tve.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "TV Sandegi",
@@ -1707,14 +1577,6 @@
    "url": "https://kbsworld-ott.akamaized.net:443/hls/live/2002341/kbsworld/01.m3u8"
   },
   {
-   "name": "MBC",
-   "code": "KR",
-   "premium": "f",
-   "status": "404(no-ref)",
-   "dead": true,
-   "url": "https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8"
-  },
-  {
    "name": "MBC Max",
    "code": "SA",
    "premium": "f",
@@ -1785,14 +1647,6 @@
    "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D5"
-  },
-  {
-   "name": "NBC 4 New York",
-   "code": "US",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dx5hfbpk7u/out/v1/c14185a397544650b9761d43ad2e8e91/cenc.mpd"
   },
   {
    "name": "Music TV",
@@ -2019,30 +1873,6 @@
    "url": "http://147.78.1.28/xview/espn_3_hd.mpd"
   },
   {
-   "name": "F1 Channel",
-   "code": "SP",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd"
-  },
-  {
-   "name": "fubo SPORTS 4",
-   "code": "SP",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd"
-  },
-  {
-   "name": "MotoGP Channel",
-   "code": "SP",
-   "premium": "t",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wjeweupwyc/out/v1/8197c8e055c94a868623653ac55c10bf/cenc.mpd"
-  },
-  {
    "name": "Sky Sports EPL",
    "code": "SP",
    "premium": "t",
@@ -2097,14 +1927,6 @@
    "status": "200(no-ref)",
    "dead": true,
    "url": "https://cdn.stmify.com/primevideo/stream/ITV3/cenc.mpd"
-  },
-  {
-   "name": "MATCH!",
-   "code": "RU",
-   "premium": "f",
-   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
-   "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! ARENA",
@@ -2171,36 +1993,12 @@
    "url": "https://video.beeline.tv/live/d/channel423.isml/manifest-stb.mpd"
   },
   {
-   "name": "TUDN Cambiale 5",
-   "code": "SP",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ntkdl68eob/out/v1/bd5dfb7676994383881bc6e71877d29d/cenc.mpd"
-  },
-  {
-   "name": "TUDN Deportes",
-   "code": "SP",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
-  },
-  {
    "name": "TV4 Sportkanalen",
    "code": "SP",
    "premium": "f",
    "status": "flaky:403",
    "dead": true,
    "url": "https://live.streaming.a2d.tv/asset/20465728.isml/dash.mpd"
-  },
-  {
-   "name": "TV4 Sweden",
-   "code": "SE",
-   "premium": "f",
-   "status": "451(no-ref)",
-   "dead": true,
-   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd"
   },
   {
    "name": "Dunia Anak",
@@ -2225,14 +2023,6 @@
    "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D25"
-  },
-  {
-   "name": "Kilisuci TV Kediri",
-   "code": "LO",
-   "premium": "f",
-   "status": "404(no-ref)",
-   "dead": true,
-   "url": "https://5bf7b725107e5.streamlock.net:443/kstv/kstv/playlist.m3u8"
   },
   {
    "name": "Al Quran Al Kareem TV",
@@ -2262,7 +2052,7 @@
    "name": "Copa das Nacoes de Futsal 2026 [CH2]",
    "code": "EV",
    "premium": "t",
-   "status": "not-checked",
+   "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -2299,156 +2089,20 @@
    "url": "https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=inews"
   },
   {
-   "name": "KompasTV",
-   "code": "ID",
-   "premium": "f",
-   "status": "401(no-ref)",
-   "dead": true,
-   "url": "https://op-flashcon-digdayahd-1.dens.tv/s/s104/index.m3u8"
-  },
-  {
    "name": "ANTV",
    "code": "ID",
    "premium": "f",
-   "status": "not-checked",
+   "status": "404(no-ref)",
    "dead": true,
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=antv"
-  },
-  {
-   "name": "MDTV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/6cdb3402d11f58c.m3u8"
-  },
-  {
-   "name": "Jogja TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
-  },
-  {
-   "name": "Jawa Pos TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/459caa984301138.m3u8"
-  },
-  {
-   "name": "BTV",
-   "code": "ID",
-   "premium": "f",
-   "status": "401(no-ref)",
-   "dead": true,
-   "url": "http://cdn.nng.cloudns.us/live/m3u8/id/270f72deeb5843f.m3u8"
-  },
-  {
-   "name": "BeritaSatu",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/270f72deeb5843g.m3u8"
-  },
-  {
-   "name": "Magna Channel",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/6183ec225226cce.m3u8"
-  },
-  {
-   "name": "TVRI Sport",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8"
-  },
-  {
-   "name": "BN Channel",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/6183ec225226ccf.m3u8"
   },
   {
    "name": "SIN PO TV",
    "code": "ID",
    "premium": "f",
-   "status": "not-checked",
+   "status": "<urlopen error timed out>(no-ref)",
    "dead": true,
    "url": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd"
-  },
-  {
-   "name": "DAAI TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/0525ed2747e3162.m3u8"
-  },
-  {
-   "name": "Elshinta TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/383fb71f4a76ab2.m3u8"
-  },
-  {
-   "name": "JTV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/226fe77699e03c6.m3u8"
-  },
-  {
-   "name": "TVKU",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "http://khano.nng.cloudns.us/live/m3u8/id/29afb26faff1ccd.m3u8"
-  },
-  {
-   "name": "TVMU",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8"
-  },
-  {
-   "name": "MQTV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/bee477ab862965d0c4c8217e84d0dcb3919353f5/55b1da7f755ebf7.m3u8"
-  },
-  {
-   "name": "Indonesiana TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://gist.githubusercontent.com/warningfm/f951716f1dfd96d4480dbdad6a000eeb/raw/65169ac6d2221de0cf3346bac07e65c6e67b3fc9/indonesiana.m3u8"
-  },
-  {
-   "name": "Mentari TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "not-checked",
-   "dead": true,
-   "url": "https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237"
   }
  ]
 }
