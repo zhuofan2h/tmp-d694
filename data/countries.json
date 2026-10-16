@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T00:52:34Z",
+ "updated": "2026-10-16T05:14:36Z",
  "countries": [
   {
    "code": "A1",
@@ -207,7 +207,7 @@
   }
  ],
  "counts": {
-  "Events": 59,
+  "Events": 50,
   "Movies": 2,
   "Asian Games 2026": 7,
   "All Country": 2,
