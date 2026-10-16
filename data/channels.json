@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T18:16:55Z",
+ "updated": "2026-10-16T21:26:37Z",
  "count": 498,
  "channels": [
   {
@@ -16,7 +16,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Denmark Open [CH2]",
@@ -32,7 +32,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Netherlands: Eredivisie [CH1]",
@@ -45,7 +45,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Deutsch: Bundesliga [CH1]",
@@ -59,7 +62,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "France: Ligue 1 [CH1]",
@@ -72,7 +77,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH1]",
@@ -86,7 +94,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -100,7 +110,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Copa das Nacoes de Futsal 2026 [CH2]",
@@ -116,7 +128,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Australia A-League [CH1]",
@@ -130,7 +142,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Australia A-League [CH2]",
@@ -144,7 +158,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "KOVO Cup Women [CH2]",
@@ -157,7 +173,10 @@
    "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -173,7 +192,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Australia A-League [CH3]",
@@ -187,7 +206,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH1]",
@@ -201,8 +222,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Kungfu Soccer",
@@ -245,7 +267,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Nations League [CH6]",
@@ -259,7 +283,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Nations League [CH7]",
@@ -273,7 +299,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "International Friendly [CH3]",
@@ -289,7 +317,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UFC Fight Night [CH2]",
@@ -303,7 +331,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "International Friendly [CH2]",
@@ -317,7 +347,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "International Friendly [CH4]",
@@ -333,7 +365,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH1]",
@@ -393,8 +425,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "FIFA Asean Cup [CH1]",
@@ -408,7 +441,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH5]",
@@ -422,8 +457,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH6]",
@@ -437,8 +473,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "FIFA Asean Cup [CH2]",
@@ -452,7 +489,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH7]",
@@ -466,8 +505,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH8]",
@@ -481,8 +521,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Asian Games 2026 [CH1]",
@@ -496,7 +537,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH2]",
@@ -510,7 +553,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH3]",
@@ -524,7 +569,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH4]",
@@ -538,7 +585,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH5]",
@@ -552,7 +601,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Football: Asian Games 2026 [CH1]",
@@ -594,8 +645,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -609,7 +661,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH1]",
@@ -625,7 +679,7 @@
    "group": "All Country",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:200"
+   "dead_reason": "not-checked"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -641,7 +695,7 @@
    "group": "All Country",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -655,8 +709,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -672,7 +727,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH6]",
@@ -685,7 +740,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoibnhqU1lwSFpJd2d6VUI5L2dpOW9kUSIsImtpZCI6IjhvZzRES1RPK2EwL0o2a3FDT203aXcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "England: Premier League [CH1]",
@@ -698,7 +756,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiME55ODEzSTd4QTN3dnpUSndKTFZIdyIsImtpZCI6IjNHbTJGWm9QbndwT0E3UC9rY3VzMVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Spain: La Liga [CH4]",
@@ -712,7 +773,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Abu Dhabi Sports 1",
@@ -726,7 +789,9 @@
    "country": "United Arab Emirates (the)",
    "code": "AE",
    "group": "United Arab Emirates (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Abu Dhabi Sports 2",
@@ -740,7 +805,9 @@
    "country": "United Arab Emirates (the)",
    "code": "AE",
    "group": "United Arab Emirates (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asean Club Championship [CH1]",
@@ -756,7 +823,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH1]",
@@ -772,7 +839,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH2]",
@@ -788,7 +855,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH3]",
@@ -804,7 +871,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH1]",
@@ -818,7 +885,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH2]",
@@ -832,7 +901,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH4]",
@@ -848,7 +919,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH5]",
@@ -864,7 +935,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH6]",
@@ -880,7 +951,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH3]",
@@ -894,7 +965,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "England: Premier League [CH3]",
@@ -907,7 +980,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiME55ODEzSTd4QTN3dnpUSndKTFZIdyIsImtpZCI6IjNHbTJGWm9QbndwT0E3UC9rY3VzMVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -921,7 +997,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Football: Asian Games 2026 [CH1]",
@@ -965,8 +1043,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -980,7 +1059,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH7]",
@@ -994,7 +1075,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Depor TV",
@@ -1467,7 +1550,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Anime TV",
@@ -2076,7 +2162,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:200"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2179,10 +2268,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "TV A7 Plus",
@@ -2511,7 +2597,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error timed out>(https)"
   },
   {
    "name": "TV Passo Fundo",
@@ -2608,7 +2697,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "360 TV HD",
@@ -2824,10 +2916,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq News",
@@ -3351,7 +3440,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "MBC Max",
@@ -4130,7 +4222,9 @@
    "country": "United States of America (the)",
    "code": "US",
    "group": "United States of America (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Nusantara TV",
@@ -4758,8 +4852,7 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoid01VRW91MHVjTGg1cGxDNGR3bzR4ZyIsImtpZCI6InJIcTZxY2xJR3F6NzJzWlB3K3d6RWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "drm": true
+   "group": "Sports TV"
   },
   {
    "name": "CBS Golazo",
@@ -4879,7 +4972,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Fancode 1",
@@ -5031,7 +5126,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "JOJ-Sports",
@@ -5129,7 +5226,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "nova SPORT1 HD",
@@ -6273,7 +6372,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TUDN Deportes",
@@ -6287,7 +6388,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TUDN Vix [CH1]",
@@ -6301,8 +6404,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TUDN Vix [CH2]",
@@ -6316,8 +6420,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TV Real Madrid",
@@ -6360,7 +6465,9 @@
    "country": "Sweden",
    "code": "SE",
    "group": "Sweden",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "451(no-ref)"
   },
   {
    "name": "Universo (West)",
@@ -6643,7 +6750,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6820,7 +6930,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "RCTI",
@@ -6902,7 +7014,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "SCTV",
@@ -6953,7 +7068,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "MDTV",
@@ -6967,7 +7082,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "RTV",
@@ -6998,7 +7116,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Jawa Pos TV",
@@ -7012,7 +7130,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "BTV",
@@ -7026,7 +7147,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "BeritaSatu",
@@ -7040,7 +7164,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Magna Channel",
@@ -7054,7 +7181,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TVRI Sport",
@@ -7068,7 +7198,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "BN Channel",
@@ -7082,7 +7215,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "SIN PO TV",
@@ -7099,7 +7235,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error timed out>(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "DAAI TV",
@@ -7113,7 +7249,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Elshinta TV",
@@ -7127,7 +7266,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "JTV",
@@ -7141,7 +7283,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TVKU",
@@ -7155,7 +7300,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TVMU",
@@ -7170,9 +7318,9 @@
    "code": "ID",
    "group": "Indonesia",
    "source": "extra",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "not-checked"
   },
   {
    "name": "MQTV",
@@ -7186,7 +7334,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesiana TV",
@@ -7200,7 +7351,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TransTV",
@@ -7282,16 +7436,19 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   }
  ],
  "health": {
-  "checked": "2026-10-16T18:21:33Z",
-  "playable": 346,
+  "checked": "2026-10-16T21:31:42Z",
+  "playable": 273,
   "total": 498,
-  "dead": 180,
-  "playlist_entries": 168,
-  "playlist_pipe_entries": 168,
+  "dead": 252,
+  "playlist_entries": 147,
+  "playlist_pipe_entries": 147,
   "verified": true
  }
 }
