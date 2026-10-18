@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-18T19:51:08Z",
+ "updated": "2026-10-18T22:03:40Z",
  "checked": 493,
- "playable": 337,
- "dead": 182,
+ "playable": 336,
+ "dead": 183,
  "no_playlist": 0,
- "pipe_only": 6,
- "drm_excluded": 116,
- "geo_limited": 40,
+ "pipe_only": 7,
+ "drm_excluded": 108,
+ "geo_limited": 44,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 171,
- "playlist_pipe_entries": 171,
+ "playlist_entries": 175,
+ "playlist_pipe_entries": 175,
  "playlist_verified": true,
- "verify_rounds": 3,
+ "verify_rounds": 2,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -43,6 +43,13 @@
    "status": "404"
   },
   {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
    "name": "RecordTV",
    "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
@@ -50,6 +57,20 @@
    "status": "200"
   },
   {
+   "name": "TVNBN",
+   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
    "name": "Fala Litoral",
    "url": "https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
@@ -159,6 +180,20 @@
    "url": "https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8",
    "style": "pipe",
    "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Rodja.tv",
+   "url": "https://rodjatv.com/rodjatv/live.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Rodja.tv",
+   "url": "https://rodjatv.com/rodjatv/live.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
    "status": "404"
   },
   {
@@ -272,48 +307,6 @@
    "style": "pipe",
    "kind": "sub:404",
    "status": "404"
-  },
-  {
-   "name": "Asharq News",
-   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Asharq News",
-   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "M-Live 5",
-   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "M-Live 5",
-   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Oman Sports",
-   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "SBT Interior",
-   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "other",
-   "status": "200"
   },
   {
    "name": "Asharq Discovery",
@@ -323,11 +316,46 @@
    "status": "404"
   },
   {
-   "name": "Asharq Documentary",
-   "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
+   "name": "Asharq News",
+   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Asharq News",
+   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
    "style": "pipe",
    "kind": "sub:404",
    "status": "404"
+  },
+  {
+   "name": "M-Live 5",
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "M-Live 5",
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TV4 Sweden",
+   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "451"
+  },
+  {
+   "name": "TV4 Sweden",
+   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "451"
   }
  ],
  "repairs": [],
@@ -508,24 +536,9 @@
    "url": "https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c6856b6088c3016b87d64b970b53/manifest.mpd"
   },
   {
-   "name": "Premium Movies",
-   "code": "ID",
-   "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/bde0a6d8d3fd4d77ae5093ad2e6699dc/index.mpd"
-  },
-  {
-   "name": "Uniquest (V+)",
-   "code": "ID",
-   "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/bde0a6d8d3fd4d77ae5093ad2e6699dc/index.mpd"
-  },
-  {
    "name": "M-Live 8",
    "code": "SG",
    "url": "https://tglmp01.akamaized.net/out/v1/41d401729c5d4ce3b15eb7db9147d7bc/manifest.mpd"
-  },
-  {
-   "name": "Xing Komg",
-   "code": "CN",
-   "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/a1dc0cb4b4f14a3094088b16366bbeed/index.mpd"
   },
   {
    "name": "beIN Sports AU 1 A+",
@@ -556,11 +569,6 @@
    "name": "CBS Sports",
    "code": "SP",
    "url": "https://a166aivottlinear-a.akamaihd.net/OTTB/lhr-nitro/live/clients/dash/enc/rbem8rorcw/out/v1/5318821e2c3c44c2a439681b9aa86e9b/cenc.mpd"
-  },
-  {
-   "name": "DA-ZN DE1",
-   "code": "SP",
-   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/nky2a8nb90/out/v1/8c7775ac3eb54dc1a0b7ee118f08aeb6/cenc.mpd"
   },
   {
    "name": "DAZN Fast",
@@ -723,11 +731,6 @@
    "url": "https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_spotv2hd.mpd"
   },
   {
-   "name": "Telemundo",
-   "code": "SP",
-   "url": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s-v2/Live/channel(KVDA)/master.mpd"
-  },
-  {
    "name": "TNT Sports 1",
    "code": "GB",
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
@@ -883,24 +886,9 @@
    "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
   },
   {
-   "name": "TV4 Sweden",
-   "code": "SE",
-   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd"
-  },
-  {
-   "name": "Universo (West)",
-   "code": "SP",
-   "url": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s/Live//channel(universo-west)/master.mpd"
-  },
-  {
    "name": "Dreamworks HD",
    "code": "KD",
    "url": "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dreamwork.smil/manifest.mpd"
-  },
-  {
-   "name": "Nickelodeon V+",
-   "code": "KD",
-   "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/3fe6d9eb97ed455c942eb8d3d1c2c2e8/index.mpd"
   },
   {
    "name": "Oktolidays",
@@ -914,6 +902,22 @@
   }
  ],
  "unplayable": [
+  {
+   "name": "Netherlands: Eredivisie [CH4]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8"
+  },
+  {
+   "name": "France: Ligue 1 [CH5]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel2.m3u8"
+  },
   {
    "name": "Susah Sinyal",
    "code": "MI",
@@ -995,12 +999,12 @@
    "url": "http://43.152.182.139/live/channel11.flv"
   },
   {
-   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "name": "WAFF Arabian Gulf Cup [CH1]",
    "code": "AA",
    "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "status": "flaky:200",
    "dead": true,
-   "url": "http://43.152.182.139/live/channel23.flv"
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -1014,7 +1018,7 @@
    "name": "Italy: Serie-A [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "<urlopen error [Errno -2] Name or service not known>(no-ref)",
+   "status": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)",
    "dead": true,
    "url": "https://live2.pro2cdnlive.com/live/channel21.flv"
   },
@@ -1209,14 +1213,6 @@
    "status": "<urlopen error [Errno -5] No address associated with hostname>(https)",
    "dead": true,
    "url": "http://evpp.mm.uol.com.br:1935/bandpracas/debatemg/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "Canal 38",
-   "code": "BR",
-   "premium": "f",
-   "status": "200(no-ref)",
-   "dead": true,
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "Canal do Inter",
@@ -2150,7 +2146,7 @@
    "name": "SIN PO TV",
    "code": "ID",
    "premium": "f",
-   "status": "<urlopen error [Errno 111] Connection refused>(no-ref)",
+   "status": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)",
    "dead": true,
    "url": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd"
   },
