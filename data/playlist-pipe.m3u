@@ -37,6 +37,10 @@ https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8|Use
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 https://d9quh89lh7dtw.cloudfront.net/public-output/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+#EXTINF:-1 tvg-id="adessotv" tvg-name="Adesso TV" group-title="Brazil",Adesso TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #EXTINF:-1 tvg-id="combrasil" tvg-name="COM Brasil" group-title="Brazil",COM Brasil
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
@@ -81,14 +85,14 @@ https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com|User-Agent=
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
-#EXTINF:-1 tvg-id="sbtinterior" tvg-name="SBT Interior" group-title="Brazil",SBT Interior
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
-https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #EXTINF:-1 tvg-id="sictv" tvg-name="SIC TV" group-title="Brazil",SIC TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#EXTINF:-1 tvg-id="tcm10hd" tvg-name="TCM 10 HD" group-title="Brazil",TCM 10 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+https://live.tcm10.com.br/tcm10hd/stream.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #EXTINF:-1 tvg-id="tvafolha" tvg-name="TV A Folha" group-title="Brazil",TV A Folha
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
@@ -101,6 +105,10 @@ https://stmv1.samcast.com.br/giovane7843/giovane7843/playlist.m3u8?checkedby:ipt
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://srv3.zcast.com.br/tvboqueirao/tvboqueirao/playlist.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#EXTINF:-1 tvg-id="tvbrasiloeste" tvg-name="TV Brasil Oeste" group-title="Brazil",TV Brasil Oeste
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
+https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8?checkedby:iptvcat.com|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #EXTINF:-1 tvg-id="tvclube" tvg-name="TV Clube" group-title="Brazil",TV Clube
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
@@ -586,14 +594,6 @@ https://list.iptvcat.com/my_list/s/a926b15c41be836d52526e91145407ae.m3u8|User-Ag
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 https://mn-nl.mncdn.com/khalij/khalij/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-#EXTINF:-1 tvg-id="asharqdiscovery" tvg-name="Asharq Discovery" group-title="Saudi Arabia",Asharq Discovery
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-#EXTINF:-1 tvg-id="asharqdocumentary" tvg-name="Asharq Documentary" group-title="Saudi Arabia",Asharq Documentary
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-#KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
-https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 #EXTINF:-1 tvg-id="asharqradio" tvg-name="Asharq Radio" group-title="Saudi Arabia",Asharq Radio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
