@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-19T08:11:42Z",
- "count": 493,
+ "updated": "2026-10-19T15:48:33Z",
+ "count": 492,
  "channels": [
   {
-   "name": "Spain: La Liga [CH3]",
-   "tagline": "18 Okt 23:30 WIB - Malaga vs Real Sociedad",
+   "name": "Italy: Serie-A [CH1]",
+   "tagline": "19 Okt 23:30 WIB - Monza vs Cagliari",
    "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
    "is_live": "t",
    "premium": "t",
@@ -17,9 +17,23 @@
    "drm": true
   },
   {
-   "name": "Netherlands: Eredivisie [CH4]",
-   "tagline": "19 Okt 01:00 WIB - FC Twente Enschede vs FC Utrecht",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8",
+   "name": "Italy: Serie-A [CH2]",
+   "tagline": "20 Okt 01:45 WIB - Parma vs Torino",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "England: Premier League [CH5]",
+   "tagline": "20 Okt 02:00 WIB - Tottenham Hotspur vs Coventry City",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel1.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -27,46 +41,11 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
-   "name": "Netherlands: Eredivisie [CH5]",
-   "tagline": "19 Okt 01:00 WIB - NEC Nijmegen vs Fortuna Sittard",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel18.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "France: Ligue 1 [CH5]",
-   "tagline": "19 Okt 01:45 WIB - Lyon vs OGC Nice",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel2.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "Italy: Serie-A [CH4]",
-   "tagline": "19 Okt 01:45 WIB - Juventus vs Lazio",
+   "name": "Spain: La Liga [CH1]",
+   "tagline": "20 Okt 02:00 WIB - Getafe vs Rayo Vallecano",
    "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
    "is_live": "t",
    "premium": "t",
@@ -79,14 +58,27 @@
    "drm": true
   },
   {
-   "name": "Spain: La Liga [CH4]",
-   "tagline": "19 Okt 02:00 WIB - Real Madrid vs Sevilla FC",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+   "name": "Portuguese: Primera Liga [CH1]",
+   "tagline": "20 Okt 02:15 WIB - Sporting Braga vs Gil Vicente",
+   "hls": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/77693/77693_264_live.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
+  },
+  {
+   "name": "Brazil: Serie-A [CH1]",
+   "tagline": "20 Okt 06:00 WIB - Corinthians - SP vs Vitória - BA",
+   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd",
    "is_live": "t",
    "premium": "t",
    "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiaUNQM0U3cHYyNXUrQ2lyWUxUQ2FTdyIsImtpZCI6IlVjRHZJN0Z5bCtYQUhOZnpiZENtemcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -482,9 +474,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -511,7 +502,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "All Country",
    "code": "AA",
-   "group": "All Country"
+   "group": "All Country",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -559,20 +553,6 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
-  },
-  {
-   "name": "Spain: La Liga [CH1]",
-   "tagline": "25 Agu 00:30 WIB - CA Osasuna vs Levante",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
   },
   {
    "name": "Italy: Serie-A [CH6]",
@@ -721,20 +701,6 @@
    "drm": true
   },
   {
-   "name": "Italy: Serie-A [CH2]",
-   "tagline": "14 Sep 23:30 WIB - Como vs Parma",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
    "name": "AFC Champions League Elite [CH4]",
    "tagline": "15 Sep 01:15 WIB - Al Ahli SC vs Pakhtakor",
    "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112",
@@ -865,9 +831,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1413,10 +1378,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "200(no-ref)"
+   "group": "Brazil"
   },
   {
    "name": "Canal do Inter",
@@ -2136,8 +2098,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:403"
   },
   {
    "name": "TV Caravelas",
@@ -2708,10 +2671,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq Documentary",
@@ -3178,10 +3138,7 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "South Korea"
   },
   {
    "name": "Hala London",
@@ -5561,7 +5518,9 @@
    "group": "Sports TV",
    "pipe_only": true,
    "pipe_only_reason": "needs headers: Accept",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "FS2",
@@ -5801,9 +5760,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "drm": true
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -5936,7 +5893,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -6176,9 +6136,7 @@
    "country": "Canada",
    "code": "CA",
    "group": "Canada",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "drm": true
   },
   {
    "name": "TUDN Cambiale 5",
@@ -6559,10 +6517,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6725,20 +6680,31 @@
    "geo_status": "403-blocked(verify)"
   },
   {
-   "name": "England: Premier League [CH5]",
-   "tagline": "20 Okt 02:00 WIB - Tottenham Hotspur vs Coventry City",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel1.m3u8",
+   "name": "Saudi Pro League [CH1]",
+   "tagline": "21 Okt 01:00 WIB - Al Nassr vs Neom SC",
+   "hls": "https://otte.cache.aiv-cdn.net/fra-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
    "is_live": "t",
    "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\": \"https://dce-ac-live.cdn.indazn.com/\", \"Origin\": \"https://dce-ac-live.cdn.indazn.com\", \"User-Agent\": \"Roku/DVP-12.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiS0Y4U25GN0tBZDBJcGRXaFN0Z0J5QSIsImtpZCI6IkN0UUlETi80eGdzU003SWdoL0N6UUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "drm": true
+  },
+  {
+   "name": "Saudi Pro League [CH3]",
+   "tagline": "21 Okt 01:00 WIB - Al Ettifaq vs Al Ittihad",
+   "hls": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/77693/77693_264_live.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
   },
   {
    "name": "RCTI",
@@ -6913,7 +6879,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "Jawa Pos TV",
@@ -7192,12 +7161,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-19T08:15:08Z",
-  "playable": 339,
-  "total": 493,
-  "dead": 177,
-  "playlist_entries": 173,
-  "playlist_pipe_entries": 173,
+  "checked": "2026-10-19T15:52:03Z",
+  "playable": 344,
+  "total": 492,
+  "dead": 170,
+  "playlist_entries": 174,
+  "playlist_pipe_entries": 174,
   "verified": true
  }
 }
