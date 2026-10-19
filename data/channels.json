@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T23:56:47Z",
+ "updated": "2026-10-19T02:31:09Z",
  "count": 493,
  "channels": [
   {
@@ -62,7 +62,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "Italy: Serie-A [CH4]",
@@ -529,8 +529,9 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -1416,7 +1417,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Canal do Inter",
@@ -1913,7 +1917,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Rede Sul",
@@ -1975,9 +1982,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:200"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -3176,7 +3183,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Hala London",
@@ -5732,9 +5742,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! ARENA",
@@ -5812,9 +5822,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! IGRA",
@@ -6418,7 +6428,9 @@
    "country": "Kids",
    "code": "KD",
    "group": "Kids",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Oktolidays",
@@ -6484,10 +6496,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Dhoho TV",
@@ -6513,10 +6522,7 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "JakTV",
@@ -6912,10 +6918,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "source": "extra"
   },
   {
    "name": "Jawa Pos TV",
@@ -7194,10 +7197,10 @@
   }
  ],
  "health": {
-  "checked": "2026-10-19T00:00:18Z",
-  "playable": 339,
+  "checked": "2026-10-19T02:34:44Z",
+  "playable": 338,
   "total": 493,
-  "dead": 180,
+  "dead": 182,
   "playlist_entries": 172,
   "playlist_pipe_entries": 172,
   "verified": true

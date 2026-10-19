@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-19T00:00:18Z",
+ "updated": "2026-10-19T02:34:44Z",
  "checked": 493,
- "playable": 339,
- "dead": 180,
+ "playable": 338,
+ "dead": 182,
  "no_playlist": 0,
- "pipe_only": 9,
- "drm_excluded": 115,
+ "pipe_only": 8,
+ "drm_excluded": 114,
  "geo_limited": 39,
  "geo_mode": "keep",
  "repaired": 0,
  "playlist_entries": 172,
  "playlist_pipe_entries": 172,
  "playlist_verified": true,
- "verify_rounds": 3,
+ "verify_rounds": 2,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -43,9 +43,9 @@
    "status": "404"
   },
   {
-   "name": "RecordTV",
-   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
    "kind": "other",
    "status": "200"
   },
@@ -68,6 +68,13 @@
    "url": "https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
    "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Rede SPTV",
+   "url": "https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "sub:404",
    "status": "404"
   },
   {
@@ -97,34 +104,6 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "Bungo TV",
-   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Bungo TV",
-   "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Garuda TV",
-   "url": "https://hgmtv.com:19360/garudatvlivestreaming/720p.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Garuda TV",
-   "url": "https://hgmtv.com:19360/garudatvlivestreaming/720p.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
   },
   {
    "name": "TVMU",
@@ -218,6 +197,27 @@
    "status": "404"
   },
   {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Nickelodeon V+",
+   "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/3fe6d9eb97ed455c942eb8d3d1c2c2e8/index.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Nickelodeon V+",
+   "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/3fe6d9eb97ed455c942eb8d3d1c2c2e8/index.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
    "name": "Sukan RTM",
    "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
    "style": "vlc",
@@ -246,15 +246,15 @@
    "status": "404"
   },
   {
-   "name": "MATCH!",
-   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd",
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
    "style": "vlc",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
-   "name": "MATCH! FOOTBALL 2",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "name": "MATCH! FOOTBALL 3",
+   "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd",
    "style": "vlc",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
@@ -267,15 +267,15 @@
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
-   "name": "MATCH!",
-   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd",
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
-   "name": "MATCH! FOOTBALL 2",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "name": "MATCH! FOOTBALL 3",
+   "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd",
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
@@ -358,11 +358,18 @@
    "status": "404"
   },
   {
-   "name": "SBT Interior",
-   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
+   "name": "Gugbang TV",
+   "url": "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Gugbang TV",
+   "url": "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
-   "kind": "other",
-   "status": "200"
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
   }
  ],
  "repairs": [],
@@ -928,11 +935,6 @@
    "url": "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dreamwork.smil/manifest.mpd"
   },
   {
-   "name": "Nickelodeon V+",
-   "code": "KD",
-   "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/3fe6d9eb97ed455c942eb8d3d1c2c2e8/index.mpd"
-  },
-  {
    "name": "Oktolidays",
    "code": "KD",
    "url": "https://tglmp03.akamaized.net/out/v1/be732843b7d24bada23e13810282e55f/manifest.mpd"
@@ -964,7 +966,7 @@
    "name": "France: Ligue 1 [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "timeout(no-ref)",
+   "status": "Remote end closed connection without response(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel2.m3u8"
   },
@@ -1039,6 +1041,14 @@
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://43.152.182.139/live/channel33.flv"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "code": "AA",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel23.flv"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -1423,6 +1433,14 @@
    "status": "<urlopen error timed out>(https)",
    "dead": true,
    "url": "http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "SBT Interior",
+   "code": "BR",
+   "premium": "f",
+   "status": "flaky:200",
+   "dead": true,
+   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -1993,6 +2011,14 @@
    "url": "https://cdn.stmify.com/primevideo/stream/ITV3/cenc.mpd"
   },
   {
+   "name": "MATCH!",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
+  },
+  {
    "name": "MATCH! ARENA",
    "code": "RU",
    "premium": "f",
@@ -2015,14 +2041,6 @@
    "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
    "dead": true,
    "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "MATCH! FOOTBALL 3",
-   "code": "RU",
-   "premium": "f",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
-   "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! IGRA",
@@ -2151,14 +2169,6 @@
    "status": "404(no-ref)",
    "dead": true,
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=antv"
-  },
-  {
-   "name": "Jogja TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "404(no-ref)",
-   "dead": true,
-   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
   },
   {
    "name": "SIN PO TV",
