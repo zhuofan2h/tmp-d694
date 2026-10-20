@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T10:13:16Z",
+ "updated": "2026-10-20T19:24:52Z",
  "countries": [
   {
    "code": "A1",
@@ -207,8 +207,8 @@
   }
  ],
  "counts": {
-  "Events": 60,
-  "Movies": 3,
+  "Events": 59,
+  "Movies": 2,
   "Asian Games 2026": 7,
   "All Country": 2,
   "United Arab Emirates (the)": 2,
