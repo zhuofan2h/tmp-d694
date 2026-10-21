@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-21T05:33:26Z",
+ "updated": "2026-10-21T10:30:32Z",
  "checked": 516,
- "playable": 363,
- "dead": 175,
+ "playable": 362,
+ "dead": 178,
  "no_playlist": 0,
- "pipe_only": 12,
- "drm_excluded": 130,
- "geo_limited": 39,
+ "pipe_only": 15,
+ "drm_excluded": 129,
+ "geo_limited": 37,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 179,
- "playlist_pipe_entries": 179,
+ "playlist_entries": 174,
+ "playlist_pipe_entries": 174,
  "playlist_verified": true,
  "verify_rounds": 4,
  "verify_failures": [
@@ -43,6 +43,13 @@
    "status": "404"
   },
   {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
    "name": "TV Cidade Verde",
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "vlc",
@@ -69,20 +76,6 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "Bandung TV",
-   "url": "http://202.150.153.254:65500/bandungtvWEBSITE.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Bandung TV",
-   "url": "http://202.150.153.254:65500/bandungtvWEBSITE.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
   },
   {
    "name": "TVMU",
@@ -141,6 +134,13 @@
    "status": "404"
   },
   {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
    "name": "Sukan RTM",
    "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
    "style": "vlc",
@@ -169,44 +169,9 @@
    "status": "404"
   },
   {
-   "name": "MATCH! FOOTBALL 1",
-   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
    "name": "MATCH! FOOTBALL 2",
    "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
    "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! STRANA",
-   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! FOOTBALL 1",
-   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! FOOTBALL 2",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! STRANA",
-   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd",
-   "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
@@ -253,6 +218,13 @@
    "status": "404"
   },
   {
+   "name": "Asharq Discovery",
+   "url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
    "name": "Asharq News",
    "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
    "style": "vlc",
@@ -281,8 +253,8 @@
    "status": "404"
   },
   {
-   "name": "RecordTV",
-   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "name": "Oman Sports",
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
    "kind": "other",
    "status": "200"
@@ -295,11 +267,18 @@
    "status": "404"
   },
   {
-   "name": "Asharq Discovery",
-   "url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
+   "name": "MATCH! FOOTBALL 3",
+   "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd",
    "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
   }
  ],
  "repairs": [],
@@ -925,16 +904,6 @@
    "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
   },
   {
-   "name": "TV4 Sweden",
-   "code": "SE",
-   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd"
-  },
-  {
-   "name": "Universo (West)",
-   "code": "SP",
-   "url": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s/Live//channel(universo-west)/master.mpd"
-  },
-  {
    "name": "Dreamworks HD",
    "code": "KD",
    "url": "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dreamwork.smil/manifest.mpd"
@@ -953,24 +922,45 @@
    "name": "Animal Planet",
    "code": "ID",
    "url": "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/ap.smil/manifest.mpd"
+  },
+  {
+   "name": "TV4 Sweden",
+   "code": "SE",
+   "url": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd"
   }
  ],
  "unplayable": [
   {
-   "name": "Basketball: NBA [CH2]",
+   "name": "French Open [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "timeout(no-ref)",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel29.m3u8"
+   "url": "http://42.117.246.9/live/channel60.flv?wsSecret=3d163ddc4dcff7a40f74c75f1ffe1132&wsABSTime=1784406214"
   },
   {
-   "name": "Basketball: NBA [CH1]",
+   "name": "French Open [CH2]",
    "code": "EV",
    "premium": "t",
-   "status": "timeout(no-ref)",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel25.m3u8"
+   "url": "http://42.117.246.9/live/channel61.flv?wsSecret=a30ef0032a9cef643240193f542e466b&wsABSTime=1779841809"
+  },
+  {
+   "name": "French Open [CH3]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://42.117.246.9/live/channel62.flv?wsSecret=25cd4400de51813709eb06b0cde96067&wsABSTime=1779993721"
+  },
+  {
+   "name": "French Open [CH4]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://42.117.246.9/live/channel63.flv?wsSecret=2297749b2f1c32928891a0cc3f8908ad&wsABSTime=1780006551"
   },
   {
    "name": "Indonesia: BRI Super League [CH1]",
@@ -979,6 +969,14 @@
    "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel24.m3u8"
+  },
+  {
+   "name": "AFC Challenge League [CH1]",
+   "code": "EV",
+   "premium": "t",
+   "status": "Remote end closed connection without response(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -992,7 +990,7 @@
    "name": "UEFA Champions League [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "Remote end closed connection without response(no-ref)",
+   "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel18.m3u8"
   },
@@ -1043,30 +1041,6 @@
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954"
-  },
-  {
-   "name": "Football: Asian Games 2026 [CH3]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel11.flv"
-  },
-  {
-   "name": "WAFF Arabian Gulf Cup [CH1]",
-   "code": "AA",
-   "premium": "t",
-   "status": "flaky:200",
-   "dead": true,
-   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "WAFF Arabian Gulf Cup [CH2]",
-   "code": "AA",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel23.flv"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -1131,14 +1105,6 @@
    "status": "401(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D113"
-  },
-  {
-   "name": "Football: Asian Games 2026 [CH3]",
-   "code": "EV",
-   "premium": "t",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
-   "dead": true,
-   "url": "http://43.152.182.139/live/channel12.flv"
   },
   {
    "name": "Depor TV",
@@ -1597,6 +1563,14 @@
    "url": "https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
+   "name": "[testo]1",
+   "code": "SP",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://www.youtube.com/watch?v=JLA13mnhizQ"
+  },
+  {
    "name": "8TV",
    "code": "MY",
    "premium": "f",
@@ -2045,12 +2019,12 @@
    "url": "https://video.beeline.tv/live/d/channel377.isml/manifest-stb.mpd"
   },
   {
-   "name": "MATCH! FOOTBALL 3",
+   "name": "MATCH! FOOTBALL 1",
    "code": "RU",
    "premium": "f",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
    "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd"
+   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! IGRA",
@@ -2069,20 +2043,20 @@
    "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd"
   },
   {
+   "name": "MATCH! STRANA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd"
+  },
+  {
    "name": "MIR BASKETBOLA",
    "code": "RU",
    "premium": "f",
    "status": "404(no-ref)",
    "dead": true,
    "url": "https://video.beeline.tv/live/d/channel423.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "TV4 Sportkanalen",
-   "code": "SP",
-   "premium": "f",
-   "status": "flaky:403",
-   "dead": true,
-   "url": "https://live.streaming.a2d.tv/asset/20465728.isml/dash.mpd"
   },
   {
    "name": "Dunia Anak",
@@ -2179,6 +2153,14 @@
    "status": "<urlopen error [Errno 61] Connection refused>(no-ref)",
    "dead": true,
    "url": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd"
+  },
+  {
+   "name": "Mentari TV",
+   "code": "ID",
+   "premium": "f",
+   "status": "302(no-ref)",
+   "dead": true,
+   "url": "https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237"
   }
  ]
 }

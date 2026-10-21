@@ -1,38 +1,70 @@
 {
- "updated": "2026-10-21T05:29:19Z",
+ "updated": "2026-10-21T10:27:00Z",
  "count": 516,
  "channels": [
   {
-   "name": "Basketball: NBA [CH2]",
-   "tagline": "21 Okt 06:00 WIB - New York Knicks vs Philadelphia 76ers",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel29.m3u8",
+   "name": "French Open [CH1]",
+   "tagline": "21 Okt 15:00 WIB - Badminton - Venue 1",
+   "hls": "http://42.117.246.9/live/channel60.flv?wsSecret=3d163ddc4dcff7a40f74c75f1ffe1132&wsABSTime=1784406214",
    "is_live": "t",
    "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
    "country": "Events",
    "code": "EV",
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
-   "name": "Basketball: NBA [CH1]",
-   "tagline": "21 Okt 08:30 WIB - San Antonio Spurs vs Oklahoma City Thunder",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel25.m3u8",
+   "name": "French Open [CH2]",
+   "tagline": "21 Okt 15:00 WIB - Badminton - Venue 2",
+   "hls": "http://42.117.246.9/live/channel61.flv?wsSecret=a30ef0032a9cef643240193f542e466b&wsABSTime=1779841809",
    "is_live": "t",
    "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
    "country": "Events",
    "code": "EV",
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "French Open [CH3]",
+   "tagline": "21 Okt 15:10 WIB - Badminton - Venue 3",
+   "hls": "http://42.117.246.9/live/channel62.flv?wsSecret=25cd4400de51813709eb06b0cde96067&wsABSTime=1779993721",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "French Open [CH4]",
+   "tagline": "21 Okt 15:10 WIB - Badminton - Venue 4",
+   "hls": "http://42.117.246.9/live/channel63.flv?wsSecret=2297749b2f1c32928891a0cc3f8908ad&wsABSTime=1780006551",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.livebytexscore.com/\", \"Origin\": \"https://xlz.livebytexscore.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Indonesia: BRI Super League [CH1]",
@@ -49,6 +81,22 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "AFC Challenge League [CH1]",
+   "tagline": "21 Okt 19:00 WIB - Tainan City Steel vs Borneo FC Samarinda",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -122,7 +170,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "Remote end closed connection without response(no-ref)"
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Champions League [CH4]",
@@ -602,9 +650,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -632,9 +679,9 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:200"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -648,9 +695,8 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -974,9 +1020,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1522,7 +1567,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Canal do Inter",
@@ -2624,6 +2672,22 @@
    "code": "SP",
    "group": "Sports TV",
    "drm": true
+  },
+  {
+   "name": "[testo]1",
+   "tagline": "Sports TV",
+   "hls": "https://www.youtube.com/watch?v=JLA13mnhizQ",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "yt",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0\"}",
+   "url_license": "none",
+   "country": "Sports TV",
+   "code": "SP",
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "360 TV HD",
@@ -6076,9 +6140,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6108,9 +6172,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! IGRA",
@@ -6156,9 +6220,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "Mediaset Italy",
@@ -6227,7 +6291,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -6525,36 +6592,6 @@
    "drm": true
   },
   {
-   "name": "TUDN Vix [CH1]",
-   "tagline": "Sports TV",
-   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/nbvkcuwbh1/out/v1/8ccf7b91d6c3409b991d48150e65c0e4/cenc.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiQnVXc08wcHhid1l0dC9peFMxSHZJQSIsImtpZCI6IlFPUUI0Y3V2U2t6ZXRvU0ozK0k5NmcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Sports TV",
-   "code": "SP",
-   "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
-  },
-  {
-   "name": "TUDN Vix [CH2]",
-   "tagline": "Sports TV",
-   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ywydwsbcrd/out/v1/6a5582b3fd4e42b097a2394c5f65ccd4/cenc.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiNWdYK3JzcGp4ZmdUK2Y0SnZWVXVpdyIsImtpZCI6Imw3aDFlb0JtdkFrKzVSOHlyS2s2dFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Sports TV",
-   "code": "SP",
-   "group": "Sports TV",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
-  },
-  {
    "name": "TV Real Madrid EN",
    "tagline": "Sports TV",
    "hls": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8",
@@ -6579,50 +6616,6 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV"
-  },
-  {
-   "name": "TV4 Sportkanalen",
-   "tagline": "Sports TV",
-   "hls": "https://live.streaming.a2d.tv/asset/20465728.isml/dash.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoidFZleTVodHprMTczUy9vaTJPb3NOQSIsImtpZCI6IklQbWdOdXE4T1RDeXNkRWtkNENRNWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Sports TV",
-   "code": "SP",
-   "group": "Sports TV",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:403"
-  },
-  {
-   "name": "TV4 Sweden",
-   "tagline": "Sweden",
-   "hls": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiV2ltN1BIQmUzcWFVR2xzZFYxckRGZyIsImtpZCI6InNKMFZmUmlyVWJtU09qMWF2ZTc5VWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Sweden",
-   "code": "SE",
-   "group": "Sweden",
-   "drm": true
-  },
-  {
-   "name": "Universo (West)",
-   "tagline": "Sports TV",
-   "hls": "https://fsly.stream.peacocktv.com/Content/CMAF_OL2-CTR-4s/Live//channel(universo-west)/master.mpd",
-   "is_live": "f",
-   "premium": "f",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://www.peacocktv.com/\", \"Origin\": \"https://www.peacocktv.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiZloyL2dUUlRYaFpsNlJUN2NUVE9SdyIsImtpZCI6IkJwODBsVGdQUFNXb3dEUjNCbjk5R3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Sports TV",
-   "code": "SP",
-   "group": "Sports TV",
-   "drm": true
   },
   {
    "name": "Cartoon Network",
@@ -6807,10 +6800,7 @@
    "url_license": "",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Bungo TV",
@@ -6930,7 +6920,10 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Al Quran Al Kareem TV",
@@ -7049,6 +7042,20 @@
    "group": "Portugal",
    "geo_limited": true,
    "geo_status": "403-blocked(verify)"
+  },
+  {
+   "name": "TV4 Sweden",
+   "tagline": "Sports",
+   "hls": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiV2ltN1BIQmUzcWFVR2xzZFYxckRGZyIsImtpZCI6InNKMFZmUmlyVWJtU09qMWF2ZTc5VWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Sweden",
+   "code": "SE",
+   "group": "Sweden",
+   "drm": true
   },
   {
    "name": "RCTI",
@@ -7495,16 +7502,19 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "302(no-ref)"
   }
  ],
  "health": {
-  "checked": "2026-10-21T05:33:26Z",
-  "playable": 363,
+  "checked": "2026-10-21T10:30:32Z",
+  "playable": 362,
   "total": 516,
-  "dead": 175,
-  "playlist_entries": 179,
-  "playlist_pipe_entries": 179,
+  "dead": 178,
+  "playlist_entries": 174,
+  "playlist_pipe_entries": 174,
   "verified": true
  }
 }
