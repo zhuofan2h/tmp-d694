@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T01:03:43Z",
+ "updated": "2026-10-22T06:14:15Z",
  "countries": [
   {
    "code": "A1",
@@ -96,10 +96,6 @@
   {
    "code": "EV",
    "name": "Events"
-  },
-  {
-   "code": "FR",
-   "name": "France"
   },
   {
    "code": "GB",

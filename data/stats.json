@@ -1,18 +1,20 @@
 {
- "updated": "2026-10-22T01:03:43Z",
+ "updated": "2026-10-22T06:14:15Z",
  "unique": 527,
  "free": 318,
  "premium": 209,
- "playlist_entries": 169,
- "playlist_pipe_entries": 169,
- "failed": [],
- "health_checked": "2026-10-22T01:07:38Z",
- "playable": 361,
- "dead": 191,
+ "playlist_entries": 171,
+ "playlist_pipe_entries": 171,
+ "failed": [
+  "FR"
+ ],
+ "health_checked": "2026-10-22T06:21:19Z",
+ "playable": 360,
+ "dead": 193,
  "no_playlist": 0,
- "pipe_only": 6,
- "drm_excluded": 129,
- "geo_limited": 37,
+ "pipe_only": 12,
+ "drm_excluded": 126,
+ "geo_limited": 38,
  "geo_mode": "keep",
  "playlist_verified": true
 }
