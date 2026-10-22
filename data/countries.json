@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T06:14:15Z",
+ "updated": "2026-10-22T12:09:54Z",
  "countries": [
   {
    "code": "A1",
@@ -96,6 +96,10 @@
   {
    "code": "EV",
    "name": "Events"
+  },
+  {
+   "code": "FR",
+   "name": "France"
   },
   {
    "code": "GB",
@@ -203,12 +207,12 @@
   }
  ],
  "counts": {
-  "Events": 70,
+  "Events": 77,
   "Movies": 2,
   "Asian Games 2026": 7,
   "All Country": 2,
   "United Arab Emirates (the)": 2,
-  "Argentina": 15,
+  "Argentina": 5,
   "Australia": 15,
   "Belgium": 1,
   "Brazil": 77,
@@ -223,11 +227,9 @@
   "Indonesia": 73,
   "United States of America (the)": 5,
   "India": 3,
-  "Mexico": 7,
-  "Paraguay": 1,
   "China": 2,
-  "Colombia": 1,
   "Czechia": 1,
+  "Mexico": 5,
   "Slovakia": 3,
   "Viet Nam": 1,
   "Philippines (the)": 3,
@@ -241,6 +243,8 @@
   "Kids": 11,
   "TV Lokal": 8,
   "Portugal": 1,
+  "Colombia": 1,
+  "Paraguay": 1,
   "Sweden": 1
  }
 }
