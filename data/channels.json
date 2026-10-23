@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T17:33:49Z",
+ "updated": "2026-10-23T20:44:22Z",
  "count": 548,
  "channels": [
   {
@@ -86,7 +86,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Deutsch: Bundesliga [CH1]",
@@ -113,7 +116,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:timeout"
   },
   {
    "name": "Italy: Serie-A [CH1]",
@@ -168,10 +174,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Formula 1 [CH2]",
@@ -260,10 +263,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Basketball: NBA [CH6]",
@@ -365,7 +365,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Kungfu Soccer",
@@ -766,8 +769,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:404"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -797,7 +801,7 @@
    "group": "All Country",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:200"
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -811,9 +815,8 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -1138,8 +1141,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:404"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1482,7 +1486,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Anime TV",
@@ -1527,10 +1534,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Canal do Inter",
@@ -2085,10 +2089,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:200"
+   "group": "Brazil"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2247,9 +2248,8 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:403"
+   "geo_limited": true,
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "TV Caravelas",
@@ -2617,10 +2617,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "NBA TV",
@@ -2850,7 +2847,10 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia"
+   "group": "Saudi Arabia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Asharq News",
@@ -4160,7 +4160,10 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Music TV",
@@ -5765,9 +5768,8 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "geo_limited": true,
+   "geo_status": "403-blocked(verify)"
   },
   {
    "name": "Fight Sports",
@@ -5974,7 +5976,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! ARENA",
@@ -5988,9 +5992,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "drm": true
   },
   {
    "name": "MATCH! FIGHT",
@@ -6020,7 +6022,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6169,7 +6173,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -6706,7 +6713,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Garuda TV",
@@ -7005,7 +7015,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -7345,7 +7358,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7358,7 +7374,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Champions League [CH1]",
@@ -7399,7 +7418,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Champions League [CH4]",
@@ -7895,10 +7917,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "Trans7",
@@ -7912,10 +7931,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "CNN",
@@ -7929,10 +7945,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "CNBC",
@@ -7946,10 +7959,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "Mentari TV",
@@ -7963,16 +7973,19 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   }
  ],
  "health": {
-  "checked": "2026-10-23T17:38:06Z",
-  "playable": 384,
+  "checked": "2026-10-23T20:50:52Z",
+  "playable": 380,
   "total": 548,
-  "dead": 192,
-  "playlist_entries": 168,
-  "playlist_pipe_entries": 168,
+  "dead": 196,
+  "playlist_entries": 171,
+  "playlist_pipe_entries": 171,
   "verified": true
  }
 }
