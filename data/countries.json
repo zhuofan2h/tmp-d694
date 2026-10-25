@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T11:50:47Z",
+ "updated": "2026-10-25T15:10:06Z",
  "countries": [
   {
    "code": "A1",
@@ -207,7 +207,7 @@
   }
  ],
  "counts": {
-  "Events": 101,
+  "Events": 99,
   "Movies": 2,
   "Asian Games 2026": 7,
   "All Country": 2,
@@ -216,7 +216,7 @@
   "Australia": 15,
   "Belgium": 1,
   "Brazil": 77,
-  "Sports TV": 72,
+  "Sports TV": 73,
   "United Kingdom": 15,
   "Malaysia": 17,
   "Japan": 15,
