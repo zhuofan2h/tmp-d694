@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T23:23:24Z",
+ "updated": "2026-10-26T01:24:23Z",
  "count": 537,
  "channels": [
   {
@@ -542,9 +542,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -923,9 +922,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -2406,7 +2404,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "NBA TV",
@@ -2623,10 +2624,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq Documentary",
@@ -2639,10 +2637,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq News",
@@ -3096,7 +3091,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Hala London",
@@ -3899,10 +3897,7 @@
    "url_license": "c64493155d8b443c834a13d4970cf834:509294911ac3c2d779ae2225a23460b4",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "tvOne",
@@ -5840,7 +5835,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FIGHT",
@@ -5870,9 +5867,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -5886,7 +5883,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -5900,9 +5899,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! IGRA",
@@ -5916,9 +5915,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! PREMIERE",
@@ -5932,9 +5931,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! STRANA",
@@ -6540,7 +6539,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Dhoho TV",
@@ -6611,10 +6613,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6909,10 +6908,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -7199,10 +7195,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7259,10 +7252,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "UEFA Champions League [CH4]",
@@ -7336,9 +7326,7 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal "
+   "drm": true
   },
   {
    "name": "UEFA Champions League [CH9]",
@@ -7600,10 +7588,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "source": "extra"
   },
   {
    "name": "TVRI Sport",
@@ -7648,7 +7633,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 61] Connection refused>(no-ref)"
+   "dead_reason": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)"
   },
   {
    "name": "DAAI TV",
@@ -7823,12 +7808,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-25T23:30:07Z",
-  "playable": 372,
+  "checked": "2026-10-26T01:28:46Z",
+  "playable": 378,
   "total": 537,
-  "dead": 193,
-  "playlist_entries": 168,
-  "playlist_pipe_entries": 168,
+  "dead": 187,
+  "playlist_entries": 170,
+  "playlist_pipe_entries": 170,
   "verified": true
  }
 }
