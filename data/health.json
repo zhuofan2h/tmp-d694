@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-27T14:52:12Z",
+ "updated": "2026-10-27T19:49:19Z",
  "checked": 566,
- "playable": 398,
- "dead": 195,
+ "playable": 399,
+ "dead": 196,
  "no_playlist": 0,
- "pipe_only": 17,
+ "pipe_only": 10,
  "drm_excluded": 145,
- "geo_limited": 39,
+ "geo_limited": 38,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 173,
- "playlist_pipe_entries": 174,
+ "playlist_entries": 170,
+ "playlist_pipe_entries": 171,
  "playlist_verified": true,
- "verify_rounds": 5,
+ "verify_rounds": 2,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -43,11 +43,18 @@
    "status": "404"
   },
   {
-   "name": "TVNBN",
-   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "SBT Interior",
+   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
   },
   {
    "name": "RecordTV",
@@ -57,13 +64,6 @@
    "status": "200"
   },
   {
-   "name": "TVNBN",
-   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
    "name": "TV Cidade Verde",
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "vlc",
@@ -75,6 +75,20 @@
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "pipe",
    "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TV Sim Cachoeiro",
+   "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "TV Sim Cachoeiro",
+   "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "httperror",
    "status": "404"
   },
   {
@@ -104,6 +118,62 @@
    "style": "pipe",
    "kind": "httperror",
    "status": "404"
+  },
+  {
+   "name": "CNBC",
+   "url": "https://green-night-d2b4.iontv.workers.dev/cnbc.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "CNN",
+   "url": "https://green-night-d2b4.iontv.workers.dev/cnn.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "Trans7",
+   "url": "https://green-night-d2b4.iontv.workers.dev/trans7.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "TransTV",
+   "url": "https://green-night-d2b4.iontv.workers.dev/transtv.m3u8",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "CNBC",
+   "url": "https://green-night-d2b4.iontv.workers.dev/cnbc.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "CNN",
+   "url": "https://green-night-d2b4.iontv.workers.dev/cnn.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "Trans7",
+   "url": "https://green-night-d2b4.iontv.workers.dev/trans7.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "429"
+  },
+  {
+   "name": "TransTV",
+   "url": "https://green-night-d2b4.iontv.workers.dev/transtv.m3u8",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "429"
   },
   {
    "name": "TVMU",
@@ -159,6 +229,20 @@
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
    "style": "pipe",
    "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
    "status": "404"
   },
   {
@@ -206,6 +290,41 @@
   {
    "name": "MATCH! FOOTBALL 2",
    "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! PREMIERE",
+   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! STRANA",
+   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! PREMIERE",
+   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "MATCH! STRANA",
+   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd",
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
@@ -284,49 +403,14 @@
    "name": "Hala London",
    "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
-   "kind": "sub:404",
+   "kind": "httperror",
    "status": "404"
   },
   {
-   "name": "Canal 38",
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "name": "Hala London",
+   "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Oman Sports",
-   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "Adesso TV",
-   "url": "https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "SBT Interior",
-   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "Rede NGT",
-   "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "sub:404",
+   "kind": "httperror",
    "status": "404"
   }
  ],
@@ -1060,22 +1144,6 @@
  ],
  "unplayable": [
   {
-   "name": "AFC Champions League Elite [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://v101.sportcdn.live/live/live-1-4621545-2.flv?txSecret=9259c8ba7e784588875bb81fd8a80b67&txTime=6ae0d236"
-  },
-  {
-   "name": "AFC Champions League Elite [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://v101.sportcdn.live/live/live-1-4621489-2.flv?txSecret=448c165e4234d015972b989367b3789b&txTime=6ae0d275"
-  },
-  {
    "name": "AFC Champions League Elite [CH3]",
    "code": "EV",
    "premium": "t",
@@ -1098,14 +1166,6 @@
    "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel11.m3u8"
-  },
-  {
-   "name": "DFB Pokal [CH4]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8"
   },
   {
    "name": "AFC Champions League Elite [CH4]",
@@ -1143,7 +1203,7 @@
    "name": "Basketball: NBA [CH3]",
    "code": "EV",
    "premium": "t",
-   "status": "timeout(no-ref)",
+   "status": "Remote end closed connection without response(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel27.m3u8"
   },
@@ -1204,6 +1264,46 @@
    "url": "http://42.117.246.9/live/channel80.flv?wsSecret=0883a7383ffd1707bdfff88a314c19fd&wsABSTime=1780974954"
   },
   {
+   "name": "Volleyball: Asian Games 2026 [CH4]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel33.flv"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH5]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel33.flv"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH6]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel33.flv"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH7]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel33.flv"
+  },
+  {
+   "name": "Volleyball: Asian Games 2026 [CH8]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel33.flv"
+  },
+  {
    "name": "Asian Games 2026 [CH4]",
    "code": "AN",
    "premium": "t",
@@ -1223,9 +1323,25 @@
    "name": "WAFF Arabian Gulf Cup [CH1]",
    "code": "AA",
    "premium": "t",
-   "status": "flaky:200",
+   "status": "200(no-ref)",
    "dead": true,
    "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "code": "AA",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel23.flv"
+  },
+  {
+   "name": "Volleyball Asian Championship Women [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.136.207/live/channel33.flv"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -1240,22 +1356,6 @@
    "code": "EV",
    "premium": "t",
    "status": "401(no-ref)",
-   "dead": true,
-   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
-  },
-  {
-   "name": "AFC Champions League Elite [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
-  },
-  {
-   "name": "AFC Champions League Elite [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115"
   },
@@ -1338,6 +1438,14 @@
    "status": "<urlopen error [Errno -5] No address associated with hostname>(https)",
    "dead": true,
    "url": "http://evpp.mm.uol.com.br:1935/bandpracas/debatemg/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "Canal 38",
+   "code": "BR",
+   "premium": "f",
+   "status": "200(no-ref)",
+   "dead": true,
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "Canal do Inter",
@@ -1562,6 +1670,14 @@
    "status": "404(no-ref)",
    "dead": true,
    "url": "https://srv3.zcast.com.br/wellington7720/wellington7720/playlist.m3u8?checkedby:iptvcat.com"
+  },
+  {
+   "name": "TV Brasil Oeste",
+   "code": "BR",
+   "premium": "f",
+   "status": "flaky:403",
+   "dead": true,
+   "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "TV Caravelas",
@@ -2036,14 +2152,6 @@
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D120"
   },
   {
-   "name": "T-Sports",
-   "code": "SP",
-   "premium": "t",
-   "status": "200(https)",
-   "dead": true,
-   "url": "http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/130714.ts"
-  },
-  {
    "name": "ITV1",
    "code": "SP",
    "premium": "f",
@@ -2116,22 +2224,6 @@
    "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd"
   },
   {
-   "name": "MATCH! PREMIERE",
-   "code": "RU",
-   "premium": "f",
-   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
-   "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "MATCH! STRANA",
-   "code": "RU",
-   "premium": "f",
-   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
-   "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel304.isml/manifest-stb.mpd"
-  },
-  {
    "name": "MIR BASKETBOLA",
    "code": "RU",
    "premium": "f",
@@ -2188,14 +2280,6 @@
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D105"
   },
   {
-   "name": "Indonesia: BRI Super League [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel6.m3u8"
-  },
-  {
    "name": "French Open [CH1]",
    "code": "EV",
    "premium": "t",
@@ -2226,14 +2310,6 @@
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
    "dead": true,
    "url": "http://42.117.246.9/live/channel64.flv?wsSecret=f148b0474d504c4bd61aa31bd32475bc&wsABSTime=1781797138"
-  },
-  {
-   "name": "Indonesia: BRI Super League [CH3]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -2324,14 +2400,6 @@
    "url": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8"
   },
   {
-   "name": "Indonesia: BRI Super League [CH2]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel28.m3u8"
-  },
-  {
    "name": "UEFA Champions League [CH5]",
    "code": "EV",
    "premium": "t",
@@ -2388,6 +2456,14 @@
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=antv"
   },
   {
+   "name": "Jogja TV",
+   "code": "ID",
+   "premium": "f",
+   "status": "404(no-ref)",
+   "dead": true,
+   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
+  },
+  {
    "name": "SIN PO TV",
    "code": "ID",
    "premium": "f",
@@ -2399,7 +2475,7 @@
    "name": "Mentari TV",
    "code": "ID",
    "premium": "f",
-   "status": "302(no-ref)",
+   "status": "flaky:302",
    "dead": true,
    "url": "https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237"
   }
