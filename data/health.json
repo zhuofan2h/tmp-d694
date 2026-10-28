@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-27T23:27:28Z",
+ "updated": "2026-10-28T02:36:24Z",
  "checked": 566,
- "playable": 392,
- "dead": 204,
+ "playable": 395,
+ "dead": 194,
  "no_playlist": 0,
- "pipe_only": 9,
- "drm_excluded": 145,
+ "pipe_only": 8,
+ "drm_excluded": 146,
  "geo_limited": 38,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 169,
- "playlist_pipe_entries": 170,
+ "playlist_entries": 177,
+ "playlist_pipe_entries": 178,
  "playlist_verified": true,
- "verify_rounds": 3,
+ "verify_rounds": 2,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -43,6 +43,20 @@
    "status": "404"
   },
   {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "Rede NGT",
+   "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
    "name": "TV Cidade Verde",
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "vlc",
@@ -54,20 +68,6 @@
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "pipe",
    "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TV Sim Cachoeiro",
-   "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "TV Sim Cachoeiro",
-   "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "httperror",
    "status": "404"
   },
   {
@@ -83,62 +83,6 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "CNBC",
-   "url": "https://green-night-d2b4.iontv.workers.dev/cnbc.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "CNN",
-   "url": "https://green-night-d2b4.iontv.workers.dev/cnn.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "Trans7",
-   "url": "https://green-night-d2b4.iontv.workers.dev/trans7.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "TransTV",
-   "url": "https://green-night-d2b4.iontv.workers.dev/transtv.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "CNBC",
-   "url": "https://green-night-d2b4.iontv.workers.dev/cnbc.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "CNN",
-   "url": "https://green-night-d2b4.iontv.workers.dev/cnn.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "Trans7",
-   "url": "https://green-night-d2b4.iontv.workers.dev/trans7.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "429"
-  },
-  {
-   "name": "TransTV",
-   "url": "https://green-night-d2b4.iontv.workers.dev/transtv.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "429"
   },
   {
    "name": "TVMU",
@@ -183,20 +127,6 @@
    "status": "<urlopen error [Errno 111] Connection refused>"
   },
   {
-   "name": "Rodja.tv",
-   "url": "https://rodjatv.com/rodjatv/live.m3u8",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Rodja.tv",
-   "url": "https://rodjatv.com/rodjatv/live.m3u8",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
    "name": "SCTV",
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
    "style": "vlc",
@@ -208,6 +138,20 @@
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
    "style": "pipe",
    "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
    "status": "404"
   },
   {
@@ -260,36 +204,8 @@
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
-   "name": "MATCH! IGRA",
-   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! PREMIERE",
-   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! FOOTBALL 2",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! IGRA",
-   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! PREMIERE",
-   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd",
+   "name": "MATCH! ARENA",
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd",
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
@@ -363,6 +279,20 @@
    "style": "pipe",
    "kind": "httperror",
    "status": "404"
+  },
+  {
+   "name": "Gugbang TV",
+   "url": "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Gugbang TV",
+   "url": "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
   },
   {
    "name": "Hala London",
@@ -372,38 +302,10 @@
    "status": "404"
   },
   {
-   "name": "RecordTV",
-   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "SBT Interior",
-   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "vlc",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "TVNBN",
-   "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8?checkedby:iptvcat.com",
+   "name": "Hala London",
+   "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "UG.tv",
-   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
+   "kind": "httperror",
    "status": "404"
   }
  ],
@@ -935,6 +837,11 @@
    "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
   },
   {
+   "name": "MATCH!",
+   "code": "RU",
+   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
+  },
+  {
    "name": "Mediaset Italy",
    "code": "IT",
    "url": "https://live03p-seg.msf.cdn.mediaset.net/live/ch-i1/i1-dash-widevine.isml/manifest.mpd"
@@ -1145,14 +1052,6 @@
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D113"
   },
   {
-   "name": "DFB Pokal [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8"
-  },
-  {
    "name": "DFB Pokal [CH2]",
    "code": "EV",
    "premium": "t",
@@ -1209,12 +1108,12 @@
    "url": "http://42.117.246.9/live/channel10.flv?wsSecret=3638effa8deb39f4923a3a8b869bfaca&wsABSTime=1761707819"
   },
   {
-   "name": "Basketball: NBA [CH4]",
+   "name": "Basketball: NBA [CH1]",
    "code": "EV",
    "premium": "t",
    "status": "timeout(no-ref)",
    "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel29.m3u8"
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel25.m3u8"
   },
   {
    "name": "AFC Champions League Elite [CH5]",
@@ -1329,6 +1228,14 @@
    "url": "http://43.152.182.139/live/channel11.flv"
   },
   {
+   "name": "WAFF Arabian Gulf Cup [CH2]",
+   "code": "AA",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://43.152.182.139/live/channel23.flv"
+  },
+  {
    "name": "Volleyball Asian Championship Women [CH2]",
    "code": "EV",
    "premium": "t",
@@ -1340,7 +1247,7 @@
    "name": "Italy: Serie-A [CH5]",
    "code": "EV",
    "premium": "t",
-   "status": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)",
+   "status": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)",
    "dead": true,
    "url": "https://live2.pro2cdnlive.com/live/channel21.flv"
   },
@@ -1439,14 +1346,6 @@
    "status": "<urlopen error [Errno -5] No address associated with hostname>(https)",
    "dead": true,
    "url": "http://evpp.mm.uol.com.br:1935/bandpracas/debatemg/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "Canal 38",
-   "code": "BR",
-   "premium": "f",
-   "status": "200(no-ref)",
-   "dead": true,
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "Canal do Inter",
@@ -2177,22 +2076,6 @@
    "url": "https://cdn.stmify.com/primevideo/stream/ITV3/cenc.mpd"
   },
   {
-   "name": "MATCH!",
-   "code": "RU",
-   "premium": "f",
-   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
-   "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "MATCH! ARENA",
-   "code": "RU",
-   "premium": "f",
-   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
-   "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd"
-  },
-  {
    "name": "MATCH! FIGHT",
    "code": "RU",
    "premium": "f",
@@ -2215,6 +2098,22 @@
    "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
    "dead": true,
    "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! IGRA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! PREMIERE",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel318.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! STRANA",
@@ -2425,14 +2324,6 @@
    "url": "https://live2.brenvoxedgenetwork.com/live/channel24.m3u8"
   },
   {
-   "name": "AFC Challenge League [CH1]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8"
-  },
-  {
    "name": "Indonesia: BRI Super League [CH2]",
    "code": "EV",
    "premium": "t",
@@ -2516,17 +2407,9 @@
    "name": "SIN PO TV",
    "code": "ID",
    "premium": "f",
-   "status": "<urlopen error [Errno 61] Connection refused>(no-ref)",
+   "status": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)",
    "dead": true,
    "url": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd"
-  },
-  {
-   "name": "Mentari TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "302(no-ref)",
-   "dead": true,
-   "url": "https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237"
   }
  ]
 }
