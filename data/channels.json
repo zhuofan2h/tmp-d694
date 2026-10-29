@@ -1,27 +1,11 @@
 {
- "updated": "2026-10-29T06:14:56Z",
- "count": 555,
+ "updated": "2026-10-29T13:25:08Z",
+ "count": 557,
  "channels": [
-  {
-   "name": "AFC Champions League Two [CH1]",
-   "tagline": "29 Okt 14:45 WIB - Adelaide United vs Lion City Sailors",
-   "hls": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://www.mewatch.sg/\", \"Origin\": \"https://www.mewatch.sg\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiK2cyQTM5aGxzMEIzdXVSTTFLREY1ZyIsImtpZCI6ImtibFpMSUdTUnNhTE93aWgvZ2k2SWcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
-  },
   {
    "name": "Hylo Open [CH1]",
    "tagline": "29 Okt 15:00 WIB - Badminton - Venue 1",
-   "hls": "http://42.117.246.9/live/channel87.flv?wsSecret=a4a67fcf182d9acc400eddb71c2bc512&wsABSTime=1779909662",
+   "hls": "http://42.117.246.9/live/channel60.flv?wsSecret=3d163ddc4dcff7a40f74c75f1ffe1132&wsABSTime=1784406214",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
@@ -37,7 +21,7 @@
   {
    "name": "Hylo Open [CH2]",
    "tagline": "29 Okt 15:00 WIB - Badminton - Venue 2",
-   "hls": "http://42.117.246.9/live/channel88.flv?wsSecret=664265b71326ccc9a8a68079f6ad8f50&wsABSTime=1784743501",
+   "hls": "http://42.117.246.9/live/channel61.flv?wsSecret=a30ef0032a9cef643240193f542e466b&wsABSTime=1779841809",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
@@ -53,7 +37,7 @@
   {
    "name": "Hylo Open [CH3]",
    "tagline": "29 Okt 15:00 WIB - Badminton - Venue 3",
-   "hls": "http://42.117.246.9/live/channel89.flv?wsSecret=db709f062560a2d58d100c5c5b0976bb&wsABSTime=1783527279",
+   "hls": "http://42.117.246.9/live/channel62.flv?wsSecret=25cd4400de51813709eb06b0cde96067&wsABSTime=1779993721",
    "is_live": "t",
    "premium": "t",
    "jenis": "ts",
@@ -172,6 +156,49 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "Copa del Rey [CH1]",
+   "tagline": "30 Okt 03:00 WIB - Sporting Hortaleza vs Sevilla FC",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "Indonesia: BRI Super League [CH1]",
+   "tagline": "30 Okt 15:30 WIB - Java United F.C. vs Bhayangkara FC",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel21.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
+  },
+  {
+   "name": "Australia A-League [CH1]",
+   "tagline": "30 Okt 16:00 WIB - Brisbane Roar vs Auckland FC",
+   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -567,9 +594,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -596,7 +622,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "All Country",
    "code": "AA",
-   "group": "All Country"
+   "group": "All Country",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -610,9 +639,8 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -947,9 +975,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1338,7 +1365,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Canal do Inter",
@@ -2134,7 +2164,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "TV CN Agitos",
@@ -2425,7 +2458,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "NBA TV",
@@ -3109,7 +3145,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Hala London",
@@ -3912,10 +3951,7 @@
    "url_license": "c64493155d8b443c834a13d4970cf834:509294911ac3c2d779ae2225a23460b4",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "tvOne",
@@ -6040,9 +6076,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6088,9 +6124,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -6191,7 +6227,10 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Premiere Brazil 1",
@@ -6780,10 +6819,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "404(no-ref)"
+   "group": "Indonesia"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6956,10 +6992,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Indonesia: BRI Super League [CH1a]",
@@ -6985,10 +7018,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Indonesia: BRI Super League [CH2a]",
@@ -7081,7 +7111,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "Remote end closed connection without response(no-ref)"
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -7248,18 +7278,17 @@
    "dead_reason": "400(no-ref)"
   },
   {
-   "name": "Australia A-League [CH1]",
-   "tagline": "30 Okt 16:00 WIB - Brisbane Roar vs Auckland FC",
-   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "name": "Indonesia: BRI Super League [CH2]",
+   "tagline": "30 Okt 19:00 WIB - Persebaya Surabaya vs Persijap Jepara",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel24.m3u8",
    "is_live": "t",
    "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "drm": true
+   "group": "Events"
   },
   {
    "name": "Australia A-League [CH2]",
@@ -7422,10 +7451,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "AFC Challenge League [CH1]",
@@ -7454,10 +7480,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "UEFA Champions League [CH1]",
@@ -8053,16 +8076,19 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "302(no-ref)"
   }
  ],
  "health": {
-  "checked": "2026-10-29T06:21:17Z",
-  "playable": 396,
-  "total": 555,
-  "dead": 185,
-  "playlist_entries": 175,
-  "playlist_pipe_entries": 176,
+  "checked": "2026-10-29T13:29:32Z",
+  "playable": 405,
+  "total": 557,
+  "dead": 183,
+  "playlist_entries": 171,
+  "playlist_pipe_entries": 172,
   "verified": true
  }
 }
