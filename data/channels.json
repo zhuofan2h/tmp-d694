@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-29T23:26:27Z",
- "count": 558,
+ "updated": "2026-10-30T02:44:29Z",
+ "count": 565,
  "channels": [
   {
    "name": "Hylo Open [CH1]",
@@ -133,7 +133,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "Basketball: NBA [CH1]",
@@ -146,7 +146,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Basketball: NBA [CH2]",
@@ -159,7 +162,24 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "MotoGP [CH1]",
+   "tagline": "30 Okt 08:00 WIB - Malaysia - Free Practice Nr. 1",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
   },
   {
    "name": "Basketball: NBA [CH3]",
@@ -172,7 +192,24 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "Remote end closed connection without response(no-ref)"
+  },
+  {
+   "name": "MotoGP [CH2]",
+   "tagline": "30 Okt 12:15 WIB - Malaysia - Practice",
+   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoib0Fzb3l2U3NZbzUzcFZQVVFNRGR5ZyIsImtpZCI6Imd0L0tJNDZNUzBNS01tbmJjWlpkdVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
   },
   {
    "name": "Indonesia: BRI Super League [CH1]",
@@ -215,7 +252,24 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "MotoGP [CH3]",
+   "tagline": "31 Okt 07:40 WIB - Malaysia - Free Practice Nr. 2",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
   },
   {
    "name": "Kungfu Soccer",
@@ -1385,9 +1439,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Canal do Inter",
@@ -1942,10 +1996,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:200"
+   "group": "Brazil"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -4001,7 +4052,9 @@
    "country": "United States of America (the)",
    "code": "US",
    "group": "United States of America (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "591(no-ref)"
   },
   {
    "name": "Nusantara TV",
@@ -6054,7 +6107,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FIGHT",
@@ -6084,7 +6139,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6098,7 +6155,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -6128,7 +6187,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -6857,7 +6918,10 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Al Quran Al Kareem TV",
@@ -7017,7 +7081,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2a]",
@@ -7277,6 +7344,20 @@
    "dead_reason": "400(no-ref)"
   },
   {
+   "name": "MotoGP [CH4]",
+   "tagline": "31 Okt 09:50 WIB - Malaysia - Qualifying Nr. 1 & 2",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
    "name": "Australia A-League [CH2]",
    "tagline": "31 Okt 11:00 WIB - Newcastle Jets vs Wellington Phoenix",
    "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
@@ -7318,6 +7399,20 @@
    "group": "Events"
   },
   {
+   "name": "MotoGP [CH5]",
+   "tagline": "31 Okt 14:00 WIB - Malaysia - Tissot Sprint",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
    "name": "Australia A-League [CH4]",
    "tagline": "31 Okt 15:40 WIB - Macarthur FC vs Western Sydney Wanderers FC",
    "hls": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd",
@@ -7332,6 +7427,20 @@
    "drm": true
   },
   {
+   "name": "MotoGP [CH6]",
+   "tagline": "01 Nov 09:40 WIB - Malaysia - Warm Up & Talkshow",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
    "name": "Australia A-League [CH5]",
    "tagline": "01 Nov 11:00 WIB - Melbourne Victory vs Central Coast Mariners",
    "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
@@ -7340,6 +7449,20 @@
    "jenis": "dash-clearkey",
    "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEMvcXlLbVp2UWEvUUZtL00wRVhTUSIsImtpZCI6ImFhV3FnMW9HSE9aS1l3MFFSbkorUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "drm": true
+  },
+  {
+   "name": "MotoGP [CH7]",
+   "tagline": "01 Nov 11:00 WIB - Malaysia - Race / Grand Prix",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
    "group": "Events",
@@ -7469,7 +7592,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "Remote end closed connection without response(no-ref)"
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7482,7 +7605,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Champions League [CH1]",
@@ -7803,10 +7929,7 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
+   "source": "extra"
   },
   {
    "name": "Jawa Pos TV",
@@ -7907,7 +8030,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)"
+   "dead_reason": "<urlopen error [Errno 111] Connection refused>(no-ref)"
   },
   {
    "name": "DAAI TV",
@@ -8082,12 +8205,12 @@
   }
  ],
  "health": {
-  "checked": "2026-10-29T23:32:43Z",
+  "checked": "2026-10-30T02:52:51Z",
   "playable": 394,
-  "total": 558,
-  "dead": 183,
-  "playlist_entries": 177,
-  "playlist_pipe_entries": 178,
+  "total": 565,
+  "dead": 193,
+  "playlist_entries": 178,
+  "playlist_pipe_entries": 179,
   "verified": true
  }
 }

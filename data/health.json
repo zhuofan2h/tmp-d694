@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-29T23:32:43Z",
- "checked": 558,
+ "updated": "2026-10-30T02:52:51Z",
+ "checked": 565,
  "playable": 394,
- "dead": 183,
+ "dead": 193,
  "no_playlist": 0,
  "pipe_only": 8,
- "drm_excluded": 153,
+ "drm_excluded": 155,
  "geo_limited": 38,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 177,
- "playlist_pipe_entries": 178,
+ "playlist_entries": 178,
+ "playlist_pipe_entries": 179,
  "playlist_verified": true,
- "verify_rounds": 2,
+ "verify_rounds": 3,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -43,219 +43,254 @@
    "status": "404"
   },
   {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
+  },
+  {
    "name": "RecordTV",
    "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
    "kind": "other",
    "status": "200"
+  },
+  {
+   "name": "RecordTV",
+   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "other",
+   "status": "200"
+  },
+  {
+   "name": "TV Cidade Verde",
+   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TV Cidade Verde",
+   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TMC",
+   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+  },
+  {
+   "name": "TMC",
+   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+  },
+  {
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "TVMU",
+   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Indosiar",
+   "url": "https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "name": "MyKids",
+   "url": "https://cdnbal1.indihometv.com/atm/DASH/mykids/manifest.mpd",
+   "style": "vlc",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "name": "Indosiar",
+   "url": "https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "name": "MyKids",
+   "url": "https://cdnbal1.indihometv.com/atm/DASH/mykids/manifest.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "name": "SCTV",
+   "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "SCTV",
+   "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "UG.tv",
+   "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Oktolidays",
+   "url": "https://tglmp03.akamaized.net/out/v1/be732843b7d24bada23e13810282e55f/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Oktolidays",
+   "url": "https://tglmp03.akamaized.net/out/v1/be732843b7d24bada23e13810282e55f/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Sukan RTM",
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "tv6",
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "Sukan RTM",
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "tv6",
+   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "Abdulmajeed Abdullah",
+   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Abdulmajeed Abdullah",
+   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Saudiya",
+   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Saudiya",
+   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Sunnah Al Nabawiyah TV",
+   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Al Sunnah Al Nabawiyah TV",
+   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Asharq News",
+   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "Asharq News",
+   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "M-Live 5",
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "style": "vlc",
+   "kind": "httperror",
+   "status": "404"
+  },
+  {
+   "name": "M-Live 5",
+   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
+   "style": "pipe",
+   "kind": "httperror",
+   "status": "404"
   },
   {
    "name": "Adesso TV",
    "url": "https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
+   "style": "vlc",
    "kind": "other",
    "status": "200"
   },
   {
-   "name": "RecordTV",
-   "url": "https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8?checkedby:iptvcat.com",
-   "style": "pipe",
-   "kind": "other",
-   "status": "200"
-  },
-  {
-   "name": "TV Cidade Verde",
-   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
+   "name": "Hala London",
+   "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TV Cidade Verde",
-   "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TMC",
-   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "TMC",
-   "url": "https://api-proxad.dc2.oqee.net/playlist/v1/live/497/1/live.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "TVMU",
-   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "TVMU",
-   "url": "https://gist.githubusercontent.com/warningfm/b04ba9b82d3b32b0929262e9daad5d11/raw/091820896e8220e1fdd804f6789103d17fbed522/MQGHZhlYFicsYHQ.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Indosiar",
-   "url": "https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 111] Connection refused>"
-  },
-  {
-   "name": "MyKids",
-   "url": "https://cdnbal1.indihometv.com/atm/DASH/mykids/manifest.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 111] Connection refused>"
-  },
-  {
-   "name": "Indosiar",
-   "url": "https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 111] Connection refused>"
-  },
-  {
-   "name": "MyKids",
-   "url": "https://cdnbal1.indihometv.com/atm/DASH/mykids/manifest.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 111] Connection refused>"
-  },
-  {
-   "name": "SCTV",
-   "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "SCTV",
-   "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=sctv",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Oktolidays",
-   "url": "https://tglmp03.akamaized.net/out/v1/be732843b7d24bada23e13810282e55f/manifest.mpd",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Oktolidays",
-   "url": "https://tglmp03.akamaized.net/out/v1/be732843b7d24bada23e13810282e55f/manifest.mpd",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Sukan RTM",
-   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "tv6",
-   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Sukan RTM",
-   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "tv6",
-   "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd",
-   "style": "pipe",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "Abdulmajeed Abdullah",
-   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Abdulmajeed Abdullah",
-   "url": "https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Saudiya",
-   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Saudiya",
-   "url": "https://saudi-tv-prod-dub-enc.edgenextcdn.net/out/v1/5ae66b453b62403199811ab78da9982a/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Sunnah Al Nabawiyah TV",
-   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Al Sunnah Al Nabawiyah TV",
-   "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Asharq News",
-   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
-   "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "Asharq News",
-   "url": "https://asharq-prod-dub-enc.edgenextcdn.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8",
-   "style": "pipe",
-   "kind": "sub:404",
-   "status": "404"
-  },
-  {
-   "name": "M-Live 5",
-   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "style": "vlc",
-   "kind": "httperror",
-   "status": "404"
-  },
-  {
-   "name": "M-Live 5",
-   "url": "https://ls-mp04stg.eo-edgefunctions7.com/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.mpd",
-   "style": "pipe",
    "kind": "httperror",
    "status": "404"
   },
@@ -263,7 +298,7 @@
    "name": "Hala London",
    "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
-   "kind": "httperror",
+   "kind": "sub:404",
    "status": "404"
   }
  ],
@@ -290,9 +325,24 @@
    "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
   },
   {
+   "name": "MotoGP [CH1]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
+   "name": "MotoGP [CH2]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd"
+  },
+  {
    "name": "Australia A-League [CH1]",
    "code": "EV",
    "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
+   "name": "MotoGP [CH3]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
   },
   {
    "name": "UEFA Nations League [CH4]",
@@ -448,11 +498,6 @@
    "name": "NBA TV",
    "code": "SP",
    "url": "https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/2jbycgm3g3/out/v1/066dd9325648468c9ecdc8b272370931/cenc.mpd"
-  },
-  {
-   "name": "NBC 4 New York",
-   "code": "US",
-   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dx5hfbpk7u/out/v1/c14185a397544650b9761d43ad2e8e91/cenc.mpd"
   },
   {
    "name": "DIRECTV",
@@ -820,26 +865,6 @@
    "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
   },
   {
-   "name": "MATCH! ARENA",
-   "code": "RU",
-   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "MATCH! FOOTBALL 1",
-   "code": "RU",
-   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "MATCH! FOOTBALL 2",
-   "code": "RU",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd"
-  },
-  {
-   "name": "MATCH! IGRA",
-   "code": "RU",
-   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd"
-  },
-  {
    "name": "Mediaset Italy",
    "code": "IT",
    "url": "https://live03p-seg.msf.cdn.mediaset.net/live/ch-i1/i1-dash-widevine.isml/manifest.mpd"
@@ -975,6 +1000,11 @@
    "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
   },
   {
+   "name": "MotoGP [CH4]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
    "name": "Australia A-League [CH2]",
    "code": "EV",
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
@@ -985,14 +1015,29 @@
    "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
   },
   {
+   "name": "MotoGP [CH5]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
    "name": "Australia A-League [CH4]",
    "code": "EV",
    "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
   },
   {
+   "name": "MotoGP [CH6]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
    "name": "Australia A-League [CH5]",
    "code": "EV",
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
+  },
+  {
+   "name": "MotoGP [CH7]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
   },
   {
    "name": "Australia A-League [CH6]",
@@ -1064,9 +1109,33 @@
    "name": "Copa del Rey [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "timeout(no-ref)",
+   "status": "Remote end closed connection without response(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8"
+  },
+  {
+   "name": "Basketball: NBA [CH1]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel27.m3u8"
+  },
+  {
+   "name": "Basketball: NBA [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel25.m3u8"
+  },
+  {
+   "name": "Basketball: NBA [CH3]",
+   "code": "EV",
+   "premium": "t",
+   "status": "Remote end closed connection without response(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel25.m3u8"
   },
   {
    "name": "Indonesia: BRI Super League [CH1]",
@@ -1075,6 +1144,14 @@
    "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel21.m3u8"
+  },
+  {
+   "name": "Indonesia: BRI Super League [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel24.m3u8"
   },
   {
    "name": "Susah Sinyal",
@@ -1285,14 +1362,6 @@
    "url": "http://evpp.mm.uol.com.br:1935/bandpracas/debatemg/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
-   "name": "Canal 38",
-   "code": "BR",
-   "premium": "f",
-   "status": "200(no-ref)",
-   "dead": true,
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
    "name": "Canal do Inter",
    "code": "BR",
    "premium": "f",
@@ -1475,14 +1544,6 @@
    "status": "<urlopen error timed out>(https)",
    "dead": true,
    "url": "http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "SBT Interior",
-   "code": "BR",
-   "premium": "f",
-   "status": "flaky:200",
-   "dead": true,
-   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -1773,6 +1834,14 @@
    "url": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D5"
   },
   {
+   "name": "NBC 4 New York",
+   "code": "US",
+   "premium": "f",
+   "status": "591(no-ref)",
+   "dead": true,
+   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dx5hfbpk7u/out/v1/c14185a397544650b9761d43ad2e8e91/cenc.mpd"
+  },
+  {
    "name": "Music TV",
    "code": "ID",
    "premium": "t",
@@ -2037,6 +2106,14 @@
    "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
   },
   {
+   "name": "MATCH! ARENA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd"
+  },
+  {
    "name": "MATCH! FIGHT",
    "code": "RU",
    "premium": "f",
@@ -2045,12 +2122,28 @@
    "url": "https://video.beeline.tv/live/d/channel377.isml/manifest-stb.mpd"
   },
   {
+   "name": "MATCH! FOOTBALL 1",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd"
+  },
+  {
    "name": "MATCH! FOOTBALL 3",
    "code": "RU",
    "premium": "f",
    "status": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)",
    "dead": true,
    "url": "https://video.beeline.tv/live/d/channel321.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "MATCH! IGRA",
+   "code": "RU",
+   "premium": "f",
+   "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
+   "dead": true,
+   "url": "https://video.beeline.tv/live/d/channel510.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! PREMIERE",
@@ -2131,6 +2224,14 @@
    "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel5.m3u8"
+  },
+  {
+   "name": "Indonesia: BRI Super League [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel6.m3u8"
   },
   {
    "name": "French Open [CH1]",
@@ -2264,9 +2365,17 @@
    "name": "AFC Challenge League [CH1]",
    "code": "EV",
    "premium": "t",
-   "status": "Remote end closed connection without response(no-ref)",
+   "status": "timeout(no-ref)",
    "dead": true,
    "url": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8"
+  },
+  {
+   "name": "Indonesia: BRI Super League [CH2]",
+   "code": "EV",
+   "premium": "t",
+   "status": "timeout(no-ref)",
+   "dead": true,
+   "url": "https://live2.brenvoxedgenetwork.com/live/channel28.m3u8"
   },
   {
    "name": "UEFA Champions League [CH3]",
@@ -2333,18 +2442,10 @@
    "url": "https://beetv.my.id/xstreamx/vd.m3u8?ch=antv"
   },
   {
-   "name": "Jogja TV",
-   "code": "ID",
-   "premium": "f",
-   "status": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)",
-   "dead": true,
-   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
-  },
-  {
    "name": "SIN PO TV",
    "code": "ID",
    "premium": "f",
-   "status": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)",
+   "status": "<urlopen error [Errno 111] Connection refused>(no-ref)",
    "dead": true,
    "url": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd"
   }
