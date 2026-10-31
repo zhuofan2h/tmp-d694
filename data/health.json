@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-31T06:04:56Z",
- "checked": 584,
- "playable": 428,
- "dead": 182,
+ "updated": "2026-10-31T11:49:41Z",
+ "checked": 576,
+ "playable": 422,
+ "dead": 181,
  "no_playlist": 0,
  "pipe_only": 16,
- "drm_excluded": 168,
- "geo_limited": 39,
+ "drm_excluded": 165,
+ "geo_limited": 38,
  "geo_mode": "keep",
  "repaired": 0,
- "playlist_entries": 176,
- "playlist_pipe_entries": 177,
+ "playlist_entries": 172,
+ "playlist_pipe_entries": 173,
  "playlist_verified": true,
- "verify_rounds": 4,
+ "verify_rounds": 6,
  "verify_failures": [
   {
    "name": "2GB Sydney",
@@ -57,6 +57,13 @@
    "status": "200"
   },
   {
+   "name": "Rede NGT",
+   "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
    "name": "TV Cidade Verde",
    "url": "https://list.iptvcat.com/my_list/s/5488049dc85ac576c0b487ec873203ec.m3u8",
    "style": "vlc",
@@ -83,13 +90,6 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
-  },
-  {
-   "name": "Bandung TV",
-   "url": "http://202.150.153.254:65500/bandungtvWEBSITE.m3u8",
-   "style": "pipe",
-   "kind": "timeout",
-   "status": "timeout"
   },
   {
    "name": "TVMU",
@@ -132,6 +132,20 @@
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "name": "MetroTV",
+   "url": "https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8",
+   "style": "vlc",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "MetroTV",
+   "url": "https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8",
+   "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
   },
   {
    "name": "SCTV",
@@ -204,29 +218,8 @@
    "status": "404"
   },
   {
-   "name": "MATCH! ARENA",
-   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! FOOTBALL 2",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
-   "style": "vlc",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! ARENA",
-   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd",
-   "style": "pipe",
-   "kind": "conn_error",
-   "status": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "name": "MATCH! FOOTBALL 2",
-   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd",
+   "name": "MATCH!",
+   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd",
    "style": "pipe",
    "kind": "conn_error",
    "status": "<urlopen error [Errno 104] Connection reset by peer>"
@@ -309,66 +302,57 @@
    "status": "404"
   },
   {
-   "name": "Canal 38",
-   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "name": "Hala London",
+   "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8?checkedby:iptvcat.com",
    "style": "pipe",
+   "kind": "sub:404",
+   "status": "404"
+  },
+  {
+   "name": "SBT Interior",
+   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
    "kind": "other",
    "status": "200"
   },
   {
-   "name": "Jogja TV",
-   "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8",
+   "name": "Adesso TV",
+   "url": "https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
+   "kind": "other",
+   "status": "200"
   },
   {
-   "name": "Asharq Discovery",
-   "url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
+   "name": "Oman Sports",
+   "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
+   "kind": "other",
+   "status": "200"
   },
   {
-   "name": "Asharq Documentary",
-   "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
+   "name": "NBS",
+   "url": "https://media.joycorp.co.kr:4443/live/ngrp:live_all/playlist.m3u8?checkedby:iptvcat.com",
    "style": "vlc",
-   "kind": "sub:404",
-   "status": "404"
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "NBS",
+   "url": "https://media.joycorp.co.kr:4443/live/ngrp:live_all/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "pipe",
+   "kind": "conn_error",
+   "status": "<urlopen error timed out>"
+  },
+  {
+   "name": "Canal 38",
+   "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8?checkedby:iptvcat.com",
+   "style": "vlc",
+   "kind": "other",
+   "status": "200"
   }
  ],
  "repairs": [],
  "drm": [
-  {
-   "name": "MotoGP [CH3]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
-  },
-  {
-   "name": "MotoGP [CH4]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
-  },
-  {
-   "name": "Australia A-League [CH2]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
-  },
-  {
-   "name": "Australia A-League [CH3]",
-   "code": "EV",
-   "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
-  },
-  {
-   "name": "MotoGP [CH5]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
-  },
-  {
-   "name": "Australia A-League [CH4]",
-   "code": "EV",
-   "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
-  },
   {
    "name": "EFL Championship [CH2]",
    "code": "EV",
@@ -392,7 +376,7 @@
   {
    "name": "Italy: Serie-A [CH1]",
    "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd"
+   "url": "https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd"
   },
   {
    "name": "Deutsch: Bundesliga [CH1]",
@@ -422,17 +406,12 @@
   {
    "name": "England: Premier League [CH3]",
    "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/vzeco5ty0v/out/v1/44c6b8f31a2544e3b2a9bb41ed5e241e/cenc.mpd"
-  },
-  {
-   "name": "England: Premier League [CH4]",
-   "code": "EV",
    "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd"
   },
   {
    "name": "Spain: La Liga [CH2]",
    "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
+   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd"
   },
   {
    "name": "Netherlands: Eredivisie [CH1]",
@@ -442,7 +421,12 @@
   {
    "name": "Italy: Serie-A [CH2]",
    "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
+  },
+  {
+   "name": "England: Premier League [CH8]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd"
   },
   {
    "name": "Formula 1 [CH3]",
@@ -452,12 +436,17 @@
   {
    "name": "Spain: La Liga [CH3]",
    "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
+   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd"
   },
   {
    "name": "Italy: Serie-A [CH3]",
    "code": "EV",
-   "url": "https://dash2.antik.sk/stream/nvidia_sport2/playlist_cenc.mpd"
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
+  },
+  {
+   "name": "England: Premier League [CH9]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd"
   },
   {
    "name": "Spain: La Liga [CH4]",
@@ -468,6 +457,26 @@
    "name": "Formula 1 [CH4]",
    "code": "EV",
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd"
+  },
+  {
+   "name": "MotoGP [CH6]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
+   "name": "Australia A-League [CH5]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
+  },
+  {
+   "name": "MotoGP [CH7]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
+  },
+  {
+   "name": "Australia A-League [CH6]",
+   "code": "EV",
+   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd"
   },
   {
    "name": "UEFA Nations League [CH4]",
@@ -653,6 +662,11 @@
    "name": "Zeetv",
    "code": "IN",
    "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeetvhd/default/manifest.mpd"
+  },
+  {
+   "name": "M-Live 8",
+   "code": "SG",
+   "url": "https://tglmp01.akamaized.net/out/v1/41d401729c5d4ce3b15eb7db9147d7bc/manifest.mpd"
   },
   {
    "name": "Xing Komg",
@@ -917,7 +931,7 @@
   {
    "name": "TNT Sports 3",
    "code": "GB",
-   "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
+   "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
   },
   {
    "name": "TNT Sports 4",
@@ -948,6 +962,11 @@
    "name": "Willow Sports HD",
    "code": "SP",
    "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd"
+  },
+  {
+   "name": "CTV News",
+   "code": "CA",
+   "url": "https://otte-tim.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/72sjo8hygl/out/v1/3079be34d72a4985852d299a02406a0c/cenc.mpd"
   },
   {
    "name": "CTV Sport",
@@ -983,6 +1002,11 @@
    "name": "M-Live 6",
    "code": "SG",
    "url": "https://ls-mp02stg.eo-edgefunctions7.com/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd"
+  },
+  {
+   "name": "MATCH! FOOTBALL 2",
+   "code": "RU",
+   "url": "https://video.beeline.tv/live/d/channel320.isml/manifest-stb.mpd"
   },
   {
    "name": "Mediaset Italy",
@@ -1070,11 +1094,6 @@
    "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ntkdl68eob/out/v1/bd5dfb7676994383881bc6e71877d29d/cenc.mpd"
   },
   {
-   "name": "TUDN Deportes",
-   "code": "SP",
-   "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
-  },
-  {
    "name": "Dreamworks HD",
    "code": "KD",
    "url": "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dreamwork.smil/manifest.mpd"
@@ -1120,26 +1139,6 @@
    "url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
   },
   {
-   "name": "MotoGP [CH6]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
-  },
-  {
-   "name": "Australia A-League [CH5]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
-  },
-  {
-   "name": "MotoGP [CH7]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
-  },
-  {
-   "name": "Australia A-League [CH6]",
-   "code": "EV",
-   "url": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd"
-  },
-  {
    "name": "Formula 1 [CH5]",
    "code": "EV",
    "url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd"
@@ -1182,30 +1181,6 @@
  ],
  "unplayable": [
   {
-   "name": "Basketball: NBA [CH9]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel29.m3u8"
-  },
-  {
-   "name": "Indonesia: BRI Super League [CH3]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel7.m3u8"
-  },
-  {
-   "name": "Indonesia: BRI Super League [CH4]",
-   "code": "EV",
-   "premium": "t",
-   "status": "timeout(no-ref)",
-   "dead": true,
-   "url": "https://live2.brenvoxedgenetwork.com/live/channel7.m3u8"
-  },
-  {
    "name": "Hylo Open [CH1]",
    "code": "EV",
    "premium": "t",
@@ -1231,6 +1206,14 @@
   },
   {
    "name": "England: Premier League [CH6]",
+   "code": "EV",
+   "premium": "t",
+   "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
+   "dead": true,
+   "url": "http://42.117.246.9/live/channel5.flv?wsSecret=d3a356f2dea23a0d485beae8aefe900a&wsABSTime=1775775180"
+  },
+  {
+   "name": "England: Premier League [CH7]",
    "code": "EV",
    "premium": "t",
    "status": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)",
@@ -1580,14 +1563,6 @@
    "status": "<urlopen error timed out>(https)",
    "dead": true,
    "url": "http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8?checkedby:iptvcat.com"
-  },
-  {
-   "name": "SBT Interior",
-   "code": "BR",
-   "premium": "f",
-   "status": "flaky:200",
-   "dead": true,
-   "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?checkedby:iptvcat.com"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2126,12 +2101,12 @@
    "url": "https://cdn.stmify.com/primevideo/stream/ITV3/cenc.mpd"
   },
   {
-   "name": "MATCH!",
+   "name": "MATCH! ARENA",
    "code": "RU",
    "premium": "f",
    "status": "flaky:<urlopen error [Errno 104] Connection reset by peer>",
    "dead": true,
-   "url": "https://video.beeline.tv/live/d/channel317.isml/manifest-stb.mpd"
+   "url": "https://video.beeline.tv/live/d/channel512.isml/manifest-stb.mpd"
   },
   {
    "name": "MATCH! FIGHT",
@@ -2188,6 +2163,14 @@
    "status": "404(no-ref)",
    "dead": true,
    "url": "https://video.beeline.tv/live/d/channel423.isml/manifest-stb.mpd"
+  },
+  {
+   "name": "TUDN Deportes",
+   "code": "SP",
+   "premium": "f",
+   "status": "591(no-ref)",
+   "dead": true,
+   "url": "https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd"
   },
   {
    "name": "Dunia Anak",
@@ -2318,14 +2301,6 @@
    "url": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(clarosports)/variant.mpd"
   },
   {
-   "name": "England: Premier League [CH9]",
-   "code": "EV",
-   "premium": "f",
-   "status": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)",
-   "dead": true,
-   "url": "https://live2.pro2cdnlive.com/live/channel10.flv"
-  },
-  {
    "name": "America TV",
    "code": "PY",
    "premium": "t",
@@ -2428,6 +2403,14 @@
    "status": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)",
    "dead": true,
    "url": "https://cdnbal1.indihometv.com/atm/DASH/sinpotv/manifest.mpd"
+  },
+  {
+   "name": "Mentari TV",
+   "code": "ID",
+   "premium": "f",
+   "status": "flaky:302",
+   "dead": true,
+   "url": "https://aspaltvpasti.top/Drmvidbos/Akun121/bosstv.m3u8?id=8237"
   }
  ]
 }
