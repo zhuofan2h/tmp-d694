@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T12:56:28Z",
+ "updated": "2026-11-02T22:00:40Z",
  "count": 553,
  "channels": [
   {
@@ -106,15 +106,16 @@
   {
    "name": "Italy: Serie-A [CH2]",
    "tagline": "03 Nov 02:45 WIB - Atalanta vs Parma",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel6.m3u8",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
    "is_live": "t",
    "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "drm": true
   },
   {
    "name": "England: Premier League [CH2]",
@@ -155,7 +156,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Basketball: NBA [CH2]",
@@ -188,6 +192,131 @@
    "fail_count": 1,
    "dead": true,
    "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+  },
+  {
+   "name": "I-League Cup [CH1]",
+   "tagline": "03 Nov 16:00 WIB - Rans Nusantara FC vs Arema FC",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "I-League Cup [CH2]",
+   "tagline": "03 Nov 16:00 WIB - De Red FC vs PSM Makassar",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "Korean V-League Women [CH1]",
+   "tagline": "03 Nov 17:00 WIB - IBK Women vs Hyundai E&C Hillstate Women",
+   "hls": "https://nvelop-livecloud.pstatic.net/chzzk/lip2_kr/cflexnmss2u0009/mazpxxfquiwttajiiuv303sud6dmzjsmrdby/pkd9lohnclonoukcvsxpbqd6dmzjsmraz3_hls_playlist.m3u8?hdnts=st=1793515536~exp=1793576746~acl=*/mazpxxfquiwttajiiuv303sud6dmzjsmrdby/*~hmac=677d0b7f2f4a66c34ff4d9117e7b1892065e5758dfb561be675f2bdfff5d3869",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
+  },
+  {
+   "name": "I-League Cup [CH3]",
+   "tagline": "03 Nov 19:00 WIB - Kendal Tornado FC vs Persebaya Surabaya",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "I-League Cup [CH4]",
+   "tagline": "03 Nov 19:00 WIB - Persela Lamongan vs Persijap Jepara",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "I-League Cup [CH5]",
+   "tagline": "03 Nov 19:00 WIB - PSMS Medan vs Persija Jakarta",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "I-League Cup [CH6]",
+   "tagline": "03 Nov 19:00 WIB - PSPS Riau vs Bhayangkara FC",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
+  },
+  {
+   "name": "I-League Cup [CH7]",
+   "tagline": "03 Nov 19:00 WIB - Dewa United FC vs Persita Tangerang",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "Kungfu Soccer",
@@ -378,8 +507,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "FIFA Asean Cup [CH1]",
@@ -407,8 +537,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH6]",
@@ -422,8 +553,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "FIFA Asean Cup [CH2]",
@@ -451,8 +583,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH8]",
@@ -466,8 +599,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Asian Games 2026 [CH1]",
@@ -609,9 +743,9 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -625,9 +759,8 @@
    "country": "All Country",
    "code": "AA",
    "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -641,8 +774,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -658,7 +792,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -1285,10 +1419,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Canal do Inter",
@@ -1843,7 +1974,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:200"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2275,7 +2409,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error timed out>(https)"
   },
   {
    "name": "TV Passo Fundo",
@@ -2375,10 +2512,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "NBA TV",
@@ -2491,10 +2625,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Al Saudiya",
@@ -2611,10 +2742,7 @@
    "url_license": "4d38060bf41b3c29df0ec950ece6b5da:7ee9506b13480491d79b71c062ab5366",
    "country": "Saudi Arabia",
    "code": "SA",
-   "group": "Saudi Arabia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Saudi Arabia"
   },
   {
    "name": "Asharq News",
@@ -3068,10 +3196,7 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "South Korea"
   },
   {
    "name": "Hala London",
@@ -5904,9 +6029,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! ARENA",
@@ -5936,9 +6061,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 1",
@@ -6655,7 +6780,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Dhoho TV",
@@ -6925,10 +7053,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Indonesia: BRI Super League [CH2a]",
@@ -7021,7 +7146,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "Remote end closed connection without response(no-ref)"
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -7188,131 +7313,6 @@
    "dead_reason": "400(no-ref)"
   },
   {
-   "name": "I-League Cup [CH1]",
-   "tagline": "03 Nov 16:00 WIB - Rans Nusantara FC vs Arema FC",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "I-League Cup [CH2]",
-   "tagline": "03 Nov 16:00 WIB - De Red FC vs PSM Makassar",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "Remote end closed connection without response(no-ref)"
-  },
-  {
-   "name": "Korean V-League Women [CH1]",
-   "tagline": "03 Nov 17:00 WIB - IBK Women vs Hyundai E&C Hillstate Women",
-   "hls": "https://nvelop-livecloud.pstatic.net/chzzk/lip2_kr/cflexnmss2u0009/mazpxxfquiwttajiiuv303sud6dmzjsmrdby/pkd9lohnclonoukcvsxpbqd6dmzjsmraz3_hls_playlist.m3u8?hdnts=st=1793515536~exp=1793576746~acl=*/mazpxxfquiwttajiiuv303sud6dmzjsmrdby/*~hmac=677d0b7f2f4a66c34ff4d9117e7b1892065e5758dfb561be675f2bdfff5d3869",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events"
-  },
-  {
-   "name": "I-League Cup [CH3]",
-   "tagline": "03 Nov 19:00 WIB - Kendal Tornado FC vs Persebaya Surabaya",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "I-League Cup [CH4]",
-   "tagline": "03 Nov 19:00 WIB - Persela Lamongan vs Persijap Jepara",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "I-League Cup [CH5]",
-   "tagline": "03 Nov 19:00 WIB - PSMS Medan vs Persija Jakarta",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "I-League Cup [CH6]",
-   "tagline": "03 Nov 19:00 WIB - PSPS Riau vs Bhayangkara FC",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "I-League Cup [CH7]",
-   "tagline": "03 Nov 19:00 WIB - Dewa United FC vs Persita Tangerang",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
    "name": "America TV",
    "tagline": "Entertainment",
    "hls": "https://dish-arg.akamaized.net/Content/DASH/Live/channel(tntsports_arg)/manifest.mpd",
@@ -7422,7 +7422,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "flaky:timeout"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7435,10 +7435,7 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "group": "Events"
   },
   {
    "name": "UEFA Champions League [CH1]",
@@ -7479,7 +7476,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "timeout(no-ref)"
   },
   {
    "name": "UEFA Champions League [CH4]",
@@ -7860,7 +7860,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 61] Connection refused>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 111] Connection refused>(no-ref)"
   },
   {
    "name": "DAAI TV",
@@ -8035,12 +8035,12 @@
   }
  ],
  "health": {
-  "checked": "2026-11-02T13:05:43Z",
-  "playable": 396,
+  "checked": "2026-11-02T22:10:10Z",
+  "playable": 386,
   "total": 553,
-  "dead": 188,
-  "playlist_entries": 172,
-  "playlist_pipe_entries": 173,
+  "dead": 191,
+  "playlist_entries": 174,
+  "playlist_pipe_entries": 175,
   "verified": true
  }
 }
