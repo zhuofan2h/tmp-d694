@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T04:47:22Z",
+ "updated": "2026-11-02T12:56:28Z",
  "countries": [
   {
    "code": "A1",
@@ -207,7 +207,7 @@
   }
  ],
  "counts": {
-  "Events": 87,
+  "Events": 95,
   "Movies": 2,
   "Asian Games 2026": 7,
   "All Country": 2,
@@ -235,7 +235,7 @@
   "Philippines (the)": 3,
   "Uruguay": 2,
   "Canada": 7,
-  "Thailand": 6,
+  "Thailand": 7,
   "Kuwait": 1,
   "Russian Federation (the)": 10,
   "Italy": 1,
