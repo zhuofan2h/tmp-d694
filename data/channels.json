@@ -1,24 +1,11 @@
 {
- "updated": "2026-11-02T00:00:13Z",
+ "updated": "2026-11-02T04:47:22Z",
  "count": 544,
  "channels": [
   {
-   "name": "Major League Soccer [CH1]",
-   "tagline": "02 Nov 07:00 WIB - New England Revolution vs Inter Miami CF",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel11.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events"
-  },
-  {
    "name": "AFC Champions League Elite [CH1]",
    "tagline": "02 Nov 20:45 WIB - Pakhtakor vs Al Nassr",
-   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
+   "hls": "https://timeshifting.rctiplus.id/live/eds/backup1/with-scte35/backup1.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -44,7 +31,7 @@
   {
    "name": "AFC Champions League Elite [CH3]",
    "tagline": "02 Nov 23:00 WIB - Tractor S.C. vs Neftchi Fergana",
-   "hls": "https://timeshifting.rctiplus.id/live/eds/backup1/with-scte35/backup1.m3u8",
+   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -57,18 +44,15 @@
   {
    "name": "AFC Champions League Elite [CH4]",
    "tagline": "02 Nov 23:00 WIB - Al-Sadd Sports Club vs Al Ahli SC",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112",
+   "hls": "https://timeshifting.rctiplus.id/live/eds/backup1/with-scte35/backup1.m3u8",
    "is_live": "t",
    "premium": "t",
-   "jenis": "drm_rcti_plus",
+   "jenis": "hls",
    "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
    "url_license": "",
    "country": "Events",
    "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
+   "group": "Events"
   },
   {
    "name": "Italy: Serie-A [CH1]",
@@ -87,7 +71,7 @@
   {
    "name": "AFC Champions League Elite [CH5]",
    "tagline": "03 Nov 01:15 WIB - Al Ittihad vs Al-Ain FC",
-   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
+   "hls": "https://timeshifting.rctiplus.id/live/eds/backup1/with-scte35/backup1.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -100,7 +84,7 @@
   {
    "name": "AFC Champions League Elite [CH6]",
    "tagline": "03 Nov 01:15 WIB - Al-Gharafa Sports Club vs Al Qadsiah",
-   "hls": "https://proxy-v.rctiplus.id/live/ios/ss2/index.m3u8",
+   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -340,9 +324,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "FIFA Asean Cup [CH1]",
@@ -370,9 +353,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH6]",
@@ -386,9 +368,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "FIFA Asean Cup [CH2]",
@@ -416,9 +397,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH8]",
@@ -432,9 +412,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Asian Games 2026 [CH1]",
@@ -546,8 +525,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -574,10 +554,7 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "All Country",
    "code": "AA",
-   "group": "All Country",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "flaky:200"
+   "group": "All Country"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -607,9 +584,8 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "pipe_only": true,
+   "pipe_only_reason": "needs headers: host"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -625,7 +601,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno -2] Name or service not known>(no-ref)"
+   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -779,6 +755,19 @@
    "drm": true
   },
   {
+   "name": "AFC Champions League Elite [CH4]",
+   "tagline": "15 Sep 01:15 WIB - Al Ahli SC vs Pakhtakor",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D112",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events"
+  },
+  {
    "name": "AFC Champions League Elite [CH5]",
    "tagline": "15 Sep 01:15 WIB - Al Qadsiah vs Al-Wasl SC",
    "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
@@ -887,8 +876,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: host"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1216,7 +1206,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Anime TV",
@@ -1261,10 +1254,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "200(no-ref)"
+   "group": "Brazil"
   },
   {
    "name": "Canal do Inter",
@@ -1729,10 +1719,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Rede QDM",
@@ -1984,8 +1971,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:403"
   },
   {
    "name": "TV Caravelas",
@@ -3893,10 +3881,7 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Music TV",
@@ -5527,7 +5512,7 @@
    "group": "Sports TV",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:502"
+   "dead_reason": "200(https)"
   },
   {
    "name": "VIVO D-Sports 1 UR",
@@ -5876,9 +5861,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "fail_count": 1,
    "dead": true,
-   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! ARENA",
@@ -5892,7 +5877,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "MATCH! FIGHT",
@@ -6621,10 +6608,7 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Garuda TV",
@@ -6718,10 +6702,7 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "Al Quran Al Kareem TV",
@@ -6884,7 +6865,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2a]",
@@ -6974,7 +6955,10 @@
    "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -7263,7 +7247,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7279,7 +7263,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "Remote end closed connection without response(no-ref)"
   },
   {
    "name": "UEFA Champions League [CH1]",
@@ -7704,7 +7688,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 111] Connection refused>(no-ref)"
+   "dead_reason": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)"
   },
   {
    "name": "DAAI TV",
@@ -7879,12 +7863,12 @@
   }
  ],
  "health": {
-  "checked": "2026-11-02T00:05:33Z",
-  "playable": 390,
+  "checked": "2026-11-02T04:53:32Z",
+  "playable": 396,
   "total": 544,
-  "dead": 177,
-  "playlist_entries": 175,
-  "playlist_pipe_entries": 176,
+  "dead": 170,
+  "playlist_entries": 178,
+  "playlist_pipe_entries": 179,
   "verified": true
  }
 }
