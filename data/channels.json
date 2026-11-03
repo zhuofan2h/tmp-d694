@@ -1,10 +1,138 @@
 {
- "updated": "2026-11-03T03:31:39Z",
- "count": 553,
+ "updated": "2026-11-03T11:26:46Z",
+ "count": 557,
  "channels": [
   {
-   "name": "AFC Champions League Elite [CH1]",
-   "tagline": "02 Nov 20:45 WIB - Pakhtakor vs Al Nassr",
+   "name": "Korea Open 2026 [CH1]",
+   "tagline": "03 Nov 08:00 WIB - Badminton - Venue 1",
+   "hls": "https://052d33b4b506ff051775da149c5848eb.v.smtcdns.net/play.cbalive.weibisai.com/live/4363761590629061_AiSD.m3u8?txSecret=59780a7f4ec605fb418eb48c182dd30a&txTime=6AEAADC0",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "Korea Open 2026 [CH2]",
+   "tagline": "03 Nov 08:00 WIB - Badminton - Venue 2",
+   "hls": "https://052d33b4b506ff051775da149c5848eb.v.smtcdns.net/play.cbalive.weibisai.com/live/4363761774939061_AiSD.m3u8?txSecret=4e124dbbcaae2b6f3b7cec92ea1ca4b1&txTime=6AEAADC0",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "Korea Open 2026 [CH3]",
+   "tagline": "03 Nov 08:00 WIB - Badminton - Venue 3",
+   "hls": "https://052d33b4b506ff051775da149c5848eb.v.smtcdns.net/play.cbalive.weibisai.com/live/4363761887030061_AiSD.m3u8?txSecret=f6891d2fc4c0daff4050d590b54b0641&txTime=6AEAADC0",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "Korea Open 2026 [CH4]",
+   "tagline": "03 Nov 08:00 WIB - Badminton - Venue 4",
+   "hls": "https://052d33b4b506ff051775da149c5848eb.v.smtcdns.net/play.cbalive.weibisai.com/live/4363762046919061_AiSD.m3u8?txSecret=7dd4ed967c700264869b5a9591c8cc56&txTime=6AEAADC0",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "I-League Cup [CH1]",
+   "tagline": "03 Nov 16:00 WIB - Rans Nusantara FC vs Arema FC",
+   "hls": "http://153.43.243.26/live/channel30.flv?wsSecret=a17c5f0e0d8a7ba8c100563bd55008e4&wsABSTime=1784687240",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.domainkqt.cc/\", \"Origin\": \"https://xlz.domainkqt.cc\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "I-League Cup [CH2]",
+   "tagline": "03 Nov 16:00 WIB - De Red FC vs PSM Makassar",
+   "hls": "http://153.43.243.26/live/channel31.flv?wsSecret=bde0737318f6003b7cd07558f1c080d2&wsABSTime=1785712424",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.domainkqt.cc/\", \"Origin\": \"https://xlz.domainkqt.cc\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH2]",
+   "tagline": "03 Nov 17:00 WIB - Vissel Kobe vs Ratchaburi FC",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel11.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH3]",
+   "tagline": "03 Nov 17:00 WIB - Kashiwa Reysol vs Daejeon Hana Citizen",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel15.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH4]",
+   "tagline": "03 Nov 17:00 WIB - Jeonbuk Hyundai Motors vs Johor Darul Ta`zim FC",
    "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
    "is_live": "t",
    "premium": "t",
@@ -16,11 +144,11 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
-   "name": "AFC Champions League Elite [CH2]",
-   "tagline": "02 Nov 23:00 WIB - Al-Wasl SC vs Al Quwa Al Jawiya",
+   "name": "Korean V-League Women [CH1]",
+   "tagline": "03 Nov 17:00 WIB - IBK Women vs Hyundai E&C Hillstate Women",
    "hls": "https://proxy-v.rctiplus.id/live/ios/ss2/index.m3u8",
    "is_live": "t",
    "premium": "t",
@@ -29,203 +157,15 @@
    "url_license": "",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
-  },
-  {
-   "name": "AFC Champions League Elite [CH3]",
-   "tagline": "02 Nov 23:00 WIB - Tractor S.C. vs Neftchi Fergana",
-   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events"
-  },
-  {
-   "name": "AFC Champions League Elite [CH4]",
-   "tagline": "02 Nov 23:00 WIB - Al-Sadd Sports Club vs Al Ahli SC",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
-   "country": "Events",
-   "code": "EV",
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
-   "name": "Italy: Serie-A [CH1]",
-   "tagline": "03 Nov 00:30 WIB - Sassuolo vs Fiorentina",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "AFC Champions League Elite [CH5]",
-   "tagline": "03 Nov 01:15 WIB - Al Ittihad vs Al-Ain FC",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
-  },
-  {
-   "name": "AFC Champions League Elite [CH6]",
-   "tagline": "03 Nov 01:15 WIB - Al-Gharafa Sports Club vs Al Qadsiah",
-   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events"
-  },
-  {
-   "name": "Italy: Serie-A [CH2]",
-   "tagline": "03 Nov 02:45 WIB - Atalanta vs Parma",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "England: Premier League [CH2]",
-   "tagline": "03 Nov 03:00 WIB - Newcastle United vs Everton",
-   "hls": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/1wlv9dr4vx/out/v1/632322be5f1047acb2472f90f8857182/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicDcyVUdobjIzUlR6QUVwaU9tclRvUSIsImtpZCI6IlF2Y3NBbDNWTURra1N0d1R0K01kclEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "Spain: La Liga [CH5]",
-   "tagline": "03 Nov 03:00 WIB - RC Deportivo vs CA Osasuna",
-   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiWjcydkhpRjF1ZjlvTDgzdzRqVkxIZyIsImtpZCI6ImVaWEhKS0UzU08yWENFQ29xMXU1c3cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "Basketball: NBA [CH1]",
-   "tagline": "03 Nov 07:00 WIB - Cleveland Cavaliers vs Oklahoma City Thunder",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel25.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events"
-  },
-  {
-   "name": "Basketball: NBA [CH2]",
-   "tagline": "03 Nov 07:30 WIB - Philadelphia 76ers vs Chicago Bulls",
-   "hls": "http://153.43.243.26/live/channel44.flv?wsSecret=ca8712734767db648ab5bc13e3b6e8b4&wsABSTime=1792811590",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.domainkqt.cc/\", \"Origin\": \"https://xlz.domainkqt.cc\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "Basketball: NBA [CH3]",
-   "tagline": "03 Nov 10:00 WIB - Golden State Warriors vs Phoenix Suns",
-   "hls": "http://153.43.243.26/live/channel45.flv?wsSecret=4a8c917179a01e4cae4ecb46de498911&wsABSTime=1775094029",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "ts",
-   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.domainkqt.cc/\", \"Origin\": \"https://xlz.domainkqt.cc\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
-   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "I-League Cup [CH1]",
-   "tagline": "03 Nov 16:00 WIB - Rans Nusantara FC vs Arema FC",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "I-League Cup [CH2]",
-   "tagline": "03 Nov 16:00 WIB - De Red FC vs PSM Makassar",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "Korean V-League Women [CH1]",
+   "name": "Korean V-League Women [CH2]",
    "tagline": "03 Nov 17:00 WIB - IBK Women vs Hyundai E&C Hillstate Women",
-   "hls": "https://nvelop-livecloud.pstatic.net/chzzk/lip2_kr/cflexnmss2u0009/mazpxxfquiwttajiiuv303sud6dmzjsmrdby/pkd9lohnclonoukcvsxpbqd6dmzjsmraz3_hls_playlist.m3u8?hdnts=st=1793515536~exp=1793576746~acl=*/mazpxxfquiwttajiiuv303sud6dmzjsmrdby/*~hmac=677d0b7f2f4a66c34ff4d9117e7b1892065e5758dfb561be675f2bdfff5d3869",
+   "hls": "https://nvelop-livecloud.pstatic.net/chzzk/lip2_kr/cflexnmss2u0010/9fugdutaiylwyioemnie8ninapgh4e7b91zh/tt1gx7bdvt9xirnyejdzzgppgh4e7b8ycr_hls_playlist.m3u8?hdnts=st=1793701556~exp=1793762766~acl=*/9fugdutaiylwyioemnie8ninapgh4e7b91zh/*~hmac=880b0be88296c301e9247dde7b73806647d9bb6f1000dff5119e7de94d095dc2",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -233,12 +173,15 @@
    "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "I-League Cup [CH3]",
    "tagline": "03 Nov 19:00 WIB - Kendal Tornado FC vs Persebaya Surabaya",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel24.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -249,12 +192,12 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "I-League Cup [CH4]",
    "tagline": "03 Nov 19:00 WIB - Persela Lamongan vs Persijap Jepara",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel12.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -265,12 +208,12 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "I-League Cup [CH5]",
    "tagline": "03 Nov 19:00 WIB - PSMS Medan vs Persija Jakarta",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel4.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -281,12 +224,12 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "Remote end closed connection without response(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "I-League Cup [CH6]",
    "tagline": "03 Nov 19:00 WIB - PSPS Riau vs Bhayangkara FC",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "hls": "https://tfyi0grauqmtofaauqmt1gy3145djq31unmutqiwsg45ucpzzr3mnp7ozr3d4.100ycdn.com/live1.quickscoreboardz.com/live/channel24.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -297,12 +240,12 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "I-League Cup [CH7]",
    "tagline": "03 Nov 19:00 WIB - Dewa United FC vs Persita Tangerang",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel16.m3u8",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel19.m3u8",
    "is_live": "t",
    "premium": "t",
    "jenis": "hls",
@@ -313,7 +256,215 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH5]",
+   "tagline": "03 Nov 19:15 WIB - Cong An Ha Noi FC vs Kyoto Sanga",
+   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH6]",
+   "tagline": "03 Nov 19:15 WIB - Port FC vs Beijing Guoan",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH7]",
+   "tagline": "03 Nov 23:00 WIB - Esteghlal Tehran vs Al-Shamal Sports Club",
+   "hls": "https://proxy-v.rctiplus.id/live/ios/ss1/index.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH1]",
+   "tagline": "04 Nov 00:45 WIB - Galatasaray vs VfB Stuttgart",
+   "hls": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVlNwNDBhNjNUeFpRMW9KVnhYU1VDQSIsImtpZCI6IitqVDZqSkF6YmRVb3g2STRjY3JSL2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH2]",
+   "tagline": "04 Nov 00:45 WIB - FC Shakhtar Donetsk vs Sporting CP",
+   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH8]",
+   "tagline": "04 Nov 01:15 WIB - Al Hilal vs Shabab Al Ahli",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH3]",
+   "tagline": "04 Nov 03:00 WIB - Villarreal CF vs Paris Saint Germain",
+   "hls": "https://live2.brenvoxedgenetwork.com/live/channel18.m3u8",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "hls",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
+   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH4]",
+   "tagline": "04 Nov 03:00 WIB - Manchester United vs AS Roma",
+   "hls": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVlNwNDBhNjNUeFpRMW9KVnhYU1VDQSIsImtpZCI6IitqVDZqSkF6YmRVb3g2STRjY3JSL2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH5]",
+   "tagline": "04 Nov 03:00 WIB - LASK Linz vs Slovan Bratislava",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D125",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH6]",
+   "tagline": "04 Nov 03:00 WIB - Feyenoord vs Inter Milan",
+   "hls": "http://153.43.243.26/live/channel19.flv?wsSecret=8185cdcf0312f16bce91778a85b066cc&wsABSTime=1775360331",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "ts",
+   "header_iptv": "{\"Host\": \"live1.quickscoreboardz.com\", \"Referer\": \"https://xlz.domainkqt.cc/\", \"Origin\": \"https://xlz.domainkqt.cc\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0\"}",
+   "url_license": "https://etslive-v3-vidio-com-preview-tokenized.akamaized.net/live/17852/master.m3u8?hdnts=exp=1726126994~acl=/live/17852/master.m3u8!/hls-p/ingest_17852*/*!/hls-b/ingest_17852*/*~id=851110~hmac=7d99eba92a995ff011bebd28413b2ce3115295b25a6ae91d4de3686d5bc3b954",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH7]",
+   "tagline": "04 Nov 03:00 WIB - FK Bodo/Glimt vs LOSC Lille",
+   "hls": "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/rbem8rorcw/out/v1/5318821e2c3c44c2a439681b9aa86e9b/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"Referer\": \"https://dcf-fs-live-dazn-cdn.dazn.com/\", \"Origin\": \"https://dcf-fs-live-dazn-cdn.dazn.com\", \"User-Agent\": \"Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVVdUbTBGRmtvdFpmcVB6SllxcElZUSIsImtpZCI6IjJXSTNkS3hjakRVYXIrbDhYK2NDWncifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH8]",
+   "tagline": "04 Nov 03:00 WIB - FC Barcelona vs Aston Villa",
+   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEMvcXlLbVp2UWEvUUZtL00wRVhTUSIsImtpZCI6ImFhV3FnMW9HSE9aS1l3MFFSbkorUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "UEFA Champions League [CH9]",
+   "tagline": "04 Nov 03:00 WIB - Atletico Madrid vs FC Bayern Munich",
+   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Kungfu Soccer",
@@ -356,7 +507,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Nations League [CH6]",
@@ -370,7 +523,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Nations League [CH7]",
@@ -384,7 +539,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "International Friendly [CH3]",
@@ -400,7 +557,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UFC Fight Night [CH2]",
@@ -414,7 +571,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "International Friendly [CH2]",
@@ -428,7 +587,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "International Friendly [CH4]",
@@ -444,7 +605,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH1]",
@@ -520,7 +681,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH5]",
@@ -566,7 +729,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
   },
   {
    "name": "Volleyball: Asian Games 2026 [CH7]",
@@ -612,7 +777,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH2]",
@@ -626,7 +793,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH3]",
@@ -640,7 +809,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH4]",
@@ -654,7 +825,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH5]",
@@ -668,7 +841,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Football: Asian Games 2026 [CH1]",
@@ -712,7 +887,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Football: Asian Games 2026 [CH4]",
@@ -726,7 +901,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH1]",
@@ -742,7 +919,7 @@
    "group": "All Country",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "200(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "WAFF Arabian Gulf Cup [CH2]",
@@ -758,7 +935,7 @@
    "group": "All Country",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Volleyball Asian Championship Women [CH2]",
@@ -774,7 +951,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH5]",
@@ -790,7 +967,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [Errno 11001] getaddrinfo failed>(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -804,7 +981,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH6]",
@@ -817,7 +996,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoibnhqU1lwSFpJd2d6VUI5L2dpOW9kUSIsImtpZCI6IjhvZzRES1RPK2EwL0o2a3FDT203aXcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "England: Premier League [CH1]",
@@ -830,7 +1012,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiME55ODEzSTd4QTN3dnpUSndKTFZIdyIsImtpZCI6IjNHbTJGWm9QbndwT0E3UC9rY3VzMVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Spain: La Liga [CH4]",
@@ -844,7 +1029,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Abu Dhabi Sports 1",
@@ -858,7 +1045,9 @@
    "country": "United Arab Emirates (the)",
    "code": "AE",
    "group": "United Arab Emirates (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Abu Dhabi Sports 2",
@@ -872,7 +1061,9 @@
    "country": "United Arab Emirates (the)",
    "code": "AE",
    "group": "United Arab Emirates (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asean Club Championship [CH1]",
@@ -888,7 +1079,23 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH1]",
+   "tagline": "14 Sep 20:45 WIB - Neftchi Fergana vs Al Quwa Al Jawiya",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH2]",
@@ -901,7 +1108,10 @@
    "url_license": "",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH3]",
@@ -914,7 +1124,26 @@
    "url_license": "",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "Italy: Serie-A [CH1]",
+   "tagline": "14 Sep 23:30 WIB - Torino vs AS Roma",
+   "hls": "https://otte.cache.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "dash-clearkey",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"}",
+   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoicmlRSkFTTzR4eXJGUUUzQlVvUjh1QSIsImtpZCI6IkMwSytKbVRYNkJIUVR6NVFUZ2treFEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH2]",
@@ -928,7 +1157,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH4]",
@@ -944,7 +1175,23 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "AFC Champions League Elite [CH5]",
+   "tagline": "15 Sep 01:15 WIB - Al Qadsiah vs Al-Wasl SC",
+   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D115",
+   "is_live": "t",
+   "premium": "t",
+   "jenis": "drm_rcti_plus",
+   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
+   "url_license": "",
+   "country": "Events",
+   "code": "EV",
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Champions League Elite [CH6]",
@@ -957,7 +1204,10 @@
    "url_license": "",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Italy: Serie-A [CH3]",
@@ -971,7 +1221,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "England: Premier League [CH3]",
@@ -984,7 +1236,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiME55ODEzSTd4QTN3dnpUSndKTFZIdyIsImtpZCI6IjNHbTJGWm9QbndwT0E3UC9rY3VzMVEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Spain: La Liga [CH1]",
@@ -998,7 +1253,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Football: Asian Games 2026 [CH1]",
@@ -1044,7 +1301,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH6]",
@@ -1058,7 +1315,9 @@
    "country": "Asian Games 2026",
    "code": "AN",
    "group": "Asian Games 2026",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Asian Games 2026 [CH7]",
@@ -1074,7 +1333,7 @@
    "group": "Asian Games 2026",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "VIVO D-Sports 1 AR",
@@ -1116,7 +1375,9 @@
    "country": "Argentina",
    "code": "AR",
    "group": "Argentina",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "VIVO D-Sports+ 2",
@@ -1130,7 +1391,9 @@
    "country": "Argentina",
    "code": "AR",
    "group": "Argentina",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "400(no-ref)"
   },
   {
    "name": "Discovery Channel Asia",
@@ -1372,10 +1635,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Anime TV",
@@ -1421,9 +1681,9 @@
    "country": "Brazil",
    "code": "BR",
    "group": "Brazil",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "200(no-ref)"
   },
   {
    "name": "Canal do Inter",
@@ -1824,10 +2084,7 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Brazil"
   },
   {
    "name": "Rede Brasil",
@@ -1917,7 +2174,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "dead": true,
+   "dead_reason": "verify-failed",
+   "fail_count": 1
   },
   {
    "name": "Rede Sul",
@@ -1978,7 +2238,10 @@
    "url_license": "",
    "country": "Brazil",
    "code": "BR",
-   "group": "Brazil"
+   "group": "Brazil",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:200"
   },
   {
    "name": "SÉRIES CLÁSSICAS",
@@ -2524,7 +2787,25 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
+  },
+  {
+   "name": "[testo]3",
+   "tagline": "Sports TV",
+   "hls": "https://www.youtube.com/watch?v=Osl3M5qrRx8",
+   "is_live": "f",
+   "premium": "f",
+   "jenis": "yt",
+   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0\"}",
+   "url_license": "none",
+   "country": "Sports TV",
+   "code": "SP",
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "360 TV HD",
@@ -3265,7 +3546,10 @@
    "url_license": "",
    "country": "South Korea",
    "code": "KR",
-   "group": "South Korea"
+   "group": "South Korea",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "MBC Max",
@@ -4037,7 +4321,9 @@
    "country": "United States of America (the)",
    "code": "US",
    "group": "United States of America (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Nusantara TV",
@@ -4157,7 +4443,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Galaxy Premium",
@@ -4347,7 +4635,9 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Thrill.TV",
@@ -4453,8 +4743,9 @@
    "country": "United States of America (the)",
    "code": "US",
    "group": "United States of America (the)",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Accept"
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "ANTV HD",
@@ -4588,7 +4879,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Action Sports 2",
@@ -4602,7 +4895,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Arena Sports 1",
@@ -4616,7 +4911,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Arena Sports 2",
@@ -4630,7 +4927,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "beIN Sports AU 1 A+",
@@ -4733,7 +5032,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "beIN Sports XTRA [CH2]",
@@ -4746,7 +5048,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "beIN Sports XTRA [CH3]",
@@ -4759,7 +5064,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Caze TV",
@@ -4787,7 +5095,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "CBS Golazo",
@@ -4815,7 +5125,9 @@
    "country": "Czechia",
    "code": "CZ",
    "group": "Czechia",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "DAZN Fast",
@@ -4841,7 +5153,10 @@
    "url_license": "75508caa27239cd34ca45ee862f1bbf2:d38f9f2b690bad3fcc838013242cc5e4",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "DAZN Rise",
@@ -4854,7 +5169,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMDQrZksya0xyVC9NZzRBVEpDekY1QSIsImtpZCI6ImRWQ01xaWNqbk5OTXBGN29Zdkc3OGcifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "F1 Channel [CH1]",
@@ -4868,7 +5186,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "F1 Channel [CH2]",
@@ -4882,7 +5202,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Fancode 1",
@@ -4936,7 +5258,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "FOX Deportes",
@@ -4964,7 +5289,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "FOX Plus",
@@ -4978,7 +5305,9 @@
    "country": "Mexico",
    "code": "MX",
    "group": "Mexico",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "FOX Sports 1",
@@ -5089,7 +5418,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "HBO Boxing",
@@ -5103,7 +5434,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Himalaya Sports",
@@ -5119,7 +5452,7 @@
    "group": "Sports TV",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "JOJ-Sports",
@@ -5217,7 +5550,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "nova SPORT1 HD",
@@ -5285,7 +5620,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Premier Sports 1",
@@ -5397,7 +5734,10 @@
    "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "SPORTS3 TV",
@@ -5453,7 +5793,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "SporTV BR 3",
@@ -5481,7 +5823,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "SPOTV ID1",
@@ -5554,7 +5898,10 @@
    "url_license": "f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Telemundo",
@@ -5581,7 +5928,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TNT Sports 1",
@@ -5665,7 +6014,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UNITE8-Sports",
@@ -5678,7 +6029,10 @@
    "url_license": "f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "VIVO D-Sports 1 UR",
@@ -5720,7 +6074,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Bahrain Sports 1",
@@ -5759,7 +6115,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "CTV News",
@@ -5773,8 +6132,7 @@
    "country": "Canada",
    "code": "CA",
    "group": "Canada",
-   "geo_limited": true,
-   "geo_status": "403-blocked(verify)"
+   "drm": true
   },
   {
    "name": "CTV Sport",
@@ -5848,9 +6206,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "pipe_only": true,
-   "pipe_only_reason": "needs headers: Accept",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "FS2",
@@ -6027,7 +6385,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! ARENA",
@@ -6040,7 +6400,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiTk0zVzgrRy9hcCtkVk9rV1dyK01DUSIsImtpZCI6Im1EbXhjTFQ4T0U4a08vL1lrcHR4b2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Russian Federation (the)",
    "code": "RU",
-   "group": "Russian Federation (the)"
+   "group": "Russian Federation (the)",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FIGHT",
@@ -6070,7 +6433,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "MATCH! FOOTBALL 2",
@@ -6084,9 +6449,7 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "drm": true
   },
   {
    "name": "MATCH! FOOTBALL 3",
@@ -6100,7 +6463,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "<urlopen error [Errno 104] Connection reset by peer>(no-ref)"
   },
   {
    "name": "MATCH! IGRA",
@@ -6146,7 +6511,9 @@
    "country": "Russian Federation (the)",
    "code": "RU",
    "group": "Russian Federation (the)",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "flaky:<urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "name": "Mediaset Italy",
@@ -6216,7 +6583,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Oman Sports",
@@ -6229,10 +6598,7 @@
    "url_license": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Sports TV"
   },
   {
    "name": "One 31 HD",
@@ -6246,7 +6612,9 @@
    "country": "Thailand",
    "code": "TH",
    "group": "Thailand",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Premiere Brazil 1",
@@ -6400,7 +6768,9 @@
    "country": "Thailand",
    "code": "TH",
    "group": "Thailand",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "tap-Sports",
@@ -6427,7 +6797,10 @@
    "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVkYzNFQvVEZTdmExT0ZVVzRQWlpWZyIsImtpZCI6IlN5di9QbG1BUTgrdmxKTUY0OUZUK2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
    "country": "Thailand",
    "code": "TH",
-   "group": "Thailand"
+   "group": "Thailand",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TMC",
@@ -6527,7 +6900,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TUDN Deportes",
@@ -6541,7 +6916,9 @@
    "country": "Sports TV",
    "code": "SP",
    "group": "Sports TV",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TV Real Madrid EN",
@@ -6554,7 +6931,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TV Real Madrid ES",
@@ -6567,7 +6947,10 @@
    "url_license": "",
    "country": "Sports TV",
    "code": "SP",
-   "group": "Sports TV"
+   "group": "Sports TV",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Cartoon Network",
@@ -6836,7 +7219,10 @@
    "url_license": "10e203f655014b5d18b0c85a6c72c809:acdcd0b65014e4929c6296171bdfebad",
    "country": "TV Lokal",
    "code": "LO",
-   "group": "Indonesia"
+   "group": "Indonesia",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "404(no-ref)"
   },
   {
    "name": "RCTV (Radar Cirebon)",
@@ -6922,10 +7308,7 @@
    "url_license": "",
    "country": "Indonesia",
    "code": "ID",
-   "group": "Indonesia",
-   "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "group": "Indonesia"
   },
   {
    "name": "TV9 Nusantara",
@@ -7015,7 +7398,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH1a]",
@@ -7028,7 +7411,10 @@
    "url_license": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7044,7 +7430,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH2a]",
@@ -7057,7 +7443,10 @@
    "url_license": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
    "country": "Events",
    "code": "EV",
-   "group": "Events"
+   "group": "Events",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH1]",
@@ -7073,7 +7462,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH2]",
@@ -7089,7 +7478,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH3]",
@@ -7105,7 +7494,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH4]",
@@ -7121,7 +7510,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH3]",
@@ -7137,7 +7526,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa Conference League [CH5]",
@@ -7153,7 +7542,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa Conference League [CH1]",
@@ -7167,7 +7556,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa Conference League [CH2]",
@@ -7181,7 +7572,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa League [CH1]",
@@ -7195,7 +7588,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa League [CH2]",
@@ -7211,7 +7606,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa Conference League [CH3]",
@@ -7227,7 +7622,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa Conference League [CH4]",
@@ -7243,7 +7638,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa League [CH3]",
@@ -7257,7 +7652,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa League [CH4]",
@@ -7271,7 +7668,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Europa League [CH5]",
@@ -7285,7 +7684,9 @@
    "country": "Events",
    "code": "EV",
    "group": "Events",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Claro Sport",
@@ -7333,7 +7734,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH2]",
@@ -7349,7 +7750,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH3]",
@@ -7365,7 +7766,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "French Open [CH4]",
@@ -7381,7 +7782,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH1]",
@@ -7397,7 +7798,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "AFC Challenge League [CH1]",
@@ -7413,7 +7814,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesia: BRI Super League [CH2]",
@@ -7429,81 +7830,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "UEFA Champions League [CH1]",
-   "tagline": "21 Okt 23:45 WIB - LOSC Lille vs Galatasaray",
-   "hls": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVlNwNDBhNjNUeFpRMW9KVnhYU1VDQSIsImtpZCI6IitqVDZqSkF6YmRVb3g2STRjY3JSL2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Champions League [CH2]",
-   "tagline": "21 Okt 23:45 WIB - Como vs Manchester United",
-   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Champions League [CH3]",
-   "tagline": "22 Okt 02:00 WIB - Sporting CP vs LASK Linz",
-   "hls": "https://live2.brenvoxedgenetwork.com/live/channel18.m3u8",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "hls",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0\"}",
-   "url_license": "d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "timeout(no-ref)"
-  },
-  {
-   "name": "UEFA Champions League [CH4]",
-   "tagline": "22 Okt 02:00 WIB - Real Madrid vs RB Leipzig",
-   "hls": "https://otte.cache.aiv-cdn.net/sin-nitro/live/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVlNwNDBhNjNUeFpRMW9KVnhYU1VDQSIsImtpZCI6IitqVDZqSkF6YmRVb3g2STRjY3JSL2cifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Champions League [CH5]",
-   "tagline": "22 Okt 02:00 WIB - Inter Milan vs FC Shakhtar Donetsk",
-   "hls": "https://toutatis.rctiplus.com/vid-cont-api-superapp/api/v3/player?permalink=http%3A%2F%2Fwww.rctiplus.com%2Fvideoplus%2Flivetv%3Fchannel%3D125",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "drm_rcti_plus",
-   "header_iptv": "{\"Referer\": \"https://www.rctiplus.com\", \"Origin\": \"https://www.rctiplus.com\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0\"}",
-   "url_license": "",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "fail_count": 1,
-   "dead": true,
-   "dead_reason": "401(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "UEFA Champions League [CH6]",
@@ -7519,49 +7846,7 @@
    "group": "Events",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(https)"
-  },
-  {
-   "name": "UEFA Champions League [CH7]",
-   "tagline": "22 Okt 02:00 WIB - Real Betis vs Feyenoord",
-   "hls": "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/rbem8rorcw/out/v1/5318821e2c3c44c2a439681b9aa86e9b/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"Referer\": \"https://dcf-fs-live-dazn-cdn.dazn.com/\", \"Origin\": \"https://dcf-fs-live-dazn-cdn.dazn.com\", \"User-Agent\": \"Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVVdUbTBGRmtvdFpmcVB6SllxcElZUSIsImtpZCI6IjJXSTNkS3hjakRVYXIrbDhYK2NDWncifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Champions League [CH8]",
-   "tagline": "22 Okt 02:00 WIB - FC Bayern Munich vs Arsenal",
-   "hls": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiMEMvcXlLbVp2UWEvUUZtL00wRVhTUSIsImtpZCI6ImFhV3FnMW9HSE9aS1l3MFFSbkorUUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
-  },
-  {
-   "name": "UEFA Champions League [CH9]",
-   "tagline": "22 Okt 02:00 WIB - Aston Villa vs Viking",
-   "hls": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
-   "is_live": "t",
-   "premium": "t",
-   "jenis": "dash-clearkey",
-   "header_iptv": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}",
-   "url_license": "eyJrZXlzIjpbeyJrdHkiOiJvY3QiLCJrIjoiVm55R084RXV0MGVJNm5TSWpBUXVHdyIsImtpZCI6Ijg5OTRRd2dLNTBPL2hsM0YvZlpNYUEifV0sInR5cGUiOiJ0ZW1wb3JhcnkifQ==",
-   "country": "Events",
-   "code": "EV",
-   "group": "Events",
-   "drm": true
+   "dead_reason": "not-checked"
   },
   {
    "name": "TV4 Sweden",
@@ -7575,7 +7860,9 @@
    "country": "Sweden",
    "code": "SE",
    "group": "Sweden",
-   "drm": true
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "451(no-ref)"
   },
   {
    "name": "RCTI",
@@ -7657,7 +7944,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "SCTV",
@@ -7708,7 +7998,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "404(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "MDTV",
@@ -7722,7 +8012,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "RTV",
@@ -7753,7 +8046,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "Jawa Pos TV",
@@ -7767,7 +8060,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "BTV",
@@ -7781,7 +8077,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "401(no-ref)"
   },
   {
    "name": "BeritaSatu",
@@ -7795,7 +8094,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Magna Channel",
@@ -7809,7 +8111,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TVRI Sport",
@@ -7823,7 +8128,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "BN Channel",
@@ -7837,7 +8145,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "SIN PO TV",
@@ -7854,7 +8165,7 @@
    "source": "extra",
    "fail_count": 1,
    "dead": true,
-   "dead_reason": "<urlopen error [WinError 10061] No connection could be made because th(no-ref)"
+   "dead_reason": "not-checked"
   },
   {
    "name": "DAAI TV",
@@ -7868,7 +8179,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Elshinta TV",
@@ -7882,7 +8196,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "JTV",
@@ -7896,7 +8213,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TVKU",
@@ -7910,7 +8230,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TVMU",
@@ -7925,9 +8248,9 @@
    "code": "ID",
    "group": "Indonesia",
    "source": "extra",
+   "fail_count": 1,
    "dead": true,
-   "dead_reason": "verify-failed",
-   "fail_count": 1
+   "dead_reason": "not-checked"
   },
   {
    "name": "MQTV",
@@ -7941,7 +8264,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "Indonesiana TV",
@@ -7955,7 +8281,10 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   },
   {
    "name": "TransTV",
@@ -8025,16 +8354,19 @@
    "country": "Indonesia",
    "code": "ID",
    "group": "Indonesia",
-   "source": "extra"
+   "source": "extra",
+   "fail_count": 1,
+   "dead": true,
+   "dead_reason": "not-checked"
   }
  ],
  "health": {
-  "checked": "2026-11-03T03:40:13Z",
-  "playable": 389,
-  "total": 553,
-  "dead": 188,
-  "playlist_entries": 176,
-  "playlist_pipe_entries": 177,
+  "checked": "2026-11-03T11:30:55Z",
+  "playable": 268,
+  "total": 557,
+  "dead": 307,
+  "playlist_entries": 155,
+  "playlist_pipe_entries": 155,
   "verified": true
  }
 }
